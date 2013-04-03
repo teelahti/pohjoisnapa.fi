@@ -1,0 +1,60 @@
+﻿#menu {
+	position: relative;
+	top: 3px;
+	left: 235px;
+	z-index: 50;
+	width: 505px;
+}
+
+#menu2 {
+	position: relative;
+	top: 16px;
+	left: 225px;
+	z-index: 50;
+	width: 510px;
+}
+.staticmenu 
+{
+	color: #CCCCCC;
+	/* Original but unreadable: impact */
+	/*font-family: Impact,Arial Narrow;*/
+	/* For FireFox since it cannot handle arial narrow */
+	font-family: Arial Narrow, Arial;
+    font-stretch: condensed;
+	/*font-family: Arial Narrow, Arial;*/
+	font-weight: bold;
+	font-size: 11pt;
+	margin-left: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#Mainmenu li:hover, #SubMenu li:hover
+{
+	text-decoration: underline;
+}
+
+#Mainmenu .selected 
+{
+	color: White !important;
+}
+
+.staticmenu2 
+{
+	color: White;
+	/* For FireFox since it cannot handle arial narrow */
+	font-family: Arial Narrow, Arial;
+    font-stretch: condensed;
+    /*font-family: Arial Narrow;*/
+	font-size: 12pt;
+	margin-left: 7px;
+	text-align: left;
+}
+
+#SubMenu .selected 
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+

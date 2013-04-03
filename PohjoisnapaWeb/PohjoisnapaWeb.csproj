@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C681ED1-B467-4073-B0CA-2D72688C29E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PohjoisnapaWeb</RootNamespace>
+    <AssemblyName>PohjoisnapaWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aikataulu.aspx.cs">
+      <DependentUpon>Aikataulu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aikataulu.aspx.designer.cs">
+      <DependentUpon>Aikataulu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Arktis.aspx.designer.cs">
+      <DependentUpon>Arktis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArktisHistoria.aspx.designer.cs">
+      <DependentUpon>ArktisHistoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data.aspx.designer.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galleria.aspx.designer.cs">
+      <DependentUpon>Galleria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleriaEnnenHiihtoa.aspx.designer.cs">
+      <DependentUpon>GalleriaEnnenHiihtoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleriaHiihto.aspx.designer.cs">
+      <DependentUpon>GalleriaHiihto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ilmastonmuutos.aspx.designer.cs">
+      <DependentUpon>Ilmastonmuutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IlmastonmuutosArktisillaAlueilla.aspx.designer.cs">
+      <DependentUpon>IlmastonmuutosArktisillaAlueilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jaakarhu.aspx.designer.cs">
+      <DependentUpon>Jaakarhu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kartta.aspx.designer.cs">
+      <DependentUpon>Kartta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kirja.aspx.designer.cs">
+      <DependentUpon>Kirja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lehdistokuvat.aspx.designer.cs">
+      <DependentUpon>Lehdistokuvat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LsvjKilta.aspx.designer.cs">
+      <DependentUpon>LsvjKilta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Media.aspx.designer.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Messut.aspx.designer.cs">
+      <DependentUpon>Messut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\DataRepository.cs" />
+    <Compile Include="Logic\DiaryEntryLayout.cs" />
+    <Compile Include="Logic\DiaryFeed.cs" />
+    <Compile Include="Logic\ImageBase.cs" />
+    <Compile Include="Logic\LanguageAwarePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logic\Models\DiaryEntry.cs" />
+    <Compile Include="Logic\Models\DiaryImage.cs" />
+    <Compile Include="Logic\RssEnclosure.cs" />
+    <Compile Include="Logic\RssFeedGenerator.cs" />
+    <Compile Include="Logic\SiteLanguage.cs" />
+    <Compile Include="App_GlobalResources\Web.sitemap.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Web.sitemap.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Web.sitemap.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Arktis.aspx.cs">
+      <DependentUpon>Arktis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArktisHistoria.aspx.cs">
+      <DependentUpon>ArktisHistoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data.aspx.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galleria.aspx.cs">
+      <DependentUpon>Galleria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleriaEnnenHiihtoa.aspx.cs">
+      <DependentUpon>GalleriaEnnenHiihtoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleriaHiihto.aspx.cs">
+      <DependentUpon>GalleriaHiihto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ilmastonmuutos.aspx.cs">
+      <DependentUpon>Ilmastonmuutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IlmastonmuutosArktisillaAlueilla.aspx.cs">
+      <DependentUpon>IlmastonmuutosArktisillaAlueilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jaakarhu.aspx.cs">
+      <DependentUpon>Jaakarhu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kartta.aspx.cs">
+      <DependentUpon>Kartta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kirja.aspx.cs">
+      <DependentUpon>Kirja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lehdistokuvat.aspx.cs">
+      <DependentUpon>Lehdistokuvat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LsvjKilta.aspx.cs">
+      <DependentUpon>LsvjKilta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Media.aspx.cs">
+      <DependentUpon>Media.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messut.aspx.cs">
+      <DependentUpon>Messut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Olosuhteet.aspx.cs">
+      <DependentUpon>Olosuhteet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Olosuhteet.aspx.designer.cs">
+      <DependentUpon>Olosuhteet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paivakirja.aspx.cs">
+      <DependentUpon>Paivakirja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paivakirja.aspx.designer.cs">
+      <DependentUpon>Paivakirja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaivakirjaLista.aspx.cs">
+      <DependentUpon>PaivakirjaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaivakirjaLista.aspx.designer.cs">
+      <DependentUpon>PaivakirjaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pohjoisnapa.master.cs">
+      <DependentUpon>Pohjoisnapa.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pohjoisnapa.master.designer.cs">
+      <DependentUpon>Pohjoisnapa.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retkikunta.aspx.cs">
+      <DependentUpon>Retkikunta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Retkikunta.aspx.designer.cs">
+      <DependentUpon>Retkikunta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ruoka.aspx.cs">
+      <DependentUpon>Ruoka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ruoka.aspx.designer.cs">
+      <DependentUpon>Ruoka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suunnistus.aspx.cs">
+      <DependentUpon>Suunnistus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suunnistus.aspx.designer.cs">
+      <DependentUpon>Suunnistus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tausta.aspx.cs">
+      <DependentUpon>Tausta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tausta.aspx.designer.cs">
+      <DependentUpon>Tausta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tavoitteet.aspx.cs">
+      <DependentUpon>Tavoitteet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tavoitteet.aspx.designer.cs">
+      <DependentUpon>Tavoitteet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tukijalista.aspx.cs">
+      <DependentUpon>Tukijalista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tukijalista.aspx.designer.cs">
+      <DependentUpon>Tukijalista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tukijat.aspx.cs">
+      <DependentUpon>Tukijat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tukijat.aspx.designer.cs">
+      <DependentUpon>Tukijat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutkimus.aspx.cs">
+      <DependentUpon>Tutkimus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutkimus.aspx.designer.cs">
+      <DependentUpon>Tutkimus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiaryEntries.ascx.cs">
+      <DependentUpon>DiaryEntries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiaryEntries.ascx.designer.cs">
+      <DependentUpon>DiaryEntries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiaryEntry.ascx.cs">
+      <DependentUpon>DiaryEntry.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiaryEntry.ascx.designer.cs">
+      <DependentUpon>DiaryEntry.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiaryImage.ascx.cs">
+      <DependentUpon>DiaryImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiaryImage.ascx.designer.cs">
+      <DependentUpon>DiaryImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GalleriaKuva.ascx.cs">
+      <DependentUpon>GalleriaKuva.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GalleriaKuva.ascx.designer.cs">
+      <DependentUpon>GalleriaKuva.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RssSubscribe.ascx.cs">
+      <DependentUpon>RssSubscribe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RssSubscribe.ascx.designer.cs">
+      <DependentUpon>RssSubscribe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Valokuvaus.aspx.cs">
+      <DependentUpon>Valokuvaus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Valokuvaus.aspx.designer.cs">
+      <DependentUpon>Valokuvaus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Varusteet.aspx.cs">
+      <DependentUpon>Varusteet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Varusteet.aspx.designer.cs">
+      <DependentUpon>Varusteet.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DiaryEntries\019.json" />
+    <Content Include="App_Data\DiaryEntries\020.json" />
+    <Content Include="App_Data\DiaryEntries\021.json" />
+    <Content Include="App_Data\DiaryEntries\022.json" />
+    <Content Include="App_Data\DiaryEntries\023.json" />
+    <Content Include="App_Data\DiaryEntries\024.json" />
+    <Content Include="App_Data\DiaryEntries\025.json" />
+    <Content Include="App_Data\DiaryEntries\026.json" />
+    <Content Include="App_Data\DiaryEntries\027.json" />
+    <Content Include="App_Data\DiaryEntries\028.json" />
+    <Content Include="App_Data\DiaryEntries\029.json" />
+    <Content Include="App_Data\DiaryEntries\031.json" />
+    <Content Include="App_Data\DiaryEntries\032.json" />
+    <Content Include="App_Data\DiaryEntries\033.json" />
+    <Content Include="App_Data\DiaryEntries\034.json" />
+    <Content Include="App_Data\DiaryEntries\035.json" />
+    <Content Include="App_Data\DiaryEntries\036.json" />
+    <Content Include="App_Data\DiaryEntries\037.json" />
+    <Content Include="App_Data\DiaryEntries\038.json" />
+    <Content Include="App_Data\DiaryEntries\039.json" />
+    <Content Include="App_Data\DiaryEntries\040.json" />
+    <Content Include="App_Data\DiaryEntries\041.json" />
+    <Content Include="App_Data\DiaryEntries\042.json" />
+    <Content Include="App_Data\DiaryEntries\043.json" />
+    <Content Include="App_Data\DiaryEntries\044.json" />
+    <Content Include="App_Data\DiaryEntries\045.json" />
+    <Content Include="App_Data\DiaryEntries\046.json" />
+    <Content Include="App_Data\DiaryEntries\047.json" />
+    <Content Include="App_Data\DiaryEntries\048.json" />
+    <Content Include="App_Data\DiaryEntries\049.json" />
+    <Content Include="App_Data\DiaryEntries\050.json" />
+    <Content Include="App_Data\DiaryEntries\051.json" />
+    <Content Include="App_Data\DiaryEntries\052.json" />
+    <Content Include="App_Data\DiaryEntries\053.json" />
+    <Content Include="App_Data\DiaryEntries\054.json" />
+    <Content Include="App_Data\DiaryEntries\055.json" />
+    <Content Include="App_Data\DiaryEntries\056.json" />
+    <Content Include="App_Data\DiaryEntries\057.json" />
+    <Content Include="App_Data\DiaryEntries\058.json" />
+    <Content Include="App_Data\DiaryEntries\059.json" />
+    <Content Include="App_Data\DiaryEntries\060.json" />
+    <Content Include="App_Data\DiaryEntries\061.json" />
+    <Content Include="App_Data\DiaryEntries\062.json" />
+    <Content Include="App_Data\DiaryEntries\063.json" />
+    <Content Include="App_Data\DiaryEntries\064.json" />
+    <Content Include="App_Data\DiaryEntries\065.json" />
+    <Content Include="App_Data\DiaryEntries\066.json" />
+    <Content Include="App_Data\DiaryEntries\067.json" />
+    <Content Include="App_Data\DiaryEntries\068.json" />
+    <Content Include="App_Data\DiaryEntries\069.json" />
+    <Content Include="App_Data\DiaryEntries\070.json" />
+    <Content Include="App_Data\DiaryEntries\071.json" />
+    <Content Include="App_Data\DiaryEntries\072.json" />
+    <Content Include="App_Data\DiaryEntries\073.json" />
+    <Content Include="App_Data\DiaryEntries\074.json" />
+    <Content Include="App_Data\DiaryEntries\075.json" />
+    <Content Include="App_Data\DiaryEntries\076.json" />
+    <Content Include="App_Data\DiaryEntries\077.json" />
+    <Content Include="App_Data\DiaryEntries\078.json" />
+    <Content Include="App_Data\DiaryEntries\079.json" />
+    <Content Include="App_Data\DiaryEntries\080.json" />
+    <Content Include="App_Data\DiaryEntries\081.json" />
+    <Content Include="App_Data\DiaryEntries\082.json" />
+    <Content Include="App_Data\DiaryEntries\083.json" />
+    <Content Include="App_Data\DiaryEntries\084.json" />
+    <Content Include="App_Data\DiaryEntries\085.json" />
+    <Content Include="App_Data\DiaryEntries\086.json" />
+    <Content Include="App_Data\DiaryEntries\087.json" />
+    <Content Include="App_Data\DiaryEntries\088.json" />
+    <Content Include="App_Data\DiaryEntries\089.json" />
+    <Content Include="App_Data\DiaryEntries\090.json" />
+    <Content Include="App_Data\DiaryEntries\091.json" />
+    <Content Include="App_Data\DiaryEntries\092.json" />
+    <Content Include="App_Data\DiaryEntries\093.json" />
+    <Content Include="App_Data\DiaryEntries\094.json" />
+    <Content Include="App_Data\DiaryEntries\095.json" />
+    <Content Include="App_Data\DiaryEntries\096.json" />
+    <Content Include="App_Data\DiaryEntries\097.json" />
+    <Content Include="App_Data\DiaryEntries\098.json" />
+    <Content Include="App_Data\DiaryEntries\099.json" />
+    <Content Include="App_Data\DiaryEntries\100.json" />
+    <Content Include="App_Data\DiaryEntries\101.json" />
+    <Content Include="App_Data\DiaryEntries\102.json" />
+    <Content Include="App_Data\DiaryEntries\103.json" />
+    <Content Include="App_Data\DiaryEntries\104.json" />
+    <Content Include="App_Data\DiaryEntries\105.json" />
+    <Content Include="App_Data\DiaryEntries\106.json" />
+    <Content Include="App_Themes\PohjoisnapaSininen\Calendar.skin" />
+    <Content Include="App_Themes\PohjoisnapaSininen\Menu.skin" />
+    <Content Include="GetImage.ashx" />
+    <Content Include="GetSmallImage.ashx" />
+    <Content Include="GetThumbnailImage.ashx" />
+    <None Include="Graph.ashx.bak" />
+    <None Include="kuvat\Keitinjarjestelman_toiminta.pdf" />
+    <Content Include="Pohjoisnapa.master" />
+    <Content Include="Rss.ashx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Web.sitemap.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.en.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Web.sitemap.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Web.sitemap.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_LocalResources\Aikataulu.aspx.en.resx" />
+    <Content Include="App_LocalResources\Aikataulu.aspx.resx" />
+    <Content Include="App_LocalResources\Arktis.aspx.en.resx" />
+    <Content Include="App_LocalResources\Arktis.aspx.resx" />
+    <Content Include="App_LocalResources\ArktisHistoria.aspx.resx" />
+    <Content Include="App_LocalResources\Data.aspx.en.resx" />
+    <Content Include="App_LocalResources\Data.aspx.resx" />
+    <Content Include="App_LocalResources\Default.aspx.en.resx" />
+    <Content Include="App_LocalResources\Default.aspx.resx" />
+    <Content Include="App_LocalResources\Galleria.aspx.en.resx" />
+    <Content Include="App_LocalResources\Galleria.aspx.resx" />
+    <Content Include="App_LocalResources\GalleriaEnnenHiihtoa.aspx.en.resx" />
+    <Content Include="App_LocalResources\GalleriaEnnenHiihtoa.aspx.resx" />
+    <Content Include="App_LocalResources\GalleriaHiihto.aspx.en.resx" />
+    <Content Include="App_LocalResources\GalleriaHiihto.aspx.resx" />
+    <Content Include="App_LocalResources\Ilmastonmuutos.aspx.en.resx" />
+    <Content Include="App_LocalResources\Ilmastonmuutos.aspx.resx" />
+    <Content Include="App_LocalResources\IlmastonmuutosArktisillaAlueilla.aspx.resx" />
+    <Content Include="App_LocalResources\Jaakarhu.aspx.resx" />
+    <Content Include="App_LocalResources\Kartta.aspx.en.resx" />
+    <Content Include="App_LocalResources\Kartta.aspx.resx" />
+    <Content Include="App_LocalResources\LsvjKilta.aspx.en.resx" />
+    <Content Include="App_LocalResources\LsvjKilta.aspx.resx" />
+    <Content Include="App_LocalResources\Media.aspx.en.resx" />
+    <Content Include="App_LocalResources\Media.aspx.resx" />
+    <Content Include="App_LocalResources\Messut.aspx.en.resx" />
+    <Content Include="App_LocalResources\Messut.aspx.resx" />
+    <Content Include="App_LocalResources\Olosuhteet.aspx.en.resx" />
+    <Content Include="App_LocalResources\Olosuhteet.aspx.resx" />
+    <Content Include="App_LocalResources\Pohjoisnapa.master.en.resx" />
+    <Content Include="App_LocalResources\Pohjoisnapa.master.resx" />
+    <Content Include="App_LocalResources\Retkikunta.aspx.en.resx" />
+    <Content Include="App_LocalResources\Retkikunta.aspx.resx" />
+    <Content Include="App_LocalResources\Ruoka.aspx.resx" />
+    <Content Include="App_LocalResources\Suunnistus.aspx.en.resx" />
+    <Content Include="App_LocalResources\Suunnistus.aspx.resx" />
+    <Content Include="App_LocalResources\Tausta.aspx.en.resx" />
+    <Content Include="App_LocalResources\Tausta.aspx.resx" />
+    <Content Include="App_LocalResources\Tavoitteet.aspx.en.resx" />
+    <Content Include="App_LocalResources\Tavoitteet.aspx.resx" />
+    <Content Include="App_LocalResources\Tukijalista.aspx.en.resx" />
+    <Content Include="App_LocalResources\Tukijalista.aspx.resx" />
+    <Content Include="App_LocalResources\Tutkimus.aspx.en.resx" />
+    <Content Include="App_LocalResources\Tutkimus.aspx.resx" />
+    <Content Include="App_LocalResources\Valokuvaus.aspx.en.resx" />
+    <Content Include="App_LocalResources\Valokuvaus.aspx.resx" />
+    <Content Include="App_LocalResources\Varusteet.aspx.en.resx" />
+    <Content Include="App_LocalResources\Varusteet.aspx.resx" />
+    <Content Include="UserControls\App_LocalResources\DiaryEntry.ascx.en.resx" />
+    <Content Include="UserControls\App_LocalResources\DiaryEntry.ascx.resx" />
+    <Content Include="UserControls\App_LocalResources\DiaryImage.ascx.resx" />
+    <Content Include="UserControls\App_LocalResources\RssSubscribe.ascx.en.resx" />
+    <Content Include="UserControls\App_LocalResources\RssSubscribe.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aikataulu.aspx" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\calendar2.gif" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\sauvakuva7_sin_pop.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top1.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top2.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top3.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top4.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top5.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu_B.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu_B_alexandria.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_tukijasivu.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top6.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top7.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\images\top8.jpg" />
+    <Content Include="App_Themes\PohjoisnapaSininen\PohjoisnapaSininen.css" />
+    <Content Include="App_Themes\PohjoisnapaSininen\PohjoisnapaSininenMenu.css" />
+    <Content Include="Arktis.aspx" />
+    <Content Include="ArktisHistoria.aspx" />
+    <Content Include="Data.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Galleria.aspx" />
+    <Content Include="GalleriaEnnenHiihtoa.aspx" />
+    <Content Include="GalleriaHiihto.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Ilmastonmuutos.aspx" />
+    <Content Include="IlmastonmuutosArktisillaAlueilla.aspx" />
+    <Content Include="Jaakarhu.aspx" />
+    <Content Include="Kartta.aspx" />
+    <Content Include="Kirja.aspx" />
+    <Content Include="kuvat\galleria\600px\ahtojaat.jpg" />
+    <Content Include="kuvat\galleria\600px\ahtojaissa-jermi.jpg" />
+    <Content Include="kuvat\galleria\600px\ahtojaissa-tero-2.jpg" />
+    <Content Include="kuvat\galleria\600px\ahtojaissa-tero-ja-jermi.jpg" />
+    <Content Include="kuvat\galleria\600px\auringonlasku-leirissa.jpg" />
+    <Content Include="kuvat\galleria\600px\hiihto-takaa.jpg" />
+    <Content Include="kuvat\galleria\600px\hiihto-vastavaloon.jpg" />
+    <Content Include="kuvat\galleria\600px\jermi-pesulla.jpg" />
+    <Content Include="kuvat\galleria\600px\karhun-jalki-ja-mono.jpg" />
+    <Content Include="kuvat\galleria\600px\kartanlukua-lehteen.jpg" />
+    <Content Include="kuvat\galleria\600px\kiiltotau.jpg" />
+    <Content Include="kuvat\galleria\600px\kylma.jpg" />
+    <Content Include="kuvat\galleria\600px\leiri-lumessa.jpg" />
+    <Content Include="kuvat\galleria\600px\leirin-pystytys.jpg" />
+    <Content Include="kuvat\galleria\600px\lvjk1.jpg" />
+    <Content Include="kuvat\galleria\600px\lvjk2.jpg" />
+    <Content Include="kuvat\galleria\600px\naamat-huurussa.jpg" />
+    <Content Include="kuvat\galleria\600px\suomenlippu-oviaukossa.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\ahtojaat.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\ahtojaissa-jermi.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\ahtojaissa-tero-2.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\ahtojaissa-tero-ja-jermi.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\auringonlasku-leirissa.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\hiihto-takaa.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\hiihto-vastavaloon.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\jermi-pesulla.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\karhun-jalki-ja-mono.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\kartanlukua-lehteen.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\kiiltotau.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\kylma.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\leiri-lumessa.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\leirin-pystytys.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\lvjk1.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\lvjk2.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\naamat-huurussa.jpg" />
+    <Content Include="kuvat\galleria\thumbnails\suomenlippu-oviaukossa.jpg" />
+    <Content Include="kuvat\gif\feedicon16x16.gif" />
+    <Content Include="kuvat\gif\FeedIcon2.gif" />
+    <Content Include="kuvat\gif\kartta.gif" />
+    <Content Include="kuvat\gif\logo_galleriaan_pop2.gif" />
+    <Content Include="kuvat\gif\logo_tumma.gif" />
+    <Content Include="kuvat\gif\logo_vaalea.gif" />
+    <Content Include="kuvat\gif\nelio.gif" />
+    <Content Include="kuvat\gif\nelio_varjo.gif" />
+    <Content Include="kuvat\gif\nuoli_oik.gif" />
+    <Content Include="kuvat\gif\nuoli_oik_varjo.gif" />
+    <Content Include="kuvat\gif\nuoli_vas.gif" />
+    <Content Include="kuvat\gif\nuoli_vas_varjo.gif" />
+    <Content Include="kuvat\gif\sana-expedition.gif" />
+    <Content Include="kuvat\gif\sana-finnish.gif" />
+    <Content Include="kuvat\gif\sana-northpole.gif" />
+    <Content Include="kuvat\gif\sana-unsupported.gif" />
+    <Content Include="kuvat\gif\tex_northpole2.gif" />
+    <Content Include="kuvat\gif\vesileima.gif" />
+    <Content Include="kuvat\jpg\ahtojaissa-jermi.jpg" />
+    <Content Include="kuvat\jpg\gradient.jpg" />
+    <Content Include="kuvat\jpg\gradient_galleriaan5.jpg" />
+    <Content Include="kuvat\jpg\hiihto-vastavaloon.jpg" />
+    <Content Include="kuvat\jpg\kartanlukua.jpg" />
+    <Content Include="kuvat\jpg\kartta.jpg" />
+    <Content Include="kuvat\jpg\KiHuPerttu1024.jpg" />
+    <Content Include="kuvat\jpg\KiHuPerttu360.jpg" />
+    <Content Include="kuvat\jpg\leirin-pystytys.jpg" />
+    <Content Include="kuvat\jpg\naamat-huurussa.jpg" />
+    <Content Include="kuvat\jpg\tero-ja-perttu-syo.jpg" />
+    <Content Include="kuvat\jpg\vesileima_galleriaan.jpg" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-aikataulu.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-aikataulu_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-arktis.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-arktis_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-historia.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-historia_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-jaakarhu.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-jaakarhu_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-jaak_kilta.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-jaak_kilta_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-kartta.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-kartta_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-kuvagalleria_lyhyt.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-kuvagalleria_lyhyt_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-olosuhteet.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-retkik_tavoitteet.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-retkik_tavoitteet_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-ruoka.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-ruoka_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-suunnistus.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-suunnistus_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-taustaa.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-taustaa_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-tukijat.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-tukijat_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-valokuvaus.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-valokuvaus_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-varusteet.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko-varusteet_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\otsikko_kuvagalleria.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-edellinenpaiva.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-edellinenpaiva_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-otsikko-arktidetalueet.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-otsikko-retkikunta.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-otsikko-retkikunta_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-otsikko-tuoreinpkote.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-otsikko-tuoreinpkote_en.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-seuraavapaiva.gif" />
+    <Content Include="kuvat\linkit\otsikot\TXT-seuraavapaiva_en.gif" />
+    <Content Include="kuvat\naamat\henkku4.jpg" />
+    <Content Include="kuvat\naamat\jermi4.jpg" />
+    <Content Include="kuvat\naamat\mikko4.jpg" />
+    <Content Include="kuvat\naamat\perttu4.jpg" />
+    <Content Include="kuvat\naamat\poppis4.JPG" />
+    <Content Include="kuvat\naamat\tero4.jpg" />
+    <Content Include="kuvat\naamat\toni4.jpg" />
+    <Content Include="kuvat\naamat\vaiska4.jpg" />
+    <Content Include="kuvat\tukijat\alexandria.gif" />
+    <Content Include="kuvat\tukijat\apu.jpg" />
+    <Content Include="kuvat\tukijat\area.gif" />
+    <Content Include="kuvat\tukijat\area2.gif" />
+    <Content Include="kuvat\tukijat\Euromaski.gif" />
+    <Content Include="kuvat\tukijat\exel.gif" />
+    <Content Include="kuvat\tukijat\exel.jpg" />
+    <Content Include="kuvat\tukijat\ey.gif" />
+    <Content Include="kuvat\tukijat\ey_vari.jpg" />
+    <Content Include="kuvat\tukijat\fazer.gif" />
+    <Content Include="kuvat\tukijat\fischer.png" />
+    <Content Include="kuvat\tukijat\garmin.gif" />
+    <Content Include="kuvat\tukijat\hilleberg.jpg" />
+    <Content Include="kuvat\tukijat\Jalas.jpg" />
+    <Content Include="kuvat\tukijat\karkkainen.gif" />
+    <Content Include="kuvat\tukijat\karkkainen.jpg" />
+    <Content Include="kuvat\tukijat\kiilto.gif" />
+    <Content Include="kuvat\tukijat\lsvjk.gif" />
+    <Content Include="kuvat\tukijat\Marmot.gif" />
+    <Content Include="kuvat\tukijat\Marmot.jpg" />
+    <Content Include="kuvat\tukijat\mildola.jpg" />
+    <Content Include="kuvat\tukijat\mildola2.jpg" />
+    <Content Include="kuvat\tukijat\nikon.gif" />
+    <Content Include="kuvat\tukijat\noptel.jpg" />
+    <Content Include="kuvat\tukijat\oracle.gif" />
+    <Content Include="kuvat\tukijat\paamies.gif" />
+    <Content Include="kuvat\tukijat\polartherm.gif" />
+    <Content Include="kuvat\tukijat\rammer.jpg" />
+    <Content Include="kuvat\tukijat\ruskovilla.jpg" />
+    <Content Include="kuvat\tukijat\Sasta.gif" />
+    <Content Include="kuvat\tukijat\Sasta.jpg" />
+    <Content Include="kuvat\tukijat\Siwa.jpg" />
+    <Content Include="kuvat\tukijat\SiwaPieni.jpg" />
+    <Content Include="kuvat\tukijat\vaasan.jpg" />
+    <Content Include="kuvat\tukijat\Vaiska.jpg" />
+    <Content Include="kuvat\tukijat\vbsnet.jpg" />
+    <Content Include="kuvat\tukijat\Vbsnet2.jpg" />
+    <Content Include="Lehdistokuvat.aspx" />
+    <Content Include="LsvjKilta.aspx" />
+    <Content Include="Media.aspx" />
+    <Content Include="Messut.aspx" />
+    <Content Include="Olosuhteet.aspx" />
+    <Content Include="Paivakirja.aspx" />
+    <Content Include="PaivakirjaLista.aspx" />
+    <Content Include="Retkikunta.aspx" />
+    <Content Include="Ruoka.aspx" />
+    <Content Include="Scripts\fancybox\blank.gif" />
+    <Content Include="Scripts\fancybox\fancybox-x.png" />
+    <Content Include="Scripts\fancybox\fancybox-y.png" />
+    <Content Include="Scripts\fancybox\fancybox.png" />
+    <Content Include="Scripts\fancybox\fancy_close.png" />
+    <Content Include="Scripts\fancybox\fancy_loading.png" />
+    <Content Include="Scripts\fancybox\fancy_nav_left.png" />
+    <Content Include="Scripts\fancybox\fancy_nav_right.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_e.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_n.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_s.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_se.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_w.png" />
+    <Content Include="Scripts\fancybox\fancy_title_left.png" />
+    <Content Include="Scripts\fancybox\fancy_title_main.png" />
+    <Content Include="Scripts\fancybox\fancy_title_over.png" />
+    <Content Include="Scripts\fancybox\fancy_title_right.png" />
+    <Content Include="Scripts\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Suunnistus.aspx" />
+    <Content Include="Tausta.aspx" />
+    <Content Include="Tavoitteet.aspx" />
+    <Content Include="Tukijalista.aspx" />
+    <Content Include="Tukijat.aspx" />
+    <Content Include="Tutkimus.aspx" />
+    <Content Include="UserControls\DiaryEntries.ascx" />
+    <Content Include="UserControls\DiaryEntry.ascx" />
+    <Content Include="UserControls\DiaryImage.ascx" />
+    <Content Include="UserControls\GalleriaKuva.ascx" />
+    <Content Include="UserControls\RssSubscribe.ascx" />
+    <Content Include="Valokuvaus.aspx" />
+    <Content Include="Varusteet.aspx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2052</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2052/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

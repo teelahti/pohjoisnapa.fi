@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="arktis.description" xml:space="preserve">
+    <value>Tietoa arktiksesta.</value>
+  </data>
+  <data name="arktis.title" xml:space="preserve">
+    <value>Arktis</value>
+  </data>
+  <data name="arktisHistoria.description" xml:space="preserve">
+    <value>Arktiksen historia.</value>
+  </data>
+  <data name="arktisHistoria.title" xml:space="preserve">
+    <value>Historia</value>
+  </data>
+  <data name="arktisIlmasto.description" xml:space="preserve">
+    <value>Tietoa arktiksella tapahtuvasta ilmastonmuutoksesta.</value>
+  </data>
+  <data name="arktisIlmasto.title" xml:space="preserve">
+    <value>Ilmastonmuutos arktisilla alueilla</value>
+  </data>
+  <data name="arktisIlmastoYleinen.description" xml:space="preserve">
+    <value>Tietoa arktiksella tapahtuvasta ilmastonmuutoksesta.</value>
+  </data>
+  <data name="arktisIlmastoYleinen.title" xml:space="preserve">
+    <value>Ilmastonmuutos</value>
+  </data>
+  <data name="arktisJaakarhu.description" xml:space="preserve">
+    <value>Tietoa jääkarhun elintavoista.</value>
+  </data>
+  <data name="arktisJaakarhu.title" xml:space="preserve">
+    <value>Jääkarhu</value>
+  </data>
+  <data name="arktisOlosuhteet.description" xml:space="preserve">
+    <value>Tietoja arktiksen olosuhteista.</value>
+  </data>
+  <data name="arktisOlosuhteet.title" xml:space="preserve">
+    <value>Olosuhteet</value>
+  </data>
+  <data name="arktisRuoka.description" xml:space="preserve">
+    <value>Pitkän arktisen vaelluksen ruokavalio.</value>
+  </data>
+  <data name="arktisRuoka.title" xml:space="preserve">
+    <value>Ruoka</value>
+  </data>
+  <data name="arktisSuunnistus.description" xml:space="preserve">
+    <value>Suunnistus arktisilla alueilla.</value>
+  </data>
+  <data name="arktisSuunnistus.title" xml:space="preserve">
+    <value>Suunnistus</value>
+  </data>
+  <data name="arktisValokuvaus.description" xml:space="preserve">
+    <value>Valokuvaus kylmässä.</value>
+  </data>
+  <data name="arktisValokuvaus.title" xml:space="preserve">
+    <value>Valokuvaus</value>
+  </data>
+  <data name="galleria.description" xml:space="preserve">
+    <value>Kuvagalleria, jossa kuvia aikaisemmilta retkikunnilta.</value>
+  </data>
+  <data name="galleria.title" xml:space="preserve">
+    <value>Kuvia aikaisemmilta retkikunnilta</value>
+  </data>
+  <data name="galleriaEnnenHiihto.description" xml:space="preserve">
+    <value>Kuvagalleria, jossa ennen hiihdon alkua otetut kuvat.</value>
+  </data>
+  <data name="galleriaEnnenHiihto.title" xml:space="preserve">
+    <value>Kuvagalleria</value>
+  </data>
+  <data name="galleriaHiihto.description" xml:space="preserve">
+    <value>Kuvagalleria, jossa hiihdon aikana otetut kuvat.</value>
+  </data>
+  <data name="galleriaHiihto.title" xml:space="preserve">
+    <value>Hiihdon aikaiset kuvat</value>
+  </data>
+  <data name="home.description" xml:space="preserve">
+    <value>www.pohjoisnapa.fi -etusivu</value>
+  </data>
+  <data name="home.title" xml:space="preserve">
+    <value>Etusivu</value>
+  </data>
+  <data name="media.description" xml:space="preserve">
+    <value>Retkikunnan medianäkyvyys.</value>
+  </data>
+  <data name="media.title" xml:space="preserve">
+    <value>Medianäkyvyys</value>
+  </data>
+  <data name="messut.description" xml:space="preserve">
+    <value>Tapaa retkikunnan jäsenet.</value>
+  </data>
+  <data name="messut.title" xml:space="preserve">
+    <value>Tapahtumat</value>
+  </data>
+  <data name="paivakirja.description" xml:space="preserve">
+    <value>Päiväkirjamerkinnät sekä tietoa keleistä ja etenemisvauhdista.</value>
+  </data>
+  <data name="paivakirja.title" xml:space="preserve">
+    <value>Päiväkirja</value>
+  </data>
+  <data name="paivakirjaData.description" xml:space="preserve">
+    <value>Tietoa keleistä ja etenemisvauhdeista.</value>
+  </data>
+  <data name="paivakirjaData.title" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="paivakirjaKaikki.description" xml:space="preserve">
+    <value>Lista kaikista päiväkirjamerkinnöistä aikajärjestyksessä.</value>
+  </data>
+  <data name="paivakirjaKaikki.title" xml:space="preserve">
+    <value>Kaikki päiväkirjaotteet</value>
+  </data>
+  <data name="paivakirjaKartta.description" xml:space="preserve">
+    <value>Sijainti kartalla</value>
+  </data>
+  <data name="paivakirjaKartta.title" xml:space="preserve">
+    <value>Kartta</value>
+  </data>
+  <data name="paivakirjaKirja.description" xml:space="preserve">
+    <value>Pohjoisnapa - jäinen haaste. </value>
+  </data>
+  <data name="paivakirjaKirja.title" xml:space="preserve">
+    <value>Kirja</value>
+  </data>
+  <data name="paivakirjaTilaaKirja.description" xml:space="preserve">
+    <value>Tilaa kirja Pohjoisnapa - jäinen haaste</value>
+  </data>
+  <data name="paivakirjaTilaaKirja.title" xml:space="preserve">
+    <value>Tilaa kirja</value>
+  </data>
+  <data name="paivakirjaViimeisin.description" xml:space="preserve">
+    <value>Tuorein retkikunnan lähettämä päiväkirjaote.</value>
+  </data>
+  <data name="paivakirjaViimeisin.title" xml:space="preserve">
+    <value>Tuorein päiväkirjaote</value>
+  </data>
+  <data name="retkikunta.description" xml:space="preserve">
+    <value>Tietoa retkikunnasta ja sen taustoista.</value>
+  </data>
+  <data name="retkikunta.title" xml:space="preserve">
+    <value>Retkikunta</value>
+  </data>
+  <data name="retkikuntaAikataulu.description" xml:space="preserve">
+    <value>Retkikunnan aikataulu</value>
+  </data>
+  <data name="retkikuntaAikataulu.title" xml:space="preserve">
+    <value>Aikataulu</value>
+  </data>
+  <data name="retkikuntaLsvjk" xml:space="preserve">
+    <value>Laskuvarjojääkärikilta</value>
+  </data>
+  <data name="retkikuntaLsvjk.description" xml:space="preserve">
+    <value>Tietoa Laskuvarjojääkärikillasta.</value>
+  </data>
+  <data name="retkikuntaTaustaa.description" xml:space="preserve">
+    <value>Tietoa retkikunnan taustoista.</value>
+  </data>
+  <data name="retkikuntaTaustaa.title" xml:space="preserve">
+    <value>Taustaa</value>
+  </data>
+  <data name="retkikuntaTavoitteet.description" xml:space="preserve">
+    <value>Retkikunnan tavoitteet.</value>
+  </data>
+  <data name="retkikuntaTavoitteet.title" xml:space="preserve">
+    <value>Tavoitteet</value>
+  </data>
+  <data name="retkikuntaTutkimus.description" xml:space="preserve">
+    <value>Lääketieteellinen tutkimus.</value>
+  </data>
+  <data name="retkikuntaTutkimus.title" xml:space="preserve">
+    <value>Tutkimus</value>
+  </data>
+  <data name="retkikuntaVarusteet.description" xml:space="preserve">
+    <value>Retkikunnan käyttämät varusteet</value>
+  </data>
+  <data name="retkikuntaVarusteet.title" xml:space="preserve">
+    <value>Varusteet</value>
+  </data>
+  <data name="retkikuntaVarusteetKeitin.description" xml:space="preserve">
+    <value>Retkikunnan keitinvalinta ja tietoa veden sulatuksesta vaativissa telttaolosuhteissa.</value>
+  </data>
+  <data name="retkikuntaVarusteetKeitin.title" xml:space="preserve">
+    <value>Keitin</value>
+  </data>
+  <data name="tukijat.description" xml:space="preserve">
+    <value>Retkikunnan tukijat.</value>
+  </data>
+  <data name="tukijat.title" xml:space="preserve">
+    <value>Tukijat</value>
+  </data>
+  <data name="tukijatLista.description" xml:space="preserve">
+    <value>Retkikunnan tukijat.</value>
+  </data>
+  <data name="tukijatLista.title" xml:space="preserve">
+    <value>Tukijalista</value>
+  </data>
+</root>

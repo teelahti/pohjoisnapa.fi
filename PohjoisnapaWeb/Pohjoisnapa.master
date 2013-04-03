@@ -1,0 +1,83 @@
+<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="Pohjoisnapa" EnableViewState="false" EnableTheming="true" Codebehind="Pohjoisnapa.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Pohjoisnapa 2006</title>
+    <link runat="server" id="rssLink" meta:resourcekey="rssLink" rel="alternate" type="application/rss+xml"
+        title="Pohjoisnapa 2006 päiväkirja" href="http://www.pohjoisnapa.fi/Rss.ashx" />
+    <asp:ContentPlaceHolder ID="StyleContent" runat="server"></asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26977602-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <form id="MasterForm" runat="server">
+    <div id="BodyBlock" class="body vesileima">
+        <div id="GradientImage" class="gradient" />
+        <div id="languageblock" class="changelanguage">
+            &nbsp;<asp:LinkButton Visible="true" ID="ChangeLanguageButton" runat="server" OnCommand="ChangeLanguage"
+                CommandName="ChangeLanguage" Text="In english" meta:resourcekey="ChangeLanguageButtonResource1" />
+        </div>
+        <!-- Header alkaa-->
+        <!-- Headerin kuvat ja vasemman laidan kartta/gradient -->
+        <asp:Panel ID="DivHeader" runat="server" CssClass="header" meta:resourcekey="DivHeaderResource1">
+            <asp:Image runat="server" OnPreRender="SwitchImage" ID="Fiiliskuva" Width="740px"
+                Height="182px" AlternateText="Tunnelmia pohjoisesta" meta:resourcekey="FiiliskuvaResource1" />
+            <a href="~/" runat="server">
+                <img class="logo" src="kuvat/gif/logo_vaalea.gif" alt="Logo" width="196" height="122" />
+            </a>
+            <asp:Image runat="server" ID="Kartta" CssClass="kartta" ImageUrl="~/kuvat/jpg/kartta.jpg" Width="126px"
+                Height="394px" Visible="False" meta:resourcekey="KarttaResource1" />
+            <%--Oikealla mukana liikkuva taustasana --%>
+            <img id="sana_expedition" alt="Expedition" src="kuvat/gif/sana-expedition.gif" width="194"
+                height="30" />
+            <div id="menu">
+                <asp:Menu runat="server" ID="Mainmenu" DataSourceID="MenuSource" Width="100%" StaticDisplayLevels="2"
+                    StaticItemFormatString="{0}"
+                    Orientation="Horizontal" MaximumDynamicDisplayLevels="0" StaticEnableDefaultPopOutImage="False"
+                    meta:resourcekey="MainmenuResource1">
+                    <StaticMenuItemStyle CssClass="staticmenu" />
+                    <StaticHoverStyle CssClass="staticmenuhover" />
+                    <StaticSelectedStyle CssClass="staticmenuselected" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="MenuSource" runat="server" />
+            </div>
+            <div id="menu2">
+                <asp:Menu runat="server" ID="SubMenu" DataSourceID="SubMenuSource" Orientation="Horizontal"
+                    MaximumDynamicDisplayLevels="0" StaticEnableDefaultPopOutImage="False" meta:resourcekey="SubMenuResource1">
+                    <StaticMenuItemStyle CssClass="staticmenu2" />
+                    <StaticHoverStyle CssClass="staticmenuhover2" />
+                    <StaticSelectedStyle CssClass="staticmenuselected2" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SubMenuSource" runat="server" ShowStartingNode="False"
+                    StartingNodeOffset="1" />
+            </div>
+        </asp:Panel>
+        <div id="Content" class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div id="footer">
+            <div id="viiva">
+                <asp:SiteMapPath ID="Breadcrumb" runat="server" CssClass="breadcrumb vasen" meta:resourcekey="BreadcrumbResource1" />
+            </div>
+            <div id="FooterText" class="footerText">
+                <asp:Localize ID="TextFooter" runat="server" meta:resourcekey="TextFooterResource1"
+                    Text="LASKUVARJOJÄÄKÄRIKILLAN POHJOISNAPARETKIKUNTA 2006 &nbsp;&nbsp; design: www.poppicok.fi &nbsp;&nbsp; valokuvat: © poppis suomela" />
+            </div>
+        </div>
+    </div>
+    </form>
+    <asp:ContentPlaceHolder ID="ScriptContent" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

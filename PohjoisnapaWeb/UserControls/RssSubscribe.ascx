@@ -1,0 +1,3 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="UserControls.RssSubscribe" Codebehind="RssSubscribe.ascx.cs" %>
+<asp:HyperLink runat="server" ID="LinkToFeed" ImageUrl="~/kuvat/gif/feedicon16x16.gif" NavigateUrl="~/Rss.ashx" meta:resourcekey="LinkToFeedResource1" />
+<asp:HyperLink runat="server" ID="LinkToFeed2" NavigateUrl="~/Rss.ashx" Text="Rss 2.0" meta:resourcekey="LinkToFeed2Resource1" />
