@@ -1,5 +1,0 @@
-D:\SkyDrive\Documents\Visual Studio 2012\Projects\SmallSitesAzurePublish\DeployImagesToCloudBlobStorage\bin\Debug\DeployImagesToCloudBlobStorage.exe
-D:\SkyDrive\Documents\Visual Studio 2012\Projects\SmallSitesAzurePublish\DeployImagesToCloudBlobStorage\bin\Debug\DeployImagesToCloudBlobStorage.pdb
-D:\SkyDrive\Documents\Visual Studio 2012\Projects\SmallSitesAzurePublish\DeployImagesToCloudBlobStorage\obj\x86\Debug\DeployImagesToCloudBlobStorage.csprojResolveAssemblyReference.cache
-D:\SkyDrive\Documents\Visual Studio 2012\Projects\SmallSitesAzurePublish\DeployImagesToCloudBlobStorage\obj\x86\Debug\DeployImagesToCloudBlobStorage.exe
-D:\SkyDrive\Documents\Visual Studio 2012\Projects\SmallSitesAzurePublish\DeployImagesToCloudBlobStorage\obj\x86\Debug\DeployImagesToCloudBlobStorage.pdb
