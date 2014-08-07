@@ -15,7 +15,7 @@
             Heitä ennen vain 32 henkilöä maailmassa on kyennyt samaan.</p>
         <p>
             POHJOISNAPA- JÄINEN HAASTE kertoo historiallisen retkikunnan vaiheet keräten laajan
-            kokonaisuuden mielenkiintoiseen pakettiin. Runsas neliväri kuvitus tekee kirjasta
+            kokonaisuuden mielenkiintoiseen pakettiin. Runsas nelivärikuvitus tekee kirjasta
             näyttävän kokonaisuuden.</p>
         <p>
             Suomelaisesta sisusta ja rohkeudesta kertova kirja sisältää tarinoita ja tunnelmakuvauksia
