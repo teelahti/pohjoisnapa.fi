@@ -62,7 +62,7 @@ public class DiaryFeed
 
                 ms.Seek(0, System.IO.SeekOrigin.Begin);
 
-                System.IO.StreamReader sr = new System.IO.StreamReader(ms, System.Text.Encoding.UTF8);
+                var sr = new System.IO.StreamReader(ms, System.Text.Encoding.UTF8);
                 return sr.ReadToEnd();
             }
         }
@@ -70,19 +70,19 @@ public class DiaryFeed
 
     private List<RssEnclosure> getEnclosures(DiaryEntry entry, bool isEnglish)
     {
-        List<RssEnclosure> retList = new List<RssEnclosure>();
+        var retList = new List<RssEnclosure>();
 
         foreach (var image in entry.Images)
         {
             string caption = isEnglish ? image.Caption_en : image.Caption_fi;
 
             // TODO: Get length from disk
-            int imageLength = 0;
+            const int ImageLength = 0;
 
             retList.Add(new RssEnclosure(
                 string.Format("http://www.pohjoisnapa.fi/kuvat/paivakirja/small/{0:000}.jpeg", image.Id),
                 string.Format("http://www.pohjoisnapa.fi/kuvat/paivakirja/{0:000}.jpeg", image.Id),
-                imageLength, "image/jpeg", caption));
+                ImageLength, "image/jpeg", caption));
         }
 
         return retList;

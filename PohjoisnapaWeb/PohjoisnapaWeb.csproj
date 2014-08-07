@@ -435,7 +435,6 @@
     <Content Include="App_Data\DiaryEntries\104.json" />
     <Content Include="App_Data\DiaryEntries\105.json" />
     <Content Include="App_Data\DiaryEntries\106.json" />
-    <Content Include="App_Themes\PohjoisnapaSininen\Calendar.skin" />
     <Content Include="App_Themes\PohjoisnapaSininen\Menu.skin" />
     <Content Include="GetImage.ashx" />
     <Content Include="GetSmallImage.ashx" />

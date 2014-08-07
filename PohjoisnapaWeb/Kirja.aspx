@@ -59,7 +59,6 @@
                     </td>
                 </tr>
             </table>
-            <asp:HyperLink ID="OrderBookLink2" runat="server" Text="Tilaa kirja" NavigateUrl="~/TilaaKirja.aspx"></asp:HyperLink>
         </div>
     </div>
 </asp:Content>

@@ -6,14 +6,12 @@ using System.Xml;
 /// Enables the generation of an RSS feed
 /// </summary>
 public class RSSFeedGenerator {
-    XmlTextWriter writer;
+    readonly XmlTextWriter writer;
     public RSSFeedGenerator(System.IO.Stream stream, System.Text.Encoding encoding) {
-        writer = new XmlTextWriter(stream, encoding);
-        writer.Formatting = Formatting.Indented;
+        writer = new XmlTextWriter(stream, encoding) { Formatting = Formatting.Indented };
     }
     public RSSFeedGenerator(System.IO.TextWriter w) {
-        writer = new XmlTextWriter(w);
-        writer.Formatting = Formatting.Indented;
+        writer = new XmlTextWriter(w) { Formatting = Formatting.Indented };
     }
     /// <summary>
     /// Writes the beginning of the RSS document
@@ -101,7 +99,6 @@ public class RSSFeedGenerator {
     /// <param name="description"></param>
     /// <param name="author"></param>
     /// <param name="publishedDate"></param>
-    /// <param name="category"></param>
     protected virtual void WriteItemCore(string title, string link, string description, string author, DateTime publishedDate, string subject, List<RssEnclosure> enclosures) {
 
         writer.WriteStartElement("item");
@@ -109,7 +106,7 @@ public class RSSFeedGenerator {
         writer.WriteElementString("link", link);
 
         // Create image tags to the end of description
-        System.Text.StringBuilder images = new System.Text.StringBuilder();
+        var images = new System.Text.StringBuilder();
         if(enclosures != null) {
             foreach(RssEnclosure enc in enclosures) {
                 if(!string.IsNullOrEmpty(enc.OriginalUrl)) {
@@ -126,7 +123,7 @@ public class RSSFeedGenerator {
         }
 
 
-        writer.WriteElementString("description", description + "<br /><br />" + images.ToString());
+        writer.WriteElementString("description", description + "<br /><br />" + images);
         writer.WriteElementString("author", author);
         writer.WriteElementString("pubDate", publishedDate.ToString("r"));
         //writer.WriteElementString("category",category);

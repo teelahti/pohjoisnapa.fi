@@ -6,13 +6,12 @@
     padding: 0;
     margin: 0;
 }
-body 
-{	
+
+body {
     /* Taustakuva */
     background-image: url(http://www.pohjoisnapa.fi/kuvat/gif/sana-finnish.gif);
     background-position: 20px 150px;
-    background-repeat: no-repeat;		
-    
+    background-repeat: no-repeat;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 0.7em;
     /* Laitetaan tekstit oletuksena valkoisiksi */
@@ -21,13 +20,12 @@ body
     line-height: 1.30em;
 }
 
-p 
-{
-    padding: 0 0 0.8em 0;	
+p {
+    padding: 0 0 0.8em 0;
 }
 
 h2 {
-    text-transform: uppercase;	
+    text-transform: uppercase;
     padding: 0 0 0.1em 0;
     border-bottom-width: 1px;
     border-bottom-style: dotted;
@@ -36,40 +34,40 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    font-size:1em;
-    font-weight: normal;	
+    font-size: 1em;
+    font-weight: normal;
     padding: 0.5em 0 0 0;
 }
+
 h4 {
     padding: 2em 0 0.2em 0;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: left;
-    
 }
-h5 
-{
+
+h5 {
     text-align: left;
 }
+
 .content h5 a:link, .content h5 a:visited {
     color: #fff;
 }
+
 img {
     border: 0;
     border-width: 0;
 }
 
-ol
-{
- padding-left: 30px;
- margin-bottom: 20px;
+ol {
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 
-ul 
-{
-    padding: 0 0 0.8em 0;	
+ul {
+    padding: 0 0 0.8em 0;
     margin-left: 25px;
 }
 
@@ -77,6 +75,7 @@ a.ulkoinen:link, a.ulkoinen:visited, a.ulkoinen:active {
     color: #CCCCCC;
     text-decoration: underline;
 }
+
 a.ulkoinen:hover {
     color: #FFFFFF;
 }
@@ -86,8 +85,7 @@ a.ulkoinen:hover {
 /***************************
     PÄÄOSIOT
 ***************************/
-div.body 
-{
+div.body {
     width: 740px;
     margin-left: auto;
     margin-right: auto;
@@ -105,12 +103,10 @@ div.header {
 
 
 /* Sivun leipätekstisisältö on tämän elementin sisällä */
-.content 
-{
+.content {
     min-height: 290px;
     position: relative;
     z-index: 2;
-    
 }
 
 .clear {
@@ -133,41 +129,35 @@ div.header {
 
 /* Teksti- ja kuvablokit yleisesti */
 
-.content div, .content span
-{
+.content div, .content span {
     position: relative;
-    overflow: visible;    
+    overflow: visible;
 }
 
 /* Kielen vaihto */
-.changelanguage 
-{
-     text-align: right;
+.changelanguage {
+    text-align: right;
 }
 
 
-.footnote 
-{
+.footnote {
     margin-top: 10px;
 }
 
 /* ***********************************************************************   */
 /*                Vain pääsivulla (Default.aspx) käytetyt elementit             */
 
-.etusivu 
-{
+.etusivu {
     width: 595px;
     margin: 0.1em 0 1.1em 145px;
 }
 
-.kokoblokki 
-{
+.kokoblokki {
     width: 100%;
     min-height: 150px;
 }
 
-.puoliblokki 
-{
+.puoliblokki {
     width: 47%;
 }
 
@@ -176,14 +166,12 @@ div.header {
     clear: left;
 }
 
-.oikea
-{
+.oikea {
     float: right;
 }
 
 /* Etusivulla oleva tuorein päiväkirjakuva */
-.etus_pienikuva 
-{
+.etus_pienikuva {
     position: relative;
     float: right;
     vertical-align: top;
@@ -198,20 +186,17 @@ div.header {
 /* ***********************************************************************   */
 /* Artikkelidokumenttien tekstit ja kuvat */
 
-.artikkeli 
-{
+.artikkeli {
     width: 735px;
     margin-top: 15px;
     text-align: left;
 }
 
-.artikkeli ul 
-{
-    margin-left: 25px;
-}
+    .artikkeli ul {
+        margin-left: 25px;
+    }
 
-.artikkelikuva
-{
+.artikkelikuva {
     float: right;
     position: relative;
     width: 360px;
@@ -221,23 +206,20 @@ div.header {
 }
 
 
-.artikkelikuva img
-{
-    margin-bottom: 2px;
-}
+    .artikkelikuva img {
+        margin-bottom: 2px;
+    }
 
-.artikkelikuva div 
-{
-    margin-left: 10px;
-}
+    .artikkelikuva div {
+        margin-left: 10px;
+    }
 
 
 /* ***********************************************************************   */
 
 
 /* Päiväkirjan teksti */
-.paivakirja 
-{
+.paivakirja {
     float: left;
     width: 353px;
     padding-right: 20px;
@@ -246,30 +228,26 @@ div.header {
 
 
 /* Päiväkirjan kuvat */
-.paivakirjakuva 
-{
-    float: right;   
+.paivakirjakuva {
+    float: right;
     width: 360px;
     margin-bottom: 20px;
     margin-top: 15px;
     z-index: 1;
 }
 
-.paivakirjakuva a
-{
-    margin: 0;
-    padding: 0;
-}
+    .paivakirjakuva a {
+        margin: 0;
+        padding: 0;
+    }
 
-.paivakirjakuva img 
-{
-    margin-bottom: 2px;
-}
+    .paivakirjakuva img {
+        margin-bottom: 2px;
+    }
 
-.paivakirjakuva p
-{
-    margin: 0px 10px 5px 10px;
-}
+    .paivakirjakuva p {
+        margin: 0px 10px 5px 10px;
+    }
 
 
 
@@ -280,24 +258,24 @@ div.header {
     width: 300px;
     margin-top: 15px;
 }
-    
-.hiihtajat img{
-    border: 0;
-    padding: 0.1em 0.8em 0.1em 0.8em;
-}
-.hiihtajat span {
-    float:left;
-    width: 95px;
-    height: 120px;
-    text-align: center;
-    margin-right: 5px;
-    margin-left: auto;
-    font-size: 85%;
-}
+
+    .hiihtajat img {
+        border: 0;
+        padding: 0.1em 0.8em 0.1em 0.8em;
+    }
+
+    .hiihtajat span {
+        float: left;
+        width: 95px;
+        height: 120px;
+        text-align: center;
+        margin-right: 5px;
+        margin-left: auto;
+        font-size: 85%;
+    }
 
 /* Päiväkirjan editointikommentti */
-.lasteditedblock 
-{
+.lasteditedblock {
     font-style: italic;
     color: #CCCCCC;
 }
@@ -311,8 +289,7 @@ div.header {
     padding: 0 0 0.2em 0;
 }
 
-.poikkeus2 
-{
+.poikkeus2 {
     width: 340px;
     height: 18px;
     border-bottom: dotted 1px #FFFFFF;
@@ -347,27 +324,25 @@ div.header {
     padding: 0.3em 1em 3em 1em;
     margin: 0 0;
 }
+
 .pieni_texti_galleria {
     font-size: 0.8em;
     color: #3399CC;
 }
 
-.paikkatieto 
-{
+.paikkatieto {
     font-family: Monospace, Courier New, Courier;
 }
 
-table.entrydata 
-{
+table.entrydata {
     margin-bottom: 30px;
 }
 
-table.entrydata td
-{	
-    padding-right: 25px;
-}
+    table.entrydata td {
+        padding-right: 25px;
+    }
 
-#edel_seuraava{
+#edel_seuraava {
     position: relative;
     float: left;
     clear: left;
@@ -375,15 +350,13 @@ table.entrydata td
     padding-bottom: 20px;
 }
 
-table.paivakirjalista 
-{
+table.paivakirjalista {
     margin-bottom: 45px;
 }
 
-table.paivakirjalista td
-{
-    padding-right: 25px;
-}
+    table.paivakirjalista td {
+        padding-right: 25px;
+    }
 
 /***************************
     KUVAT
@@ -395,8 +368,8 @@ table.paivakirjalista td
     width: 202px;
     z-index: 3;
 }
-.kartta 
-{
+
+.kartta {
     position: absolute;
     width: 126px;
     left: 0px;
@@ -404,23 +377,21 @@ table.paivakirjalista td
     z-index: 1;
 }
 
-.vesileima
-{
+.vesileima {
     background-image: url(http://www.pohjoisnapa.fi/kuvat/gif/vesileima.gif);
     background-position: 267px 196px;
     background-repeat: no-repeat;
 }
-.gradient 
-{
+
+.gradient {
     background-image: url(http://www.pohjoisnapa.fi/kuvat/jpg/gradient.jpg);
     background-position: 0px 196px;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 /**********************************
     taustasanat
 **********************************/
-#sana_expedition 
-{
+#sana_expedition {
     position: absolute;
     display: block;
     top: 270px;
@@ -440,9 +411,11 @@ table.paivakirjalista td
     z-index: 30;
     padding: 3px 0 0 0;
 }
-.thumb_galleria img{
-    padding: 10px 2px ;
-}
+
+    .thumb_galleria img {
+        padding: 10px 2px;
+    }
+
 .selaimet {
     position: relative;
     margin-right: auto;
@@ -453,28 +426,25 @@ table.paivakirjalista td
     z-index: 30;
 }
 
-.kuvapohja 
-{
+.kuvapohja {
     text-align: center;
 }
 
 /* **************************** */
 /* Footer */
 
-#footer 
-{
+#footer {
     position: relative;
     width: 740px;
     height: 100px;
     text-align: center;
     z-index: 1;
-    clear: both;	
+    clear: both;
     /* border: solid 1px green;*/
-    
     background-image: url(http://www.pohjoisnapa.fi/kuvat/gif/sana-unsupported.gif);
     /*background-position: -90px 60px;*/
     background-position: 0px 60px;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
 
 #viiva {
@@ -486,115 +456,100 @@ table.paivakirjalista td
     text-align: right;
     padding: 0 0 0 0;
     margin: 0 0 2px 0;
-
     background-image: url(http://www.pohjoisnapa.fi/kuvat/gif/tex_northpole2.gif);
     background-position: top right;
-    background-repeat: no-repeat;	
+    background-repeat: no-repeat;
 }
-.footerText 
-{
+
+.footerText {
     font-size: 0.8em;
     color: #CCCCCC;
-    text-align: center;	
+    text-align: center;
 }
 
-.footerText a:link, .footerText a:visited, .footerText a:active
-{
-    text-decoration: none;
-    font-size: 1em;
-    color: #CCCCCC;
-}
-.footerText a:hover 
-{
-    color: #FFFFFF;
-    text-decoration: underline;
-}
+    .footerText a:link, .footerText a:visited, .footerText a:active {
+        text-decoration: none;
+        font-size: 1em;
+        color: #CCCCCC;
+    }
+
+    .footerText a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
 
 /* footerissa oleva polku */
-.breadcrumb 
-{
+.breadcrumb {
     margin: 10px 0 0 0;
     padding: 0 0 0 0;
 }
-.breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:active
-{
-    color: #CCCCCC;
-    text-decoration: none;	
-}
 
-.breadcrumb a:hover
-{
-    color: #FFFFFF;
-    text-decoration: underline;
-}
+    .breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:active {
+        color: #CCCCCC;
+        text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
 
 /* Tukijasivu */
 
-#isottukijat 
-{
+#isottukijat {
     border-bottom: solid 1px #FFFFFF;
     margin-bottom: 20px;
 }
 
-#isottukijat > div 
-{
-     min-height: 100px;
-     margin-bottom: 10px;
-}
+    #isottukijat > div {
+        min-height: 100px;
+        margin-bottom: 10px;
+    }
 
-#isottukijat > div > p, #isottukijat > div > h5 
-{
-    margin: 0 0 10px 0;
-    width: 400px;
-    float: left;
-    clear: right;    
-}
+        #isottukijat > div > p, #isottukijat > div > h5 {
+            margin: 0 0 10px 0;
+            width: 400px;
+            float: left;
+            clear: right;
+        }
 
-#isottukijat > div > h5
-{
-    font-size: 1.2em;
-}
+        #isottukijat > div > h5 {
+            font-size: 1.2em;
+        }
 
-#isottukijat > div > a
-{
-    display: block;
-    float: left;
-    margin-bottom: 10px;
-    vertical-align: middle; 
-    text-align: center;
-    padding-right: 20px; 
-    width: 220px;
-}
+        #isottukijat > div > a {
+            display: block;
+            float: left;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            text-align: center;
+            padding-right: 20px;
+            width: 220px;
+        }
 
-#logotukijat h5
-{
+#logotukijat h5 {
     font-size: 1.1em;
 }
 
-#logotukijat td
-{
+#logotukijat td {
     padding-bottom: 10px;
     padding-right: 10px;
     vertical-align: top;
 }
 
-#varustelista 
-{
+#varustelista {
     width: 80%;
 }
 
-.largeTextRight 
-{
+.largeTextRight {
     margin-left: 140px;
 }
 
-#orderContactInfo div
-{
+#orderContactInfo div {
     padding-bottom: 5px;
 }
 
-.ValidateError 
-{
-    color:Red;
+.ValidateError {
+    color: Red;
     background-color: white;
 }

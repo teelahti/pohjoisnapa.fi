@@ -5,7 +5,6 @@
     using System.Runtime.Serialization;
     using System.IO;
     using System.Runtime.Serialization.Json;
-    using System.Xml;
     using System.Text;
     using System.Text.RegularExpressions;
 
@@ -77,16 +76,16 @@
         public DateTime? NextEntryDate { get; set; }
         public DateTime? PreviousEntryDate { get; set; }
 
-        public static Models.DiaryEntry FromJson(string json)
+        public static DiaryEntry FromJson(string json)
         {
-            Models.DiaryEntry entry;
+            DiaryEntry entry;
 
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(DiaryEntry));
+            var ser = new DataContractJsonSerializer(typeof(DiaryEntry));
 
             // Json documents have been saved with windows 1252 encoding, use the same 
             // when reading them back instead of Encoding.Default which might not work 
             // at hosting.
-            using (MemoryStream ms = new MemoryStream(Encoding.GetEncoding(1252).GetBytes(json)))
+            using (var ms = new MemoryStream(Encoding.GetEncoding(1252).GetBytes(json)))
             {
                 entry = (DiaryEntry)ser.ReadObject(ms);
             }
@@ -104,14 +103,14 @@
         /// <summary>
         /// Compiled regular expression for performance.
         /// </summary>
-        private static Regex htmlRegex = new Regex("<.*?>", RegexOptions.Compiled);
+        private static readonly Regex HtmlRegex = new Regex("<.*?>", RegexOptions.Compiled);
 
         /// <summary>
         /// Remove HTML from string with compiled Regex.
         /// </summary>
         private static string StripHtmlTags(string source)
         {
-            return htmlRegex.Replace(source, string.Empty);
+            return HtmlRegex.Replace(source, string.Empty);
         }
     }
 }

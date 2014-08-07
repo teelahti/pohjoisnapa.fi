@@ -249,8 +249,8 @@
 				</asp:HyperLink></td>
 			<td>
 				<h5>
-					<a href="http://www.fazer.fi">Fazer</h5>
-				</a>
+					<a href="http://www.fazer.fi">Fazer</a></h5>
+				
 			</td>
 			<td>
 				<asp:HyperLink ID="linkToPolartherm" runat="server" NavigateUrl="http://www.polartherm.fi">

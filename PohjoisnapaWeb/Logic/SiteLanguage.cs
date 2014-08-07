@@ -30,7 +30,7 @@ public class SiteLanguage
         {
 
             // Language functions checks the language string, just give it as parameter
-            SiteLanguage.ChangeLanguage(page, lan, saveCookie);
+            ChangeLanguage(page, lan, saveCookie);
         }
     }
 
@@ -55,13 +55,13 @@ public class SiteLanguage
         if (cookie != null)
         {
             // Change language function checks the value
-            SiteLanguage.ChangeLanguage(page, cookie.Value, false);
+            ChangeLanguage(page, cookie.Value, false);
         }
     }
 
     public static void ChangeLanguage(Page page, string language, bool saveCookie)
     {
-        string safeLan = SiteLanguage.ConvertToSafeLanguage(language);
+        string safeLan = ConvertToSafeLanguage(language);
 
         if (safeLan == null)
         {

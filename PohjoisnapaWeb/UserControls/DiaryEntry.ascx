@@ -4,8 +4,7 @@
 <asp:MultiView ID="LayoutSwitch" runat="server" ActiveViewIndex="0">
     <asp:View ID="Summary" runat="server">
         <div class="kokoblokki" id="texti">
-            <asp:Repeater ID="FormViewSummary" runat="server" 
-                meta:resourcekey="FormViewSummaryResource1">
+            <asp:Repeater ID="FormViewSummary" runat="server">
                 <ItemTemplate>
                     <asp:Panel runat="server" ID="LatestEntry" CssClass="poikkeus" Visible='<%# Eval("NextEntryDate") == null %>'
                         meta:resourcekey="LatestEntryResource1">
@@ -32,8 +31,7 @@
         </div>
     </asp:View>
     <asp:View ID="Full" runat="server">
-        <asp:Repeater ID="FormViewDiaryEntry" runat="server" 
-            meta:resourcekey="FormViewDiaryEntryResource1">
+        <asp:Repeater ID="FormViewDiaryEntry" runat="server">
             <ItemTemplate>
                 <div class="paivakirja" id="paivakirjateksti">
                     <asp:Label runat="server" ID="TextLatestEntry" CssClass="poikkeus2" Visible='<%# Eval("NextEntryDate") == null %>'

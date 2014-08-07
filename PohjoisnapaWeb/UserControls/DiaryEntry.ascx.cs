@@ -55,8 +55,7 @@ namespace UserControls
                 entry.PreviousEntryDate = DataRepository.Entries[index + 1].EntryDate;
             }
 
-            var entryAsListForBinding = new List<Models.DiaryEntry>();
-            entryAsListForBinding.Add(entry);
+            var entryAsListForBinding = new List<Models.DiaryEntry> { entry };
             this.FormViewDiaryEntry.DataSource = entryAsListForBinding;
             this.FormViewDiaryEntry.DataBind();
             this.FormViewSummary.DataSource = entryAsListForBinding;

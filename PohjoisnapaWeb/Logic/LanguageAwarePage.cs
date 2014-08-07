@@ -1,6 +1,3 @@
-/// <summary>
-/// Summary description for LanguageAwarePage
-/// </summary>
 public class LanguageAwarePage: System.Web.UI.Page
 {
 
@@ -22,8 +19,7 @@ public class LanguageAwarePage: System.Web.UI.Page
 
     protected bool IsFinnish {
         get {
-            string culture = Page.UICulture;
-            return (culture != null && culture.ToLower().StartsWith("fi"));
+            return Page.UICulture.ToLower().StartsWith("fi");
         }
     }
 

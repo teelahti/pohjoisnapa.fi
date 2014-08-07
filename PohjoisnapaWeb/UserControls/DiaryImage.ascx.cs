@@ -1,5 +1,4 @@
 using System;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace UserControls
@@ -47,7 +46,7 @@ namespace UserControls
                 return;
             }
 
-            MultiView s = ((MultiView)sender);
+            var s = ((MultiView)sender);
 
             if (this.Entry == null || this.Entry.Id == 0)
             {
@@ -57,14 +56,7 @@ namespace UserControls
 
             s.Visible = true;
 
-            if (this.DiaryImageView == DiaryEntryLayout.Summary)
-            {
-                s.ActiveViewIndex = 0;
-            }
-            else
-            {
-                s.ActiveViewIndex = 1;
-            }
+            s.ActiveViewIndex = this.DiaryImageView == DiaryEntryLayout.Summary ? 0 : 1;
         }
 
 

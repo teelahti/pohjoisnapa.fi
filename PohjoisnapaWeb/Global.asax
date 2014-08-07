@@ -8,18 +8,9 @@
 
         DateTime start = DateTime.UtcNow;
 
-        List<Models.DiaryEntry> entries = new List<Models.DiaryEntry>();
-        
         // Serialize all diary entries from disk to memory
         string folder = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/DiaryEntries/");
-        foreach (var f in System.IO.Directory.EnumerateFiles(folder, "*.json"))
-        {
-            string fileContents = System.IO.File.ReadAllText(f);
-            
-            // Deserialize
-            var entry = Models.DiaryEntry.FromJson(fileContents);
-            entries.Add(entry);
-        }
+        var entries = System.IO.Directory.EnumerateFiles(folder, "*.json").Select(f => System.IO.File.ReadAllText(f)).Select(Models.DiaryEntry.FromJson).ToList();
 
         // Order and add to main list
         foreach (var entry in entries.OrderByDescending(m => m.EntryDate))

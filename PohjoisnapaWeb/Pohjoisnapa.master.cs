@@ -1,14 +1,5 @@
 using System;
-using System.Threading;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 
 public partial class Pohjoisnapa : System.Web.UI.MasterPage
 {
@@ -33,7 +24,7 @@ public partial class Pohjoisnapa : System.Web.UI.MasterPage
     {
         get
         {
-            System.Random r = new Random();
+            var r = new Random();
             return "top" + r.Next(Pohjoisnapa.FirstRandomPictureIndex, Pohjoisnapa.LastRandomPictureIndex) + ".jpg";
         }
     }
