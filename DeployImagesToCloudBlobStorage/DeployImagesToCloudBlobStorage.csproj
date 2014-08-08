@@ -482,6 +482,7 @@
     <Content Include="PohjoisnapaWeb\tukijat\vanhat\Siwa.jpg" />
     <Content Include="PohjoisnapaWeb\tukijat\vbsnet.jpg" />
     <Content Include="PohjoisnapaWeb\tukijat\Vbsnet2.jpg" />
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PohjoisnapaWeb\Keitinjarjestelman_toiminta.pdf" />
