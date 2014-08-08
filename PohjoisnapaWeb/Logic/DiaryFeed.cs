@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Models;
 
-/// <summary>
-/// Summary description for DiaryFeed
-/// </summary>
 public class DiaryFeed
 {
     public string GetRss(bool isEnglish, string safeLan)
     {
-        using (System.IO.MemoryStream ms = new System.IO.MemoryStream(5000))
+        using (var ms = new System.IO.MemoryStream(5000))
         {
-            using (System.IO.StreamWriter sw = new System.IO.StreamWriter(ms, System.Text.Encoding.UTF8))
+            using (var sw = new System.IO.StreamWriter(ms, System.Text.Encoding.UTF8))
             {
 
                 string title = "Pohjoisnapa 2006 - päiväkirja";
@@ -30,7 +27,7 @@ public class DiaryFeed
                     subject = "Diary";
                 }
 
-                RSSFeedGenerator gen = new RSSFeedGenerator(sw);
+                var gen = new RSSFeedGenerator(sw);
                 gen.WriteStartDocument();
                 gen.WriteStartChannel(title, "http://www.pohjoisnapa.fi/", description, safeLan,
                     "Copyright © Laskuvarjojääkärikilta, 2006", "webmaster@pohjoisnapa.fi");
