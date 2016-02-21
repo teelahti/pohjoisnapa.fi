@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BreadcrumbResource1.PathSeparator" xml:space="preserve">
     <value> &gt; </value>
@@ -170,12 +170,6 @@
   </data>
   <data name="MainmenuResource1.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="rssLink.href" xml:space="preserve">
-    <value>http://www.pohjoisnapa.fi/Rss.ashx?language=en</value>
-  </data>
-  <data name="rssLink.title" xml:space="preserve">
-    <value>North Pole 2006 Diary</value>
   </data>
   <data name="SubMenuResource1.ScrollDownText" xml:space="preserve">
     <value>Scroll down</value>
