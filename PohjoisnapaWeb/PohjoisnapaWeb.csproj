@@ -24,11 +24,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -125,15 +126,12 @@
     </Compile>
     <Compile Include="Logic\DataRepository.cs" />
     <Compile Include="Logic\DiaryEntryLayout.cs" />
-    <Compile Include="Logic\DiaryFeed.cs" />
     <Compile Include="Logic\ImageBase.cs" />
     <Compile Include="Logic\LanguageAwarePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Logic\Models\DiaryEntry.cs" />
     <Compile Include="Logic\Models\DiaryImage.cs" />
-    <Compile Include="Logic\RssEnclosure.cs" />
-    <Compile Include="Logic\RssFeedGenerator.cs" />
     <Compile Include="Logic\SiteLanguage.cs" />
     <Compile Include="App_GlobalResources\Web.sitemap.designer.cs">
       <AutoGen>True</AutoGen>
@@ -322,13 +320,6 @@
     <Compile Include="UserControls\GalleriaKuva.ascx.designer.cs">
       <DependentUpon>GalleriaKuva.ascx</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RssSubscribe.ascx.cs">
-      <DependentUpon>RssSubscribe.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControls\RssSubscribe.ascx.designer.cs">
-      <DependentUpon>RssSubscribe.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Valokuvaus.aspx.cs">
       <DependentUpon>Valokuvaus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -442,7 +433,6 @@
     <None Include="Graph.ashx.bak" />
     <None Include="kuvat\Keitinjarjestelman_toiminta.pdf" />
     <Content Include="Pohjoisnapa.master" />
-    <Content Include="Rss.ashx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -508,8 +498,6 @@
     <Content Include="UserControls\App_LocalResources\DiaryEntry.ascx.en.resx" />
     <Content Include="UserControls\App_LocalResources\DiaryEntry.ascx.resx" />
     <Content Include="UserControls\App_LocalResources\DiaryImage.ascx.resx" />
-    <Content Include="UserControls\App_LocalResources\RssSubscribe.ascx.en.resx" />
-    <Content Include="UserControls\App_LocalResources\RssSubscribe.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aikataulu.aspx" />
@@ -736,7 +724,6 @@
     <Content Include="UserControls\DiaryEntry.ascx" />
     <Content Include="UserControls\DiaryImage.ascx" />
     <Content Include="UserControls\GalleriaKuva.ascx" />
-    <Content Include="UserControls\RssSubscribe.ascx" />
     <Content Include="Valokuvaus.aspx" />
     <Content Include="Varusteet.aspx" />
   </ItemGroup>

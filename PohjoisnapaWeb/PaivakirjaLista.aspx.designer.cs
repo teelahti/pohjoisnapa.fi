@@ -19,13 +19,4 @@ public partial class PaivakirjaLista {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::UserControls.DiaryEntries diaryentrylist;
-    
-    /// <summary>
-    /// Rss control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::UserControls.RssSubscribe Rss;
 }

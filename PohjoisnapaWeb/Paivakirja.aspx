@@ -1,10 +1,8 @@
 <%@ Page Language="C#" MasterPageFile="~/Pohjoisnapa.master" AutoEventWireup="true"
 	Inherits="Paivakirja" Title="Pohjoisnapa 2006 - Päiväkirja" Codebehind="Paivakirja.aspx.cs" %>
 <%@ Register TagPrefix="Diary" TagName="Entry" Src="~/UserControls/DiaryEntry.ascx" %>	
-<%@ Register TagPrefix="Diary" TagName="RssSubscribe" Src="~/UserControls/RssSubscribe.ascx" %>
 <asp:Content ID="ContentPaivakirja" ContentPlaceHolderID="MainContent" runat="Server">
 	<Diary:Entry runat="server" ID="diaryentry" Layout="Full" />
-	<Diary:RssSubscribe runat="server" id="Rss" />
 </asp:Content>
 <asp:Content ID="GalleryStyles" ContentPlaceHolderID="StyleContent" runat="server">
     <link href="Scripts/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet"

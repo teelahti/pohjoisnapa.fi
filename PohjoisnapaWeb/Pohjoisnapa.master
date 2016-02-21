@@ -6,8 +6,6 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Pohjoisnapa 2006</title>
-    <link runat="server" id="rssLink" meta:resourcekey="rssLink" rel="alternate" type="application/rss+xml"
-        title="Pohjoisnapa 2006 päiväkirja" href="http://www.pohjoisnapa.fi/Rss.ashx" />
     <asp:ContentPlaceHolder ID="StyleContent" runat="server"></asp:ContentPlaceHolder>
     <script type="text/javascript">
         var _gaq = _gaq || [];
