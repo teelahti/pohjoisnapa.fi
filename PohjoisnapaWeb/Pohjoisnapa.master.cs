@@ -16,7 +16,7 @@ public partial class Pohjoisnapa : System.Web.UI.MasterPage
     {
         get
         {
-            return "App_themes/" + Page.Theme + "/images/";
+            return "Content/images/";
         }
     }
 

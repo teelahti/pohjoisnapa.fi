@@ -497,20 +497,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aikataulu.aspx" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\calendar2.gif" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\sauvakuva7_sin_pop.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top1.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top2.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top3.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top4.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top5.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu_B.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_paasivu_B_alexandria.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top5_tukijasivu.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top6.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top7.jpg" />
-    <Content Include="App_Themes\PohjoisnapaSininen\images\top8.jpg" />
+    <Content Include="Content\images\top1.jpg" />
+    <Content Include="Content\images\top2.jpg" />
+    <Content Include="Content\images\top5.jpg" />
+    <Content Include="Content\images\top5_paasivu_B_alexandria.jpg" />
+    <Content Include="Content\images\top5_tukijasivu.jpg" />
+    <Content Include="Content\images\top6.jpg" />
+    <Content Include="Content\images\top7.jpg" />
+    <Content Include="Content\images\top8.jpg" />
     <Content Include="App_Themes\PohjoisnapaSininen\PohjoisnapaSininen.css" />
     <Content Include="App_Themes\PohjoisnapaSininen\PohjoisnapaSininenMenu.css" />
     <Content Include="Arktis.aspx" />
