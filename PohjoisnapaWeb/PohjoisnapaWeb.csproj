@@ -126,7 +126,6 @@
     </Compile>
     <Compile Include="Logic\DataRepository.cs" />
     <Compile Include="Logic\DiaryEntryLayout.cs" />
-    <Compile Include="Logic\ImageBase.cs" />
     <Compile Include="Logic\LanguageAwarePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -427,9 +426,6 @@
     <Content Include="App_Data\DiaryEntries\105.json" />
     <Content Include="App_Data\DiaryEntries\106.json" />
     <Content Include="App_Themes\PohjoisnapaSininen\Menu.skin" />
-    <Content Include="GetImage.ashx" />
-    <Content Include="GetSmallImage.ashx" />
-    <Content Include="GetThumbnailImage.ashx" />
     <None Include="Graph.ashx.bak" />
     <None Include="kuvat\Keitinjarjestelman_toiminta.pdf" />
     <Content Include="Pohjoisnapa.master" />
