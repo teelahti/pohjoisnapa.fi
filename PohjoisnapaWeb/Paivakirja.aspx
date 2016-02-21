@@ -9,7 +9,7 @@
         type="text/css" runat="server" />
 </asp:Content>
 <asp:Content ID="GalleryScripts" ContentPlaceHolderID="ScriptContent" runat="server">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <script src="Scripts/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
     <script>
         $("div.paivakirjakuva a").fancybox({ type: 'image', overlayColor: '#000', overlayOpacity: 0.9 });
