@@ -25,12 +25,12 @@
 </asp:Content>
 
 <asp:Content id="GalleryStyles" ContentPlaceHolderID="StyleContent" runat="server">
-    <link id="Link1" href="Scripts/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" runat="server" />
+    <link rel="stylesheet" href="Content/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 </asp:Content>
 
 <asp:Content id="GalleryScripts" ContentPlaceHolderID="ScriptContent" runat="server">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script src="Scripts/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="Content/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript"></script>
     <script>
         $("div#Content > div > a").fancybox({ type: 'image', overlayColor: '#000', overlayOpacity: 0.9 });
     </script>
