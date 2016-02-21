@@ -18,6 +18,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <link href="Content/PohjoisnapaSininen.css" type="text/css" rel="stylesheet" />    <link href="Content/PohjoisnapaSininenMenu.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <form id="MasterForm" runat="server">
