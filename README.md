@@ -11,6 +11,8 @@ This newest rewrite is based on [Gatsby JS](https://www.gatsbyjs.org) and hosted
 hosting to get cheap and easy SSL-secured CDN hosting. During rewrite some of HTML was modernized, but otherwise the
 site was left intact.
 
+Language translation setup is inspired from this [article](https://www.gatsbyjs.org/blog/2017-10-17-building-i18n-with-gatsby/).
+
 ## Develop
 
 Run `gatsby develop` for normal development view. To build production site (for testing
