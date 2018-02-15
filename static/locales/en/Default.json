@@ -1,0 +1,21 @@
+{
+    "ExpeditionHeaderImageResource1.AlternateText": "Expedition",
+    "ExpeditionHeaderImageResource1.ImageUrl": "kuvat/linkit/otsikot/TXT-otsikko-retkikunta_en.gif",
+    "ExpeditionHeaderImageResource1.ToolTip": null,
+    "FollowHeaderImage.AlternateText": "Follow expeditions progress",
+    "FollowHeaderImage.ImageUrl": "kuvat/linkit/otsikot/TXT-otsikko-arktidetalueet_en.gif",
+    "LinkExpeditionMoreResource1.Text": "Read more",
+    "LinkExpeditionMoreResource1.ToolTip": null,
+    "LinkOrder.Text": "Read more and order...",
+    "LinkToArctic.Text": "Read more",
+    "LinkToFollow.Text": "The book \"Pohjoisnapa - jäinen haaste\" has been published",
+    "mailToExpeditionHeader.Text": "Send email to expedition",
+    "mailToExpeditionHeader.ToolTip": "You can send email to expedition by clicking this link.",
+    "PageResource1.Title": "North Pole 2006",
+    "SendEmailHeaderImage.AlternateText": "Send email to expedition",
+    "SendEmailHeaderImage.ImageUrl": "kuvat/linkit/otsikot/TXT-otsikko-arktidetalueet_en.gif",
+    "SendEmailHeaderImage.ToolTip": null,
+    "TextEmail.Text": "Email address is",
+    "TextExpeditionHeaderResource1.Text": "Unsupported expedition to the North Pole",
+    "TextExpeditionResource1.Text": "Airborne Ranger Club of Finland's expedition skied from Canadas Ward Hunt to the geographic North Pole during spring 2006. Expedition consisted of seven skiing expedition members, and a large group of support members..."
+}

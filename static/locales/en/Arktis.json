@@ -1,0 +1,10 @@
+{
+    "ArktisFiilisKuvaResource1.AlternateText": "Päiväkirjakuva",
+    "ArktisFiilisKuvaResource1.ToolTip": null,
+    "ArktisHeaderResource1.Text": "Arktis",
+    "ArktisOtsikkoKuvaResource1.AlternateText": "Arktis",
+    "ArktisOtsikkoKuvaResource1.ImageUrl": "~/kuvat/linkit/otsikot/otsikko-arktis_en.gif",
+    "ArktisOtsikkoKuvaResource1.ToolTip": null,
+    "ArktisTextResource1.Text": "<p> Tässä osiossa on tietoa arktisilta alueilta, pohjoisesta luonnosta ja kokemuksista kylmässä elämisestä. </p>",
+    "PageResource1.Title": "Pohjoisnapa 2006 - Tietoa arktiksesta"
+}
