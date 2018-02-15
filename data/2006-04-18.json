@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "jarmo aho",
+    "CreatedDate": "2006-04-19T06:51:00",
+    "DistanceTraveled": 0.0,
+    "EntryDate": "2006-04-18T00:00:00",
+    "Id": 90,
+    "Images": [
+        {
+            "Caption_en": "Our free day was mostly spent indoors.",
+            "Caption_fi": "Taukopäivä kuluu teltan suojissa. Edelleen päivän tärkeimpiä hetkiä lienee päivällisen nauttiminen.",
+            "CreatedDate": "2006-04-19T10:11:00",
+            "Id": 90
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-04-19T13:31:00",
+    "LocationLatitude": 872543,
+    "LocationLongitude": 765724,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "A scalding and a day off work",
+    "Subject_fi": "Vesivahinko ja lepopäivä",
+    "Temperature": -14.0,
+    "Text_en": "<P>We decided yesterday that today we would sleep in, rest up during the morning, then ski a half-day in the afternoon. Certainly we need the extra sleeping time, and we need to charge our own batteries both physically and mentally. In front of us there still remain ten grueling days of trekking.</P>\r\n<P>Unexpectedly, the planned half day's rest turned into a full rest day. Henkku, our Expedition leader, had a mishap while boiling water in his tent. He scalded himself, but the burn is not serious. Just in case, we administered first aid according to instructions from the Expedition's Support Team Doctor, speaking live from Finland on the satellite phone.</P>\r\n<P>Henrik's injuries are minor but, once again, we decided to play on the safe side and give the skin an extra half day's healing time. We shall continue as normal tomorrow, with a full days skiing.</P>\r\n<P>Now begins the countdown:<BR>Skiing days remaining: 10<BR>Distance remaining to the Geographic North Pole: 288 km</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Eilen päätimme että tänään olisi puolikas päivä lepoa, jotta ehtisimme hieman nukkua ja ladata omia akkujamme - onhan tässä vielä kymmenen pitkää hiihtopäivää jäljellä. Ikävä onnettomuus muutti tämän kuitenkin täydeksi lepopäiväksi. Henkku sai teltassa kiehuvaa vettä päälleen. Tarvittava ensihoito annettiin retkikunnan lääkärin puhelimessa antamien ohjeiden mukaan. Vammat eivät ole vakavia, mutta päätimme antaa niille puoli päivää lisää aikaa parantua. Huomenna aamulla jatkamme normaalisti.</P>\r\n<P>Hiihtopäiviä jäljellä: 10<BR>Matkaa jäljellä pohjoisnavalle:&nbsp; 288 km</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>--------------------------------------------------------------<BR>Vattenskador och vilodag</P>\r\n<P>I går beslöt vi att hålla en halv dag ledigt, så att vi skulle få sova lite och ladda våra egna batterier - vi har ju faktiskt tio långa dagar framför oss. En tråkig olycka förlängde vilan till hen hel vilodag. Henrik fick i tältet en kastrull kokande vatten över sig. Första hjälpen gavs enligt instruktioner av expeditionens läkare över satellitteelfon. Skadorna är inte allvarliga, men vi beslöt ge dem en halv dag till att läkas. Morgon på morgonen fortsätter vi som vanligt.</P>\r\n<P>Dagar kvar: 10<BR>Distans till nordplen: 288 km</P>\r\n<P>Expeditionen allt väl.<BR></P>",
+    "Weather": null,
+    "Wind": 0.0
+}

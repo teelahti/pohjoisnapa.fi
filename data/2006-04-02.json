@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-04-03T12:28:00",
+    "DistanceTraveled": 17.0,
+    "EntryDate": "2006-04-02T00:00:00",
+    "Id": 74,
+    "Images": [
+        {
+            "Caption_en": "Pulling together, we can get the sledges over large obstacles.",
+            "Caption_fi": "Yhteistyöllä ahkiot nousevat isompienkin lohkareiden yli.",
+            "CreatedDate": "2006-04-03T12:44:00",
+            "Id": 81
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-04-03T14:13:00",
+    "LocationLatitude": 845434,
+    "LocationLongitude": 752813,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Steady progress",
+    "Subject_fi": "Tasaista taaperrusta",
+    "Temperature": -30.0,
+    "Text_en": "<P>Routine North Pole Expedition day: more of the same steady, plodding progress. Our rate of advance during the average active skiing leg is 2 km/hour. The weather is changeable: from bright sunshine to snow. The snowflakes varied in type from tiny, diamond-like crystals to normal flakes.</P>\r\n<P>The whole team is feeling the fatigue. We are heavy-legged from 12-hour working days. After all, it has been over a week since our last rest day. We are really looking forward to Wednesday, our next scheduled day of recreation and servicing.</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Tätä se naparetkeily on. Tasaista taapertamista hiljallee eteenpäin. Kahden kilometrin tuntivauhtia päivämme eteni kohti napaa. Keli vaihteli kirkkaasta auringonpaisteesta kristallinkirkkaaseen hile- tai lumisateeseen.</P>\r\n<P>Kaikilla painaa jaloissa rankat 12 tunnin työpäivät. Edellisestä taukopäivästä on aikaa yli viikko, joten odottelemme jo innolla keskiviikolle suuniteltua lepopäivää.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>******</P>\r\n<P>Jämna plågor<BR><BR>Det äe det här arktiska expeditioner består av: ett evigt tragglande framåt i sakta mak. Vi närmar oss polen med en hastighet av 2 km/h. Vädret varierar från klart solsken till gnistrande iskristaller och snöfall.<BR><BR>Om kvällarna känns de tunga 12 timmarsdagarna minsann i benen. Det är över en vecka sedan vår förra vilodag och väntar verkligen på nästa som kommer på onsdag.<BR><BR>Expeditionen allt väl.</P>",
+    "Weather": null,
+    "Wind": 3.0
+}

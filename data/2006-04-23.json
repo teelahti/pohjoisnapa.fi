@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-04-24T09:55:00",
+    "DistanceTraveled": 29.6,
+    "EntryDate": "2006-04-23T00:00:00",
+    "Id": 95,
+    "Images": [
+        {
+            "Caption_en": "Jermi straining at the leash against a snowbound headwind.",
+            "Caption_fi": "Jermi vääntää ahkion kanssa eteenpäin lumituiskun lyödessä kasvoille.",
+            "CreatedDate": "2006-04-24T09:55:00",
+            "Id": 92
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-04-24T15:27:00",
+    "LocationLatitude": 883842,
+    "LocationLongitude": 842124,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Two steps forward, one step back",
+    "Subject_fi": "Hiihtomatto",
+    "Temperature": -14.0,
+    "Text_en": "<P>The weather was just as interesting as on many other days: clear sunshine in the morning; completely overcast for the rest of the day.</P>\r\n<P>Visibility was bad, but that is nothing new to us. Even a smidgen of sunshine would help keep our brains active and our spirits high. On the other hand, this skiing business is mostly routine trudging: sometimes it seems that brawn, not brains, are all that's required. So you just grit your teeth and force your arms, legs and skis to keep trekking.</P>\r\n<P>In terms of making headway towards the Pole, the last two day's progress has been `two steps forward, one step back.´ It's like running against the flow on a moving walkway. During the last 48 hours, the ice beneath our feet has moved a total of 5 km in a Southerly direction. In other words, for every one-hour leg that we ski in a Northerly direction, the ice takes us 200 meters back where we just came from. Thus, it would be misleading to calculate the actual distance skied on any given day. The only important thing is, how much distance, as-the-crow-flies, remains between us and the Geographic North Pole.</P>\r\n<P>Distance remaining to the Pole: 151 km.<BR>Skiing days remaining: 5.</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Tänään sää oli yhtä miellyttävä kuin niin usein ennenkin: aamulla jonkin aikaa auringonpaistetta, mutta sitten täysi pilviverho loppupäiväksi.</P>\r\n<P>Näkyvyys oli siis huono, mutta onneksi olemme jo aika harjaantuneita liikkumaan tällaisessa kelissä. Pieni auringonpaiste pitäisi mielen virkeämpänä, mutta onneksi hiihtämiseen ei mieltä tarvitse, vain jalkoja, käsiä ja suksia.</P>\r\n<P>Päivän eteneminen oli kuin juoksumatolla hiihtämistä. Kahden viimeisen vuorokauden aikana olemme liikkuneet jäälauttojen mukana vajaa viisi kilometriä vuorokaudessa etelään. Toisin sanoen jokaisella hiihtolegillä jäät tulevat pari sataa metriä vastaan. Tämän liikkumisen vuoksi meidän päivämatkoja yhteen laskemalla ei saa mitään järjellistä tulokseksi, vaan pitää tuijottaa tiukasti tärkeintä: minkä verran on kilometrejä jäljellä pohjoisnavalle.</P>\r\n<P>Matkaa jäljellä pohjoisnavalle: 151 km.</P>\r\n<P>Hiihtopäiviä jäljellä: 5</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>****</P>\r\n<P>Vädret var i dag lika trevligt liksom så ofta förr: lite solsken på morgonen, men sedan molntäcke resten av dagen. Sikten var alltså dålig, men till all lycka börjar vi vänja oss vid att skida i sådana färhållanden. En liten solglimt skulle nog lyfta humöret, men som tur äär behöver man inte humös för att skida utan ben, armar och skidor.<BR><BR>Dagens tripp var som att skida på en löpmatta. Under de senaste två dygnen har vi drivit knappt fem kilometer bakåt med isflaken. Det vill säga att isen kommit ett par hundra meter emot oss på varje leg. Därför kan vi inte bara addera distanserna för varje dag, utan vi koncentrerar oss på det väsentliga: hur många kilometer det är kvar till nordpolen.<BR><BR>Distans till nordpolen: 151 km.<BR>Dagar kvar: 5<BR><BR>Expeditionen allt väl.<BR></P>",
+    "Weather": null,
+    "Wind": 6.0
+}

@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-03-05T09:02:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2006-03-04T00:00:00",
+    "Id": 45,
+    "Images": [
+        {
+            "Caption_en": "The Expedition is ready, destination North Pole.",
+            "Caption_fi": "Retkikunta valmiina koitokseen. Suuntana pohjoinen.",
+            "CreatedDate": "2006-03-05T09:02:00",
+            "Id": 51
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-06T08:24:00",
+    "LocationLatitude": null,
+    "LocationLongitude": null,
+    "LocationLongitudeEastWest": null,
+    "Subject_en": "On the starting blocks",
+    "Subject_fi": "Lähtökuopissa",
+    "Temperature": null,
+    "Text_en": "<P>At long last we have a concrete sense of being on our way. On Saturday evening we took the sledges to the airport, and loaded them on the aircraft. If the weather is good enough, the Expedition will be underway. Two light aircraft will transport us 1000 km north from Resolute, to the shores of the Arctic Marine Ice-sheet.</P>\r\n<P>During the day we continued to fine-tune our sledge packing, but most of the day was used up frying bacon!! The Jerky that we've been missing so sorely did not, after all, arrive in time. So this morning we went to the shop and bought 60 kilograms of bacon! Frying that much bacon is a bigger job than you can imagine. Thank goodness we had the use of the hotel kitchen.</P>\r\n<P>When we took the fully-packed sledges to the airport, they were weighed â€¦ our surprise was great! We thought we had calculated everything to the last gram, but the weight of the sledges varied from 140 to 160 kg â€¦ more than we had planned for.</P>\r\n<P>Now we're off to bed for a couple of hours, and then the marathon begins. The Expedition is ready!</P>\r\n<P>And all is well with the Expedition.</P>",
+    "Text_fi": "<P>Nyt vihdoin on jo konkreettista lähdöntunnelmaa. Ahkiot vietiin lauantai-iltana lentokentälle ja rahdattiin koneisiin asti. Jos keli sallii niin sunnuntai aamuna retkikunta aloittaa varsinaisen matkan teon. Kahdella lentokoneella siirrytään tuhat kilometriä pohjoiseen arktisen jäämeren rantaan.</P>\r\n<P>Päivä kului pakkaamisen viimeistelyssä. Ajassa suurimman osan vei kuitenkin pekonien käristys. Kauan kadoksissa ollut lihalähetys ei nimittäin lopultakaan tullut ajoissa perille, joten aamulla kävimme kaupasta ostamassa 60 kiloa pekonia. Sen paistamisessa olikin suurempi urakka kuin aluksi tuntui. Onneksi käytössä oli hotellin suurtalouskeittiö.</P>\r\n<P>Rahdatessa ahkiomme lentokentälle varusteet punnittiin ja hämmästys oli suuri. Tarkoista laskelmista huolimatta painoa tuntui kertyvän melkoisesti. Ahkiopainot vaihtelivat 140 ja 160 kilon välillä. Nyt siis pariksi tunniksi nukkumaan ja sitten se alkaa. Retkikunta on valmis koitokseen.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
+    "Weather": null,
+    "Wind": null
+}

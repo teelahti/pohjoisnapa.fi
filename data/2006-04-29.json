@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-04-29T21:01:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2006-04-29T00:00:00",
+    "Id": 100,
+    "Images": [
+        {
+            "Caption_en": "",
+            "Caption_fi": "Pohjoisnapa",
+            "CreatedDate": "2006-05-02T00:35:00",
+            "Id": 95
+        }
+    ],
+    "LastModifiedBy": "tero teelahti",
+    "LastModifiedDate": "2006-05-02T00:35:00",
+    "LocationLatitude": 900000,
+    "LocationLongitude": 0,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Mission accomplished",
+    "Subject_fi": "Tehtävä suoritettu",
+    "Temperature": null,
+    "Text_en": "<P>The Unsupported Expedition of the Airborne Rangers Club of Finland planted its Finnish Flag at the Geographic North Pole today, 4/29/2006 at 1931 Finnish time (1631 GMT).</P>\r\n<P>All is very, very excellent with Our Expedition.</P>\r\n<P>&nbsp;</P>",
+    "Text_fi": "<P>Retkikunta on pystyttänyt Suomen lipun maantieteelliselle pohjoisnavalle kello 19.31 Suomen aikaa.</P>\r\n<P>Retkikunnalla kaikki erittäin hyvin.</P>\r\n<P>*****************</P>\r\n<P>Updraget utfört.</P>\r\n<P>Expeditionen har hissat Finlands flagga på nordpolen kl 19.31 finsk tid.</P>\r\n<P>Expeditionen allt väldigt väl.</P>",
+    "Weather": null,
+    "Wind": null
+}

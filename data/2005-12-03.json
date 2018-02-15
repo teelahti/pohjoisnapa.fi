@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-09T22:02:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2005-12-03T00:00:00",
+    "Id": 25,
+    "Images": [
+        {
+            "Caption_en": "Magnetic North Pole expedition. Kari Vainio (second row, second person from left) acts as the support team leader, others will ski.",
+            "Caption_fi": "Magneettisen pohjoisnavan retkikunta, kuvan henkilöistä Kari Vainio (keskimmäinen rivi, toinen vas.) toimii support-tiimin vetäjänä ja muut hiihtävät.",
+            "CreatedDate": "2006-01-10T13:36:00",
+            "Id": 20
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-20T19:35:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Building team spirit",
+    "Subject_fi": "Yhteishengen nostatusta ",
+    "Temperature": null,
+    "Text_en": "<P><FONT style=\"BACKGROUND-COLOR: #006699\">The expedition group got together to TF hut for risk management discussions. During the weekend, some difficult cases were handled pertaining to exceptional situations. Another target was to ease the possible tensions caused by hectic preparation phase. Some of the support team members participated the meeting during Saturday.</FONT></P>",
+    "Text_fi": "Retkikunta kokoontui viikonlopuksi TF:n majalle teemana riskienhallinta. Viikonlopun aikana käytiin läpi osin vaikeitakin asioita poikkeustilanteisiin liittyen. Viikonlopun tarkoituksena oli myös poistaa mahdollisia järjestelyn kiireessä syntyneitä jäsenien välisiä jännitteitä. Lauantaina mukana oli myös osa support-tiimistä.",
+    "Weather": null,
+    "Wind": null
+}

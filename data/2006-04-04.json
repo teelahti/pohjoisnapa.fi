@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-04-05T11:34:00",
+    "DistanceTraveled": 17.1,
+    "EntryDate": "2006-04-04T00:00:00",
+    "Id": 76,
+    "Images": [
+        {
+            "Caption_en": "When blinded by whiteout, there is no choice but to blaze on in a straight line. Often, this tactic wastes energy. You find yourself going over obstacles, instead of around them.",
+            "Caption_fi": "Whiteoutin viedessä näkyvyyden ei auta muuta kuin mennä suoraan. ",
+            "CreatedDate": "2006-04-05T11:34:00",
+            "Id": 83
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-04-06T17:14:00",
+    "LocationLatitude": 850140,
+    "LocationLongitude": 754839,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Whiteout saps energy",
+    "Subject_fi": "Whiteout vie voimia",
+    "Temperature": -21.0,
+    "Text_en": "<P>After yesterday's unscheduled rest day, the whole team feels rejuvenated. We are ready to ski with new vigor. The warm spring weather (- 21 C) also spurred us on.</P>\r\n<P>Otherwise, the skiing conditions we confronted today were nothing to write home about. The overcast weather caused total whiteout. It was impossible to distinguish icescape profiles. In pack ice pressure zones, whiteout makes for very heavy going, and much wasted energy. All we could do was to ski in a straight line blindly, disregarding any mounds, moguls or mountains we might come across. </P>\r\n<P>In good visibility, we would of course ski around obstacles in order to save energy. In whiteout conditions this cannot be done: you spend time and energy crossing an obstacle, and only afterwards do you realize there would have been a much easier route just a few meters to one side.</P>\r\n<P>All day long we fought on half blinded, and the icy boulders seemed to be never-ending. We did bump into some bits of welcome flat ice, but this was completely by chance. We couldn't use the sun for orienteering; it wasn't visible. A small aid to navigation were the snowdrifts, which undulated in a fairly constant direction. At regular intervals we also checked our GPS position and our compasses. It has to be remembered though, that we are very close to the Magnetic North Pole, so the compass reading is 90 degrees off True North.</P>\r\n<P>Despite these difficulties, we made good progress. This afternoon we crossed the 85th latitude; an important milestone. The Pole awaits usâ€¦</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Taukopäivän jälkeen into hiihtoon oli jälleen kova. Keväisen lämmin sää lisäsi intoa hiihtää.</P>\r\n<P>Mutta muuten kelissä ei hurraamista ollut. Pöppöräinen sää vei näkyvyyden ja whiteoutissa ei näkynyt mitään maaston muotoja. Ahtojäissä se on todella raskasta ja lisää turhia ponnisteluja melkoisesti. Edetään ainoastaan suunnassa eikä pieniäkään knöölejä ja kumpareita, saatika isompia ahtojäitä voi kiertää. Niitä kun ei yksinkertaisesti näe. Vasta kohdalla huomaaa ahkiota nykiessä että kas, vieressä olisikin ollut paljon helpompi reitti.</P>\r\n<P>Koko päivän taapersimme siis pienessä pilvessä ja ahtojäitä tuntui riittävän. Tasaisempia pätkiä löytyi sattumalta sentään muutamia. Auringon mukaan ei siis tänään suunnistettu, vaan oikeaa suuntaa tarkitettiin säännöllisesti tuulen muotoilemista lumidyyneistä, GPS paikantimesta ja kompassista, joka näissä maisemissa näyttää magneettisen navan läheisyyden takia 90 astetta pieleen.</P>\r\n<P>Huonosta kelistä huolimatta kilometrejä sentään kertyi mukavasti.</P>\r\n<P>Iltapäivällä oli taas yksi merkkipaalu ylitetty kun 85 leveysaste jäi taakse. Näin se napa lähestyy.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>&nbsp;</P>\r\n<P>*****</P>\r\n<P>&nbsp;</P>\r\n<P>Efter vilodagen &nbsp;var viljan att skida stark. Det varma vårvädret gav en tilläggsboost.<BR><BR>Men i övrigt var väret inte mycket att hänga i julgranen, Till följd av det grötiga vädret var xisibiliteten noll och i whiteouten kunde man inte urskilja terrängformationer. Det är otroligt tungt att ta sig fram blind i packisen. Vi går rakt och har ingen möjlighet att undvika vare sig mindre knölar eller större isberg, efersom vi inte ser dem. Först när man kommit fram märker man att sidu det hade funnits en lättare väg.<BR><BR>Hela dagen kämpade vi alltså lite groggy och utan brist på packis. Till all lycka fanns det några slätare passager. Vi kunde heller inte navigera med hjälp av solen, utan avläste riktningen från de vindpackade dynerna, från GPS mottagaren och från kompassen, som till följd av närheten till den magnetiska polen &nbsp;här visar 90 grader fel.<BR><BR>Det besvärliga vädret till trots gjorde vi god distans.<BR><BR>På eftermiddagen kunde vi ånyo fira, då vi korsade den 85 breddgraden. Polen närmar sig.<BR><BR>Expeditionen allt väl.<BR></P>",
+    "Weather": null,
+    "Wind": 2.0
+}

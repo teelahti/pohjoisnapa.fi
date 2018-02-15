@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-09T21:27:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2005-05-03T00:00:00",
+    "Id": 19,
+    "Images": [
+        {
+            "Caption_en": "",
+            "Caption_fi": "",
+            "CreatedDate": "2006-01-09T21:27:00",
+            "Id": 10
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-20T20:06:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Web pages now on-line",
+    "Subject_fi": "Www-sivut avattu",
+    "Temperature": null,
+    "Text_en": "<P>The Expedition web pages are now on-line. Most up-to-date info will be made available through these pages. In the spring of 2006 during the actual expedition, a new entry and picture will be published daily. During the planning and preparatory phase you'll find the updates of the proceedings.</P>\r\n<P>Currently the preparations proceed as planned. There remains lots of work for gear development, planning the menu, medical preparations, communication and logistics. Budget preparations and other financial activities demand also lots of attention. Physical preparations take long time so training happens daily.</P>\r\n<P>Before the actual expedition there pages are periodically updated. Continuous updating will start in Spring 2006.</P>",
+    "Text_fi": "<P class=tilaa>Retkikunnan www-sivut on avattu. Näiden sivujen kautta tarjotaan uusinta tietoa retkikunnan vaiheista. Keväällä 2006 varsinaisen hiihdon aikana sivuille päivitetään uusi ote ja valokuva päivittäin. Suunnitteluvaiheessa tätä kautta löytyy tuoreimmat tilannekatsaukset.</P>\r\n<P>Tällä hetkellä retkikunnan valmistelu etenee ennakkosuunnitelmien mukaan. Varustekehityksessä ja ruokalistan, lääkintähuollon, viestiyhteyksien sekä logistiikan suunnittelussa riittää töitä. Budjetin laadinta ja rahoituksen järjestelyt vaativat myös suuria panostuksia. Fyysinen harjoittelu on pitkäjänteistä puuhaa, joten sen suhteen tehdään tässä vaiheessa töitä päivittäin. </P>\r\n<P>Ennen varsinaista retkikuntaa näitä sivuja päivitetään satunnaisesti. Jatkuva päivitys aloitetaan vasta keväällä 2006. </P>",
+    "Weather": null,
+    "Wind": null
+}

@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-03-12T08:54:00",
+    "DistanceTraveled": 4.8,
+    "EntryDate": "2006-03-11T00:00:00",
+    "Id": 52,
+    "Images": [
+        {
+            "Caption_en": "Pack-ice in sunset.",
+            "Caption_fi": "Ahtojäitä iltahämärässä.",
+            "CreatedDate": "2006-03-12T08:54:00",
+            "Id": 58
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-13T06:47:00",
+    "LocationLatitude": 831756,
+    "LocationLongitude": 740603,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Another boring day at the office",
+    "Subject_fi": "Tavallinen päivä toimistossa",
+    "Temperature": -40.0,
+    "Text_en": "<P>Only real difference between today and previous days: scattered cloud. As such, this does not hinder our progress, but the clouds have brought on a cold breeze. With daytime temperatures approaching â€“ 40 C, even a wind of 3 m/s can be dangerous. It becomes essential to protect your face from the cold. We regularly check each other's faces, visually, for the white patches that would warn of an on-coming frostbite.</P>\r\n<P>The terrain today was mostly `easy´, much a repeat of yesterday. We did need to traverse a couple of challenging obstacles, but the general impression is that the going is getting easier. This afternoon, we had our first encounter with open water: a newly-opened, 20-meter-wide crack in the ice sheet. After a brief search, we found a place where the two edges of the crack came together. The whole team got over dry, and in one piece. The only other alternative would have been to pitch camp, and wait for the crack to freeze over by morning.</P>\r\n<P>By the time we did pitch camp in the evening, the wind had become brisker. Overall, it felt very cold all day long, even though the absolute temperature was no lower than on previous days. Chill-factor is important!</P>",
+    "Text_fi": "<P>Aamu erosi edellisistä siinä, että taivaalla oli vähän pilviä. Pilvet sinällään eivät meidän matkantekoa haittaisi, mutta tällä kertaa ne toivat mukanaan pienen tuulenvireen. Tuuli näissä pakkaslukemissa on aina paha asia - varsinkin kasvojen suojaaminen muuttuu entistä tärkeämmäksi.</P>\r\n<P>Päivän maasto oli enimmäkseen helppoa ja eteneminen edellisten päivien toisintoa. Matkan varrella oli pari pahempaa paikkaa, mutta yleistuntuma on että maasto on keventymässä. Iltapäivällä törmäsimme ensimmäistä kertaa avoveteen. Vastassa oli noin 20 m leveä railo. Pienen etsimisen jälkeen löytyi paikka jossa jäät painuivat yhteen, ja päästiin yli. Toinen vaihtoehto olisi ollut tehdä leiri railon reunaan ja ylittää se aamulla.</P>\r\n<P>Illalla leiriin saavuttaessa muuttui tuuli hieman navakammaksi. Kaiken kaikkiaan päivä tuntui erittäin kylmältä, vaikkei mittarin mukaan ollutkaan kylmimpiä tällä reissulla koettuja.</P>\r\n<P>&nbsp;</P>\r\n<P>******</P>\r\n<P>&nbsp;</P>\r\n<P>Morgonen skilde sig från de tidigare på så sätt, att det fanns några moln på himlen. Molnen påverkar i och för sig inte våra planer, men nu hade de med sig lite blåst. Vind i dessa temperaturer är alltid illa - att skydda framförallt ansiktet är viktigare än någonsin.<BR><BR>Terrängen var i dag i huvudsak lätt och framryckningen som under tidigare dagar. Under dagens etapp hade vi ett par knepigare passager, men som helhet kan man säga att terrängen blir lättare. På eftermiddagen stötte vi för första gången på öppet vatten. Det var en ca 20 m bred råk. Efter ett kort sökande fann vi en plats där isarna pressats ihop, och där kom vi över. Det andra alternativet hade varit att slå läger vid råken och skida över på morgonen.<BR><BR>På kvällen i lägret friskade vinden i något. Det känns rejält kallt, trots att vi enligt termometern haft kallare väder under resan.</P>",
+    "Weather": null,
+    "Wind": 3.0
+}

@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-16T08:56:00",
+    "DistanceTraveled": 0.0,
+    "EntryDate": "2006-03-15T00:00:00",
+    "Id": 56,
+    "Images": [
+        {
+            "Caption_en": "Office work in a warm tent. Henkku is calculation our distance traveled, with the aid of a GPS positioning device.",
+            "Caption_fi": "Teltan lämmössä sujuu toimistohommatkin. Henkku tutkii kuljettua matkaa GPS paikantimesta.",
+            "CreatedDate": "2006-03-16T08:56:00",
+            "Id": 62
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-16T11:48:00",
+    "LocationLatitude": 832234,
+    "LocationLongitude": 740955,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Rest day",
+    "Subject_fi": "Taukopäivä",
+    "Temperature": -40.0,
+    "Text_en": "<P>Today we had a well-earned day off from trekking. Nothing to do but to service our gear and rest up. We all slept in; nobody moved a muscle before midday.</P>\r\n<P>In the afternoon, we made miscellaneous repairs to our gear: serviced our skis and poles; check our electronics and communications equipment; and mended any torn or worn clothes.</P>\r\n<P>This has been an important day's rest; more such days have been scheduled as the trek progresses. Tomorrow, we continue on our Stroll-to-the-Pole.</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Tänään vietettiin ansaittua huolto- eli taukopäivää. Aamulla kaikki nukkuivat pitkään. Ensimmäiset liikkeet leirissä havaittiin vasta puolenpäivän jälkeen. Päivällä tehtiin muutamia korjaustöitä kuten yhdet karvat piti kiinnittää uudestaan, parit sauvat piti korjata, elektroniikkaa huoltaa ja ommella revenneitä tai kuluneita vaatteita.</P>\r\n<P>Levon kannalta päivä oli tärkeä. Huomenna taas jatkuu hiihtoa kohti pohjoista.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>&nbsp;</P>\r\n<P>***********</P>\r\n<P>I dag höll vi en välförtjänt pausdag. På morgonen sov vi länge och steg upp först mitt på dagen. Sedan var det dags att utföra lite underhållarbete. En stighud had lossnat och måste fästas på nytt, ett par stavar reparerades, elektroniken servades och så<BR>syddes några revor och slitage i kläderna.<BR><BR>Det var en viktig dag för vila och återhämtning. I morgon<BR>skicdar vi vidare norrut.<BR><BR>Expeditionen allt väl.</P>",
+    "Weather": null,
+    "Wind": 3.0
+}

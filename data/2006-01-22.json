@@ -1,0 +1,39 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-01-25T22:48:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2006-01-22T00:00:00",
+    "Id": 29,
+    "Images": [
+        {
+            "Caption_en": "Every item packed was carefully entered into a computer.",
+            "Caption_fi": "Kaikki laatikoihin menneet ruuat ja varusteet kirjattiin tarkkaan ylös.",
+            "CreatedDate": "2006-01-25T22:48:00",
+            "Id": 28
+        },
+        {
+            "Caption_en": "Tightly packed box. All available space is utilized.",
+            "Caption_fi": "Täyteen pakattu ahkiolaatikko. Laatikon ja ahkion väliset kolot täytettiin tiukkaan ruualla.",
+            "CreatedDate": "2006-01-25T22:50:00",
+            "Id": 29
+        },
+        {
+            "Caption_en": "Skiing boot by Jalas was examined carefully. Excellent work.",
+            "Caption_fi": "Jalaksen retkikunnalle valmistamat monot tarkistettiin viikonlopun aikana. Lopputulosta kelpaa ihailla.",
+            "CreatedDate": "2006-01-25T22:52:00",
+            "Id": 30
+        }
+    ],
+    "LastModifiedBy": "Jarmo Aho",
+    "LastModifiedDate": "2006-02-14T19:12:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Third day of the cargo weekend",
+    "Subject_fi": "Rahtiviikonlopun kolmas päivä",
+    "Temperature": null,
+    "Text_en": "Every single one was tired on the third morning. There still remained a mountaing of work to be done and the time was running out. The morning turned out to be a success after all, since the idea of packing remaining dry food - pasta, rise, seeds etc - into empty fuel containers. This enabled us to have 210 litres of addition excellent cargo space. In Kanada, this containers are again emptied, rinsed, and they then are ready to be filled with the fuel.<BR><BR>Every single item was entered into a computer. We did this in order to easy the hassle with the customs and to make sure we have everything packed. As there is about one month to start, we just don't have any spare time to have these items be hold in customs.<BR><BR>At 10.00 in the evening all boxes were packed. Then they needed to be closed and sealed, marked and weighted. Pasi Nissilä from the support team came to help us out with the last things to be done, as well as cleaning up the place. By end of the night, we had seven neatly packed boxes between 140 and 185 kilos each. The last expedition member hit the sack around 1.00 am. Remaining time: one month.<BR>",
+    "Text_fi": "Kolmannen päivän aamuna kaikki olivat väsyneitä. Edessä oleva kiire teki kuitenkin tehtävänsä, ja hommat alkoivat sujumaan vaaditulla vauhdilla. Heti aamulla huomattiin, että tila tulee olemaan kortilla. Näin siitäkin huolimatta, että kaikista ruuista oli poistettu turhat pakkausmateriaalit, ja mukana oli vain välttämättömimmät varusteet. Rahdin pakkaamisen pelasti oivallus laittaa kaikki irtonainen kuivatuote, eli riisit, pastat, myslit ja siemenet, mukaan lähteviin, vielä tyhjiin polttoainesäiliöihin. Näin saimme 210 litraa lisää hyvää pakkaustilaa. Kanadassa säiliöt tyhjennetään ruuasta, huuhdellaan, ja niihin laitetaan korkit ja valmiiksi paikan päälle tilattu polttoaine. <BR><BR>Päivän aikana joka ikinen laatikoihin mennyt varuste kirjattiin tietokoneelle ylös. Tämä tehtiin tulliepäselvyyksien välttämiseksi, ja rahdin sujumisen varmistamiseksi. Koska aikaa lähtöön on enää kuukausi, ei retkikunnalla ole aikaa makuuttaa rahtilaatikoita Kanadan tullin hoteissa. <BR><BR>Illalla kymmenen aikaan kaikki laatikot oli pakattu, ja jäljellä oli vielä kansien kiinnilaittaminen, sekä laatikoiden merkintä ja punnitus. Support-tiimin Pasi Nissilä saapui vielä auttamaan viimeistelyssä ja paikan siivoamisessa. Illan päätteeksi hallin kulmassa oli seitsemän siistin näköistä laatikkoa, joiden painot vaihtelivat 140 ja 185 kilon välillä. Viimeinenkin retkikunnan jäsen pääsi yöllä ennen kello yhtä kotiin. Seuraavana päivänä oli luvassa hetken hengähdys ennen viimeistä, kuukauden kestävää järjestelyiden loppukiriä.",
+    "Weather": null,
+    "Wind": null
+}

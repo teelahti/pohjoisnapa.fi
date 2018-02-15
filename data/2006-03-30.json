@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-31T09:39:00",
+    "DistanceTraveled": 15.0,
+    "EntryDate": "2006-03-30T00:00:00",
+    "Id": 71,
+    "Images": [
+        {
+            "Caption_en": "The maze was negotiated at the head-spinning velocity of 30 meters in 60 minutes.",
+            "Caption_fi": "Tässä rövelikössä pääsimme huimaan matkanopeuteen, 30 metriä tunnissa.",
+            "CreatedDate": "2006-03-31T09:39:00",
+            "Id": 78
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-31T14:26:00",
+    "LocationLatitude": 843156,
+    "LocationLongitude": 742926,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Sking in a jugsaw puzzle",
+    "Subject_fi": "Palapelihiihtoa",
+    "Temperature": -29.0,
+    "Text_en": "<P>The weather this morning was almost an exact copy of that on previous mornings: sunshine, temperature - 30 C, nasty cold wind. Nothing that we're not already used to.</P>\r\n<P>The icescape today could be described in one word: broken. It wasn't impassable, but there were man-sized lumps of ice strewn all around us. Also, our path was crisscrossed with deep, frozen-over, 1 or 2 meter-wide old leads; none of them going in the right direction. Imagine yourself skiing through a giant jigsaw puzzle made of ice. Fortunately, we didn't have to `solve´ this puzzle: nature has done that for us!</P>\r\n<P>Late in the afternoon, we found ourselves skiing on younger, more level ice. This made for much easier going than the sastrugi-furrowed old ice we were often faced with earlier in the trek. We are hoping for more of the same easy trekking in coming days.</P>\r\n<P>(Ed: Sastruga is a Russian word meaning `wind-formed furrow´. Sastrugi (plural) are long, wavelike ridges of hard snow, formed perpendicular to the direction of the wind and common in polar regions. [Webster's New World Dictionary])</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Tänään keli oli lähes identtinen aikaisempien aamujen kanssa: aurinko paistoi, pakkasta oli kolmekymmentä, ja viima oli ikävä. Näihin keleihin on kuitenkin jo totuttu.</P>\r\n<P>Päivän hiihtomaastoa voisi kuvailla sanalla 'rikkonainen'; maasto ei ollut mitenkään erityisen huonoa, mutta joka paikka oli täynnä miehenkokoista jääkimpaletta, ja vanhoja metrin - parin levyisiä, syviä, jäätyneitä railoja. Olo oli kuin olisi hiihdellyt jättimäisellä, jäästä tehdyllä palapelillä. Tätä vain ei onneksi tarvitse ratkoa, luonto on tehnyt sen jo.</P>\r\n<P>Illan päätteeksi saatiin alle nuoreempaa, tasaista jäätä. Tämä oli huomattavasti helpompaa hiihtää kuin poikittaisten sastrugien täyttämä, vanha jää. Pitää toivoa että tasainen jää jatkuu vielä huomennakin.</P>\r\n<P>&nbsp;</P>\r\n<P>Retkikunnalla kaikki hyvin. </P>\r\n<P>****************</P>\r\n<P>I dag var vädret så gott som identiskt med tidigare mornar: solen sken, temperaturen run minus trettio grader och en otrevlig vind. Till all lycka har vi vant oss vid detta.<BR><BR>Dagens skidterräng kan bäst beskrivas med ordet \"trasig\". Det var inget egentligt fel på terrängen, men överallt fanns manshöga isbitar och gamla, frusna råkar i formen av ett till två meter djupa diken. Det kändes som om vi skidade på ett jättelikt puzzle gjort av is. Det är allt tur att naturen redan satt ihop det.<BR><BR>Mot kvällen fick vi yngre, slätare is. Det blev betydligt lättare att skida än på den gamla sastrugifyllda isen. Vi hoppas att den släta isen håller i sig ännu i morgon.<BR><BR>Expeditionen allt väl.</P>",
+    "Weather": null,
+    "Wind": 4.0
+}

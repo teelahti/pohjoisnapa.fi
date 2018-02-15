@@ -1,0 +1,27 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-01T07:52:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2006-02-28T00:00:00",
+    "Id": 41,
+    "Images": [
+        {
+            "Caption_en": "Our first taste of camp life. Preheating the cooking stoves is a hazardous task demanding constant vigilance.",
+            "Caption_fi": "Vähitellen päästään leirielämän makuun. Keittimien esilämmityksessä saa olla tarkkana tuhansienkin sytytyskertojen jälkeen.",
+            "CreatedDate": "2006-03-01T07:52:00",
+            "Id": 46
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-01T11:30:00",
+    "LocationLatitude": null,
+    "LocationLongitude": null,
+    "LocationLongitudeEastWest": null,
+    "Subject_en": "FIRST NIGHT OUT",
+    "Subject_fi": "Yö ulkona",
+    "Temperature": -20.0,
+    "Text_en": "<P>The day has once again been used for food packing, and for searching high and low for dried meat: we know we stashed it somewhere, but where? After dinner, we skied a short distance out on the marine ice-sheet and pitched camp for the night. So this is our first diary entry from camp. The objective is to test tent-erection routines, to organize our gear logically inside the tents, and to fine tune the boring details of tent-life. </P>\r\n<P>Tomorrow morning we'll return to the civilized world of running water and electricity. </P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>Päivä meni jälleen ruokia pakatessa ja kadoksissa olevia kuivalihoja metsästäessä. Päivällisen jälkeen lähdettiin hiihtämään pieni matka meren jäälle, jossa tällä hetkellä ollaan yötä. Tarkoitus on testata telttojen pystytys ja telttajärjestys sekä muut telttaelämään liittyvät rutiinit. </P>\r\n<P>Aamulla siirrytään takaisin LVIS-olosuhteisiin.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
+    "Weather": null,
+    "Wind": 3.0
+}

@@ -1,0 +1,33 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-02-16T23:02:00",
+    "DistanceTraveled": null,
+    "EntryDate": "2006-02-16T00:00:00",
+    "Id": 34,
+    "Images": [
+        {
+            "Caption_en": "Emergency training with couch, rag and orange.",
+            "Caption_fi": "Ompelukoulutusta, ompelun kohteeksi joutui sohva, tiskirätti ja appelsiini.",
+            "CreatedDate": "2006-02-16T23:02:00",
+            "Id": 35
+        },
+        {
+            "Caption_en": "Perttu at the finish of the maximum endurance test.",
+            "Caption_fi": "Perttu maksimirasitustestin loppusuoralla.",
+            "CreatedDate": "2006-02-16T23:05:00",
+            "Id": 36
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-21T22:41:00",
+    "LocationLatitude": 678903,
+    "LocationLongitude": 345008,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Tests and first aid training",
+    "Subject_fi": "Testit ja lääkintäkoulutus",
+    "Temperature": null,
+    "Text_en": "<P>About half of the expedition group -&nbsp;Poppis, Toni, Perttu and Tero,&nbsp;was again in tests organised by Department of Biology and Physical Activity, University of Jyväskylä. This was the second test in series of three tests. The last tests will be conducted immediately after the return back to Finland. Each time the physical tests are identical, in order to enable the researchers to find out how arctic exploration affects the human body. The tests indicate that members have gained weight, but the performance has remained the same as previously. This was as expected so the expedition is physically ready to go.</P>\r\n<P>This time there were additional tests included in the test set. Heart beat was analysed as expedition members learned Japanese characters and followed computer based training. The mental condition was probably not at the very best, as the last nights sewing exercises took their toll. </P>\r\n<P>Medical materials were trained by Heikki Karinen, who is a member of the support team. Wound treatments were studied. The target is to be able to&nbsp;treat all wounds and possible sicknesses on the ice without any external help.</P>",
+    "Text_fi": "<P>Puolet retkikunnasta - Poppis, Toni, Perttu ja Tero - oli jälleen Jyväskylän yliopiston liikuntabiologian laitoksen testeissä. Testi oli toinen kolmen testin sarjasta, viimeinen testeistä on heti retkikunnan Suomeen paluun jälkeen. Jokaisen testikerran kuntotestit ovat identtiset, jotta tutkijat saavat mahdollisimman hyvin selville millä tavoin naparetkeily elimistöön vaikuttaa. Testien perusteella porukka on lihonnut, mutta siitä huolimatta suorituskyky on pysynyt entisellään. Tämä oli tarkoituskin, joten retkikunta on kuntonsa puolesta valmis lähtemään matkaan. <BR><BR>Tällä kertaa lisänä oli myös oppimista ja vireystilaa käsittelevät psykofyysiset testit. Näissä testeissä seurattiin sykettä samalla kun opeteltiin japanin kirjainmerkkejä ja seurattiin ruudulla pyörivää punaista palloa. Vireystilatestiä hieman häiritsi edellisen yön ompelutalkoot Heinolan hotelli Kumpelissa, mutta eiköhän tutkijoille jäänyt käyttökelpoistakin materiaalia.</P>\r\n<P>Testien yhteydessä käytiin läpi mukaan tulevia lääkintätarvikkeita, ja opeteltiin support-teamin Heikki Karisen johdolla ompelemaan haavoja umpeen. Tavoite on, että kaikista niistä vammoista ja sairauksista jotka on mahdollista jäällä hoitaa, selvitään omin avuin.</P>",
+    "Weather": null,
+    "Wind": null
+}
