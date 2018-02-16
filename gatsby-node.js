@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// TODO: Implement the following for JSON diary files
+// TODO: Implement the following for JSON diary files, and create pages based on template: https://www.gatsbyjs.org/docs/building-with-components/
 
 // // Implement the Gatsby API “createPages”. This is called once the
 // // data layer is bootstrapped to let plugins create pages from data.
