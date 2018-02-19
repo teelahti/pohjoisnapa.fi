@@ -3,7 +3,6 @@
     "CreatedDate": "2006-02-14T19:11:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-02-13T00:00:00",
-    "Id": 31,
     "Images": [
         {
             "Caption_en": "",
@@ -21,7 +20,8 @@
     "Subject_fi": "Retkikunnan lihotus loppusuoralla",
     "Temperature": null,
     "Text_en": "<p>Expedition is right now on a high fat diet. Every member tries to get at least 10 extra kilograms of fat. During the journey it isn't possible to eat as much as one needs for two reasons: 1) Body can't take enough calories, and 2) no-one can pull that much food in a sledge. A good way to gain&nbsp;weight is to eat as much oil, nuts, chips and bacon as possible.</p>",
-    "Text_fi": "<P>Hiihdon aikana ei ole mahdollista syödä kulutusta vastaavaa määrää ruokaa kahdesta syystä: 1. elimistö ei ota niin paljoa päivässä vastaan, ja 2. ruokaa ei painon vuoksi ole tarpeeksi mukana. Tämän vuoksi kaikki retkikunnan jäsenet ovat lihottaneet itseään, tavoitteena saada noin 10 kilon ylipaino. Osa on päässyt tavoitteeseen, osalla on vielä matkaa. Hyväksi lihottamiskeinoksi ovat osoittautuneet erilaiset öljyt, pähkinät, sipsit ja pekoni.</P>",
+    "Text_fi": "<P>Hiihdon aikana ei ole mahdollista sy\u00f6d\u00e4 kulutusta vastaavaa m\u00e4\u00e4r\u00e4\u00e4 ruokaa kahdesta syyst\u00e4: 1. elimist\u00f6 ei ota niin paljoa p\u00e4iv\u00e4ss\u00e4 vastaan, ja 2. ruokaa ei painon vuoksi ole tarpeeksi mukana. T\u00e4m\u00e4n vuoksi kaikki retkikunnan j\u00e4senet ovat lihottaneet itse\u00e4\u00e4n, tavoitteena saada noin 10 kilon ylipaino. Osa on p\u00e4\u00e4ssyt tavoitteeseen, osalla on viel\u00e4 matkaa. Hyv\u00e4ksi lihottamiskeinoksi ovat osoittautuneet erilaiset \u00f6ljyt, p\u00e4hkin\u00e4t, sipsit ja pekoni.</P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-02-13-retkikunnan-lihotus-loppusuoralla"
 }

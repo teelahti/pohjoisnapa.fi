@@ -3,7 +3,6 @@
     "CreatedDate": "2006-02-28T07:24:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-02-27T00:00:00",
-    "Id": 40,
     "Images": [
         {
             "Caption_en": "Shopping trip, Resolute-style.",
@@ -18,10 +17,11 @@
     "LocationLongitude": null,
     "LocationLongitudeEastWest": null,
     "Subject_en": "Stormy day",
-    "Subject_fi": "Myrskypäivä",
+    "Subject_fi": "Myrskyp\u00e4iv\u00e4",
     "Temperature": null,
-    "Text_en": "<P>Brisk wind today â€“ local weather station measured winds gusting to 40 m/s. On the other hand, the weather was really warm and wet; unseasonably so according to the locals. As a result, visibility was close to zero: finding the local police station was a major project.</P>\r\n<P>Otherwise, we spent the day on tasks similar to those of recent days â€“ packing food and fine-tuning our gear. Because of the mild weather, we didn't go out training today; just a short pulkha-run to the local shop to buy 160 litres of fuel and 6 litres of orange juice. The juice cost 10 Canadian Dollars. Guess how much the Fuel cost?</P>\r\n<P>All is well with the Expedition.</P>",
-    "Text_fi": "<P>Tänään on ollut melko reipas keli - paikallisen sääaseman tuulimittarissa on ollut puuskissa 40 m/s. Keli on samalla ollut todella lämmin ja märkä, paikallisten mukaan jopa poikkeuksellisen lämmin. Seurauksena edellisistä näkyvyys on ollut lähes nolla; paikallisen poliisiaseman löytäminenkin oli työn ja tuskan takana.</P>\r\n<P>Päivä on mennyt edellisten kaltaisesti - ruokaa pakatessa ja varusteita viritellessä. Ulkona ei kelin vuoksi tänään käyty treenaamassa. paikallisessa kaupassa käytiin ahkion kera ostamassa 160 litraa polttoainetta ja kuusi litraa appelsiinimehua. Mehu maksaa 10 kanadan dollaria pänikkä, polttoaine ei.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
+    "Text_en": "<P>Brisk wind today \u00e2\u20ac\u201c local weather station measured winds gusting to 40 m/s. On the other hand, the weather was really warm and wet; unseasonably so according to the locals. As a result, visibility was close to zero: finding the local police station was a major project.</P>\r\n<P>Otherwise, we spent the day on tasks similar to those of recent days \u00e2\u20ac\u201c packing food and fine-tuning our gear. Because of the mild weather, we didn't go out training today; just a short pulkha-run to the local shop to buy 160 litres of fuel and 6 litres of orange juice. The juice cost 10 Canadian Dollars. Guess how much the Fuel cost?</P>\r\n<P>All is well with the Expedition.</P>",
+    "Text_fi": "<P>T\u00e4n\u00e4\u00e4n on ollut melko reipas keli - paikallisen s\u00e4\u00e4aseman tuulimittarissa on ollut puuskissa 40 m/s. Keli on samalla ollut todella l\u00e4mmin ja m\u00e4rk\u00e4, paikallisten mukaan jopa poikkeuksellisen l\u00e4mmin. Seurauksena edellisist\u00e4 n\u00e4kyvyys on ollut l\u00e4hes nolla; paikallisen poliisiaseman l\u00f6yt\u00e4minenkin oli ty\u00f6n ja tuskan takana.</P>\r\n<P>P\u00e4iv\u00e4 on mennyt edellisten kaltaisesti - ruokaa pakatessa ja varusteita viritelless\u00e4. Ulkona ei kelin vuoksi t\u00e4n\u00e4\u00e4n k\u00e4yty treenaamassa. paikallisessa kaupassa k\u00e4ytiin ahkion kera ostamassa 160 litraa polttoainetta ja kuusi litraa appelsiinimehua. Mehu maksaa 10 kanadan dollaria p\u00e4nikk\u00e4, polttoaine ei.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
     "Weather": null,
-    "Wind": 40.0
+    "Wind": 40.0,
+    "Slug": "2006-02-27-myrskypaiva"
 }

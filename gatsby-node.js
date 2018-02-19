@@ -9,7 +9,6 @@
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const slug = require('slug');
   const path = require('path');
   const moment = require('moment');
 
@@ -22,6 +21,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             allDataJson {
               edges {
                 node {
+                  Slug
                   EntryDate
                   Subject_en
                   Subject_fi
@@ -37,9 +37,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
         // Create pages for each markdown file.
         result.data.allDataJson.edges.forEach(({ node }) => {
-          console.log("Entrydate", node.EntryDate);
           const entryDate = node.EntryDate;
-          const path = `/diary/${moment(entryDate).format("YYYY-MM-DD")}-${slug(node.Subject_fi.toLowerCase())}`;
+          const path = `/diary/${node.Slug}`;
+          
+          console.log("Creating page", path);
           
           createPage({
             path: path,

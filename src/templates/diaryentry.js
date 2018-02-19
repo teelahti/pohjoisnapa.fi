@@ -50,7 +50,7 @@ export const diaryEntryQuery = graphql`
     allDataJson(filter: { EntryDate: { eq: $entryDate } }) {
       edges {
         node {
-          Id
+          Slug
           EntryDate
           CreatedBy
           CreatedDate

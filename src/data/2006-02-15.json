@@ -3,11 +3,10 @@
     "CreatedDate": "2006-02-15T23:12:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-02-15T00:00:00",
-    "Id": 33,
     "Images": [
         {
             "Caption_en": "Warm clothes in cold test condition ",
-            "Caption_fi": "Lämpimät vaatteet kylmissä testiolosuhteissa",
+            "Caption_fi": "L\u00e4mpim\u00e4t vaatteet kylmiss\u00e4 testiolosuhteissa",
             "CreatedDate": "2006-02-15T23:12:00",
             "Id": 34
         }
@@ -18,10 +17,11 @@
     "LocationLongitude": 345008,
     "LocationLongitudeEastWest": "E",
     "Subject_en": "The expedition in a cold laboratory",
-    "Subject_fi": "Retkikunta kylmälaboratoriossa",
+    "Subject_fi": "Retkikunta kylm\u00e4laboratoriossa",
     "Temperature": null,
-    "Text_en": "The expedition is having the last physical tests in Department of Biology and Physical Activity, University of Jyväskylä. While driving to Jyväskylä the expedition had a visit in a cold room of the Hospital of Finnish Rheumatism Foundation where the temperature can be decreased as low as -110Â°C (-166Â°F). In a cold room the last tests were made to see how the electronics and the O-ring of the stoves can handle the cold temperature. It was warming to see that Marmot Down Clothes were actually hot to wear in such cold conditions.",
-    "Text_fi": "<P>Retkikunta pysähtyi matkalla Jyväskylän kuntotesteihin Heinolaan Reumasäätiön sairaalan kylmähuoneeseen. Huoneeseen saa parhaimmillaan (tai pahimmillaan) 110 astetta pakkasta. Kylmähuoneessa tehtiin uusi testaus keittimien tiivisteille, sekä elektroniikan akuille. Suurin osa testeistä tehtiin noin 60 asteen pakkasessa. Mukava yllätys oli, että Marmotin untuva-asussa tuli suorastaan hiki!</P>",
+    "Text_en": "The expedition is having the last physical tests in Department of Biology and Physical Activity, University of Jyv\u00e4skyl\u00e4. While driving to Jyv\u00e4skyl\u00e4 the expedition had a visit in a cold room of the Hospital of Finnish Rheumatism Foundation where the temperature can be decreased as low as -110\u00c2\u00b0C (-166\u00c2\u00b0F). In a cold room the last tests were made to see how the electronics and the O-ring of the stoves can handle the cold temperature. It was warming to see that Marmot Down Clothes were actually hot to wear in such cold conditions.",
+    "Text_fi": "<P>Retkikunta pys\u00e4htyi matkalla Jyv\u00e4skyl\u00e4n kuntotesteihin Heinolaan Reumas\u00e4\u00e4ti\u00f6n sairaalan kylm\u00e4huoneeseen. Huoneeseen saa parhaimmillaan (tai pahimmillaan) 110 astetta pakkasta. Kylm\u00e4huoneessa tehtiin uusi testaus keittimien tiivisteille, sek\u00e4 elektroniikan akuille. Suurin osa testeist\u00e4 tehtiin noin 60 asteen pakkasessa. Mukava yll\u00e4tys oli, ett\u00e4 Marmotin untuva-asussa tuli suorastaan hiki!</P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-02-15-retkikunta-kylmalaboratoriossa"
 }

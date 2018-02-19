@@ -3,17 +3,16 @@
     "CreatedDate": "2006-01-09T21:57:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-01-07T00:00:00",
-    "Id": 24,
     "Images": [
         {
             "Caption_en": "Toni in water in sking gear.",
-            "Caption_fi": "Toni vedessä hiihtoasuisena.",
+            "Caption_fi": "Toni vedess\u00e4 hiihtoasuisena.",
             "CreatedDate": "2006-01-22T00:38:00",
             "Id": 21
         },
         {
             "Caption_en": "Man starting to fall into water.",
-            "Caption_fi": "Mies vajoamassa jäihin.",
+            "Caption_fi": "Mies vajoamassa j\u00e4ihin.",
             "CreatedDate": "2006-01-22T00:40:00",
             "Id": 22
         }
@@ -24,10 +23,11 @@
     "LocationLongitude": 244600,
     "LocationLongitudeEastWest": "E",
     "Subject_en": "Expedition on weak ice",
-    "Subject_fi": "Retkikunta heikoilla jäillä",
+    "Subject_fi": "Retkikunta heikoilla j\u00e4ill\u00e4",
     "Temperature": null,
     "Text_en": "<P><FONT style=\"BACKGROUND-COLOR: #006699\">The expedition group trained how to act on weak ice. Pasi from the expedition support team had brought&nbsp;a tent with heating unit. Each member of the expedition group went to water with their special dry&nbsp;suit, without the suit, with and without skies. The dry suit has been designed together with <A href=\"http://www.sasta.fi/\">Sasta</A>&nbsp;and they worked as expected. The water without the dry suit is around this time of year just as cold as you can imagine.</FONT></P>\r\n<P><FONT style=\"BACKGROUND-COLOR: #006699\">Afternoon was spent at Mikko's appartment. Meeting agenda contained last gear decisions.</FONT></P>",
-    "Text_fi": "Aamu aloitettiin siirtymällä Suvisaariston sillan kupeeseen heikkojen jäiden treeniä varten. Retkikunnan support-tiimin jäsen Pasi järjesti paikalle lämmitetyn teltan kaikkine tarvittavine mukavuuksineen. Tämän jälkeen jokainen vuorollaan meni jäihin kuivapuvulla ja ilman, suksilla ja ilman. <A href=\"http://www.sasta.fi\">Sastan</A>&nbsp;kanssa yhteistyössä tehdyt kuivapuvut toimivat kuten pitikin, ja ilman kuivapukua vesi oli juuri niin kylmää kun tähän aikaan vuodesta voi olettaa sen olevan. <BR><BR>Puolen päivän jälkeen siirryttiin jälleen Mikon luokse jatkamaan kokoustelua. Päivän agendassa oli mm. viimeisiä varustepäätöksiä.",
+    "Text_fi": "Aamu aloitettiin siirtym\u00e4ll\u00e4 Suvisaariston sillan kupeeseen heikkojen j\u00e4iden treeni\u00e4 varten. Retkikunnan support-tiimin j\u00e4sen Pasi j\u00e4rjesti paikalle l\u00e4mmitetyn teltan kaikkine tarvittavine mukavuuksineen. T\u00e4m\u00e4n j\u00e4lkeen jokainen vuorollaan meni j\u00e4ihin kuivapuvulla ja ilman, suksilla ja ilman. <A href=\"http://www.sasta.fi\">Sastan</A>&nbsp;kanssa yhteisty\u00f6ss\u00e4 tehdyt kuivapuvut toimivat kuten pitikin, ja ilman kuivapukua vesi oli juuri niin kylm\u00e4\u00e4 kun t\u00e4h\u00e4n aikaan vuodesta voi olettaa sen olevan. <BR><BR>Puolen p\u00e4iv\u00e4n j\u00e4lkeen siirryttiin j\u00e4lleen Mikon luokse jatkamaan kokoustelua. P\u00e4iv\u00e4n agendassa oli mm. viimeisi\u00e4 varustep\u00e4\u00e4t\u00f6ksi\u00e4.",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-01-07-retkikunta-heikoilla-jailla"
 }

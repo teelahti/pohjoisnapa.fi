@@ -3,17 +3,16 @@
     "CreatedDate": "2006-01-09T21:53:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-01-06T00:00:00",
-    "Id": 23,
     "Images": [
         {
             "Caption_en": "The training unit. Additional weight on wheel is between 25-40 kg (50-80 lbs.).",
-            "Caption_fi": "Treenauksessa käytetty vetorengas. Painona on treenistä riippuen 25-40 kg.",
+            "Caption_fi": "Treenauksessa k\u00e4ytetty vetorengas. Painona on treenist\u00e4 riippuen 25-40 kg.",
             "CreatedDate": "2006-01-10T13:32:00",
             "Id": 18
         },
         {
             "Caption_en": "Poppis dragging a wheel.",
-            "Caption_fi": "Poppis vetämässä rengasta.",
+            "Caption_fi": "Poppis vet\u00e4m\u00e4ss\u00e4 rengasta.",
             "CreatedDate": "2006-01-10T13:33:00",
             "Id": 19
         }
@@ -27,7 +26,8 @@
     "Subject_fi": "Renkaanvetotreeni ja varustekokous",
     "Temperature": null,
     "Text_en": "<P>Expedition had a get-togerther starting at 8.00 in central park of Espoo. The target was to perform a refreshing three hour wheel dragging exercise. Afther the exercise, the group headed to Mikko's appartment to enjoy one of the most important targets - getting more weight -&nbsp; in a form of breakfast. After the breakfast, the day was spent on discussing gear and maintenance. During the day, the <A href=\"http://www.fischer.fi/\">skies</A> were prepared.</P>",
-    "Text_fi": "Retkikunta kokoontui aamulla kello 8.00 Espoon keskuspuistoon tekemään kolmen tunnin virkistävän rengastreenin. Tämän jälkeen siirryttiin Mikon luokse syömään yhtä tärkeimmistä tavoitteista, lihomista, edesauttava aamiainen. Tämän jälkeen päivä kului varusteista keskustelemisen sekä niiden huoltamisen ja valmistamisen merkeissä. Päivän aikana mm. <A href=\"http://www.fischer.fi/\">sukset</A> saivat siteet ja niiden pohjat hiottiin nousukarvojen liimaamista varten. ",
+    "Text_fi": "Retkikunta kokoontui aamulla kello 8.00 Espoon keskuspuistoon tekem\u00e4\u00e4n kolmen tunnin virkist\u00e4v\u00e4n rengastreenin. T\u00e4m\u00e4n j\u00e4lkeen siirryttiin Mikon luokse sy\u00f6m\u00e4\u00e4n yht\u00e4 t\u00e4rkeimmist\u00e4 tavoitteista, lihomista, edesauttava aamiainen. T\u00e4m\u00e4n j\u00e4lkeen p\u00e4iv\u00e4 kului varusteista keskustelemisen sek\u00e4 niiden huoltamisen ja valmistamisen merkeiss\u00e4. P\u00e4iv\u00e4n aikana mm. <A href=\"http://www.fischer.fi/\">sukset</A> saivat siteet ja niiden pohjat hiottiin nousukarvojen liimaamista varten. ",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-01-06-renkaanvetotreeni-ja-varustekokous"
 }

@@ -3,7 +3,6 @@
     "CreatedDate": "2006-04-29T21:01:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-04-29T00:00:00",
-    "Id": 100,
     "Images": [
         {
             "Caption_en": "",
@@ -18,10 +17,11 @@
     "LocationLongitude": 0,
     "LocationLongitudeEastWest": "W",
     "Subject_en": "Mission accomplished",
-    "Subject_fi": "Tehtävä suoritettu",
+    "Subject_fi": "Teht\u00e4v\u00e4 suoritettu",
     "Temperature": null,
     "Text_en": "<P>The Unsupported Expedition of the Airborne Rangers Club of Finland planted its Finnish Flag at the Geographic North Pole today, 4/29/2006 at 1931 Finnish time (1631 GMT).</P>\r\n<P>All is very, very excellent with Our Expedition.</P>\r\n<P>&nbsp;</P>",
-    "Text_fi": "<P>Retkikunta on pystyttänyt Suomen lipun maantieteelliselle pohjoisnavalle kello 19.31 Suomen aikaa.</P>\r\n<P>Retkikunnalla kaikki erittäin hyvin.</P>\r\n<P>*****************</P>\r\n<P>Updraget utfört.</P>\r\n<P>Expeditionen har hissat Finlands flagga på nordpolen kl 19.31 finsk tid.</P>\r\n<P>Expeditionen allt väldigt väl.</P>",
+    "Text_fi": "<P>Retkikunta on pystytt\u00e4nyt Suomen lipun maantieteelliselle pohjoisnavalle kello 19.31 Suomen aikaa.</P>\r\n<P>Retkikunnalla kaikki eritt\u00e4in hyvin.</P>\r\n<P>*****************</P>\r\n<P>Updraget utf\u00f6rt.</P>\r\n<P>Expeditionen har hissat Finlands flagga p\u00e5 nordpolen kl 19.31 finsk tid.</P>\r\n<P>Expeditionen allt v\u00e4ldigt v\u00e4l.</P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-04-29-tehtava-suoritettu"
 }

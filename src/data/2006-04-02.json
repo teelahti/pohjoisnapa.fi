@@ -3,11 +3,10 @@
     "CreatedDate": "2006-04-03T12:28:00",
     "DistanceTraveled": 17.0,
     "EntryDate": "2006-04-02T00:00:00",
-    "Id": 74,
     "Images": [
         {
             "Caption_en": "Pulling together, we can get the sledges over large obstacles.",
-            "Caption_fi": "Yhteistyöllä ahkiot nousevat isompienkin lohkareiden yli.",
+            "Caption_fi": "Yhteisty\u00f6ll\u00e4 ahkiot nousevat isompienkin lohkareiden yli.",
             "CreatedDate": "2006-04-03T12:44:00",
             "Id": 81
         }
@@ -21,7 +20,8 @@
     "Subject_fi": "Tasaista taaperrusta",
     "Temperature": -30.0,
     "Text_en": "<P>Routine North Pole Expedition day: more of the same steady, plodding progress. Our rate of advance during the average active skiing leg is 2 km/hour. The weather is changeable: from bright sunshine to snow. The snowflakes varied in type from tiny, diamond-like crystals to normal flakes.</P>\r\n<P>The whole team is feeling the fatigue. We are heavy-legged from 12-hour working days. After all, it has been over a week since our last rest day. We are really looking forward to Wednesday, our next scheduled day of recreation and servicing.</P>\r\n<P>All is well with the Expedition.</P>",
-    "Text_fi": "<P>Tätä se naparetkeily on. Tasaista taapertamista hiljallee eteenpäin. Kahden kilometrin tuntivauhtia päivämme eteni kohti napaa. Keli vaihteli kirkkaasta auringonpaisteesta kristallinkirkkaaseen hile- tai lumisateeseen.</P>\r\n<P>Kaikilla painaa jaloissa rankat 12 tunnin työpäivät. Edellisestä taukopäivästä on aikaa yli viikko, joten odottelemme jo innolla keskiviikolle suuniteltua lepopäivää.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>******</P>\r\n<P>Jämna plågor<BR><BR>Det äe det här arktiska expeditioner består av: ett evigt tragglande framåt i sakta mak. Vi närmar oss polen med en hastighet av 2 km/h. Vädret varierar från klart solsken till gnistrande iskristaller och snöfall.<BR><BR>Om kvällarna känns de tunga 12 timmarsdagarna minsann i benen. Det är över en vecka sedan vår förra vilodag och väntar verkligen på nästa som kommer på onsdag.<BR><BR>Expeditionen allt väl.</P>",
+    "Text_fi": "<P>T\u00e4t\u00e4 se naparetkeily on. Tasaista taapertamista hiljallee eteenp\u00e4in. Kahden kilometrin tuntivauhtia p\u00e4iv\u00e4mme eteni kohti napaa. Keli vaihteli kirkkaasta auringonpaisteesta kristallinkirkkaaseen hile- tai lumisateeseen.</P>\r\n<P>Kaikilla painaa jaloissa rankat 12 tunnin ty\u00f6p\u00e4iv\u00e4t. Edellisest\u00e4 taukop\u00e4iv\u00e4st\u00e4 on aikaa yli viikko, joten odottelemme jo innolla keskiviikolle suuniteltua lepop\u00e4iv\u00e4\u00e4.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>******</P>\r\n<P>J\u00e4mna pl\u00e5gor<BR><BR>Det \u00e4e det h\u00e4r arktiska expeditioner best\u00e5r av: ett evigt tragglande fram\u00e5t i sakta mak. Vi n\u00e4rmar oss polen med en hastighet av 2 km/h. V\u00e4dret varierar fr\u00e5n klart solsken till gnistrande iskristaller och sn\u00f6fall.<BR><BR>Om kv\u00e4llarna k\u00e4nns de tunga 12 timmarsdagarna minsann i benen. Det \u00e4r \u00f6ver en vecka sedan v\u00e5r f\u00f6rra vilodag och v\u00e4ntar verkligen p\u00e5 n\u00e4sta som kommer p\u00e5 onsdag.<BR><BR>Expeditionen allt v\u00e4l.</P>",
     "Weather": null,
-    "Wind": 3.0
+    "Wind": 3.0,
+    "Slug": "2006-04-02-tasaista-taaperrusta"
 }

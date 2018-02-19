@@ -3,7 +3,6 @@
     "CreatedDate": "2006-02-14T23:41:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-02-14T00:00:00",
-    "Id": 32,
     "Images": [
         {
             "Caption_en": "Communication equipment.",
@@ -21,7 +20,8 @@
     "Subject_fi": "Viesti kulkee",
     "Temperature": null,
     "Text_en": "<p>Communication equipment has been tested. While the expedition is on the move unsupported&nbsp;every piece of equipment is doubled for redundancy. For example the expedition travels with two satellite phones and two computers (PDA and laptop).</p>",
-    "Text_fi": "<P>Retkikunta on kokeillut viestivälineistöään. Koska liikkeellä ollaan ilman tukea, on lähes kaikki pyritty kahdentamaan. Retkikunnalla on mukana mm. kaksi puhelinta, kaksi tietokonetta (PDA ja kannettava).</P>",
+    "Text_fi": "<P>Retkikunta on kokeillut viestiv\u00e4lineist\u00f6\u00e4\u00e4n. Koska liikkeell\u00e4 ollaan ilman tukea, on l\u00e4hes kaikki pyritty kahdentamaan. Retkikunnalla on mukana mm. kaksi puhelinta, kaksi tietokonetta (PDA ja kannettava).</P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-02-14-viesti-kulkee"
 }

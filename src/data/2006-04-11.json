@@ -3,7 +3,6 @@
     "CreatedDate": "2006-04-12T09:19:00",
     "DistanceTraveled": 24.0,
     "EntryDate": "2006-04-11T00:00:00",
-    "Id": 83,
     "Images": [],
     "LastModifiedBy": "Antti Pohjolainen",
     "LastModifiedDate": "2006-04-12T14:22:00",
@@ -14,7 +13,8 @@
     "Subject_fi": "Matka taittaa",
     "Temperature": -15.0,
     "Text_en": "<P>Today the weather was just as fickle and hard to forecast as was yesterday's, but the terrain was more level. During the morning stint, the only obstacle hindering our progress was a narrow lead. We sprightly sprung over it. One ski boot took a dip.</P>\r\n<P>On the tenth leg of the day, Mother Nature told us that we should make camp for the night. We believed her. Visibility was again approaching zero due to whiteout and, furthermore, we stumbled into another rubble-strewn maze of pack ice. We had already posted a new distance record for the day: 24 km. These factors all considered, the decision to pitch camp was an easy one. Mother Nature is all-wise, and deserves listening to.</P>\r\n<P>It was a good day, and all is well with the Expedition.</P>",
-    "Text_fi": "<P>Tänään oli kelien vaihtelu yhtä käsittämätöntä kuin eilenkin, mutta maasto pysyi tasaisempana. Aamupäivällä ei tullut vastaan kuin yksi liikettä hidastava railo. Siitäkin heilahdettiin reippaasti yli, tosin yksi kenkä tuli samalla pestyä.</P>\r\n<P>Kymmenennellä legillä luonto oli sitä mieltä ettei meidän kannata jatkaa, ja me uskoimme. Näkyvyys meni jälleen white outin vuoksi, ja vastaan tuli kunnon rövelikkö. Takana oli jo uusi päiväennätys 24 km, joten päätös leiriytymisestä oli helppo. Hieno päivä.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>******* </P>\r\n<P>Ã„ven i dag fortsätter de snabba väderomslagen, men terrängen har varit jämnare. Det enda farthindret på förmiddagen var en råk, men ve tog oss över den i ett huj. På samma gång passade vi på att tvätta en skidpjäxa. Efter tio leg förstod vi av vädrets makter att det var dags att sätta punkt för dagen. Sikten blev noll till följd av whiteout och dessutom hade vi potatisfält framför oss. Vi hade redan satt ett ståtligt dagsrekord, så det var ett enkelt beslut att bivackera. En verkligt fin dag. Expeditionen allt väl.</P>",
+    "Text_fi": "<P>T\u00e4n\u00e4\u00e4n oli kelien vaihtelu yht\u00e4 k\u00e4sitt\u00e4m\u00e4t\u00f6nt\u00e4 kuin eilenkin, mutta maasto pysyi tasaisempana. Aamup\u00e4iv\u00e4ll\u00e4 ei tullut vastaan kuin yksi liikett\u00e4 hidastava railo. Siit\u00e4kin heilahdettiin reippaasti yli, tosin yksi kenk\u00e4 tuli samalla pesty\u00e4.</P>\r\n<P>Kymmenennell\u00e4 legill\u00e4 luonto oli sit\u00e4 mielt\u00e4 ettei meid\u00e4n kannata jatkaa, ja me uskoimme. N\u00e4kyvyys meni j\u00e4lleen white outin vuoksi, ja vastaan tuli kunnon r\u00f6velikk\u00f6. Takana oli jo uusi p\u00e4iv\u00e4enn\u00e4tys 24 km, joten p\u00e4\u00e4t\u00f6s leiriytymisest\u00e4 oli helppo. Hieno p\u00e4iv\u00e4.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>\r\n<P>******* </P>\r\n<P>\u00c3\u201even i dag forts\u00e4tter de snabba v\u00e4deromslagen, men terr\u00e4ngen har varit j\u00e4mnare. Det enda farthindret p\u00e5 f\u00f6rmiddagen var en r\u00e5k, men ve tog oss \u00f6ver den i ett huj. P\u00e5 samma g\u00e5ng passade vi p\u00e5 att tv\u00e4tta en skidpj\u00e4xa. Efter tio leg f\u00f6rstod vi av v\u00e4drets makter att det var dags att s\u00e4tta punkt f\u00f6r dagen. Sikten blev noll till f\u00f6ljd av whiteout och dessutom hade vi potatisf\u00e4lt framf\u00f6r oss. Vi hade redan satt ett st\u00e5tligt dagsrekord, s\u00e5 det var ett enkelt beslut att bivackera. En verkligt fin dag. Expeditionen allt v\u00e4l.</P>",
     "Weather": null,
-    "Wind": 10.0
+    "Wind": 10.0,
+    "Slug": "2006-04-11-matka-taittaa"
 }

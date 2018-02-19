@@ -3,7 +3,6 @@
     "CreatedDate": "2006-05-09T15:35:00",
     "DistanceTraveled": null,
     "EntryDate": "2006-05-05T00:00:00",
-    "Id": 106,
     "Images": [
         {
             "Caption_en": "All is happy with the Expedition.",
@@ -21,7 +20,8 @@
     "Subject_fi": "Retkikunta Suomessa",
     "Temperature": null,
     "Text_en": "<P>The Expedition arrived safe and happy back in Finland today after flying in from Spitzbergen via Oslo. After champagne, cakes and coffee, we held a well attended and successful press conference at Helsinki-Vantaa International Airport.</P>\r\n<P>After this, we returned to the welcome embrace of our families, having been away for nearly three long months.</P>\r\n<P>We would like to thank all our readers and followers for your support and questions. In your own very important way, you have helped us achieve our dream.</P>\r\n<P>Daily updates of this diary end with this entry.</P>\r\n<P>All is well with the Expedition.</P>",
-    "Text_fi": "<P>Retkikunta saapui onnellisesti Suomeen ja piti lehdistötilaisuuden Helsinki-Vantaan lentokentällä. Tämän jälkeen siirryttiin lähes kolmen kuukauden erossa olon jälkeen perheiden pariin.</P>\r\n<P>Kiitos kaikille lukijoille ja viestien lähettäjille. Olette omalta osaltanne auttaneet unelmamme toteuttamisessa. </P>\r\n<P>Päiväkirjan päivitykset loppuvat tähän. </P>\r\n<P>Retkikunnalla kaikki hyvin. </P>",
+    "Text_fi": "<P>Retkikunta saapui onnellisesti Suomeen ja piti lehdist\u00f6tilaisuuden Helsinki-Vantaan lentokent\u00e4ll\u00e4. T\u00e4m\u00e4n j\u00e4lkeen siirryttiin l\u00e4hes kolmen kuukauden erossa olon j\u00e4lkeen perheiden pariin.</P>\r\n<P>Kiitos kaikille lukijoille ja viestien l\u00e4hett\u00e4jille. Olette omalta osaltanne auttaneet unelmamme toteuttamisessa. </P>\r\n<P>P\u00e4iv\u00e4kirjan p\u00e4ivitykset loppuvat t\u00e4h\u00e4n. </P>\r\n<P>Retkikunnalla kaikki hyvin. </P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2006-05-05-retkikunta-suomessa"
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Moment from 'react-moment';
 import i18n from '../components/i18n'
-import diarySlug from '../components/diarySlug'
 
 const DiaryEntriesPage = (props) => (
   <div>
@@ -11,9 +10,9 @@ const DiaryEntriesPage = (props) => (
     <article>
       {
         props.data.allDataJson.edges.map(({ node }) => (
-          <div key={node.Id}>
+          <div key={node.Slug}>
             <Moment interval={0} date={node.EntryDate} format="D.M.YYYY" />
-            <Link to={"/diary/" + diarySlug(node.EntryDate, node.Subject_fi)} >
+            <Link to={"/diary/" + node.Slug} >
               {i18n.language === 'fi' ? node.Subject_fi : node.Subject_en}
             </Link>
           </div>
@@ -29,7 +28,7 @@ export const pageQuery = graphql`
     allDataJson {
       edges {
         node {
-          Id 
+          Slug
           EntryDate
           Subject_en
           Subject_fi

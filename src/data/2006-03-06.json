@@ -3,7 +3,6 @@
     "CreatedDate": "2006-03-07T07:03:00",
     "DistanceTraveled": 3.8,
     "EntryDate": "2006-03-06T00:00:00",
-    "Id": 47,
     "Images": [],
     "LastModifiedBy": "Antti Pohjolainen",
     "LastModifiedDate": "2006-03-08T08:48:00",
@@ -11,10 +10,11 @@
     "LocationLongitude": 741208,
     "LocationLongitudeEastWest": "W",
     "Subject_en": "First miles behind us",
-    "Subject_fi": "Ensimmäiset kilometrit takana",
+    "Subject_fi": "Ensimm\u00e4iset kilometrit takana",
     "Temperature": -39.0,
     "Text_en": "<P>Woke up this morning to a refreshing -44 C frost. We all felt a bit stiff after first night of trek-camp. Never mind, breakfast and camp-strike went well; we were on our way soon after 9 o'clock under a dark, clear morning sky.</P>\r\n<P>For a couple of hours we skied along the level shoreline of Ward Hunt Island. All too soon, the realities of arctic pack ice hit home. Ice boulders were piled up chaotically. The weight of our sledges seemed steadily to increase as the day drew on.</P>\r\n<P>After several hours struggle, we had traveled just over a kilometer. Willingly, we pitched camp for the night on a small but level ice plate, amidst a chaotic sea of pack ice. Day gave way to night at 4 o'clock in the afternoon. We dug out our head-lamps, pitched camp, cooked diner and went to bed.</P>\r\n<P>All is well with the Expedition.</P>",
-    "Text_fi": "<P>Aamulla heräsimme kirpeään pakkaskeliin. Lämpömittari näytti -44 C. Aamutoimissa oli pientä alkukankeutta, olihan takana ensimmäinen yö jäällä. Olosuhteet huomioiden kaikki meni kuitenkin hyvin ja matkaan päästiin aamuhämärissä jo pian yhdeksän jälkeen.</P>\r\n<P>Pari tuntia hiihdeltiin tasaista matalikkoa WardHuntin rannoilla. Mutta varsin pian arktinen totuus paljastui. Edessämme alkoi ahtojäät. Ahkioiden paino tuntui nousevan samaa tahtia ahtojäiden lisääntyessä.</P>\r\n<P>Muutaman tunnin äheltämisen jälkeen matkaa ahtojäissä oli kertynyt vähän toista kilometriä. Hyvillä mielin laitoimme teltat pystyyn pienelle tasaiselle platalle ahtojäiden keskellä. Päivä muuttui yöksi jo neljältä iltapäivällä ja otsalamput kaivetiin esille keittelyä ja muita iltatoimia varten.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
+    "Text_fi": "<P>Aamulla her\u00e4simme kirpe\u00e4\u00e4n pakkaskeliin. L\u00e4mp\u00f6mittari n\u00e4ytti -44 C. Aamutoimissa oli pient\u00e4 alkukankeutta, olihan takana ensimm\u00e4inen y\u00f6 j\u00e4\u00e4ll\u00e4. Olosuhteet huomioiden kaikki meni kuitenkin hyvin ja matkaan p\u00e4\u00e4stiin aamuh\u00e4m\u00e4riss\u00e4 jo pian yhdeks\u00e4n j\u00e4lkeen.</P>\r\n<P>Pari tuntia hiihdeltiin tasaista matalikkoa WardHuntin rannoilla. Mutta varsin pian arktinen totuus paljastui. Edess\u00e4mme alkoi ahtoj\u00e4\u00e4t. Ahkioiden paino tuntui nousevan samaa tahtia ahtoj\u00e4iden lis\u00e4\u00e4ntyess\u00e4.</P>\r\n<P>Muutaman tunnin \u00e4helt\u00e4misen j\u00e4lkeen matkaa ahtoj\u00e4iss\u00e4 oli kertynyt v\u00e4h\u00e4n toista kilometri\u00e4. Hyvill\u00e4 mielin laitoimme teltat pystyyn pienelle tasaiselle platalle ahtoj\u00e4iden keskell\u00e4. P\u00e4iv\u00e4 muuttui y\u00f6ksi jo nelj\u00e4lt\u00e4 iltap\u00e4iv\u00e4ll\u00e4 ja otsalamput kaivetiin esille keittely\u00e4 ja muita iltatoimia varten.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
     "Weather": null,
-    "Wind": 0.0
+    "Wind": 0.0,
+    "Slug": "2006-03-06-ensimmaiset-kilometrit-takana"
 }

@@ -3,7 +3,6 @@
     "CreatedDate": "2006-01-09T21:27:00",
     "DistanceTraveled": null,
     "EntryDate": "2005-05-03T00:00:00",
-    "Id": 19,
     "Images": [
         {
             "Caption_en": "",
@@ -21,7 +20,8 @@
     "Subject_fi": "Www-sivut avattu",
     "Temperature": null,
     "Text_en": "<P>The Expedition web pages are now on-line. Most up-to-date info will be made available through these pages. In the spring of 2006 during the actual expedition, a new entry and picture will be published daily. During the planning and preparatory phase you'll find the updates of the proceedings.</P>\r\n<P>Currently the preparations proceed as planned. There remains lots of work for gear development, planning the menu, medical preparations, communication and logistics. Budget preparations and other financial activities demand also lots of attention. Physical preparations take long time so training happens daily.</P>\r\n<P>Before the actual expedition there pages are periodically updated. Continuous updating will start in Spring 2006.</P>",
-    "Text_fi": "<P class=tilaa>Retkikunnan www-sivut on avattu. Näiden sivujen kautta tarjotaan uusinta tietoa retkikunnan vaiheista. Keväällä 2006 varsinaisen hiihdon aikana sivuille päivitetään uusi ote ja valokuva päivittäin. Suunnitteluvaiheessa tätä kautta löytyy tuoreimmat tilannekatsaukset.</P>\r\n<P>Tällä hetkellä retkikunnan valmistelu etenee ennakkosuunnitelmien mukaan. Varustekehityksessä ja ruokalistan, lääkintähuollon, viestiyhteyksien sekä logistiikan suunnittelussa riittää töitä. Budjetin laadinta ja rahoituksen järjestelyt vaativat myös suuria panostuksia. Fyysinen harjoittelu on pitkäjänteistä puuhaa, joten sen suhteen tehdään tässä vaiheessa töitä päivittäin. </P>\r\n<P>Ennen varsinaista retkikuntaa näitä sivuja päivitetään satunnaisesti. Jatkuva päivitys aloitetaan vasta keväällä 2006. </P>",
+    "Text_fi": "<P class=tilaa>Retkikunnan www-sivut on avattu. N\u00e4iden sivujen kautta tarjotaan uusinta tietoa retkikunnan vaiheista. Kev\u00e4\u00e4ll\u00e4 2006 varsinaisen hiihdon aikana sivuille p\u00e4ivitet\u00e4\u00e4n uusi ote ja valokuva p\u00e4ivitt\u00e4in. Suunnitteluvaiheessa t\u00e4t\u00e4 kautta l\u00f6ytyy tuoreimmat tilannekatsaukset.</P>\r\n<P>T\u00e4ll\u00e4 hetkell\u00e4 retkikunnan valmistelu etenee ennakkosuunnitelmien mukaan. Varustekehityksess\u00e4 ja ruokalistan, l\u00e4\u00e4kint\u00e4huollon, viestiyhteyksien sek\u00e4 logistiikan suunnittelussa riitt\u00e4\u00e4 t\u00f6it\u00e4. Budjetin laadinta ja rahoituksen j\u00e4rjestelyt vaativat my\u00f6s suuria panostuksia. Fyysinen harjoittelu on pitk\u00e4j\u00e4nteist\u00e4 puuhaa, joten sen suhteen tehd\u00e4\u00e4n t\u00e4ss\u00e4 vaiheessa t\u00f6it\u00e4 p\u00e4ivitt\u00e4in. </P>\r\n<P>Ennen varsinaista retkikuntaa n\u00e4it\u00e4 sivuja p\u00e4ivitet\u00e4\u00e4n satunnaisesti. Jatkuva p\u00e4ivitys aloitetaan vasta kev\u00e4\u00e4ll\u00e4 2006. </P>",
     "Weather": null,
-    "Wind": null
+    "Wind": null,
+    "Slug": "2005-05-03-www-sivut-avattu"
 }
