@@ -23,5 +23,7 @@
     "Text_fi": "<P>P\u00e4iv\u00e4 meni j\u00e4lleen ruokia pakatessa ja kadoksissa olevia kuivalihoja mets\u00e4st\u00e4ess\u00e4. P\u00e4iv\u00e4llisen j\u00e4lkeen l\u00e4hdettiin hiiht\u00e4m\u00e4\u00e4n pieni matka meren j\u00e4\u00e4lle, jossa t\u00e4ll\u00e4 hetkell\u00e4 ollaan y\u00f6t\u00e4. Tarkoitus on testata telttojen pystytys ja telttaj\u00e4rjestys sek\u00e4 muut telttael\u00e4m\u00e4\u00e4n liittyv\u00e4t rutiinit. </P>\r\n<P>Aamulla siirryt\u00e4\u00e4n takaisin LVIS-olosuhteisiin.</P>\r\n<P>Retkikunnalla kaikki hyvin.</P>",
     "Weather": null,
     "Wind": 3.0,
-    "Slug": "2006-02-28-yo-ulkona"
+    "Slug": "2006-02-28-yo-ulkona",
+    "Previous": "2006-02-27-myrskypaiva",
+    "Next": "2006-03-01-ruokaa-pusseihin"
 }

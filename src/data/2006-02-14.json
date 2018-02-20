@@ -23,5 +23,7 @@
     "Text_fi": "<P>Retkikunta on kokeillut viestiv\u00e4lineist\u00f6\u00e4\u00e4n. Koska liikkeell\u00e4 ollaan ilman tukea, on l\u00e4hes kaikki pyritty kahdentamaan. Retkikunnalla on mukana mm. kaksi puhelinta, kaksi tietokonetta (PDA ja kannettava).</P>",
     "Weather": null,
     "Wind": null,
-    "Slug": "2006-02-14-viesti-kulkee"
+    "Slug": "2006-02-14-viesti-kulkee",
+    "Previous": "2006-02-13-retkikunnan-lihotus-loppusuoralla",
+    "Next": "2006-02-15-retkikunta-kylmalaboratoriossa"
 }
