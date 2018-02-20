@@ -1,0 +1,11 @@
+{
+    "data" : {
+        "distance": "Kuljettu matka:",
+        "temperature": "Lämpötila:",
+        "wind": "Tuuli:"
+    },
+    "links" : {
+        "prev": "Edellinen",
+        "next": "Seuraava"
+    }    
+}

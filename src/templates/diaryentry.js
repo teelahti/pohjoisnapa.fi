@@ -1,47 +1,59 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 import Moment from 'react-moment';
 import i18n from '../components/i18n';
+import { translate } from "react-i18next";
 import LatLong from '../components/LatLong';
+import DiaryImage from '../components/DiaryImage';
 
 const DiaryEntry = (props) => {
   const doc = props.data.allDataJson.edges[0].node;
+  const t = props.t;
+  let subject = i18n.language === 'fi' ? doc.Subject_fi : doc.Subject_en;
 
-  // TODO: Make images as component and do the popup
   return (
-    <article>
-      <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {i18n.language === 'fi' ? doc.Subject_fi : doc.Subject_en}</h1>
+    <article className="diaryentry">
+      <Helmet title={`Pohjoisnapa 2006 - ${subject}`} />
+
+      <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />
 
       <div className="diaryentry-text" dangerouslySetInnerHTML={{ __html: i18n.language === 'fi' ? doc.Text_fi : doc.Text_en} } />
 
       {doc.Images ?
       <aside className="diaryentry-images">
-        {doc.Images.map(img => (
-          <img 
-            src={`/images/paivakirja/${img.Id.toString().padStart(3, "0")}-small.jpeg`} 
-            alt={i18n.language === 'fi' ? img.Caption_fi : img.Caption_en} />
-        ))}
+        {doc.Images.map(img => 
+          <DiaryImage key={img.Id} id={img.Id} caption={i18n.language === 'fi' ? img.Caption_fi : img.Caption_en} /> )}
       </aside> : false
       }
 
       <aside className="diaryentry-data">
         <dl>
-          <dt>Distance traveled:</dt>
+          <dt>{t("data.distance")}</dt>
           <dd>{doc.DistanceTraveled ? doc.DistanceTraveled : 0} km</dd>
-          <dt>Temperature:</dt>
+          <dt>{t("data.temperature")}</dt>
           <dd>{doc.Temperature ? doc.Temperature : "n/a"}°C</dd>
-          <dt>Wind:</dt>
+          <dt>{t("data.wind")}</dt>
           <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
         </dl>
       </aside>
+
+      <footer>
+          <div id="diaryentry-prev" className="diaryentry-nav">
+            {doc.Previous && <Link to={`/diary/${doc.Previous}`}>{t("links.prev")}</Link> }
+          </div>
+          <div id="diaryentry-next" className="diaryentry-nav">
+            {doc.Next && <Link to={`/diary/${doc.Next}`}>{t("links.next")}</Link> }
+          </div>
+      </footer>
 
     </article>
   );
 }
 
-export default DiaryEntry
+export default translate("DiaryEntry")(DiaryEntry)
 
 // Query for the content for this particular page.
 // entryDate variable is set from the createPage context at gatsby-node.js
@@ -51,6 +63,8 @@ export const diaryEntryQuery = graphql`
       edges {
         node {
           Slug
+          Previous
+          Next
           EntryDate
           CreatedBy
           CreatedDate

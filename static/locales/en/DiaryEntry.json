@@ -1,0 +1,11 @@
+{
+    "data" : {
+        "distance": "Distance traveled:",
+        "temperature": "Temperature:",
+        "wind": "Wind:"
+    },
+    "links" : {
+        "prev": "Previous",
+        "next": "Next"
+    }
+}
