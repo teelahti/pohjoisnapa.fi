@@ -38,9 +38,14 @@ const DiaryEntry = (props) => {
           <dt>{t("data.wind")}</dt>
           <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
         </dl>
+        <Link to="/data">{t("data.link")}</Link>
       </aside>
 
       <footer>
+          <ul className="diaryentry-dates">
+            <li>{t("created")} <Moment date={doc.CreatedDate} format="D.M.YYYY h.mm" />.</li>
+            <li>{t("lastModified")} <Moment date={doc.LastModifiedDate} format="D.M.YYYY h.mm" />.</li>
+          </ul>
           <div id="diaryentry-prev" className="diaryentry-nav">
             {doc.Previous && <Link to={`/diary/${doc.Previous}`}>{t("links.prev")}</Link> }
           </div>

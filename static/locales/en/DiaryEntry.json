@@ -2,10 +2,14 @@
     "data" : {
         "distance": "Distance traveled:",
         "temperature": "Temperature:",
-        "wind": "Wind:"
+        "wind": "Wind:",
+        "link": "Expedition data..."
     },
     "links" : {
-        "prev": "Previous",
-        "next": "Next"
-    }
+        "prev": "Previous day",
+        "next": "Next day"
+    },
+    "created": "Entry saved at",
+    "lastModified": "Updated at"
+
 }

@@ -2,10 +2,13 @@
     "data" : {
         "distance": "Kuljettu matka:",
         "temperature": "Lämpötila:",
-        "wind": "Tuuli:"
+        "wind": "Tuuli:",
+        "link": "Etenemisdata..."
     },
     "links" : {
-        "prev": "Edellinen",
-        "next": "Seuraava"
-    }    
+        "prev": "Edellinen päivä",
+        "next": "Seuraava päivä"
+    },
+    "created": "Päiväkirjamerkintä tallennettu",
+    "lastModified": "Muokattu viimeksi"
 }

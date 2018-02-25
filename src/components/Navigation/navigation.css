@@ -1,0 +1,13 @@
+.nav-active {
+    font-weight: bold;
+}
+
+/* Hide sub menu by default */
+ul.nav-sub {
+    display: none;
+}
+
+/* Show sub-menu when main menu is active */
+.nav-active + ul.nav-sub {
+    display: block;
+}

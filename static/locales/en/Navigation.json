@@ -1,3 +1,40 @@
 {
-    "firsttest": "This comes from resource file!"
+    "home": "Frontpage",
+    "expedition": {
+        "index": "Expedition",
+        "background": "Background",
+        "objectives": "Objectives",
+        "timetable": "Timetable",
+        "research": "Research",
+        "equipment": "Equipment",
+        "club": "Airborne Ranger Club"
+    },
+    "diary": {
+        "index": "Diary",
+        "all": "All entries",
+        "last": "Most recent entry",
+        "data": "Data",
+        "book": "Book"
+    },
+    "gallery": {
+        "index": "Gallery",
+        "ice": "Images from the ice",
+        "previous": "Images from previous expeditions",
+        "press": "Press images"
+    },
+    "sponsors": {
+        "index": "Sponsors",
+        "list": "Sponsorlist",
+        "media": "Media",
+        "events": "Events"
+    },
+    "arctic": {
+        "index": "Arctic",
+        "history": "History",
+        "polarBear": "Polar bear",
+        "climateChange": "Climate change",
+        "orienteering": "Orienteering",
+        "photographing": "Photographing",
+        "food": "Food"
+    }
 }
