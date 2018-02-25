@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import LanguageSwitcher from '../LanguageSwitcher'
 
 const Header = () => (
   <div
@@ -23,9 +24,10 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Pohjoisnapa
         </Link>
       </h1>
+      <LanguageSwitcher />
     </div>
   </div>
 )

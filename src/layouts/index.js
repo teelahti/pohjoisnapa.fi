@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import i18n from '../components/i18n'
 
 import Header from '../components/Header'
-import LanguageSwitcher from '../components/LanguageSwitcher'
 import Navigation from '../components/Navigation'
 import './index.css'
 
@@ -18,7 +17,6 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <LanguageSwitcher />
     <Navigation />
     <div
       style={{
