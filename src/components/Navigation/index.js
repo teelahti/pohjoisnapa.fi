@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { translate } from "react-i18next";
 import Link, { withPrefix } from 'gatsby-link';
-import './navigation.css'
+import './navigation.scss'
 
 const ListLink = props =>
   <li>
@@ -18,7 +18,7 @@ class Navigation extends Component {
     return (
       <nav id="nav">
         <ul className="nav-main">
-          <ListLink to="/" exact="true" text={t("home")} />
+          <ListLink to="/" exact={true} text={t("home")} />
           <ListLink to="/expedition" text={t("expedition.index")}>
             <ul className="nav-sub">
               <ListLink to="/expedition/background" text={t("expedition.background")} />
@@ -29,10 +29,9 @@ class Navigation extends Component {
               <ListLink to="/expedition/club" text={t("expedition.club")} />
             </ul>
           </ListLink>
-          <ListLink to="/diary" text={t("diary.index")}>
+          <ListLink to="/diary/2006-05-05-retkikunta-suomessa" text={t("diary.index")}>
             <ul className="nav-sub">
               <ListLink to="/diary/all" text={t("diary.all")} />
-              <ListLink to="/diary/last" text={t("diary.last")} />
               <ListLink to="/diary/data" text={t("diary.data")} />
               <ListLink to="/diary/book" text={t("diary.book")} />
             </ul>
@@ -46,6 +45,7 @@ class Navigation extends Component {
           </ListLink>
           <ListLink to="/sponsors" text={t("sponsors.index")}>
             <ul className="nav-sub">
+
               <ListLink to="/sponsors/list" text={t("sponsors.list")} />
               <ListLink to="/sponsors/media" text={t("sponsors.media")} />
               <ListLink to="/sponsors/events" text={t("sponsors.events")} />

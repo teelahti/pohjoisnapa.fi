@@ -12,7 +12,6 @@
     "diary": {
         "index": "Diary",
         "all": "All entries",
-        "last": "Most recent entry",
         "data": "Data",
         "book": "Book"
     },

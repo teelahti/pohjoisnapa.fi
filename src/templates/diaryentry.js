@@ -15,7 +15,7 @@ const DiaryEntry = (props) => {
 
   return (
     <article className="diaryentry">
-      <Helmet title={`Pohjoisnapa 2006 - ${subject}`} />
+      <Helmet title={`${t("translations:expeditionName")} - ${subject}`} />
 
       <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />

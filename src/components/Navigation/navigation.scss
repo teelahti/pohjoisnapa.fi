@@ -1,0 +1,47 @@
+
+nav#nav {
+    /* Both menu and submenu shared: */
+    ul {
+        width: 100%;
+        list-style: none;
+        margin: 0 0 1.5rem 0;
+        padding: 0; 
+        display: flex;
+    }
+    li {
+        display: block;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;   
+        
+        & a {
+            text-decoration: none;
+        }
+
+        & a:hover {
+            color: #eee;
+        }              
+    }
+
+    .nav-active {
+        font-weight: bold;
+    }    
+
+    /* Main menu specific styles */
+    ul.nav-main {
+
+    }
+
+    /* Sub-menu specific styles */
+    ul.nav-sub {
+        /* Hide sub menu by default */
+        display: none;
+        font-size: 0.8em;
+    }
+
+    /* Show sub-menu when main menu is active */
+    .nav-active + ul.nav-sub {
+        display: block;
+    }    
+}

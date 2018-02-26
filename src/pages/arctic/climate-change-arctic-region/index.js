@@ -1,10 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { translate } from "react-i18next";
+import Link from 'gatsby-link';
 
-const pageId = "history";
+const pageId = "climateChangeArctic";
 
-const History = ({t}) => (
+const ClimateChangeArctic = ({t}) => (
     <article id={pageId} className="contentpage">
       <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
 
@@ -12,7 +13,8 @@ const History = ({t}) => (
 
       <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
+      <Link to="/arctic/climate-change">{t("prev")}</Link>
     </article>
   );
 
-export default translate(pageId)(History)
+export default translate(pageId)(ClimateChangeArctic)

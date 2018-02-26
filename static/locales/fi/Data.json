@@ -1,10 +1,10 @@
 {
-    "GraphResource1.AlternateText": null,
-    "GraphResource1.ToolTip": null,
-    "otsikkoResource1.Text": "Retkikunnan päiväkohtainen eteneminen",
-    "PageResource1.Title": "Pohjoisnapa 2006 - Retkikunnan eteneminen",
-    "TableHeaderDistanceResource1.Text": "Matka",
-    "TableHeaderPvmResource1.Text": "Pvm",
-    "TableHeaderTemperatureResource1.Text": "Lämpötila",
-    "TableHeaderWindResource1.Text": "Tuuli"
+    "header": "Retkikunnan päiväkohtainen eteneminen",
+    "title": "Pohjoisnapa 2006 - Retkikunnan eteneminen",
+    "table": {
+        "distance": "Matka",
+        "date": "Pvm",
+        "temperature": "Lämpötila",
+        "wind": "Tuuli"
+    }
 }

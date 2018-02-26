@@ -12,7 +12,6 @@
     "diary": {
         "index": "Päiväkirja",
         "all": "Kaikki päiväkirjaotteet",
-        "last": "Tuorein päiväkirjaote",
         "data": "Data",
         "book": "Kirja"
     },

@@ -1,10 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { translate } from "react-i18next";
+import backgroundImg from './naamat-huurussa.jpg';
 
-const pageId = "history";
+const pageId = "background";
 
-const History = ({t}) => (
+const Background = ({t}) => (
     <article id={pageId} className="contentpage">
       <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
 
@@ -12,7 +13,11 @@ const History = ({t}) => (
 
       <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
+      <aside>      
+        <img alt={t("imgAlt")} src={backgroundImg} />
+      </aside>
+        
     </article>
   );
 
-export default translate(pageId)(History)
+export default translate(pageId)(Background)

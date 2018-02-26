@@ -7,7 +7,7 @@ const pageId = "arctic";
 
 const Arctic = ({t}) => (
     <article id={pageId} className="contentpage">
-      <Helmet title={`Pohjoisnapa 2006 - ${t("title")}`} />
+      <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
 
       <h1>{t("header")}</h1>
 
