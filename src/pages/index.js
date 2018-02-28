@@ -32,7 +32,6 @@ const IndexPage = ({ t }) => (
       </aside>
     </div>
         
-
   </article>
 );
 
