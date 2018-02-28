@@ -1,0 +1,19 @@
+{
+    "title": "Pohjoisnapa 2006",
+    "diary" : {
+        "header" : "Tuorein päiväkirjaote",
+        "subHeader" : "4.5.2006   RETKIKUNTA SUOMESSA",
+        "text" : "Retkikunta saapui onnellisesti Suomeen ja piti lehdistötilaisuuden Helsinki-Vantaan lentokentällä. Tämän jälkeen siirryttiin lähes kolmen kuukauden erossa olon jälkeen perheiden pariin. ...",
+        "readMore": "Lue lisää"
+    },  
+    "expedition" : {
+        "header": "Retkikunta",
+        "subHeader" : "Unsupport-retkikunta pohjoisnavalle",
+        "readMore": "Lue lisää",
+        "text": "Laskuvarjojääkärikillan retkikunta hiihti maantieteelliselle pohjoisnavalle keväällä 2006. Seitsem&auml;n hengen unsupport- retkikunta lähti liikkeelle Pohjoiskanadasta Ward Huntista maaliskuun alussa ..."
+    },
+    "book" : {
+        "header" : "Kirja \"Pohjoisnapa - jäinen haaste\" julkaistu",
+        "orderLink": "Tutustu ja tilaa..."
+    }
+}

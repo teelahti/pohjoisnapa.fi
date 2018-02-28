@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import i18n from '../components/i18n'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
 import './index.css'
 
@@ -28,6 +29,7 @@ const TemplateWrapper = ({ children }) => (
     >
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

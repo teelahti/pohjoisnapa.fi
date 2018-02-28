@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { translate } from "react-i18next";
-import researchImg from './KiHuPerttu1024.jpg';
+import researchImg from './KiHuPerttu360.jpg';
 
 const pageId = "research";
 

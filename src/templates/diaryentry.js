@@ -58,7 +58,7 @@ const DiaryEntry = (props) => {
   );
 }
 
-export default translate("DiaryEntry")(DiaryEntry)
+export default translate("diaryEntry")(DiaryEntry)
 
 // Query for the content for this particular page.
 // entryDate variable is set from the createPage context at gatsby-node.js

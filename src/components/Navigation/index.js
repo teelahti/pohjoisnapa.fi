@@ -45,7 +45,6 @@ class Navigation extends Component {
           </ListLink>
           <ListLink to="/sponsors" text={t("sponsors.index")}>
             <ul className="nav-sub">
-
               <ListLink to="/sponsors/list" text={t("sponsors.list")} />
               <ListLink to="/sponsors/media" text={t("sponsors.media")} />
               <ListLink to="/sponsors/events" text={t("sponsors.events")} />
@@ -67,4 +66,4 @@ class Navigation extends Component {
   }
 }
 
-export default translate("Navigation")(Navigation);
+export default translate("navigation")(Navigation);

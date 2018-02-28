@@ -1,8 +1,8 @@
 {
-    "introTextResource1.Text": "<p> Matkan aikana retkikuntaa säännöllisesti seuraavat MTV 3:n Huomenta Suomi, Radio Nova, Apu-lehti, sekä Retki-lehti.  Myös useat valtakunnalliset ja alueelliset sanoma- ja aikakausilehdet seuraavat ja  kirjoittavat retkikunnasta matkan aikana.</p> <p> Myöhemmin vuonna 2006 tehdään matkasta TV-dokumentti, tai -dokumenttisarja. Dokumentin julkaisuajankohta on vielä avoinna.</p>",
-    "Localize1Resource1.Text": "<p>Mukana ovat vain artikkelit jotka on kirjoitettu ennen liikkeelle lähtöä.</p>",
-    "otsikkoArtikkelitResource1.Text": "Retkikuntaa käsittelevät artikkelit",
-    "otsikkoEsiintymisetResource1.Text": "TV- ja radioesiintymiset",
-    "otsikkoMediaResource1.Text": "Retkikunnan medianäkyvyys",
-    "PageResource1.Title": "Pohjoisnapa 2006 - Medianäkyvyys"
+    "text": "<p> Matkan aikana retkikuntaa säännöllisesti seuraavat MTV 3:n Huomenta Suomi, Radio Nova, Apu-lehti, sekä Retki-lehti.  Myös useat valtakunnalliset ja alueelliset sanoma- ja aikakausilehdet seuraavat ja  kirjoittavat retkikunnasta matkan aikana.</p> <p> Myöhemmin vuonna 2006 tehdään matkasta TV-dokumentti, tai -dokumenttisarja. Dokumentin julkaisuajankohta on vielä avoinna.</p>",
+    "articlesText": "<p>Mukana ovat vain artikkelit jotka on kirjoitettu ennen liikkeelle lähtöä.</p>",
+    "articlesHeader": "Retkikuntaa käsittelevät artikkelit",
+    "eventsHeader": "TV- ja radioesiintymiset",
+    "header": "Retkikunnan medianäkyvyys",
+    "title": "Medianäkyvyys"
 }
