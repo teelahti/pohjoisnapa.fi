@@ -1,25 +1,24 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import orienteeringImg from "./ahtojaissa-jermi.jpg";
 
 const pageId = "orienteering";
 
 const Orienteering = ({t}) => (
-    <article id={pageId} className="contentpage">
-      <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
 
-      <h1>{t("header")}</h1>
+    <h1>{t("header")}</h1>
 
-      <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-      <div className="footnote" dangerouslySetInnerHTML={{ __html: t("footnote")} } />
+    <div className="footnote" dangerouslySetInnerHTML={{ __html: t("footnote")} } />
 
-      <aside>
-        <img alt={t("imgAlt")} src={orienteeringImg} />
-      </aside>
+    <aside>
+      <img alt={t("imgAlt")} src={orienteeringImg} />
+    </aside>
 
-    </article>
+  </Page>
   );
 
 export default translate(pageId)(Orienteering)

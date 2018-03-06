@@ -1,15 +1,14 @@
 import React from 'react'
 import Moment from 'react-moment';
 import moment from 'moment';
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import dataImg from './data.jpg';
 
 const pageId = "data";
 
 const DiaryData = ({ t, data }) => (
-  <article id={pageId} className="contentpage">
-    <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
 
     <h1>{t("header")}</h1>
 
@@ -48,7 +47,7 @@ const DiaryData = ({ t, data }) => (
       </tbody>
     </table>
 
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(DiaryData)

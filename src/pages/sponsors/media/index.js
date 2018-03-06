@@ -1,12 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 
 const pageId = "media";
 
 const Media = ({ t }) => (
-  <article id={pageId} className="contentpage">
-    <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
 
     <h1>{t("header")}</h1>
 
@@ -44,7 +43,7 @@ const Media = ({ t }) => (
       <li>
         Huomenta suomi, MTV 3, joka maanantai kello 6.38</li>
     </ul>
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(Media)

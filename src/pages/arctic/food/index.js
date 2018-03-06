@@ -1,26 +1,25 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import foodImg from './tero-ja-perttu-syo.jpg';
 
 const pageId = "food";
 
-const Food = ({t}) => (
-    <article id={pageId} className="contentpage">
-      <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+const Food = ({ t }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
 
-      <h1>{t("header")}</h1>
+    <h1>{t("header")}</h1>
 
-      <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-      <aside id="food-recipe">
-        <img alt={t("recipe.imgAlt")} src={foodImg} />
-        
-        <h2>{t("recipe.header")}</h2>
+    <aside id="food-recipe">
+      <img alt={t("recipe.imgAlt")} src={foodImg} />
+      
+      <h2>{t("recipe.header")}</h2>
 
-        <div dangerouslySetInnerHTML={{ __html: t("recipe.text")} } />
-      </aside>
-    </article>
-  );
+      <div dangerouslySetInnerHTML={{ __html: t("recipe.text")} } />
+    </aside>
+  </Page>
+);
 
 export default translate(pageId)(Food)

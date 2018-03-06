@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import Link from 'gatsby-link';
 import { translate } from "react-i18next";
 import i18n from '../../../components/i18n';
@@ -23,9 +23,7 @@ const GalleryAtIcePage = ({ t, data }) => {
     );
 
   return (
-    <article id={pageId} className="contentpage">
-      <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
-
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h1>{t("header")}</h1>
 
       <Link to="/gallery">{t("link")}</Link>
@@ -35,7 +33,7 @@ const GalleryAtIcePage = ({ t, data }) => {
         showThumbnails={true}
       />
 
-    </article>
+    </Page>
   );
 };
 

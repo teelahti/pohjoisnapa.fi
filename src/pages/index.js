@@ -1,13 +1,12 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { translate } from "react-i18next";
 import Link, { withPrefix } from 'gatsby-link'
+import Page, { headerImages } from "../components/Page";
 
 const pageId = "index";
 
 const IndexPage = ({ t }) => (
-  <article id={pageId} className="contentpage">
-    <Helmet title={t("translations:expeditionName")} />
+  <Page id={pageId} headerImg={headerImages.top5}>
 
     <div>
       <h2>{t("diary.header")}</h2>
@@ -32,7 +31,7 @@ const IndexPage = ({ t }) => (
       </aside>
     </div>
         
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(IndexPage)

@@ -1,23 +1,22 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import backgroundImg from './naamat-huurussa.jpg';
 
 const pageId = "background";
 
-const Background = ({t}) => (
-    <article id={pageId} className="contentpage">
-      <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+const Background = ({ t }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
 
-      <h1>{t("header")}</h1>
+    <h1>{t("header")}</h1>
 
-      <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-      <aside>      
-        <img alt={t("imgAlt")} src={backgroundImg} />
-      </aside>
-        
-    </article>
-  );
+    <aside>      
+      <img alt={t("imgAlt")} src={backgroundImg} />
+    </aside>
+      
+  </Page>
+);
 
 export default translate(pageId)(Background)

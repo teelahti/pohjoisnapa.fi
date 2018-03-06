@@ -1,13 +1,11 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 
 const pageId = "equipment";
 
 const Equipment = ({ t }) => (
-  <article id={pageId} className="contentpage">
-    <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
-
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top6}>
     <h1>{t("header")}</h1>
 
     <table id="varustelista">
@@ -763,7 +761,7 @@ const Equipment = ({ t }) => (
           Yhteensä sisältäen mm.</td>
         <td>
         </td>
-        <td colspan="2">
+        <td colSpan="2">
           60 kg</td>
       </tr>
       <tr>
@@ -864,7 +862,7 @@ const Equipment = ({ t }) => (
       </tr>
     </table>
 
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(Equipment)

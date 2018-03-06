@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Moment from 'react-moment';
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import i18n from '../../../components/i18n'
 
 const pageId = "diaryList";
 
 const DiaryEntriesPage = ({ t, data }) => (
-  <article>
-    <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
 
     <h1>{t("header")}</h1>
 
@@ -24,7 +23,7 @@ const DiaryEntriesPage = ({ t, data }) => (
           </li>
         ))}
     </ul>
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(DiaryEntriesPage)

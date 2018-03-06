@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
 import Moment from 'react-moment';
 import i18n from '../components/i18n';
+import Page, { headerImages } from "../components/Page";
 import { translate } from "react-i18next";
 import LatLong from '../components/LatLong';
 import DiaryImage from '../components/DiaryImage';
@@ -14,8 +14,7 @@ const DiaryEntry = (props) => {
   let subject = i18n.language === 'fi' ? doc.Subject_fi : doc.Subject_en;
 
   return (
-    <article className="diaryentry">
-      <Helmet title={`${t("translations:expeditionName")} - ${subject}`} />
+    <Page id="diaryentry" title={subject} headerImg={headerImages.top5}>
 
       <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />
@@ -54,7 +53,7 @@ const DiaryEntry = (props) => {
           </div>
       </footer>
 
-    </article>
+    </Page>
   );
 }
 

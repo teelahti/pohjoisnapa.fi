@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Page, { headerImages } from "../../components/Page";
 import Link from 'gatsby-link';
 import { translate } from "react-i18next";
 
@@ -41,14 +41,13 @@ const Big = props =>
     <p>{props.children}</p>
   </div>
 
-const Small = props => 
+const Small = props =>
   <Big to={props.to} img={props.img} name={props.name} width="150px" className="sponsors-small">
     {props.children}
   </Big>
 
 const Sponsors = ({ t }) => (
-  <article id={pageId} className="contentpage">
-    <Helmet title={`${t("translations:expeditionName")} - ${t("title")}`} />
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
 
     <div id="isottukijat">
       <Big name="Sasta" to="http://www.sasta.fi" img={sasta}></Big>
@@ -111,7 +110,7 @@ const Sponsors = ({ t }) => (
       <Small name="Garmin" to="http://www.garmin.fi" img={garmin}></Small>          
     </div>
 
-  </article>
+  </Page>
 );
 
 export default translate(pageId)(Sponsors)

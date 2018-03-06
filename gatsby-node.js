@@ -40,8 +40,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           const entryDate = node.EntryDate;
           const path = `/diary/${node.Slug}`;
           
-          console.log("Creating page", path);
-          
           createPage({
             path: path,
             component: diaryTemplate,
