@@ -4,8 +4,8 @@ import { translate } from "react-i18next";
 
 const pageId = "sponsors-list";
 
-const List = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
+const List = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
     <h1>{t("header")}</h1>
 
     <table>

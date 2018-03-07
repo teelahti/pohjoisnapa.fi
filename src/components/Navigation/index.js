@@ -1,25 +1,27 @@
 import React, { Component } from "react";
 import { translate } from "react-i18next";
-import Link, { withPrefix } from 'gatsby-link';
+import LanLink from '../LanLink';
 import './navigation.scss'
 
-const ListLink = props =>
-  <li>
-    <Link activeClassName="nav-active" to={props.to} exact={props.exact}>
-      {props.text}
-    </Link>
-    {props.children}
-  </li>
 
 class Navigation extends Component {
   render() {
-    const { t } = this.props;
+    const { t, i18n } = this.props;
+    const lan = i18n.language;
+
+    const ListLink = ({ to, exact, text, children }) =>
+      <li>
+        <LanLink activeClassName="nav-active" to={to} lan={lan} exact={exact}>
+          {text}
+        </LanLink>
+        {children}
+      </li>
 
     return (
       <nav id="nav">
         <ul className="nav-main">
-          <ListLink to="/" exact={true} text={t("home")} />
-          <ListLink to="/expedition" text={t("expedition.index")}>
+          <ListLink to="/" exact={true} text={t("home")}  />
+          <ListLink to="/expedition" text={t("expedition.index")} >
             <ul className="nav-sub">
               <ListLink to="/expedition/background" text={t("expedition.background")} />
               <ListLink to="/expedition/objectives" text={t("expedition.objectives")} />

@@ -1,13 +1,13 @@
 import React from 'react'
 import Page, { headerImages } from "../../../components/Page";
-import Link from 'gatsby-link';
+import LanLink from '../../../components/LanLink';
 import { translate } from "react-i18next";
 import i18n from '../../../components/i18n';
 import Gallery from '../../../components/Gallery';
 
 const pageId = "gallery-at-ice";
 
-const GalleryAtIcePage = ({ t, data }) => {
+const GalleryAtIcePage = ({ t, pathContext, data }) => {
 
   let imgs = data.allDataJson.edges
     .filter(({ node }) => node.Images && new Date(node.EntryDate) > new Date(2006, 2, 4))
@@ -23,10 +23,10 @@ const GalleryAtIcePage = ({ t, data }) => {
     );
 
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
       <h1>{t("header")}</h1>
 
-      <Link to="/gallery">{t("link")}</Link>
+      <LanLink to="/gallery" lan={pathContext.language}>{t("link")}</LanLink>
 
       <Gallery
         images={imgs}

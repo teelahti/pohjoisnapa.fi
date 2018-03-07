@@ -1,14 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Moment from 'react-moment';
 import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import i18n from '../../../components/i18n'
+import LanLink from '../../../components/LanLink';
 
 const pageId = "diaryList";
 
-const DiaryEntriesPage = ({ t, data }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
+const DiaryEntriesPage = ({ t, pathContext, data }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 
@@ -17,9 +17,9 @@ const DiaryEntriesPage = ({ t, data }) => (
         data.allDataJson.edges.map(({ node }) => (
           <li key={node.Slug}>
             <Moment interval={0} date={node.EntryDate} format="D.M.YYYY" />
-            <Link to={"/diary/" + node.Slug} >
+            <LanLink to={"/diary/" + node.Slug} lan={pathContext.language} >
               {i18n.language === 'fi' ? node.Subject_fi : node.Subject_en}
-            </Link>
+            </LanLink>
           </li>
         ))}
     </ul>

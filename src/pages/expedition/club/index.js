@@ -5,8 +5,8 @@ import clubImg from './kartanlukua.jpg';
 
 const pageId = "club";
 
-const Club = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
+const Club = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

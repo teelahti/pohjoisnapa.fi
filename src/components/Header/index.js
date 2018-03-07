@@ -1,5 +1,5 @@
 import React from 'react'
-import Link, { withPrefix } from 'gatsby-link'
+import LanLink from "../LanLink";
 import LanguageSwitcher from '../LanguageSwitcher'
 
 import top1 from "./top1.jpg";
@@ -25,17 +25,18 @@ const Header = (props) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
+        <LanLink
           to="/"
+          lan={props.lan}
           style={{
             color: 'white',
             textDecoration: 'none',
           }}
         >
           Pohjoisnapa
-        </Link>
+        </LanLink>
       </h1>
-      <LanguageSwitcher />
+      <LanguageSwitcher lan={props.lan} />
     </div>
   </div>
 )

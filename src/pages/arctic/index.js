@@ -5,8 +5,8 @@ import img from './paivakirja360.jpg';
 
 const pageId = "arctic";
 
-const Arctic = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
+const Arctic = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
     <h1>{t("header")}</h1>
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />

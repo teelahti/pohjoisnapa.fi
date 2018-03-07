@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 // TODO: Format in 2 number chunks
 const LatLong = ({lat, long, eastWest}) => (

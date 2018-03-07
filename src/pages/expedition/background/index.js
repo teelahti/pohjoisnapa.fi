@@ -5,8 +5,8 @@ import backgroundImg from './naamat-huurussa.jpg';
 
 const pageId = "background";
 
-const Background = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
+const Background = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

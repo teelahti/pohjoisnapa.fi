@@ -1,6 +1,6 @@
 import React from 'react'
 import Page, { headerImages } from "../../components/Page";
-import Link from 'gatsby-link';
+import LanLink from '../../components/LanLink';
 import { translate } from "react-i18next";
 
 import sasta from "./img/Sasta.jpg";
@@ -46,8 +46,8 @@ const Small = props =>
     {props.children}
   </Big>
 
-const Sponsors = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
+const Sponsors = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
 
     <div id="isottukijat">
       <Big name="Sasta" to="http://www.sasta.fi" img={sasta}></Big>
@@ -56,7 +56,7 @@ const Sponsors = ({ t }) => (
       </Big>
       <Big name="Jalas" to="http://www.jalas.fi" img={jalas}></Big>
       <Big name="Apu" to="http://www.apu.fi" img={apu}>
-        Lue <Link to="/sponsors/media">Apu-lehden artikkelit.</Link>
+        Lue <LanLink to="/sponsors/media" lan={pathContext.language}>Apu-lehden artikkelit.</LanLink>
       </Big>
       <Big name="Ernst &amp; Young" to="http://www.ey.com/fi/" img={ey}>
         Ernst & Young on taloushallinnon ja liikkeenjohdon asiantuntijaorganisaatio, jonka palveluksessa on

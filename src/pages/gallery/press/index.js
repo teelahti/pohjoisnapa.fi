@@ -1,6 +1,5 @@
 import React from 'react'
 import Page, { headerImages } from "../../../components/Page";
-import Link from 'gatsby-link';
 import { translate } from "react-i18next";
 import i18n from '../../../components/i18n';
 
@@ -26,10 +25,10 @@ const Fig = props =>
     </figcaption>
   </figure>
 
-const GalleryPressPage = ({ t }) => {
+const GalleryPressPage = ({ t, pathContext }) => {
 
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
 
       <h1>{t("header")}</h1>
       <p>

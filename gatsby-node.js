@@ -23,14 +23,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                 node {
                   Slug
                   EntryDate
-                  Subject_en
-                  Subject_fi
                 }
               }
             }
           }
-        `
-      ).then(result => {
+        `).then(result => {
         if (result.errors) {
           reject(result.errors);
         }
@@ -39,18 +36,62 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         result.data.allDataJson.edges.forEach(({ node }) => {
           const entryDate = node.EntryDate;
           const path = `/diary/${node.Slug}`;
-          
-          createPage({
-            path: path,
-            component: diaryTemplate,
-            layout: `index`,
-            // Use EntryDate as context to be able to query the contents
-            context: {
-              entryDate: node.EntryDate,
-            },
-          });
+
+          let basePageInfo = {
+              path: path,
+              component: diaryTemplate,
+              layout: `index`,
+              // Use EntryDate as context to be able to query the contents
+              context: {
+                entryDate: node.EntryDate,
+              }
+            };
+
+          generatePageInfos(basePageInfo).map(page => createPage(page));
         });
       })
     );
   });
 };
+
+// Create language versions of pages. Based on:
+// https://github.com/gatsbyjs/gatsby/issues/3853#issuecomment-365216769
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage, deletePage } = boundActionCreators;
+
+  return new Promise((resolve, reject) => {
+
+    if (page.path.match(/^\/[\w-\/]*\/?$/) && !page.path.includes("404")) {
+      const i18nPages = generatePageInfos(page);
+      deletePage(page);
+      i18nPages.map(page => createPage(page));
+    }
+
+    resolve();
+  });
+}
+
+function generatePageInfos(defaultInfos) {
+
+  const pageFI = {
+    ...defaultInfos,
+    context: {
+      ...defaultInfos.context,
+      language: "fi"
+    },
+    // Use the original path for FI
+    path: defaultInfos.path
+  };
+
+  const pageEN = {
+    ...defaultInfos,
+    context: {
+      ...defaultInfos.context,
+      language: "en"
+    },
+    // Use altered path for EN
+    path: "/en" + defaultInfos.path
+  };
+
+  return [pageFI, pageEN];
+}

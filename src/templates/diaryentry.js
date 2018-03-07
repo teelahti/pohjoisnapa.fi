@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link'
+import LanLink from '../components/LanLink';
 import Moment from 'react-moment';
 import i18n from '../components/i18n';
 import Page, { headerImages } from "../components/Page";
@@ -8,23 +8,23 @@ import { translate } from "react-i18next";
 import LatLong from '../components/LatLong';
 import DiaryImage from '../components/DiaryImage';
 
-const DiaryEntry = (props) => {
-  const doc = props.data.allDataJson.edges[0].node;
-  const t = props.t;
-  let subject = i18n.language === 'fi' ? doc.Subject_fi : doc.Subject_en;
+const DiaryEntry = ({data, t, pathContext }) => {
+  const doc = data.allDataJson.edges[0].node;
+  const language = pathContext.language;
+  let subject = doc[`Subject_${language}`];
 
   return (
-    <Page id="diaryentry" title={subject} headerImg={headerImages.top5}>
+    <Page id="diaryentry" title={subject} headerImg={headerImages.top5} language={language}>
 
       <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />
 
-      <div className="diaryentry-text" dangerouslySetInnerHTML={{ __html: i18n.language === 'fi' ? doc.Text_fi : doc.Text_en} } />
+      <div className="diaryentry-text" dangerouslySetInnerHTML={{ __html: doc[`Text_${language}`] }} />
 
       {doc.Images ?
       <aside className="diaryentry-images">
         {doc.Images.map(img => 
-          <DiaryImage key={img.Id} id={img.Id} caption={i18n.language === 'fi' ? img.Caption_fi : img.Caption_en} /> )}
+          <DiaryImage key={img.Id} id={img.Id} caption={img[`Caption_${language}`]} /> )}
       </aside> : false
       }
 
@@ -37,7 +37,7 @@ const DiaryEntry = (props) => {
           <dt>{t("data.wind")}</dt>
           <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
         </dl>
-        <Link to="/data">{t("data.link")}</Link>
+        <LanLink to="/diary/data" lan={language}>{t("data.link")}</LanLink>
       </aside>
 
       <footer>
@@ -46,10 +46,10 @@ const DiaryEntry = (props) => {
             <li>{t("lastModified")} <Moment date={doc.LastModifiedDate} format="D.M.YYYY h.mm" />.</li>
           </ul>
           <div id="diaryentry-prev" className="diaryentry-nav">
-            {doc.Previous && <Link to={`/diary/${doc.Previous}`}>{t("links.prev")}</Link> }
+            {doc.Previous && <LanLink to={`/diary/${doc.Previous}`} lan={language}>{t("links.prev")}</LanLink> }
           </div>
           <div id="diaryentry-next" className="diaryentry-nav">
-            {doc.Next && <Link to={`/diary/${doc.Next}`}>{t("links.next")}</Link> }
+            {doc.Next && <LanLink to={`/diary/${doc.Next}`} lan={language}>{t("links.next")}</LanLink> }
           </div>
       </footer>
 

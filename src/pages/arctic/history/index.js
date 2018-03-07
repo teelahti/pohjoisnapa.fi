@@ -4,8 +4,8 @@ import { translate } from "react-i18next";
 
 const pageId = "history";
 
-const History = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
+const History = ({ t, language }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

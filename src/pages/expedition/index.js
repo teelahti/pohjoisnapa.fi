@@ -12,8 +12,8 @@ import toni from "./toni4.jpg";
 
 const pageId = "expedition";
 
-const Expedition = ({t}) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
+const Expedition = ({t, pathContext}) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

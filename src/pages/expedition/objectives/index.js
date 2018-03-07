@@ -5,8 +5,8 @@ import objectivesImg from './leirin-pystytys.jpg';
 
 const pageId = "objectives";
 
-const Objectives = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top2}>
+const Objectives = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top2} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

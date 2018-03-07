@@ -5,8 +5,8 @@ import foodImg from './tero-ja-perttu-syo.jpg';
 
 const pageId = "food";
 
-const Food = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
+const Food = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

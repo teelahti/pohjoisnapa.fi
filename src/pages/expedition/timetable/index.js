@@ -5,8 +5,8 @@ import objectivesImg from './leirin-pystytys.jpg';
 
 const pageId = "timetable";
 
-const Timetable = ({t}) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
+const Timetable = ({t, pathContext}) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language}>
 
     <h1>{t("header")}</h1>
 

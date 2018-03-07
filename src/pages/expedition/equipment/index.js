@@ -4,8 +4,8 @@ import { translate } from "react-i18next";
 
 const pageId = "equipment";
 
-const Equipment = ({ t }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top6}>
+const Equipment = ({ t, pathContext }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top6} language={pathContext.language}>
     <h1>{t("header")}</h1>
 
     <table id="varustelista">
