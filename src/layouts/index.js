@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// Need to be included once somewhere in the app for translations to work
+import "../components/i18n.js";
+
 import './normalize.css'
 
 const TemplateWrapper = ({ children }) => (

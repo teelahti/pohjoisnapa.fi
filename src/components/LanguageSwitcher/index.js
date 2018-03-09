@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import LanLink from "../LanLink";
-import classNames from "classnames";
 
 const languages = [
   {
