@@ -9,36 +9,34 @@ import top6 from "./top6.jpg";
 import top7 from "./top7.jpg";
 import top8 from "./top8.jpg";
 
-const Header = (props) => (
-  <div
-    style={{
-      backgroundImage: `url(${props.img ? props.img : top5})`,
-      height: "182px",
-      marginBottom: '1.45rem',
-    }}
-  >
+import logo from "./logo_vaalea.gif";
+
+const Header = ({lan, img}) => (
+  <header>
+    <LanguageSwitcher lan={lan} />
     <div
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        backgroundImage: `url(${img ? img : top5})`,
+        width: "740px",
+        height: "181px",
+        marginBottom: '5px',
       }}
     >
       <h1 style={{ margin: 0 }}>
         <LanLink
           to="/"
-          lan={props.lan}
+          lan={lan}
           style={{
-            color: 'white',
-            textDecoration: 'none',
+            position: "relative",
+            left: "30px",
+            top: "118px",
           }}
         >
-          Pohjoisnapa
+          <img src={logo} />
         </LanLink>
       </h1>
-      <LanguageSwitcher lan={props.lan} />
     </div>
-  </div>
+  </header>
 )
 
 export default Header

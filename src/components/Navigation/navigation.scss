@@ -1,5 +1,29 @@
 
 nav#nav {
+    margin-left: 230px;
+    color: #CCCCCC;
+    font-family: Arial Narrow, Arial;
+    font-stretch: condensed;
+	font-weight: bold;
+	font-size: 11pt;
+	text-transform: uppercase;
+    text-align: center;
+
+    a, a:visited {
+        text-decoration: none;
+        color: #CCCCCC;
+    }              
+
+    a:hover {
+        color: #ccc;
+        text-decoration: underline;
+    }    
+    
+    a.nav-active {
+        font-weight: bold;
+        color: #fff;
+    }        
+
     /* Both menu and submenu shared: */
     ul {
         width: 100%;
@@ -14,19 +38,7 @@ nav#nav {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: auto;   
-        
-        & a {
-            text-decoration: none;
-        }
-
-        & a:hover {
-            color: #eee;
-        }              
     }
-
-    .nav-active {
-        font-weight: bold;
-    }    
 
     /* Main menu specific styles */
     ul.nav-main {

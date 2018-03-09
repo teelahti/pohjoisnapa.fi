@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import LanLink from "../LanLink";
+import styles from "./languageswitcher.scss";
 
 const languages = [
   {
@@ -14,7 +15,7 @@ const languages = [
 
 const LanguageSwitcher = ({ lan }) => {
   return <div className="LanguageSwitcher" > {
-          languages.filter(s => s.code !== lan).map(language => <LanLink to="/" lan={language.code}>{language.label}</LanLink>)
+          languages.filter(s => s.code !== lan).map(language => <LanLink key={language.code} to="/" lan={language.code}>{language.label}</LanLink>)
         } </div>;
 };
 

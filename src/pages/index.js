@@ -4,17 +4,21 @@ import { withPrefix } from "gatsby-link";
 import LanLink from "../components/LanLink";
 import Page, { headerImages } from "../components/Page";
 
+import styles from "./index.scss";
+
 const pageId = "index";
 
 const IndexPage = ({ t, pathContext }) => (
   <Page id={pageId} headerImg={headerImages.top5} language={pathContext.language}>
 
-    <div>
-      <h2>{t("diary.header")}</h2>
-      <h3>{t("diary.subHeader")}</h3>
-      <p>
-        {t("diary.text")} <LanLink to="/diary/2006-05-05-retkikunta-suomessa" lan={pathContext.language}>{t("diary.readMore")}</LanLink>
-      </p>
+    <div id="index-latestdiary">
+      <div>
+        <h2>{t("diary.header")}</h2>
+        <h3>{t("diary.subHeader")}</h3>
+        <p>
+          {t("diary.text")} <LanLink to="/diary/2006-05-05-retkikunta-suomessa" lan={pathContext.language}>{t("diary.readMore")}</LanLink>
+        </p>
+      </div>
       <aside>
         <img src={withPrefix("/images/paivakirja/099-small.jpeg")} />
       </aside>

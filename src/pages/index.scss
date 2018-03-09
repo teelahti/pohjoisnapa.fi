@@ -1,0 +1,41 @@
+.etusivu {
+  width: 595px;
+  margin: 0.1em 0 1.1em 145px;
+}
+
+.kokoblokki {
+  width: 100%;
+  min-height: 150px;
+}
+
+.puoliblokki {
+  width: 47%;
+}
+
+.vasen {
+  float: left;
+  clear: left;
+}
+
+.oikea {
+  float: right;
+}
+
+
+/* Etusivulla oleva tuorein p�iv�kirjakuva */
+
+#index-latestdiary {
+  display: flex;
+
+  aside {
+    
+    img {
+        position: relative;
+        float: right;
+        vertical-align: top;
+        width: 128px;
+        height: 100px;
+        padding: 0 0.5em 0 1em;
+      }
+  }
+}
