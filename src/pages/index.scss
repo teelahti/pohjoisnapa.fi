@@ -1,41 +1,51 @@
-.etusivu {
-  width: 595px;
-  margin: 0.1em 0 1.1em 145px;
+#index {
+    display: flex;
+    min-height: 350px;
+
+    #index-content {
+        width: 595px;
+        margin: 40px 0 0 147px;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        margin: 0;
+        padding-top: 0px;
+    }
+  
+    p {
+        margin-top: 2px;
+    }
 }
-
-.kokoblokki {
-  width: 100%;
-  min-height: 150px;
-}
-
-.puoliblokki {
-  width: 47%;
-}
-
-.vasen {
-  float: left;
-  clear: left;
-}
-
-.oikea {
-  float: right;
-}
-
-
-/* Etusivulla oleva tuorein p�iv�kirjakuva */
 
 #index-latestdiary {
   display: flex;
 
   aside {
-    
+    margin-top: 25px;
+    padding-left: 5px;
+
     img {
         position: relative;
         float: right;
         vertical-align: top;
         width: 128px;
         height: 100px;
-        padding: 0 0.5em 0 1em;
       }
   }
+}
+
+#index-static {
+    display: flex;
+
+    div {
+        width: 280px;
+    }
+
+    aside {
+        margin: 35px 0 0 35px;
+    }
 }

@@ -8,7 +8,7 @@ const pageId = "research";
 const Research = ({ t, pathContext }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language}>
 
-    <h1>{t("header")}</h1>
+    <h2>{t("header")}</h2>
 
     <img alt={t("imgAlt")} src={researchImg} />
     

@@ -10,6 +10,10 @@ import stamp from "./vesileima.gif";
 
 import bg1 from "./sana-finnish.gif";
 import bg2 from "./sana-expedition.gif";
+import bg3 from "./tex_northpole2.gif";
+
+import map from "./kartta.jpg";
+import gradient from "./gradient.jpg";
 
 import './index.scss'
 
@@ -38,15 +42,16 @@ class Page extends React.PureComponent {
   render() {
     const { id, title, headerImg, t, children, i18n } = this.props;
 
+    let leftColumnImg = id === "index" ? map : gradient;
+
     return (
       <div
         style={{
           background: `url(${bg1}) no-repeat 30px 150px, url(${bg2}) no-repeat calc(100% - (100% - 740px)/2 + 130px) 290px`,
-        }}
-      >  
+        }}>  
         <div id="main"
           style={{
-            background: `url(${stamp}) no-repeat right 195px`,
+            background: `url(${leftColumnImg}) no-repeat left top 196px, url(${stamp}) no-repeat right 195px`,
           }}
         >
           <Helmet
@@ -59,7 +64,12 @@ class Page extends React.PureComponent {
           <Header img={headerImg} lan={i18n.language} />
           <Navigation />
 
-          <article id={id} className="contentpage">
+          <article 
+            id={id} 
+            className="contentpage"
+            style={{
+              background: `url(${bg3}) no-repeat right bottom 3px`
+            }}>
 
             {children}
           

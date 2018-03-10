@@ -38,7 +38,7 @@ const GalleryPreviousPage = ({ t, pathContext }) => {
   return (
     <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
 
-      <h1>{t("header")}</h1>
+      <h2>{t("header")}</h2>
 
       <Gallery
         images={imgs}

@@ -7,7 +7,7 @@ const pageId = "media";
 const Media = ({ t, pathContext }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
 
-    <h1>{t("header")}</h1>
+    <h2>{t("header")}</h2>
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
 

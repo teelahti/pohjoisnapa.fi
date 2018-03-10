@@ -141,7 +141,7 @@ export default {
             "header": "Retkikunta",
             "subHeader": "Unsupport-retkikunta pohjoisnavalle",
             "readMore": "Lue lisää",
-            "text": "Laskuvarjojääkärikillan retkikunta hiihti maantieteelliselle pohjoisnavalle keväällä 2006. Seitsem&auml;n hengen unsupport- retkikunta lähti liikkeelle Pohjoiskanadasta Ward Huntista maaliskuun alussa ..."
+            "text": "Laskuvarjojääkärikillan retkikunta hiihti maantieteelliselle pohjoisnavalle keväällä 2006. Seitsemän hengen unsupport- retkikunta lähti liikkeelle Pohjoiskanadasta Ward Huntista maaliskuun alussa ..."
         },
         "book": {
             "header": "Kirja \"Pohjoisnapa - jäinen haaste\" julkaistu",

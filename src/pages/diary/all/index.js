@@ -10,7 +10,7 @@ const pageId = "diaryList";
 const DiaryEntriesPage = ({ t, pathContext, data }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
 
-    <h1>{t("header")}</h1>
+    <h2>{t("header")}</h2>
 
     <ul className="diary-list">
       {

@@ -9,7 +9,7 @@ const pageId = "book";
 const Book = ({ t, pathContext }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
 
-    <h1>{t("header")}</h1>
+    <h2>{t("header")}</h2>
 
     <p>
       Laskuvarjojääkärikillan retkikunta saavutti suomalaisella sisukkuudella maantieteellisen

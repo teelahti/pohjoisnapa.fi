@@ -2,16 +2,10 @@ import React from 'react'
 import { translate } from "react-i18next";
 
 import styles from "./footer.scss";
-import bg1 from "./tex_northpole2.gif";
 import bg2 from "./sana-unsupported.gif";
 
 const Footer = ({ t }) => 
-  <footer
-    style={{
-      background: `url(${bg1}) no-repeat right top`,
-      padding: "35px 0"
-    }}
-  >
+  <footer>
     <div 
       id="footer-text"
       style={{

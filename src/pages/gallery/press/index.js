@@ -30,7 +30,7 @@ const GalleryPressPage = ({ t, pathContext }) => {
   return (
     <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
 
-      <h1>{t("header")}</h1>
+      <h2>{t("header")}</h2>
       <p>
         Lehdistokuvat vapaassa tiedotuskäytässä 20.5.2006 asti. Käytön yhteydessä mainittava
         kuvaaja Poppicok/Kari Poppis Suomela. Kuviin liittyvät tiedustelut tai lisäkuvien
