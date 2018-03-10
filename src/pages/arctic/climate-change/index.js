@@ -5,8 +5,8 @@ import LanLink from '../../../components/LanLink';
 
 const pageId = "climateChange";
 
-const ClimateChange = ({ t, pathContext }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
+const ClimateChange = ({ t, pathContext, location }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
 

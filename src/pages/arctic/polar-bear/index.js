@@ -5,8 +5,8 @@ import polarBearImg from "./jaakarhu-levinneisyys.gif";
 
 const pageId = "polarBear";
 
-const PolarBear = ({t, pathContext}) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
+const PolarBear = ({t, pathContext, location }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
 

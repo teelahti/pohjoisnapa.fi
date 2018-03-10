@@ -5,12 +5,12 @@ import './navigation.scss'
 
 class Navigation extends Component {
   render() {
-    const { t, i18n } = this.props;
+    const { location, t, i18n } = this.props;
     const lan = i18n.language;
 
-    const ListLink = ({ to, exact, text, children }) =>
+    const ListLink = ({ to, exact, text, children, ...rest }) =>
       <li>
-        <LanLink activeClassName="nav-active" to={to} lan={lan} exact={exact}>
+        <LanLink activeClassName="nav-active" to={to} lan={lan} exact={exact} {...rest}>
           {text}
         </LanLink>
         {children}
@@ -69,24 +69,50 @@ class Navigation extends Component {
       }
     }
 
+    let subNav = null;
+
+    // regex: (\/.{2}\/){0,1} + path
+    // Iterate through paths and check which one is active
+    //var pathTest = new RegExp("\/.{2}\/){0,1}");
+    console.log("path", location.pathname);
+    Object.keys(nav).forEach(path => {
+      // Test with or without language
+      var pathReg = new RegExp("(\/[a-z]{2}\/){0,1}" + path + "$");
+      if (pathReg.test(location.pathname)) {
+        nav[path].active = true;
+        subNav = nav[path].sub;
+      } else if (nav[path].sub) {
+        // Check if any subpath matches
+        Object.keys(nav[path].sub).forEach(subpath => {
+          var subReg = new RegExp("(\/[a-z]{2}\/){0,1}" + subpath);
+          if (subReg.test(location.pathname)) {
+            nav[path].active = true;
+            nav[path].sub[subpath].active = true;
+            subNav = nav[path].sub;
+          }
+        });
+      }
+    });
+
+    console.log("subnav", subNav);
+
     return (
       <nav id="nav">
         <ul className="nav-main">
           {
             Object.keys(nav).map(p => 
-              <ListLink to={p} exact={nav[p].exact} text={nav[p].text}>
-                { nav[p].sub ? 
-                  <ul className="nav-sub">
-                  {
-                    Object.keys(nav[p].sub).map(sp => 
-                      <ListLink to={sp} exact={nav[p].sub[sp].exact} text={nav[p].sub[sp].text} />
-                    ) 
-                  } 
-                  </ul> : false } 
-              </ListLink>
+              <ListLink key={p} to={p} exact={nav[p].exact} text={nav[p].text} className={nav[p].active ? "nav-active" : ""} />
             )
           }
         </ul>
+        { subNav ? 
+          <ul className="nav-sub">
+          {
+            Object.keys(subNav).map(p => 
+              <ListLink key={p} to={p} exact={subNav[p].exact} text={subNav[p].text} />
+            ) 
+          } 
+          </ul> : false } 
       </nav>
     );
   }

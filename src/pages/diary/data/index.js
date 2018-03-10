@@ -8,7 +8,7 @@ import dataImg from './data.jpg';
 const pageId = "data";
 
 const DiaryData = ({ t, pathContext, data }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}  language={pathContext.language}>
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5}  language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
 

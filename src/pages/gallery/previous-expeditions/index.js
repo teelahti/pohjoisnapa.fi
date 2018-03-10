@@ -6,7 +6,7 @@ import Gallery from '../../../components/Gallery';
 
 const pageId = "gallery-previous";
 
-const GalleryPreviousPage = ({ t, pathContext }) => {
+const GalleryPreviousPage = ({ t, pathContext, location }) => {
 
   let names = [
     "ahtojaat"
@@ -36,7 +36,7 @@ const GalleryPreviousPage = ({ t, pathContext }) => {
   }));
 
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
 
       <h2>{t("header")}</h2>
 

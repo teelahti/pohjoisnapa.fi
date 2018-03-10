@@ -5,8 +5,8 @@ import orienteeringImg from "./ahtojaissa-jermi.jpg";
 
 const pageId = "orienteering";
 
-const Orienteering = ({t, pathContext}) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language}>
+const Orienteering = ({t, pathContext, location }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
 

@@ -7,7 +7,7 @@ import Gallery from '../../components/Gallery';
 
 const pageId = "gallery";
 
-const GalleryPage = ({ t, pathContext, data }) => {
+const GalleryPage = ({ t, pathContext, location, data }) => {
 
   let imgs = data.allDataJson.edges
     .filter(({ node }) => node.Images && new Date(node.EntryDate) < new Date(2006, 2, 5))
@@ -23,7 +23,7 @@ const GalleryPage = ({ t, pathContext, data }) => {
     );
 
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
 
       <h2>{t("header")}</h2>
 

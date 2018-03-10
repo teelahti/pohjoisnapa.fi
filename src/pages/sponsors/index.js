@@ -46,8 +46,8 @@ const Small = props =>
     {props.children}
   </Big>
 
-const Sponsors = ({ t, pathContext }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language}>
+const Sponsors = ({ t, pathContext, location }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top5} language={pathContext.language} location={location}>
 
     <div id="isottukijat">
       <Big name="Sasta" to="http://www.sasta.fi" img={sasta}></Big>

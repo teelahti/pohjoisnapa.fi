@@ -40,8 +40,7 @@ class Page extends React.PureComponent {
   }
 
   render() {
-    const { id, title, headerImg, t, children, i18n } = this.props;
-
+    const { id, title, location, headerImg, t, children, i18n } = this.props;
     let leftColumnImg = id === "index" ? map : gradient;
 
     return (
@@ -62,7 +61,7 @@ class Page extends React.PureComponent {
             ]}
           />    
           <Header img={headerImg} lan={i18n.language} />
-          <Navigation />
+          <Navigation location={location} />
 
           <article 
             id={id} 

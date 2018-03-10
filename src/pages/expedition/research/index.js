@@ -5,8 +5,8 @@ import researchImg from './KiHuPerttu360.jpg';
 
 const pageId = "research";
 
-const Research = ({ t, pathContext }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language}>
+const Research = ({ t, pathContext, location }) => (
+  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
 

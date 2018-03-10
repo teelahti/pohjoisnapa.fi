@@ -8,8 +8,8 @@ import styles from "./index.scss";
 
 const pageId = "index";
 
-const IndexPage = ({ t, pathContext }) => (
-  <Page id={pageId} headerImg={headerImages.top5} language={pathContext.language}>
+const IndexPage = ({ t, pathContext, location }) => (
+  <Page id={pageId} headerImg={headerImages.top5} language={pathContext.language} location={location}>
     <div id="index-content">
       <div id="index-latestdiary">
         <div>

@@ -8,13 +8,13 @@ import { translate } from "react-i18next";
 import LatLong from '../components/LatLong';
 import DiaryImage from '../components/DiaryImage';
 
-const DiaryEntry = ({data, t, pathContext }) => {
+const DiaryEntry = ({data, t, pathContext, location }) => {
   const doc = data.allDataJson.edges[0].node;
   const language = pathContext.language;
   let subject = doc[`Subject_${language}`];
 
   return (
-    <Page id="diaryentry" title={subject} headerImg={headerImages.top5} language={language}>
+    <Page id="diaryentry" title={subject} headerImg={headerImages.top5} language={language} location={location}>
 
       <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />

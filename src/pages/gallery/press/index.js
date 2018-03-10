@@ -25,10 +25,10 @@ const Fig = props =>
     </figcaption>
   </figure>
 
-const GalleryPressPage = ({ t, pathContext }) => {
+const GalleryPressPage = ({ t, pathContext, location }) => {
 
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language}>
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
 
       <h2>{t("header")}</h2>
       <p>
