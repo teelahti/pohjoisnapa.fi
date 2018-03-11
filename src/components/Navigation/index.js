@@ -33,6 +33,7 @@ class Navigation extends Component {
         }
       },
       "/diary/2006-05-05-retkikunta-suomessa": {
+        test: "/diary",
         text: t("diary.index"),
         sub: {
           "/diary/all": { text: t("diary.all") },
@@ -76,25 +77,27 @@ class Navigation extends Component {
     //var pathTest = new RegExp("\/.{2}\/){0,1}");
     console.log("path", location.pathname);
     Object.keys(nav).forEach(path => {
+      let cur = nav[path];
+      
       // Test with or without language
-      var pathReg = new RegExp("(\/[a-z]{2}\/){0,1}" + path + "$");
+      // Use given test, or path if not given
+      let pathReg = new RegExp("(\/[a-z]{2}\/){0,1}" + (cur.test ? cur.test : path) + (cur.exact ? "$" : ""));
+
       if (pathReg.test(location.pathname)) {
-        nav[path].active = true;
-        subNav = nav[path].sub;
-      } else if (nav[path].sub) {
+        cur.active = true;
+        subNav = cur.sub;
+      } else if (cur.sub) {
         // Check if any subpath matches
-        Object.keys(nav[path].sub).forEach(subpath => {
+        Object.keys(cur.sub).forEach(subpath => {
           var subReg = new RegExp("(\/[a-z]{2}\/){0,1}" + subpath);
           if (subReg.test(location.pathname)) {
-            nav[path].active = true;
-            nav[path].sub[subpath].active = true;
-            subNav = nav[path].sub;
+            cur.active = true;
+            cur.sub[subpath].active = true;
+            subNav = cur.sub;
           }
         });
       }
     });
-
-    console.log("subnav", subNav);
 
     return (
       <nav id="nav">
