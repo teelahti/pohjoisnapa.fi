@@ -11,7 +11,7 @@ const Media = ({ t, pathContext, location }) => (
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
 
-    <h2>{t("articlesHeader")}</h2>
+    <h3>{t("articlesHeader")}</h3>
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("articlesText") }} />
 
@@ -34,8 +34,7 @@ const Media = ({ t, pathContext, location }) => (
 			</a></li>
     </ul>
 
-
-    <h2>{t("eventsHeader")}</h2>
+    <h3>{t("eventsHeader")}</h3>
 
     <ul>
       <li>

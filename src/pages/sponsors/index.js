@@ -30,15 +30,21 @@ import fazer from "./img/fazer.gif";
 import polartherm from "./img/polartherm.gif";
 import garmin from "./img/garmin.gif";
 
+import styles from "./index.scss";
+
 const pageId = "sponsors";
 
 const Big = props =>
   <div className={props.className ? props.className : "sponsors-big"}>
-    <a href={props.to}>
-      <img src={props.img} style={{ width: props.width ? props.width : "200px" }} alt={props.name} />
-    </a>
-    <h5><a href={props.to}>{props.name}</a></h5>
-    <p>{props.children}</p>
+    <div className="sponsors-logo">
+      <a href={props.to}>
+        <img src={props.img} style={{ width: props.width ? props.width : "200px" }} alt={props.name} />
+      </a>
+    </div>
+    <div className="sponsors-text">
+      <a href={props.to}>{props.name}</a>
+      <p>{props.children}</p>
+    </div>
   </div>
 
 const Small = props =>

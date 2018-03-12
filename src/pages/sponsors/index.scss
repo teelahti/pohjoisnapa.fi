@@ -1,0 +1,45 @@
+.sponsors-big {
+  display: flex;
+  margin-bottom: 20px;
+
+  .sponsors-logo {
+    width: 270px;
+  }
+
+  .sponsors-text {
+    flex: 1;
+
+    a,
+    a:link,
+    a:visited {
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+}
+
+#logotukijat {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .sponsors-small {
+    display: flex;
+    margin: 0 10px 10px 0;
+
+    .sponsors-logo {
+      width: 160px;
+    }
+
+    .sponsors-text {
+      width: 200px;
+
+      a,
+      a:link,
+      a:visited {
+        color: #fff;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
