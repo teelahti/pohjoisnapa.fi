@@ -14,14 +14,13 @@ import thumbRyhma from "./pohjoisnapa_ryhma_pieni.jpg";
 import imgYlitys from "./pohjoisnapa_ylitys.jpg";
 import thumbYlitys from "./pohjoisnapa_ylitys_pieni.jpg";
 
-
 const pageId = "gallery-press";
 
-const Fig = props =>
-  <figure>
-    <a href={props.img}><img alt={props.alt} width="280" height="187" src={props.thumb} /><br /></a>
+const Fig = ({img, alt, thumb, children, ...others}) =>
+  <figure {...others}>
+    <a href={img}><img alt={alt} width="280" height="187" src={thumb} /><br /></a>
     <figcaption>
-      {props.children}
+      {children}
     </figcaption>
   </figure>
 
@@ -37,27 +36,31 @@ const GalleryPressPage = ({ t, pathContext, location }) => {
         tilaukset poppis@pohjoisnapa.fi, 0400 420 002.
       </p>
 
-      <Fig img={imgRyhma} thumb={thumbRyhma} alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006">
-        Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.<br />
-        Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.<br />
-        Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. Ylärivi: Toni Vaartimo.
-      </Fig>
+      <div style={{marginBottom: "30px"}}>
+        <Fig style={{width: "300px", margin: "auto"}} img={imgRyhma} thumb={thumbRyhma} alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006">
+          Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.<br />
+          Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.<br />
+          Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. Ylärivi: Toni Vaartimo.
+        </Fig>
+      </div>
 
-      <Fig img={imgYlitys} thumb={thumbYlitys} alt="Avovesirailon ylitys kuivapuku päällä uiden">
-        Avovesirailon ylitys kuivapuku päällä uiden
-      </Fig>
+      <div style={{display: "flex", flexWrap: "wrap", marginBottom: "30px"}}>
+        <Fig style={{flex: "0.5"}} img={imgYlitys} thumb={thumbYlitys} alt="Avovesirailon ylitys kuivapuku päällä uiden">
+          Avovesirailon ylitys kuivapuku päällä uiden
+        </Fig>
 
-      <Fig img={imgHiihto} thumb={thumbHiihto} alt="Retkikunta matkalla kohti pohjoista">
-        Retkikunta matkalla kohti pohjoista. Etenemistä hidastavat raskaat ahkiot ja epätasaiset ahtojäät.
-      </Fig>
+        <Fig style={{flex: "0.5"}}  img={imgHiihto} thumb={thumbHiihto} alt="Retkikunta matkalla kohti pohjoista">
+          Retkikunta matkalla kohti pohjoista. Etenemistä hidastavat raskaat ahkiot ja epätasaiset ahtojäät.
+        </Fig>
 
-      <Fig img={imgLeiri} thumb={thumbLeiri} alt="Iltatoimia leirissä">
-        Iltatoimia leirissä. Mikko Vermas harjaa Toni Vaartimolta pahimmat jäätyneet hiet pois.
-      </Fig>
+        <Fig style={{flex: "0.5"}}  img={imgLeiri} thumb={thumbLeiri} alt="Iltatoimia leirissä">
+          Iltatoimia leirissä. Mikko Vermas harjaa Toni Vaartimolta pahimmat jäätyneet hiet pois.
+        </Fig>
 
-      <Fig img={imgAhto} thumb={thumbAhto} alt="Raskasta etenemistä ahtojäissä">
-        Raskasta etenemistä ahtojäissä
-      </Fig>
+        <Fig style={{flex: "0.5"}}  img={imgAhto} thumb={thumbAhto} alt="Raskasta etenemistä ahtojäissä">
+          Raskasta etenemistä ahtojäissä
+        </Fig>
+      </div>
 
       <h2>Tiedustelut ja haastattelupyynnöt</h2>
       <p>

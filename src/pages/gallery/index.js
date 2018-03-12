@@ -27,7 +27,9 @@ const GalleryPage = ({ t, pathContext, location, data }) => {
 
       <h2>{t("header")}</h2>
 
-      <LanLink to="/gallery/at-ice" lan={pathContext.language}>{t("link")}</LanLink>
+      <div style={{marginBottom: "10px"}}>
+        <LanLink to="/gallery/at-ice" lan={pathContext.language}>{t("link")}</LanLink>
+      </div>
 
       <Gallery
         images={imgs}

@@ -26,8 +26,10 @@ const GalleryAtIcePage = ({ t, pathContext, location, data }) => {
     <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
       <h2>{t("header")}</h2>
 
-      <LanLink to="/gallery" lan={pathContext.language}>{t("link")}</LanLink>
-
+      <div style={{marginBottom: "10px"}}>
+        <LanLink to="/gallery" lan={pathContext.language}>{t("link")}</LanLink>
+      </div>
+      
       <Gallery
         images={imgs}
         showThumbnails={true}
