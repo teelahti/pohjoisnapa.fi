@@ -5,6 +5,8 @@ import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
 import dataImg from './data.jpg';
 
+import styles from "./data.scss";
+
 const pageId = "data";
 
 const DiaryData = ({ t, pathContext, data }) => (
@@ -14,13 +16,13 @@ const DiaryData = ({ t, pathContext, data }) => (
 
     <img src={dataImg} />
 
-    <table>
+    <table id="diary-data">
       <thead>
         <tr>
           <th>{t("table.date")}</th>
-          <th style={{ width: "25%" }}>{t("table.distance")} (km)</th>
-          <th style={{ width: "25%" }}>{t("table.temperature")} (°C)</th>
-          <th style={{ width: "25%" }}>{t("table.wind")} (m/s)</th>
+          <th style={{ width: "25%" }}>{t("table.distance")}<br/>(km)</th>
+          <th style={{ width: "25%" }}>{t("table.temperature")}<br/>(°C)</th>
+          <th style={{ width: "25%" }}>{t("table.wind")}<br/>(m/s)</th>
         </tr>
         <tr>
           <td></td>

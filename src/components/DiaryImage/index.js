@@ -8,9 +8,12 @@ class DiaryImage extends Component {
     let imgBase = `/images/paivakirja/${id.toString().padStart(3, "0")}`;
 
     return (
-      <a key={id} className="diaryentry-image" href={withPrefix(`${imgBase}.jpeg`)}>
-        <img src={withPrefix(`${imgBase}-small.jpeg`)} alt={caption} />
-      </a>
+      <figure className="diaryentry-image">
+        <a key={id}  href={withPrefix(`${imgBase}.jpeg`)}>
+          <img src={withPrefix(`${imgBase}-small.jpeg`)} alt={caption} />
+        </a>
+        <figcaption>{caption}</figcaption>
+      </figure>
     );
   }
 }

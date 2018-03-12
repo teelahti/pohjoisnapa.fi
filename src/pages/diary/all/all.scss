@@ -1,0 +1,13 @@
+.diary-list {
+    list-style-type: none;
+    padding-left: 0px;
+
+    li {
+        margin-bottom: 2px;
+
+        time {
+            display: inline-block;
+            width: 100px;
+        }
+    }
+}

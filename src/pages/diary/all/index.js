@@ -5,6 +5,8 @@ import { translate } from "react-i18next";
 import i18n from '../../../components/i18n'
 import LanLink from '../../../components/LanLink';
 
+import styles from "./all.scss";
+
 const pageId = "diaryList";
 
 const DiaryEntriesPage = ({ t, pathContext, data }) => (

@@ -8,6 +8,8 @@ import { translate } from "react-i18next";
 import LatLong from '../components/LatLong';
 import DiaryImage from '../components/DiaryImage';
 
+import styles from "./diaryentry.scss";
+
 const DiaryEntry = ({data, t, pathContext, location }) => {
   const doc = data.allDataJson.edges[0].node;
   const language = pathContext.language;
@@ -16,42 +18,48 @@ const DiaryEntry = ({data, t, pathContext, location }) => {
   return (
     <Page id="diaryentry" title={subject} headerImg={headerImages.top5} language={language} location={location}>
 
-      <h1><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h1>
+      <h2><Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}</h2>
       <LatLong lat={doc.LocationLatitude} long={doc.LocationLongitude} eastWest={doc.LocationLongitudeEastWest} />
 
-      <div className="diaryentry-text" dangerouslySetInnerHTML={{ __html: doc[`Text_${language}`] }} />
+      <div className="diaryentry-content">
+        <div> 
+          <div className="diaryentry-text" dangerouslySetInnerHTML={{ __html: doc[`Text_${language}`] }} />
 
-      {doc.Images ?
-      <aside className="diaryentry-images">
-        {doc.Images.map(img => 
-          <DiaryImage key={img.Id} id={img.Id} caption={img[`Caption_${language}`]} /> )}
-      </aside> : false
-      }
+          { doc.DistanceTraveled || doc.Temperature || doc.Wind ?
+          <aside className="diaryentry-data">
+            <dl>
+              <dt>{t("data.distance")}</dt>
+              <dd>{doc.DistanceTraveled ? doc.DistanceTraveled : 0} km</dd>
+              <dt>{t("data.temperature")}</dt>
+              <dd>{doc.Temperature ? doc.Temperature : "n/a"}°C</dd>
+              <dt>{t("data.wind")}</dt>
+              <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
+            </dl>
+            <LanLink to="/diary/data" lan={language}>{t("data.link")}</LanLink>
+          </aside> : false
+          }
 
-      <aside className="diaryentry-data">
-        <dl>
-          <dt>{t("data.distance")}</dt>
-          <dd>{doc.DistanceTraveled ? doc.DistanceTraveled : 0} km</dd>
-          <dt>{t("data.temperature")}</dt>
-          <dd>{doc.Temperature ? doc.Temperature : "n/a"}°C</dd>
-          <dt>{t("data.wind")}</dt>
-          <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
-        </dl>
-        <LanLink to="/diary/data" lan={language}>{t("data.link")}</LanLink>
-      </aside>
+          <footer>
+              <ul className="diaryentry-dates">
+                <li>{t("created")} <Moment date={doc.CreatedDate} format="D.M.YYYY h.mm" />.</li>
+                <li>{t("lastModified")} <Moment date={doc.LastModifiedDate} format="D.M.YYYY h.mm" />.</li>
+              </ul>
+              <div id="diaryentry-prev" className="diaryentry-nav">
+                {doc.Previous && <LanLink to={`/diary/${doc.Previous}`} lan={language}>{t("links.prev")}</LanLink> }
+              </div>
+              <div id="diaryentry-next" className="diaryentry-nav">
+                {doc.Next && <LanLink to={`/diary/${doc.Next}`} lan={language}>{t("links.next")}</LanLink> }
+              </div>
+          </footer>          
+        </div>
 
-      <footer>
-          <ul className="diaryentry-dates">
-            <li>{t("created")} <Moment date={doc.CreatedDate} format="D.M.YYYY h.mm" />.</li>
-            <li>{t("lastModified")} <Moment date={doc.LastModifiedDate} format="D.M.YYYY h.mm" />.</li>
-          </ul>
-          <div id="diaryentry-prev" className="diaryentry-nav">
-            {doc.Previous && <LanLink to={`/diary/${doc.Previous}`} lan={language}>{t("links.prev")}</LanLink> }
-          </div>
-          <div id="diaryentry-next" className="diaryentry-nav">
-            {doc.Next && <LanLink to={`/diary/${doc.Next}`} lan={language}>{t("links.next")}</LanLink> }
-          </div>
-      </footer>
+          {doc.Images ?
+        <aside className="diaryentry-images">
+          {doc.Images.map(img => 
+            <DiaryImage key={img.Id} id={img.Id} caption={img[`Caption_${language}`]} /> )}
+        </aside> : false
+        }
+      </div>
 
     </Page>
   );

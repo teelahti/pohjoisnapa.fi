@@ -1,0 +1,54 @@
+.diaryentry-content {
+    display: flex;
+}
+
+.diaryentry-images {
+    margin: 0 0 20px 20px;
+
+    .diaryentry-image {
+        margin: 0 0 15px 10px;
+
+        figcaption {
+            width: 360px;
+        }
+    }
+}
+
+.diaryentry-dates {
+    list-style-type: none;
+    padding: 0;
+    color: #ccc;
+    font-style: italic;
+
+    margin-bottom: 30px;
+}
+
+.diaryentry-nav {
+    display: inline-block;
+    margin-right: 20px;
+
+    font-family: Arial Narrow, Arial; 
+    font-size: 1.1em;   
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+}
+
+.latlong {
+    font-family: Monospace, Courier New, Courier;
+}
+
+.diaryentry-data {
+    width: 340px;
+    dl {
+        dt {
+            display: inline-block;
+            width: 100px;
+            margin-right: 10px;
+        }
+        dd {
+            display: inline-block;
+            width: 230px;
+            margin: 0;
+        }
+    }
+}
