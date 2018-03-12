@@ -9,12 +9,13 @@ const Background = ({ t, pathContext, location }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
 
     <h2>{t("header")}</h2>
+    <div className="content-two-column">
+      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
-
-    <aside>      
-      <img alt={t("imgAlt")} src={backgroundImg} />
-    </aside>
+      <aside className="right">      
+        <img alt={t("imgAlt")} src={backgroundImg} />
+      </aside>
+    </div>
       
   </Page>
 );

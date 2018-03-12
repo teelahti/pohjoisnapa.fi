@@ -12,11 +12,11 @@ const Equipment = ({ t, pathContext, location }) => (
       <tr>
         <th>
         </th>
-        <th>
+        <th style={{textAlign: "left"}}>
           Tuote</th>
-        <th>
+        <th style={{textAlign: "left"}}>
           Merkki</th>
-        <th>
+        <th style={{textAlign: "left"}}>
           Kpl</th>
         <th>
         </th>

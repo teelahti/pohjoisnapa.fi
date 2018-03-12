@@ -10,6 +10,8 @@ import poppis from "./poppis4.jpg";
 import tero from "./tero4.jpg";
 import toni from "./toni4.jpg";
 
+import styles from "./index.scss";
+
 const pageId = "expedition";
 
 const Expedition = ({t, pathContext, location }) => (
@@ -17,45 +19,47 @@ const Expedition = ({t, pathContext, location }) => (
 
     <h2>{t("header")}</h2>
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content-two-column" id="expedition-content">
+      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-    <aside>
-      <figure>
-        <img src={henkku} alt="Henrik B. Reims" />
-        <figcaption>Henrik B. Reims</figcaption>
-      </figure>
+      <aside className="right">
+        <figure>
+          <img src={henkku} alt="Henrik B. Reims" />
+          <figcaption>Henrik B. Reims</figcaption>
+        </figure>
 
-      <figure>
-        <img src={poppis} alt="Poppis Suomela" />
-        <figcaption>Poppis Suomela</figcaption>
-      </figure>
+        <figure>
+          <img src={poppis} alt="Poppis Suomela" />
+          <figcaption>Poppis Suomela</figcaption>
+        </figure>
 
-      <figure>
-        <img src={toni} alt="Toni Vaartimo" />
-        <figcaption>Toni Vaartimo</figcaption>
-      </figure>
+        <figure>
+          <img src={toni} alt="Toni Vaartimo" />
+          <figcaption>Toni Vaartimo</figcaption>
+        </figure>
 
-      <figure>
-        <img src={mikko} alt="Mikko Vermas" />
-        <figcaption>Mikko Vermas</figcaption>
-      </figure>
+        <figure>
+          <img src={mikko} alt="Mikko Vermas" />
+          <figcaption>Mikko Vermas</figcaption>
+        </figure>
 
-      <figure>
-        <img src={tero} alt="Tero Teelahti" />
-        <figcaption>Tero Teelahti</figcaption>
-      </figure>
+        <figure>
+          <img src={tero} alt="Tero Teelahti" />
+          <figcaption>Tero Teelahti</figcaption>
+        </figure>
 
-      <figure>
-        <img src={perttu} alt="Perttu Ojala" />
-        <figcaption>Perttu Ojala</figcaption>
-      </figure>
+        <figure>
+          <img src={perttu} alt="Perttu Ojala" />
+          <figcaption>Perttu Ojala</figcaption>
+        </figure>
 
-      <figure>
-        <img src={jermi} alt="Jermi Tertsunen" />
-        <figcaption>Jermi Tertsunen</figcaption>
-      </figure>
-      
-    </aside>
+        <figure>
+          <img src={jermi} alt="Jermi Tertsunen" />
+          <figcaption>Jermi Tertsunen</figcaption>
+        </figure>
+        
+      </aside>
+    </div>
 
   </Page>
   );

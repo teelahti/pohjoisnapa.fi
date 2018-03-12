@@ -10,12 +10,13 @@ const Club = ({ t, pathContext, location }) => (
 
     <h2>{t("header")}</h2>
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content-two-column">
+      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-    <aside>      
-      <img alt={t("imgAlt")} src={clubImg} />
-    </aside>
-      
+      <aside className="right">      
+        <img alt={t("imgAlt")} src={clubImg} />
+      </aside>
+    </div>
   </Page>
 );
 

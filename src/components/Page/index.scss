@@ -39,6 +39,8 @@ h4 {
 }
 
 .contentpage {
+  padding-bottom: 40px;
+
   a, a:link, a:visited, a:active {
     color: #CCCCCC;
     text-decoration: none;
@@ -50,7 +52,25 @@ h4 {
   }
 }
 
+#index.contentpage {
+  padding-bottom: 0px;
+}
+
 #main {
   width: 740px;
   margin: 0 auto;
+}
+
+.content-two-column {
+  display: flex;
+
+  .left {
+    width: 360px;
+    margin-right: 20px;
+  }
+
+  .right {
+    width: 320px;
+    margin-top: 15px;
+  }
 }
