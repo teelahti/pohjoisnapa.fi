@@ -9,11 +9,13 @@ const Arctic = ({ t, pathContext, location }) => (
   <Page id={pageId} title={t("title")} headerImg={headerImages.top1} language={pathContext.language} location={location}>
     <h2>{t("header")}</h2>
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
+    <div className="content-two-column">
+      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-    <aside className="contentpage-image">
-      <img src={img} alt={t("imgAlt")} />
-    </aside>
+      <aside className="right">
+        <img src={img} alt={t("imgAlt")} />
+      </aside>
+    </div>
   </Page>
 );
 

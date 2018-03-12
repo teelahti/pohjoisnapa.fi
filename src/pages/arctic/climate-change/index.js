@@ -12,7 +12,7 @@ const ClimateChange = ({ t, pathContext, location }) => (
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
-    <LanLink to="/arctic/climate-change-arctic-region" lan={pathContext.language}>{t("next")}</LanLink>
+    <LanLink to="/arctic/climate-change-arctic-region" lan={pathContext.language}>{t("next")} ></LanLink>
 
   </Page>
 );

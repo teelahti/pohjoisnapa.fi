@@ -10,12 +10,12 @@ const PolarBear = ({t, pathContext, location }) => (
 
     <h2>{t("header")}</h2>
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
-
-    <figure>
+    <figure style={{float: "right", margin: "0 0 20px 20px"}}>
       <img alt={t("imgAlt")} src={polarBearImg} />
-      <figcaption dangerouslySetInnerHTML={{ __html: t("imgCaption")} } ></figcaption>
+      <figcaption style={{marginLeft: "5px"}} dangerouslySetInnerHTML={{ __html: t("imgCaption")} } ></figcaption>
     </figure>
+
+    <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
 
   </Page>
   );

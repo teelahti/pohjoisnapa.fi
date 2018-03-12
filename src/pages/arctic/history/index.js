@@ -10,7 +10,7 @@ const History = ({ t, pathContext, location }) => (
     <h2>{t("header")}</h2>
 
     <div className="content" dangerouslySetInnerHTML={{ __html: t("text")} } />
-
+    <p><i>Pentti Kronqvist</i></p>
   </Page>
 );
 
