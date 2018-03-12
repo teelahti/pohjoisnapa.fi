@@ -1,0 +1,35 @@
+{
+  "hosting": {
+    "public": "public",
+    "redirects": [
+        { "source": "/Aikataulu.aspx", "destination": "/expedition/timetable", "type" : 301 },
+        { "source": "/Arktis.aspx", "destination": "/arctic", "type" : 301 },
+        { "source": "/ArktisHistoria.aspx", "destination": "/arctic/history", "type" : 301 },
+        { "source": "/Data.aspx", "destination": "/diary/data", "type" : 301 },
+        { "source": "/Default.aspx", "destination": "/", "type" : 301 },
+        { "source": "/Galleria.aspx", "destination": "/gallery", "type" : 301 },
+        { "source": "/GalleriaEnnenHiihtoa.aspx", "destination": "/gallery", "type" : 301 },
+        { "source": "/GalleriaHiihto.aspx", "destination": "/gallery/at-ice", "type" : 301 },
+        { "source": "/Ilmastonmuutos.aspx", "destination": "/arctic/climate-change", "type" : 301 },
+        { "source": "/IlmastonmuutosArktisillaAlueilla.aspx", "destination": "/arctic/climate-change-arctic-region", "type" : 301 },
+        { "source": "/Jaakarhu.aspx", "destination": "/arctic/polar-bear", "type" : 301 },
+        { "source": "/Kirja.aspx", "destination": "/diary/book", "type" : 301 },
+        { "source": "/Lehdistokuvat.aspx", "destination": "/gallery/press", "type" : 301 },
+        { "source": "/LsvjKilta.aspx", "destination": "/expedition/club", "type" : 301 },
+        { "source": "/Media.aspx", "destination": "/sponsors/media", "type" : 301 },
+        { "source": "/Messut.aspx", "destination": "/sponsors/events", "type" : 301 },
+        { "source": "/Paivakirja.aspx", "destination": "/diary", "type" : 301 },
+        { "source": "/PaivakirjaLista.aspx", "destination": "/diary/all", "type" : 301 },
+        { "source": "/Retkikunta.aspx", "destination": "/expedition", "type" : 301 },
+        { "source": "/Ruoka.aspx", "destination": "/arctic/food", "type" : 301 },
+        { "source": "/Suunnistus.aspx", "destination": "/arctic/orienteering", "type" : 301 },
+        { "source": "/Tausta.aspx", "destination": "/expedition/background", "type" : 301 },
+        { "source": "/Tavoitteet.aspx", "destination": "/expedition/objectives", "type" : 301 },
+        { "source": "/Tukijalista.aspx", "destination": "/sponsors/list", "type" : 301 },
+        { "source": "/Tukijat.aspx", "destination": "/sponsors", "type" : 301 },
+        { "source": "/Tutkimus.aspx", "destination": "/expedition/research", "type" : 301 },
+        { "source": "/Valokuvaus.aspx", "destination": "/arctic/photographing", "type" : 301 },
+        { "source": "/Varusteet.aspx", "destination": "/expedition/equipment", "type" : 301 }
+    ]
+  }
+}

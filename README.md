@@ -20,5 +20,4 @@ purposes, see Deploy below) run `gatsby build`, then test the site with `gatsby 
 
 ## Deploy
 
-Deployment to cloud hosting is automated with Google Cloud Container Builder. To deploy
-locally built site run `firebase deploy`.
+Deployment to cloud hosting is automated with Google Cloud Container Builder. To deploy locally built site run `firebase deploy`.
