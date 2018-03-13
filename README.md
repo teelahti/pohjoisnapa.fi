@@ -17,7 +17,9 @@ Language translation setup is inspired from this [article](https://www.gatsbyjs.
 
 Run `gatsby develop` for normal development view. To build production site (for testing
 purposes, see Deploy below) run `gatsby build`, then test the site with `gatsby serve`.
+Build production site will be at folder /public, and can be copied from there to any
+static (preferably CDN-based) hosting.
 
 ## Deploy
 
-Deployment to cloud hosting is automated with Google Cloud Container Builder. To deploy locally built site run `firebase deploy`.
+To deploy locally built site run `firebase deploy`.
