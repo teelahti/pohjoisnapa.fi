@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Page, { headerImages } from "../../components/Page";
 import { translate } from "react-i18next";
 
@@ -10,17 +10,25 @@ import poppis from "./poppis4.jpg";
 import tero from "./tero4.jpg";
 import toni from "./toni4.jpg";
 
-import styles from "./index.scss";
+import "./index.scss";
 
 const pageId = "expedition";
 
-const Expedition = ({t, pathContext, location }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top8} language={pathContext.language} location={location}>
-
+const Expedition = ({ t, pathContext, location }) => (
+  <Page
+    id={pageId}
+    title={t("title")}
+    headerImg={headerImages.top8}
+    language={pathContext.language}
+    location={location}
+  >
     <h2>{t("header")}</h2>
 
     <div className="content-two-column" id="expedition-content">
-      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
+      <div
+        className="content left"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
       <aside className="right">
         <figure>
@@ -57,11 +65,9 @@ const Expedition = ({t, pathContext, location }) => (
           <img src={jermi} alt="Jermi Tertsunen" />
           <figcaption>Jermi Tertsunen</figcaption>
         </figure>
-        
       </aside>
     </div>
-
   </Page>
-  );
+);
 
-export default translate(pageId)(Expedition)
+export default translate(pageId)(Expedition);

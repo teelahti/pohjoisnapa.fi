@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import { translate } from "react-i18next";
-import LanLink from '../LanLink';
-import './navigation.scss'
+import LanLink from "../LanLink";
+import "./navigation.scss";
 
 class Navigation extends Component {
   render() {
     const { location, t, i18n } = this.props;
     const lan = i18n.language;
 
-    const ListLink = ({ to, exact, text, children, ...rest }) =>
+    const ListLink = ({ to, text, children, ...rest }) => (
       <li>
-        <LanLink activeClassName="nav-active" to={to} lan={lan} exact={exact} {...rest}>
+        <LanLink activeClassName="nav-active" to={to} lan={lan} {...rest}>
           {text}
         </LanLink>
         {children}
       </li>
+    );
 
     const nav = {
       "/": {
-        exact: true,
         text: t("home")
       },
       "/expedition": {
@@ -68,7 +68,7 @@ class Navigation extends Component {
           "/arctic/food": { text: t("arctic.food") }
         }
       }
-    }
+    };
 
     let subNav = null;
 
@@ -78,10 +78,12 @@ class Navigation extends Component {
     console.log("path", location.pathname);
     Object.keys(nav).forEach(path => {
       let cur = nav[path];
-      
+
       // Test with or without language
       // Use given test, or path if not given
-      let pathReg = new RegExp("(\/[a-z]{2}\/){0,1}" + (cur.test ? cur.test : path) + (cur.exact ? "$" : ""));
+      let pathReg = new RegExp(
+        "(/[a-z]{2}/){0,1}" + (cur.test ? cur.test : path)
+      );
 
       if (pathReg.test(location.pathname)) {
         cur.active = true;
@@ -89,7 +91,7 @@ class Navigation extends Component {
       } else if (cur.sub) {
         // Check if any subpath matches
         Object.keys(cur.sub).forEach(subpath => {
-          var subReg = new RegExp("(\/[a-z]{2}\/){0,1}" + subpath);
+          var subReg = new RegExp("(/[a-z]{2}/){0,1}" + subpath);
           if (subReg.test(location.pathname)) {
             cur.active = true;
             cur.sub[subpath].active = true;
@@ -102,20 +104,24 @@ class Navigation extends Component {
     return (
       <nav id="nav">
         <ul className="nav-main">
-          {
-            Object.keys(nav).map(p => 
-              <ListLink key={p} to={p} exact={nav[p].exact} text={nav[p].text} className={nav[p].active ? "nav-active" : ""} />
-            )
-          }
+          {Object.keys(nav).map(p => (
+            <ListLink
+              key={p}
+              to={p}
+              text={nav[p].text}
+              className={nav[p].active ? "nav-active" : ""}
+            />
+          ))}
         </ul>
-        { subNav ? 
+        {subNav ? (
           <ul className="nav-sub">
-          {
-            Object.keys(subNav).map(p => 
-              <ListLink key={p} to={p} exact={subNav[p].exact} text={subNav[p].text} />
-            ) 
-          } 
-          </ul> : false } 
+            {Object.keys(subNav).map(p => (
+              <ListLink key={p} to={p} text={subNav[p].text} />
+            ))}
+          </ul>
+        ) : (
+          false
+        )}
       </nav>
     );
   }

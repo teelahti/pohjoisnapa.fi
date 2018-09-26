@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
-import i18n from '../../../components/i18n';
 
 import imgAhto from "./pohjoisnapa_ahto.jpg";
 import thumbAhto from "./pohjoisnapa_ahto_pieni.jpg";
@@ -16,48 +15,83 @@ import thumbYlitys from "./pohjoisnapa_ylitys_pieni.jpg";
 
 const pageId = "gallery-press";
 
-const Fig = ({img, alt, thumb, children, ...others}) =>
+const Fig = ({ img, alt, thumb, children, ...others }) => (
   <figure {...others}>
-    <a href={img}><img alt={alt} width="280" height="187" src={thumb} /><br /></a>
-    <figcaption>
-      {children}
-    </figcaption>
+    <a href={img}>
+      <img alt={alt} width="280" height="187" src={thumb} />
+      <br />
+    </a>
+    <figcaption>{children}</figcaption>
   </figure>
+);
 
 const GalleryPressPage = ({ t, pathContext, location }) => {
-
   return (
-    <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
-
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top7}
+      language={pathContext.language}
+      location={location}
+    >
       <h2>{t("header")}</h2>
       <p>
-        Lehdistokuvat vapaassa tiedotuskäytässä 20.5.2006 asti. Käytön yhteydessä mainittava
-        kuvaaja Poppicok/Kari Poppis Suomela. Kuviin liittyvät tiedustelut tai lisäkuvien
-        tilaukset poppis@pohjoisnapa.fi, 0400 420 002.
+        Lehdistokuvat vapaassa tiedotuskäytässä 20.5.2006 asti. Käytön
+        yhteydessä mainittava kuvaaja Poppicok/Kari Poppis Suomela. Kuviin
+        liittyvät tiedustelut tai lisäkuvien tilaukset poppis@pohjoisnapa.fi,
+        0400 420 002.
       </p>
 
-      <div style={{marginBottom: "30px"}}>
-        <Fig style={{width: "300px", margin: "auto"}} img={imgRyhma} thumb={thumbRyhma} alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006">
+      <div style={{ marginBottom: "30px" }}>
+        <Fig
+          style={{ width: "300px", margin: "auto" }}
+          img={imgRyhma}
+          thumb={thumbRyhma}
+          alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006"
+        >
           Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.<br />
           Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.<br />
-          Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. Ylärivi: Toni Vaartimo.
+          Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. Ylärivi:
+          Toni Vaartimo.
         </Fig>
       </div>
 
-      <div style={{display: "flex", flexWrap: "wrap", marginBottom: "30px"}}>
-        <Fig style={{flex: "0.5"}} img={imgYlitys} thumb={thumbYlitys} alt="Avovesirailon ylitys kuivapuku päällä uiden">
+      <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "30px" }}>
+        <Fig
+          style={{ flex: "0.5" }}
+          img={imgYlitys}
+          thumb={thumbYlitys}
+          alt="Avovesirailon ylitys kuivapuku päällä uiden"
+        >
           Avovesirailon ylitys kuivapuku päällä uiden
         </Fig>
 
-        <Fig style={{flex: "0.5"}}  img={imgHiihto} thumb={thumbHiihto} alt="Retkikunta matkalla kohti pohjoista">
-          Retkikunta matkalla kohti pohjoista. Etenemistä hidastavat raskaat ahkiot ja epätasaiset ahtojäät.
+        <Fig
+          style={{ flex: "0.5" }}
+          img={imgHiihto}
+          thumb={thumbHiihto}
+          alt="Retkikunta matkalla kohti pohjoista"
+        >
+          Retkikunta matkalla kohti pohjoista. Etenemistä hidastavat raskaat
+          ahkiot ja epätasaiset ahtojäät.
         </Fig>
 
-        <Fig style={{flex: "0.5"}}  img={imgLeiri} thumb={thumbLeiri} alt="Iltatoimia leirissä">
-          Iltatoimia leirissä. Mikko Vermas harjaa Toni Vaartimolta pahimmat jäätyneet hiet pois.
+        <Fig
+          style={{ flex: "0.5" }}
+          img={imgLeiri}
+          thumb={thumbLeiri}
+          alt="Iltatoimia leirissä"
+        >
+          Iltatoimia leirissä. Mikko Vermas harjaa Toni Vaartimolta pahimmat
+          jäätyneet hiet pois.
         </Fig>
 
-        <Fig style={{flex: "0.5"}}  img={imgAhto} thumb={thumbAhto} alt="Raskasta etenemistä ahtojäissä">
+        <Fig
+          style={{ flex: "0.5" }}
+          img={imgAhto}
+          thumb={thumbAhto}
+          alt="Raskasta etenemistä ahtojäissä"
+        >
           Raskasta etenemistä ahtojäissä
         </Fig>
       </div>
@@ -75,4 +109,4 @@ const GalleryPressPage = ({ t, pathContext, location }) => {
   );
 };
 
-export default translate(pageId)(GalleryPressPage)
+export default translate(pageId)(GalleryPressPage);
