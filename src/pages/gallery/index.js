@@ -8,7 +8,7 @@ import { graphql } from "gatsby";
 
 const pageId = "gallery";
 
-const GalleryPage = ({ t, pathContext, location, data }) => {
+const GalleryPage = ({ t, pageContext, location, data }) => {
   let imgs = data.allDataJson.edges
     .filter(
       ({ node }) =>
@@ -31,13 +31,13 @@ const GalleryPage = ({ t, pathContext, location, data }) => {
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top7}
-      language={pathContext.language}
+      language={pageContext.language}
       location={location}
     >
       <h2>{t("header")}</h2>
 
       <div style={{ marginBottom: "10px" }}>
-        <LanLink to="/gallery/at-ice" lan={pathContext.language}>
+        <LanLink to="/gallery/at-ice" lan={pageContext.language}>
           {t("link")}
         </LanLink>
       </div>

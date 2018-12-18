@@ -1,23 +1,30 @@
-import React from 'react'
+import React from "react";
 import Page, { headerImages } from "../../../components/Page";
 import { translate } from "react-i18next";
-import backgroundImg from './naamat-huurussa.jpg';
+import backgroundImg from "./naamat-huurussa.jpg";
 
 const pageId = "background";
 
-const Background = ({ t, pathContext, location }) => (
-  <Page id={pageId} title={t("title")} headerImg={headerImages.top7} language={pathContext.language} location={location}>
-
+const Background = ({ t, pageContext, location }) => (
+  <Page
+    id={pageId}
+    title={t("title")}
+    headerImg={headerImages.top7}
+    language={pageContext.language}
+    location={location}
+  >
     <h2>{t("header")}</h2>
     <div className="content-two-column">
-      <div className="content left" dangerouslySetInnerHTML={{ __html: t("text")} } />
+      <div
+        className="content left"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
-      <aside className="right">      
+      <aside className="right">
         <img alt={t("imgAlt")} src={backgroundImg} />
       </aside>
     </div>
-      
   </Page>
 );
 
-export default translate(pageId)(Background)
+export default translate(pageId)(Background);

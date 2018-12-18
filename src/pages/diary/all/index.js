@@ -10,12 +10,12 @@ import "./all.scss";
 
 const pageId = "diaryList";
 
-const DiaryEntriesPage = ({ t, pathContext, data }) => (
+const DiaryEntriesPage = ({ t, pageContext, data }) => (
   <Page
     id={pageId}
     title={t("title")}
     headerImg={headerImages.top5}
-    language={pathContext.language}
+    language={pageContext.language}
     location={window.location}
   >
     <h2>{t("header")}</h2>
@@ -24,7 +24,7 @@ const DiaryEntriesPage = ({ t, pathContext, data }) => (
       {data.allDataJson.edges.map(({ node }) => (
         <li key={node.Slug}>
           <Moment interval={0} date={node.EntryDate} format="D.M.YYYY" />
-          <LanLink to={"/diary/" + node.Slug} lan={pathContext.language}>
+          <LanLink to={"/diary/" + node.Slug} lan={pageContext.language}>
             {i18n.language === "fi" ? node.Subject_fi : node.Subject_en}
           </LanLink>
         </li>

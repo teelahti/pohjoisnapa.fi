@@ -25,13 +25,13 @@ const Fig = ({ img, alt, thumb, children, ...others }) => (
   </figure>
 );
 
-const GalleryPressPage = ({ t, pathContext, location }) => {
+const GalleryPressPage = ({ t, pageContext, location }) => {
   return (
     <Page
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top7}
-      language={pathContext.language}
+      language={pageContext.language}
       location={location}
     >
       <h2>{t("header")}</h2>

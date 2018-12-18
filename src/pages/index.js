@@ -8,11 +8,11 @@ import "./index.scss";
 
 const pageId = "index";
 
-const IndexPage = ({ t, pathContext, location }) => (
+const IndexPage = ({ t, pageContext, location }) => (
   <Page
     id={pageId}
     headerImg={headerImages.top5}
-    language={pathContext.language}
+    language={pageContext.language}
     location={location}
   >
     <div id="index-content">
@@ -24,7 +24,7 @@ const IndexPage = ({ t, pathContext, location }) => (
             {t("diary.text")}{" "}
             <LanLink
               to="/diary/2006-05-05-retkikunta-suomessa"
-              lan={pathContext.language}
+              lan={pageContext.language}
             >
               {t("diary.readMore")}
             </LanLink>
@@ -41,16 +41,16 @@ const IndexPage = ({ t, pathContext, location }) => (
           <h3>{t("expedition.subHeader")}</h3>
           <p>
             {t("expedition.text")}{" "}
-            <LanLink to="/expedition" lan={pathContext.language}>
+            <LanLink to="/expedition" lan={pageContext.language}>
               {t("expedition.readMore")}
             </LanLink>
           </p>
         </div>
         <aside>
-          <LanLink to="/diary/book" lan={pathContext.language}>
+          <LanLink to="/diary/book" lan={pageContext.language}>
             <h3>{t("book.header")}</h3>
           </LanLink>
-          <LanLink to="/diary/book" lan={pathContext.language}>
+          <LanLink to="/diary/book" lan={pageContext.language}>
             {t("book.orderLink")}
           </LanLink>
         </aside>

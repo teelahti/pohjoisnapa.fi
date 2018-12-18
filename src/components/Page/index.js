@@ -20,7 +20,7 @@ import "./index.scss";
 
 class Page extends React.PureComponent {
   static propTypes = {
-    pathContext: PropTypes.shape({
+    pageContext: PropTypes.shape({
       language: PropTypes.string.isRequired
     })
   };

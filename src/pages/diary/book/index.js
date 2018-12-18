@@ -4,12 +4,12 @@ import { translate } from "react-i18next";
 
 const pageId = "book";
 
-const Book = ({ t, pathContext, location }) => (
+const Book = ({ t, pageContext, location }) => (
   <Page
     id={pageId}
     title={t("title")}
     headerImg={headerImages.top5}
-    language={pathContext.language}
+    language={pageContext.language}
     location={location}
   >
     <h2>{t("header")}</h2>

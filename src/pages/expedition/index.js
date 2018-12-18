@@ -14,12 +14,12 @@ import "./index.scss";
 
 const pageId = "expedition";
 
-const Expedition = ({ t, pathContext, location }) => (
+const Expedition = ({ t, pageContext, location }) => (
   <Page
     id={pageId}
     title={t("title")}
     headerImg={headerImages.top8}
-    language={pathContext.language}
+    language={pageContext.language}
     location={location}
   >
     <h2>{t("header")}</h2>

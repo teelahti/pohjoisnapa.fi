@@ -64,12 +64,12 @@ const Small = props => (
   </Big>
 );
 
-const Sponsors = ({ t, pathContext, location }) => (
+const Sponsors = ({ t, pageContext, location }) => (
   <Page
     id={pageId}
     title={t("title")}
     headerImg={headerImages.top5}
-    language={pathContext.language}
+    language={pageContext.language}
     location={location}
   >
     <div id="isottukijat">
@@ -81,7 +81,7 @@ const Sponsors = ({ t, pathContext, location }) => (
       <Big name="Jalas" to="http://www.jalas.fi" img={jalas} />
       <Big name="Apu" to="http://www.apu.fi" img={apu}>
         Lue{" "}
-        <LanLink to="/sponsors/media" lan={pathContext.language}>
+        <LanLink to="/sponsors/media" lan={pageContext.language}>
           Apu-lehden artikkelit.
         </LanLink>
       </Big>

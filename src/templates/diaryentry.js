@@ -9,9 +9,9 @@ import { graphql } from "gatsby";
 
 import "./diaryentry.scss";
 
-const DiaryEntry = ({ data, t, pathContext, location }) => {
+const DiaryEntry = ({ data, t, pageContext, location }) => {
   const doc = data.allDataJson.edges[0].node;
-  const language = pathContext.language;
+  const language = pageContext.language;
   let subject = doc[`Subject_${language}`];
 
   return (

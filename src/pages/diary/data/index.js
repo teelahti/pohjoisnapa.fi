@@ -10,12 +10,12 @@ import "./data.scss";
 
 const pageId = "data";
 
-const DiaryData = ({ t, pathContext, data }) => (
+const DiaryData = ({ t, pageContext, data }) => (
   <Page
     id={pageId}
     title={t("title")}
     headerImg={headerImages.top5}
-    language={pathContext.language}
+    language={pageContext.language}
     location={window.location}
   >
     <h2>{t("header")}</h2>
