@@ -23,3 +23,7 @@ static (preferably CDN-based) hosting.
 ## Deploy
 
 To deploy locally built site run `firebase deploy`.
+
+## Misc
+
+The folder "internet-archive" contains some archived pages from the internet discussing this trip.

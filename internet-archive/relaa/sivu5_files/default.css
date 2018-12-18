@@ -1,0 +1,55 @@
+#menu-main > ul > li.current-menu-item > a, #menu-main > ul > li > a:hover, .tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > a,
+      .ajax-search-icon:hover, .menu-nav-top li a:hover, .block-big-slider-cate-tag li, .review-score, .drop-caps,
+      #comment-submit, .form-submit #submit, .score-bar, .top-score-bar, #toTop i, .no-thumb, .widget-title h3:before,
+      .tn-ajax-loadmore:hover, .tn-ajax-loadmore:focus, .page-numbers.current, .page-numbers:hover, .page-numbers:focus
+      {background-color: #65ADE0}
+
+.tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > ul > li > a:hover, .tn-sub-menu li a:hover, .cat-item a:before, .widget_pages .page_item a:before, .widget_meta li:before, .widget_archive li a:before,
+      .widget_nav_menu .menu-main-nav-container > ul > li > a:before, .widget_rss ul li a, .about-widget-name span, .title-logo::first-letter,
+      .block11-wrap:before, .logo-404 h1, .post-content-wrap a, .post-content-wrap a:hover, .post-content-wrap a:focus, .comment-form .logged-in-as a, .prev-article, .next-article,
+      #close-side-dock:hover, .single-review-score, .post-categories li:hover a, .post-categories li:focus a, #recentcomments a, #mobile-button-nav-open:hover, #mobile-button-nav-open:focus,
+      #main-mobile-menu .current-menu-item a, #main-mobile-menu li a:hover, .block11-score-separation, .block11-wrap .review-score, .single-review-as
+      {color: #65ADE0}
+
+::selection {background-color: #65ADE0}
+::-moz-selection {background-color: #65ADE0}
+
+
+.post-content-wrap blockquote, pre, .cate-title, .search-page-title, .archive-page-title,
+      .author-title
+      {border-color: #65ADE0}
+
+.tn-mega-menu, .tn-navbar, .tn-mega-menu-col, .tn-dropdown-menu, #menu-main ul li .tn-dropdown-menu ul li ul.tn-sub-menu, #menu-main ul li div.tn-dropdown-menu ul li ul.tn-sub-menu
+      {border-top-color: #65ADE0}
+#menu-main > ul > li > a.active, form.commerce-add-to-cart input[type=submit]:hover {background: #65ADE0;}
+.products .product .star-rating span, .product_list_widget li .star-rating span, .star-rating span {
+    color: #65ADE0;
+}
+.item-list .pager .pager-current {
+    background: #65ADE0;
+}
+.ajax-search-wrap #search-block-form {border-top: 3px solid #65ADE0;}
+.comment-respond .comment-form input[type=submit] {
+      background: #65ADE0;
+}
+.switch.button {
+      background-color: #65ADE0;
+}
+.tn-category-18 .review-score, .tn-category-18 .meta-thumb-element:hover, .tn-category-18 .meta-thumb-element:focus, .tn-category-18 .widget-title h3:before, #menu-main > ul >li.tn-menu-category-18 > a:hover, #menu-main > ul >li.tn-menu-category-18 > a:focus, #menu-main > ul >li.current-menu-item.tn-menu-category-18 > a {
+  background: #65ADE0;
+}
+.post-content-wrap blockquote, pre, .cate-title, .search-page-title, .archive-page-title, .post-categories, .author-title, .big-carousel-inner, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .tn-share-to-email-popup {
+  border-color: #65ADE0;
+}
+.tn-category-18 .post-categories, .tn-category-18 .cate-title, .big-carousel-inner.tn-category-18, .tn-menu-category-18 .tn-mega-menu, .tn-menu-category-18 .tn-dropdown-menu {
+  border-color: #65ADE0;
+}
+#menu-main > ul > li.current-menu-item > a, #menu-main > ul > li > a:hover, .tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > a, .ajax-search-icon:hover, .ajax-search-icon:focus, .menu-nav-top li a:hover, .block-big-slider-cate-tag li, .review-score, .drop-caps, #comment-submit, .form-submit #submit, .score-bar, .top-score-bar, #toTop i, .no-thumb, .widget-title h3:before, .close-mobile-menu-wrap, .tn-ajax-loadmore:hover, .tn-ajax-loadmore:focus, .page-numbers.current, .page-numbers:hover, .page-numbers:focus, .meta-thumb-element:hover, .meta-thumb-element:focus, #mobile-button-nav-open:hover, #mobile-button-nav-open:focus, .widget_product_search input[type="submit"]:hover, .widget_product_search input[type="submit"]:focus, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .related.products h2:before, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+      background: #65ADE0;
+}
+.tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > ul > li > a:hover, .tn-sub-menu li a:hover, .cat-item a:before, .widget_pages .page_item a:before, .widget_meta li:before, .widget_archive li a:before, .widget_nav_menu .menu-main-nav-container > ul > li > a:before, .widget_rss ul li a, .about-widget-name span, .title-logo a::first-letter, .block11-wrap:before, .logo-404 h1, .post-content-wrap a, .post-content-wrap a:hover, .post-content-wrap a:focus, .comment-form .logged-in-as a, .prev-article, .next-article, #close-side-dock:hover, .single-review-score, .post-categories li:hover a, .post-categories li:focus a, #recentcomments a, #footer .post-categories a:hover, #footer .post-categories a:focus, #main-mobile-menu .current-menu-item a, #main-mobile-menu li a:hover, .block11-score-separation, .block11-wrap .review-score, .single-review-as, .menu-nav-top .sub-menu li a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce .page-wrap .star-rating span {
+  color: #65ADE0;
+}
+#menu-main > ul > li.current-menu-item > a, #menu-main > ul > li > a:hover, .tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > a, .ajax-search-icon:hover, .ajax-search-icon:focus, .menu-nav-top li a:hover, .block-big-slider-cate-tag li, .review-score, .drop-caps, #comment-submit, .form-submit #submit, .score-bar, .top-score-bar, #toTop i, .no-thumb, .widget-title h3:before, .close-mobile-menu-wrap, .tn-ajax-loadmore:hover, .tn-ajax-loadmore:focus, .page-numbers.current, .page-numbers:hover, .page-numbers:focus, .meta-thumb-element:hover, .meta-thumb-element:focus, #mobile-button-nav-open:hover, #mobile-button-nav-open:focus, .widget_product_search input[type="submit"]:hover, .widget_product_search input[type="submit"]:focus, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .related.products h2:before, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background: #65ADE0;
+}
