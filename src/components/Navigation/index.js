@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import LanLink from "../LanLink";
 import "./navigation.scss";
 
@@ -127,4 +127,4 @@ class Navigation extends Component {
   }
 }
 
-export default translate("navigation")(Navigation);
+export default withNamespaces("navigation")(Navigation);

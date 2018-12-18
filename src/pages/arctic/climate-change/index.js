@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import LanLink from "../../../components/LanLink";
 
 const pageId = "climateChange";
@@ -26,4 +26,4 @@ const ClimateChange = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(ClimateChange);
+export default withNamespaces(pageId)(ClimateChange);

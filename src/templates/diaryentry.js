@@ -2,7 +2,7 @@ import React from "react";
 import LanLink from "../components/LanLink";
 import Moment from "react-moment";
 import Page, { headerImages } from "../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import LatLong from "../components/LatLong";
 import DiaryImage from "../components/DiaryImage";
 import { graphql } from "gatsby";
@@ -102,7 +102,7 @@ const DiaryEntry = ({ data, t, pageContext, location }) => {
   );
 };
 
-export default translate("diaryEntry")(DiaryEntry);
+export default withNamespaces("diaryEntry")(DiaryEntry);
 
 // Query for the content for this particular page.
 // entryDate variable is set from the createPage context at gatsby-node.js

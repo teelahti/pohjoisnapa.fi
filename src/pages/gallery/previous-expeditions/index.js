@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import Gallery from "../../../components/Gallery";
 
 const pageId = "gallery-previous";
@@ -48,4 +48,4 @@ const GalleryPreviousPage = ({ t, pageContext, location }) => {
   );
 };
 
-export default translate(pageId)(GalleryPreviousPage);
+export default withNamespaces(pageId)(GalleryPreviousPage);

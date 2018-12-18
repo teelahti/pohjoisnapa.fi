@@ -1,5 +1,5 @@
 import React from "react";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 
 import "./footer.scss";
 import bg2 from "./sana-unsupported.gif";
@@ -17,4 +17,4 @@ const Footer = ({ t }) => (
   </footer>
 );
 
-export default translate("translations")(Footer);
+export default withNamespaces("translations")(Footer);

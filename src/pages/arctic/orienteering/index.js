@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import orienteeringImg from "./ahtojaissa-jermi.jpg";
 
 const pageId = "orienteering";
@@ -28,4 +28,4 @@ const Orienteering = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Orienteering);
+export default withNamespaces(pageId)(Orienteering);

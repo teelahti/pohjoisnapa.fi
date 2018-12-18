@@ -1,5 +1,5 @@
 import React from "react";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import { withPrefix } from "gatsby";
 import LanLink from "../components/LanLink";
 import Page, { headerImages } from "../components/Page";
@@ -59,4 +59,4 @@ const IndexPage = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(IndexPage);
+export default withNamespaces(pageId)(IndexPage);

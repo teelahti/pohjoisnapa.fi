@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import clubImg from "./kartanlukua.jpg";
 
 const pageId = "club";
@@ -28,4 +28,4 @@ const Club = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Club);
+export default withNamespaces(pageId)(Club);

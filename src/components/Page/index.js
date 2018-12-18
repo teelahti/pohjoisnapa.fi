@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import Layout from "../Layout";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -90,7 +90,7 @@ class Page extends React.PureComponent {
   }
 }
 
-export default translate("translations")(Page);
+export default withNamespaces("translations")(Page);
 
 // Make usage easier by exporting the possible header images
 export { headerImages } from "../Header";

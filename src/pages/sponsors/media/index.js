@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 
 const pageId = "media";
 
@@ -61,4 +61,4 @@ const Media = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Media);
+export default withNamespaces(pageId)(Media);

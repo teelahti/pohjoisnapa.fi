@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 
 const pageId = "book";
 
@@ -74,4 +74,4 @@ const Book = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Book);
+export default withNamespaces(pageId)(Book);

@@ -1,7 +1,7 @@
 import React from "react";
 import Page, { headerImages } from "../../components/Page";
 import LanLink from "../../components/LanLink";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 
 import sasta from "./img/Sasta.jpg";
 import marmot from "./img/Marmot.jpg";
@@ -181,4 +181,4 @@ const Sponsors = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Sponsors);
+export default withNamespaces(pageId)(Sponsors);

@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import objectivesImg from "./leirin-pystytys.jpg";
 
 const pageId = "timetable";
@@ -28,4 +28,4 @@ const Timetable = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Timetable);
+export default withNamespaces(pageId)(Timetable);

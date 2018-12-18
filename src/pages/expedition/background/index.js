@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import backgroundImg from "./naamat-huurussa.jpg";
 
 const pageId = "background";
@@ -27,4 +27,4 @@ const Background = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Background);
+export default withNamespaces(pageId)(Background);

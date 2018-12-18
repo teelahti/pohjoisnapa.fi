@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import i18n from "../../../components/i18n";
 import LanLink from "../../../components/LanLink";
 import { graphql } from "gatsby";
@@ -33,7 +33,7 @@ const DiaryEntriesPage = ({ t, pageContext, data }) => (
   </Page>
 );
 
-export default translate(pageId)(DiaryEntriesPage);
+export default withNamespaces(pageId)(DiaryEntriesPage);
 
 export const pageQuery = graphql`
   query IndexQuery {

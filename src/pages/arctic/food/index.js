@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import foodImg from "./tero-ja-perttu-syo.jpg";
 
 const pageId = "food";
@@ -27,4 +27,4 @@ const Food = ({ t, pageContext, location }) => (
   </Page>
 );
 
-export default translate(pageId)(Food);
+export default withNamespaces(pageId)(Food);

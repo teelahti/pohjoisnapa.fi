@@ -1,7 +1,7 @@
 import React from "react";
 import Page, { headerImages } from "../../components/Page";
 import LanLink from "../../components/LanLink";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import i18n from "../../components/i18n";
 import Gallery from "../../components/Gallery";
 import { graphql } from "gatsby";
@@ -47,7 +47,7 @@ const GalleryPage = ({ t, pageContext, location, data }) => {
   );
 };
 
-export default translate(pageId)(GalleryPage);
+export default withNamespaces(pageId)(GalleryPage);
 
 export const query = graphql`
   query GalleryBeforeStartQuery {

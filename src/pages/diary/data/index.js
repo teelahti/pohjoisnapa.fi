@@ -3,7 +3,7 @@ import Moment from "react-moment";
 import moment from "moment";
 import Page, { headerImages } from "../../../components/Page";
 import { graphql } from "gatsby";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 import dataImg from "./data.jpg";
 
 import "./data.scss";
@@ -71,7 +71,7 @@ const DiaryData = ({ t, pageContext, data }) => (
   </Page>
 );
 
-export default translate(pageId)(DiaryData);
+export default withNamespaces(pageId)(DiaryData);
 
 export const query = graphql`
   query DataQuery {

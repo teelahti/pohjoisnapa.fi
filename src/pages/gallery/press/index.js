@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { translate } from "react-i18next";
+import { withNamespaces } from "react-i18next";
 
 import imgAhto from "./pohjoisnapa_ahto.jpg";
 import thumbAhto from "./pohjoisnapa_ahto_pieni.jpg";
@@ -109,4 +109,4 @@ const GalleryPressPage = ({ t, pageContext, location }) => {
   );
 };
 
-export default translate(pageId)(GalleryPressPage);
+export default withNamespaces(pageId)(GalleryPressPage);
