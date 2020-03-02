@@ -1,14 +1,16 @@
 import React from "react";
 import Page, { headerImages } from "../../components/Page";
 import LanLink from "../../components/LanLink";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../components/i18n";
 import i18n from "../../components/i18n";
 import Gallery from "../../components/Gallery";
 import { graphql } from "gatsby";
 
 const pageId = "gallery";
 
-const GalleryPage = ({ t, pageContext, location, data }) => {
+const GalleryPage = ({ pageContext, location, data }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
+
   let imgs = data.allDataJson.edges
     .filter(
       ({ node }) =>
@@ -23,7 +25,7 @@ const GalleryPage = ({ t, pageContext, location, data }) => {
         "0"
       )}-small.jpeg`,
       caption: i18n.language === "fi" ? img.Caption_fi : img.Caption_en,
-      alt: i18n.language === "fi" ? img.Caption_fi : img.Caption_en
+      alt: i18n.language === "fi" ? img.Caption_fi : img.Caption_en,
     }));
 
   return (
@@ -31,15 +33,12 @@ const GalleryPage = ({ t, pageContext, location, data }) => {
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top7}
-      language={pageContext.language}
       location={location}
     >
       <h2>{t("header")}</h2>
 
       <div style={{ marginBottom: "10px" }}>
-        <LanLink to="/gallery/at-ice" lan={pageContext.language}>
-          {t("link")}
-        </LanLink>
+        <LanLink to="/gallery/at-ice">{t("link")}</LanLink>
       </div>
 
       <Gallery images={imgs} showThumbnails={true} />
@@ -47,7 +46,7 @@ const GalleryPage = ({ t, pageContext, location, data }) => {
   );
 };
 
-export default withNamespaces(pageId)(GalleryPage);
+export default GalleryPage;
 
 export const query = graphql`
   query GalleryBeforeStartQuery {

@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../components/i18n";
 
 import henkku from "./henkku4.jpg";
 import jermi from "./jermi4.jpg";
@@ -14,60 +14,63 @@ import "./index.scss";
 
 const pageId = "expedition";
 
-const Expedition = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top8}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Expedition = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content-two-column" id="expedition-content">
-      <div
-        className="content left"
-        dangerouslySetInnerHTML={{ __html: t("text") }}
-      />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top8}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-      <aside className="right">
-        <figure>
-          <img src={henkku} alt="Henrik B. Reims" />
-          <figcaption>Henrik B. Reims</figcaption>
-        </figure>
+      <div className="content-two-column" id="expedition-content">
+        <div
+          className="content left"
+          dangerouslySetInnerHTML={{ __html: t("text") }}
+        />
 
-        <figure>
-          <img src={poppis} alt="Poppis Suomela" />
-          <figcaption>Poppis Suomela</figcaption>
-        </figure>
+        <aside className="right">
+          <figure>
+            <img src={henkku} alt="Henrik B. Reims" />
+            <figcaption>Henrik B. Reims</figcaption>
+          </figure>
 
-        <figure>
-          <img src={toni} alt="Toni Vaartimo" />
-          <figcaption>Toni Vaartimo</figcaption>
-        </figure>
+          <figure>
+            <img src={poppis} alt="Poppis Suomela" />
+            <figcaption>Poppis Suomela</figcaption>
+          </figure>
 
-        <figure>
-          <img src={mikko} alt="Mikko Vermas" />
-          <figcaption>Mikko Vermas</figcaption>
-        </figure>
+          <figure>
+            <img src={toni} alt="Toni Vaartimo" />
+            <figcaption>Toni Vaartimo</figcaption>
+          </figure>
 
-        <figure>
-          <img src={tero} alt="Tero Teelahti" />
-          <figcaption>Tero Teelahti</figcaption>
-        </figure>
+          <figure>
+            <img src={mikko} alt="Mikko Vermas" />
+            <figcaption>Mikko Vermas</figcaption>
+          </figure>
 
-        <figure>
-          <img src={perttu} alt="Perttu Ojala" />
-          <figcaption>Perttu Ojala</figcaption>
-        </figure>
+          <figure>
+            <img src={tero} alt="Tero Teelahti" />
+            <figcaption>Tero Teelahti</figcaption>
+          </figure>
 
-        <figure>
-          <img src={jermi} alt="Jermi Tertsunen" />
-          <figcaption>Jermi Tertsunen</figcaption>
-        </figure>
-      </aside>
-    </div>
-  </Page>
-);
+          <figure>
+            <img src={perttu} alt="Perttu Ojala" />
+            <figcaption>Perttu Ojala</figcaption>
+          </figure>
 
-export default withNamespaces(pageId)(Expedition);
+          <figure>
+            <img src={jermi} alt="Jermi Tertsunen" />
+            <figcaption>Jermi Tertsunen</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </Page>
+  );
+};
+
+export default Expedition;

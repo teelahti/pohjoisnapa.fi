@@ -1,26 +1,32 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 
 const pageId = "events";
 
-const Events = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top5}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Events = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top5}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-    <ul>
-      <li>Erä-messut 2006</li>
-      <li>Ski-Expo 2006</li>
-    </ul>
-  </Page>
-);
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
-export default withNamespaces(pageId)(Events);
+      <ul>
+        <li>Erä-messut 2006</li>
+        <li>Ski-Expo 2006</li>
+      </ul>
+    </Page>
+  );
+};
+
+export default Events;

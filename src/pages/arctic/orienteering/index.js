@@ -1,31 +1,37 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 import orienteeringImg from "./ahtojaissa-jermi.jpg";
 
 const pageId = "orienteering";
 
-const Orienteering = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top1}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Orienteering = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top1}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-    <div
-      className="footnote"
-      dangerouslySetInnerHTML={{ __html: t("footnote") }}
-    />
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
-    <aside>
-      <img alt={t("imgAlt")} src={orienteeringImg} />
-    </aside>
-  </Page>
-);
+      <div
+        className="footnote"
+        dangerouslySetInnerHTML={{ __html: t("footnote") }}
+      />
 
-export default withNamespaces(pageId)(Orienteering);
+      <aside>
+        <img alt={t("imgAlt")} src={orienteeringImg} />
+      </aside>
+    </Page>
+  );
+};
+
+export default Orienteering;

@@ -11,25 +11,24 @@ import top8 from "./top8.jpg";
 
 import logo from "./logo_vaalea.gif";
 
-const Header = ({ lan, img }) => (
+const Header = ({ img }) => (
   <header>
-    <LanguageSwitcher lan={lan} />
+    <LanguageSwitcher />
     <div
       style={{
         backgroundImage: `url(${img ? img : top5})`,
         width: "740px",
         height: "181px",
-        marginBottom: "5px"
+        marginBottom: "5px",
       }}
     >
       <h1 style={{ margin: 0 }}>
         <LanLink
           to="/"
-          lan={lan}
           style={{
             position: "relative",
             left: "30px",
-            top: "118px"
+            top: "118px",
           }}
         >
           <img src={logo} alt="Logo" />
@@ -47,5 +46,5 @@ export let headerImages = {
   top5: top5,
   top6: top6,
   top7: top7,
-  top8: top8
+  top8: top8,
 };

@@ -1,7 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { withNamespaces } from "react-i18next";
 import Layout from "../Layout";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -16,46 +14,30 @@ import bg3 from "./tex_northpole2.gif";
 import map from "./kartta.jpg";
 import gradient from "./gradient.jpg";
 
+import { useLocalization } from "../i18n.js";
+
 import "./index.scss";
 
-class Page extends React.PureComponent {
-  static propTypes = {
-    pageContext: PropTypes.shape({
-      language: PropTypes.string.isRequired
-    })
-  };
+// Add LocaleContext to each page so that any component in the tree can query the locale
+const LocaleContext = React.createContext();
 
-  constructor(props) {
-    super(props);
-    const { i18n, language } = props;
-    const currentLanguage = i18n.language;
+const Page = ({ id, title, location, headerImg, children }) => {
+  const { t, i18n } = useLocalization("translations");
 
-    // First request
-    if (!currentLanguage) {
-      i18n.language = language;
-    }
+  let leftColumnImg = id === "index" ? map : gradient;
 
-    // Only update on language change
-    if (currentLanguage !== language) {
-      i18n.changeLanguage(language);
-    }
-  }
-
-  render() {
-    const { id, title, location, headerImg, t, children, i18n } = this.props;
-    let leftColumnImg = id === "index" ? map : gradient;
-
-    return (
+  return (
+    <LocaleContext.Provider value={i18n.language}>
       <Layout>
         <div
           style={{
-            background: `url(${bg1}) no-repeat 30px 150px, url(${bg2}) no-repeat calc(100% - (100% - 740px)/2 + 130px) 290px`
+            background: `url(${bg1}) no-repeat 30px 150px, url(${bg2}) no-repeat calc(100% - (100% - 740px)/2 + 130px) 290px`,
           }}
         >
           <div
             id="main"
             style={{
-              background: `url(${leftColumnImg}) no-repeat left top 196px, url(${stamp}) no-repeat right 195px`
+              background: `url(${leftColumnImg}) no-repeat left top 196px, url(${stamp}) no-repeat right 195px`,
             }}
           >
             <Helmet
@@ -66,17 +48,17 @@ class Page extends React.PureComponent {
               }
               meta={[
                 { name: "description", content: "Pohjoisnapa 2006" },
-                { name: "keywords", content: "retkikunta, expedition" }
+                { name: "keywords", content: "retkikunta, expedition" },
               ]}
             />
-            <Header img={headerImg} lan={i18n.language} />
+            <Header img={headerImg} />
             <Navigation location={location} />
 
             <article
               id={id}
               className="contentpage"
               style={{
-                background: `url(${bg3}) no-repeat right bottom 3px`
+                background: `url(${bg3}) no-repeat right bottom 3px`,
               }}
             >
               {children}
@@ -86,11 +68,12 @@ class Page extends React.PureComponent {
           </div>
         </div>
       </Layout>
-    );
-  }
-}
+    </LocaleContext.Provider>
+  );
+};
 
-export default withNamespaces("translations")(Page);
+export default Page;
+export { LocaleContext };
 
 // Make usage easier by exporting the possible header images
 export { headerImages } from "../Header";

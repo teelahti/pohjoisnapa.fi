@@ -2,14 +2,15 @@ import React from "react";
 import LanLink from "../components/LanLink";
 import Moment from "react-moment";
 import Page, { headerImages } from "../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../components/i18n";
 import LatLong from "../components/LatLong";
 import DiaryImage from "../components/DiaryImage";
 import { graphql } from "gatsby";
 
 import "./diaryentry.scss";
 
-const DiaryEntry = ({ data, t, pageContext, location }) => {
+const DiaryEntry = ({ data, pageContext, location }) => {
+  const { t } = useLocalization("diaryEntry", pageContext.language);
   const doc = data.allDataJson.edges[0].node;
   const language = pageContext.language;
   let subject = doc[`Subject_${language}`];
@@ -48,9 +49,7 @@ const DiaryEntry = ({ data, t, pageContext, location }) => {
                 <dt>{t("data.wind")}</dt>
                 <dd>{doc.Wind ? doc.Wind : "n/a"} m/s</dd>
               </dl>
-              <LanLink to="/diary/data" lan={language}>
-                {t("data.link")}
-              </LanLink>
+              <LanLink to="/diary/data">{t("data.link")}</LanLink>
             </aside>
           ) : (
             false
@@ -69,16 +68,14 @@ const DiaryEntry = ({ data, t, pageContext, location }) => {
             </ul>
             <div id="diaryentry-prev" className="diaryentry-nav">
               {doc.Previous && (
-                <LanLink to={`/diary/${doc.Previous}`} lan={language}>
+                <LanLink to={`/diary/${doc.Previous}`}>
                   {t("links.prev")}
                 </LanLink>
               )}
             </div>
             <div id="diaryentry-next" className="diaryentry-nav">
               {doc.Next && (
-                <LanLink to={`/diary/${doc.Next}`} lan={language}>
-                  {t("links.next")}
-                </LanLink>
+                <LanLink to={`/diary/${doc.Next}`}>{t("links.next")}</LanLink>
               )}
             </div>
           </footer>
@@ -102,12 +99,12 @@ const DiaryEntry = ({ data, t, pageContext, location }) => {
   );
 };
 
-export default withNamespaces("diaryEntry")(DiaryEntry);
+export default DiaryEntry;
 
 // Query for the content for this particular page.
 // entryDate variable is set from the createPage context at gatsby-node.js
 export const diaryEntryQuery = graphql`
-  query DiaryEntryQuery($entryDate: String!) {
+  query DiaryEntryQuery($entryDate: Date!) {
     allDataJson(filter: { EntryDate: { eq: $entryDate } }) {
       edges {
         node {

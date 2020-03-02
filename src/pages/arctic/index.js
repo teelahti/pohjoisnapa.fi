@@ -1,31 +1,34 @@
 import React from "react";
 import Page, { headerImages } from "../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../components/i18n";
 import img from "./paivakirja360.jpg";
 
 const pageId = "arctic";
 
-const Arctic = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top1}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Arctic = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content-two-column">
-      <div
-        className="content left"
-        dangerouslySetInnerHTML={{ __html: t("text") }}
-      />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top1}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-      <aside className="right">
-        <img src={img} alt={t("imgAlt")} />
-      </aside>
-    </div>
-  </Page>
-);
+      <div className="content-two-column">
+        <div
+          className="content left"
+          dangerouslySetInnerHTML={{ __html: t("text") }}
+        />
 
-export default withNamespaces(pageId)(Arctic);
+        <aside className="right">
+          <img src={img} alt={t("imgAlt")} />
+        </aside>
+      </div>
+    </Page>
+  );
+};
+
+export default Arctic;

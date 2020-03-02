@@ -1,11 +1,13 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 import Gallery from "../../../components/Gallery";
 
 const pageId = "gallery-previous";
 
-const GalleryPreviousPage = ({ t, pageContext, location }) => {
+const GalleryPreviousPage = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
+
   let names = [
     "ahtojaat",
     "ahtojaissa-jermi",
@@ -23,14 +25,14 @@ const GalleryPreviousPage = ({ t, pageContext, location }) => {
     "lvjk2",
     "lvjk1",
     "suomenlippu-oviaukossa",
-    "naamat-huurussa"
+    "naamat-huurussa",
   ];
 
   let imgs = names.map(n => ({
     src: `/images/previous-expeditions/600px/${n}.jpg`,
     thumbnail: `/images/previous-expeditions/thumbnails/${n}.jpg`,
     caption: t(`imgs.${n}`),
-    alt: t(`imgs.${n}`)
+    alt: t(`imgs.${n}`),
   }));
 
   return (
@@ -38,7 +40,6 @@ const GalleryPreviousPage = ({ t, pageContext, location }) => {
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top7}
-      language={pageContext.language}
       location={location}
     >
       <h2>{t("header")}</h2>
@@ -48,4 +49,4 @@ const GalleryPreviousPage = ({ t, pageContext, location }) => {
   );
 };
 
-export default withNamespaces(pageId)(GalleryPreviousPage);
+export default GalleryPreviousPage;

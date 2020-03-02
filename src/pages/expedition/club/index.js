@@ -1,31 +1,34 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 import clubImg from "./kartanlukua.jpg";
 
 const pageId = "club";
 
-const Club = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top8}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Club = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content-two-column">
-      <div
-        className="content left"
-        dangerouslySetInnerHTML={{ __html: t("text") }}
-      />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top8}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-      <aside className="right">
-        <img alt={t("imgAlt")} src={clubImg} />
-      </aside>
-    </div>
-  </Page>
-);
+      <div className="content-two-column">
+        <div
+          className="content left"
+          dangerouslySetInnerHTML={{ __html: t("text") }}
+        />
 
-export default withNamespaces(pageId)(Club);
+        <aside className="right">
+          <img alt={t("imgAlt")} src={clubImg} />
+        </aside>
+      </div>
+    </Page>
+  );
+};
+
+export default Club;

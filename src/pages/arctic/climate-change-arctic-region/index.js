@@ -1,26 +1,30 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 import LanLink from "../../../components/LanLink";
 
 const pageId = "climateChangeArctic";
 
-const ClimateChangeArctic = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top1}
-    language={pageContext.language}
-    location={window.location}
-  >
-    <h2>{t("header")}</h2>
+const ClimateChangeArctic = ({ pageContext }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top1}
+      location={window.location}
+    >
+      <h2>{t("header")}</h2>
 
-    <LanLink to="/arctic/climate-change" lan={pageContext.language}>
-      {t("prev")}
-    </LanLink>
-  </Page>
-);
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
-export default withNamespaces(pageId)(ClimateChangeArctic);
+      <LanLink to="/arctic/climate-change">{t("prev")}</LanLink>
+    </Page>
+  );
+};
+
+export default ClimateChangeArctic;

@@ -1,28 +1,35 @@
 import React from "react";
 import LanLink from "../LanLink";
+import { LocaleContext } from "../Page";
 import "./languageswitcher.scss";
 
 const languages = [
   {
     code: "en",
-    label: "In English"
+    label: "In English",
   },
   {
     code: "fi",
-    label: "Suomeksi"
-  }
+    label: "Suomeksi",
+  },
 ];
 
-const LanguageSwitcher = ({ lan }) => {
+const LanguageSwitcher = () => {
   return (
-    <div className="LanguageSwitcher">
-      {" "}
-      {languages.filter(s => s.code !== lan).map(language => (
-        <LanLink key={language.code} to="/" lan={language.code}>
-          {language.label}
-        </LanLink>
-      ))}{" "}
-    </div>
+    <LocaleContext.Consumer>
+      {language => (
+        <div className="LanguageSwitcher">
+          {" "}
+          {languages
+            .filter(s => s.code !== language)
+            .map(l => (
+              <LanLink key={l.code} to="/" lan={l.code}>
+                {l.label}
+              </LanLink>
+            ))}{" "}
+        </div>
+      )}
+    </LocaleContext.Consumer>
   );
 };
 

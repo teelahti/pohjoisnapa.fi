@@ -1,30 +1,36 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 import foodImg from "./tero-ja-perttu-syo.jpg";
 
 const pageId = "food";
 
-const Food = ({ t, pageContext, location }) => (
-  <Page
-    id={pageId}
-    title={t("title")}
-    headerImg={headerImages.top1}
-    language={pageContext.language}
-    location={location}
-  >
-    <h2>{t("header")}</h2>
+const Food = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
 
-    <div className="content" dangerouslySetInnerHTML={{ __html: t("text") }} />
+  return (
+    <Page
+      id={pageId}
+      title={t("title")}
+      headerImg={headerImages.top1}
+      location={location}
+    >
+      <h2>{t("header")}</h2>
 
-    <aside id="food-recipe">
-      <img alt={t("recipe.imgAlt")} src={foodImg} />
+      <div
+        className="content"
+        dangerouslySetInnerHTML={{ __html: t("text") }}
+      />
 
-      <h2>{t("recipe.header")}</h2>
+      <aside id="food-recipe">
+        <img alt={t("recipe.imgAlt")} src={foodImg} />
 
-      <div dangerouslySetInnerHTML={{ __html: t("recipe.text") }} />
-    </aside>
-  </Page>
-);
+        <h2>{t("recipe.header")}</h2>
 
-export default withNamespaces(pageId)(Food);
+        <div dangerouslySetInnerHTML={{ __html: t("recipe.text") }} />
+      </aside>
+    </Page>
+  );
+};
+
+export default Food;

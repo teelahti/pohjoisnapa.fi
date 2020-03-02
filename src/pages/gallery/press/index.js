@@ -1,6 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
-import { withNamespaces } from "react-i18next";
+import { useLocalization } from "../../../components/i18n";
 
 import imgAhto from "./pohjoisnapa_ahto.jpg";
 import thumbAhto from "./pohjoisnapa_ahto_pieni.jpg";
@@ -25,13 +25,14 @@ const Fig = ({ img, alt, thumb, children, ...others }) => (
   </figure>
 );
 
-const GalleryPressPage = ({ t, pageContext, location }) => {
+const GalleryPressPage = ({ pageContext, location }) => {
+  const { t } = useLocalization(pageId, pageContext.language);
+
   return (
     <Page
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top7}
-      language={pageContext.language}
       location={location}
     >
       <h2>{t("header")}</h2>
@@ -49,8 +50,10 @@ const GalleryPressPage = ({ t, pageContext, location }) => {
           thumb={thumbRyhma}
           alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006"
         >
-          Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.<br />
-          Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.<br />
+          Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.
+          <br />
+          Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.
+          <br />
           Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. Ylärivi:
           Toni Vaartimo.
         </Fig>
@@ -98,15 +101,17 @@ const GalleryPressPage = ({ t, pageContext, location }) => {
 
       <h2>Tiedustelut ja haastattelupyynnöt</h2>
       <p>
-        Tiedotus ja media, valokuvat<br />
+        Tiedotus ja media, valokuvat
+        <br />
         Kari Poppis Suomela 0400 420 002
       </p>
       <p>
-        Retkikunnan johtaja<br />
+        Retkikunnan johtaja
+        <br />
         Henrik B. Reims 040 515 5719
       </p>
     </Page>
   );
 };
 
-export default withNamespaces(pageId)(GalleryPressPage);
+export default GalleryPressPage;

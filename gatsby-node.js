@@ -33,7 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
         // Create pages for each markdown file.
         result.data.allDataJson.edges.forEach(({ node }) => {
           const path = `/diary/${node.Slug}`;
-
+          
           let basePageInfo = {
             path: path,
             component: diaryTemplate,
