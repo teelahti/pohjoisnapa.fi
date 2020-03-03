@@ -10,7 +10,7 @@ import "./all.scss";
 
 const pageId = "diaryList";
 
-const DiaryEntriesPage = ({ pageContext, data }) => {
+const DiaryEntriesPage = ({ pageContext, data, location }) => {
   const { t } = useLocalization(pageId, pageContext.language);
 
   return (
@@ -18,7 +18,7 @@ const DiaryEntriesPage = ({ pageContext, data }) => {
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top5}
-      location={window.location}
+      location={location}
     >
       <h2>{t("header")}</h2>
 

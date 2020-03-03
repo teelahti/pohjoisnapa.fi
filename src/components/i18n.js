@@ -5,7 +5,6 @@ import en from "../locales/en.js";
 import fi from "../locales/fi.js";
 import { useEffect } from "react";
 
-// TODO: Copy static compilation from https://github.com/gatsbyjs/gatsby/issues/3853#issuecomment-365216769
 i18n.use(initReactI18next).init({
   resources: {
     fi: fi,

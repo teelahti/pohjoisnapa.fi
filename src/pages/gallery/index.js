@@ -19,13 +19,17 @@ const GalleryPage = ({ pageContext, location, data }) => {
     .map(({ node }) => node.Images)
     .reduce((all, current) => all.concat(current))
     .map(img => ({
-      src: `/images/paivakirja/${img.Id.toString().padStart(3, "0")}.jpeg`,
-      thumbnail: `/images/paivakirja/${img.Id.toString().padStart(
-        3,
-        "0"
-      )}-small.jpeg`,
+      source: {
+        regular: `/images/paivakirja/${img.Id.toString().padStart(
+          3,
+          "0"
+        )}.jpeg`,
+        thumbnail: `/images/paivakirja/${img.Id.toString().padStart(
+          3,
+          "0"
+        )}-small.jpeg`,
+      },
       caption: i18n.language === "fi" ? img.Caption_fi : img.Caption_en,
-      alt: i18n.language === "fi" ? img.Caption_fi : img.Caption_en,
     }));
 
   return (

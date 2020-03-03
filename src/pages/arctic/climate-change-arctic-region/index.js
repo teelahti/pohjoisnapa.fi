@@ -5,7 +5,7 @@ import LanLink from "../../../components/LanLink";
 
 const pageId = "climateChangeArctic";
 
-const ClimateChangeArctic = ({ pageContext }) => {
+const ClimateChangeArctic = ({ pageContext, location }) => {
   const { t } = useLocalization(pageId, pageContext.language);
 
   return (
@@ -13,7 +13,7 @@ const ClimateChangeArctic = ({ pageContext }) => {
       id={pageId}
       title={t("title")}
       headerImg={headerImages.top1}
-      location={window.location}
+      location={location}
     >
       <h2>{t("header")}</h2>
 

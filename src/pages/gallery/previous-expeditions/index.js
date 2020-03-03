@@ -29,10 +29,11 @@ const GalleryPreviousPage = ({ pageContext, location }) => {
   ];
 
   let imgs = names.map(n => ({
-    src: `/images/previous-expeditions/600px/${n}.jpg`,
-    thumbnail: `/images/previous-expeditions/thumbnails/${n}.jpg`,
+    source: {
+      regular: `/images/previous-expeditions/600px/${n}.jpg`,
+      thumbnail: `/images/previous-expeditions/thumbnails/${n}.jpg`,
+    },
     caption: t(`imgs.${n}`),
-    alt: t(`imgs.${n}`),
   }));
 
   return (
