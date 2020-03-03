@@ -4,16 +4,11 @@ import { useLocalization } from "../../../components/i18n";
 
 const pageId = "equipment";
 
-const Equipment = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Equipment = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top6}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top6}>
       <h2>{t("header")}</h2>
 
       <table id="varustelista">

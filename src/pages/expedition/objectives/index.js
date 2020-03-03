@@ -5,16 +5,11 @@ import objectivesImg from "./leirin-pystytys.jpg";
 
 const pageId = "objectives";
 
-const Objectives = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Objectives = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top2}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top2}>
       <h2>{t("header")}</h2>
 
       <div className="content-two-column">

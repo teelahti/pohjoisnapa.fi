@@ -25,16 +25,11 @@ const Fig = ({ img, alt, thumb, children, ...others }) => (
   </figure>
 );
 
-const GalleryPressPage = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const GalleryPressPage = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top7}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h2>{t("header")}</h2>
       <p>
         Lehdistokuvat vapaassa tiedotuskäytässä 20.5.2006 asti. Käytön

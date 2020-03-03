@@ -5,16 +5,11 @@ import researchImg from "./KiHuPerttu360.jpg";
 
 const pageId = "research";
 
-const Research = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Research = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top8}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
       <h2>{t("header")}</h2>
 
       <figure

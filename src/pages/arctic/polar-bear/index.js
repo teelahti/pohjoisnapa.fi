@@ -5,16 +5,11 @@ import polarBearImg from "./jaakarhu-levinneisyys.gif";
 
 const pageId = "polarBear";
 
-const PolarBear = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const PolarBear = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top1}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
       <h2>{t("header")}</h2>
 
       <figure style={{ float: "right", margin: "0 0 20px 20px" }}>

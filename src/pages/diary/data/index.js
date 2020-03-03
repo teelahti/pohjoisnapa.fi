@@ -10,16 +10,11 @@ import "./data.scss";
 
 const pageId = "data";
 
-const DiaryData = ({ pageContext, data, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const DiaryData = ({ data }) => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top5}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
       <h2>{t("header")}</h2>
 
       <img src={dataImg} alt="Data" />

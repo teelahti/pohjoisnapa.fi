@@ -5,8 +5,8 @@ import Gallery from "../../../components/Gallery";
 
 const pageId = "gallery-previous";
 
-const GalleryPreviousPage = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const GalleryPreviousPage = () => {
+  const { t } = useLocalization(pageId);
 
   let names = [
     "ahtojaat",
@@ -37,12 +37,7 @@ const GalleryPreviousPage = ({ pageContext, location }) => {
   }));
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top7}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h2>{t("header")}</h2>
 
       <Gallery images={imgs} showThumbnails={true} />

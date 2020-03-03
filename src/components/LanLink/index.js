@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { LocaleContext } from "../Page";
+import { LocaleContext } from "../Layout";
 
 const LanLink = ({ to, lan, ...other }) => (
   <LocaleContext.Consumer>

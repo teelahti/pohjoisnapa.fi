@@ -1,12 +1,12 @@
 import React from "react";
 import { useLocalization } from "../i18n";
-import { LocaleContext } from "../Page";
+import { useLocation } from "@reach/router";
 import LanLink from "../LanLink";
 import "./navigation.scss";
 
-const Navigation = ({ location }) => {
-  const lctx = React.useContext(LocaleContext);
-  const { t } = useLocalization("navigation", lctx.language);
+const Navigation = () => {
+  const location = useLocation();
+  const { t } = useLocalization("navigation");
   const ListLink = ({ to, text, children, ...rest }) => (
     <li>
       <LanLink activeClassName="nav-active" to={to} {...rest}>

@@ -1,6 +1,6 @@
 import React from "react";
 import LanLink from "../LanLink";
-import { LocaleContext } from "../Page";
+import { LocaleContext } from "../Layout";
 import "./languageswitcher.scss";
 
 const languages = [

@@ -64,16 +64,11 @@ const Small = props => (
   </Big>
 );
 
-const Sponsors = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Sponsors = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top5}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top5}>
       <div id="isottukijat">
         <Big name="Sasta" to="http://www.sasta.fi" img={sasta} />
         <Big name="Marmot" to="http://www.marmot.com" img={marmot}>

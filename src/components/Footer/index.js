@@ -1,13 +1,11 @@
 import React from "react";
 import { useLocalization } from "../i18n";
-import { LocaleContext } from "../Page";
 
 import "./footer.scss";
 import bg2 from "./sana-unsupported.gif";
 
 const Footer = () => {
-  const lctx = React.useContext(LocaleContext);
-  const { t } = useLocalization("translations", lctx.language);
+  const { t } = useLocalization("translations");
 
   return (
     <footer>

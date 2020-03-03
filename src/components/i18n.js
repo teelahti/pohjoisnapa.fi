@@ -3,7 +3,6 @@ import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import en from "../locales/en.js";
 import fi from "../locales/fi.js";
-import { useEffect } from "react";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -38,20 +37,9 @@ i18n.use(initReactI18next).init({
 export default i18n;
 
 // Create custom hook to make it easier to use translations, and to ensure our translation
-// component is always updated. This hook assumes that language is the first part in
-// our url.
-function useLocalization(ns, language) {
+// component is always updated. Current language is set at the root at Layout
+function useLocalization(ns) {
   const { t, i18n } = useTranslation(ns);
-
-  useEffect(() => {
-    if (language && i18n.language !== language) {
-      const c = async () => {
-        await i18n.changeLanguage(language);
-      };
-
-      c();
-    }
-  }, [i18n, language]);
 
   return { t, i18n };
 }

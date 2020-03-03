@@ -9,20 +9,14 @@ import { graphql } from "gatsby";
 
 import "./diaryentry.scss";
 
-const DiaryEntry = ({ data, pageContext, location }) => {
-  const { t } = useLocalization("diaryEntry", pageContext.language);
+const DiaryEntry = ({ data, pageContext }) => {
+  const { t } = useLocalization("diaryEntry");
   const doc = data.allDataJson.edges[0].node;
   const language = pageContext.language;
   let subject = doc[`Subject_${language}`];
 
   return (
-    <Page
-      id="diaryentry"
-      title={subject}
-      headerImg={headerImages.top5}
-      language={language}
-      location={location}
-    >
+    <Page id="diaryentry" title={subject} headerImg={headerImages.top5}>
       <h2>
         <Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}
       </h2>

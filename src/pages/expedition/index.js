@@ -14,16 +14,11 @@ import "./index.scss";
 
 const pageId = "expedition";
 
-const Expedition = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Expedition = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top8}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
       <h2>{t("header")}</h2>
 
       <div className="content-two-column" id="expedition-content">

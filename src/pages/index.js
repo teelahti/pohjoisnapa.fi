@@ -8,11 +8,11 @@ import "./index.scss";
 
 const pageId = "index";
 
-const IndexPage = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const IndexPage = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page id={pageId} headerImg={headerImages.top5} location={location}>
+    <Page id={pageId} headerImg={headerImages.top5}>
       <div id="index-content">
         <div id="index-latestdiary">
           <div>

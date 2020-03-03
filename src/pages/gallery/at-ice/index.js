@@ -8,8 +8,8 @@ import { graphql } from "gatsby";
 
 const pageId = "gallery-at-ice";
 
-const GalleryAtIcePage = ({ pageContext, location, data }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const GalleryAtIcePage = ({ data }) => {
+  const { t } = useLocalization(pageId);
 
   let imgs = data.allDataJson.edges
     .filter(
@@ -33,12 +33,7 @@ const GalleryAtIcePage = ({ pageContext, location, data }) => {
     }));
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top7}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h2>{t("header")}</h2>
 
       <div style={{ marginBottom: "10px" }}>

@@ -5,16 +5,11 @@ import orienteeringImg from "./ahtojaissa-jermi.jpg";
 
 const pageId = "orienteering";
 
-const Orienteering = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Orienteering = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top1}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top1}>
       <h2>{t("header")}</h2>
 
       <div

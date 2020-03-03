@@ -5,16 +5,11 @@ import clubImg from "./kartanlukua.jpg";
 
 const pageId = "club";
 
-const Club = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Club = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top8}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top8}>
       <h2>{t("header")}</h2>
 
       <div className="content-two-column">

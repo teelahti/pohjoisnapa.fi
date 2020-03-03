@@ -5,16 +5,11 @@ import backgroundImg from "./naamat-huurussa.jpg";
 
 const pageId = "background";
 
-const Background = ({ pageContext, location }) => {
-  const { t } = useLocalization(pageId, pageContext.language);
+const Background = () => {
+  const { t } = useLocalization(pageId);
 
   return (
-    <Page
-      id={pageId}
-      title={t("title")}
-      headerImg={headerImages.top7}
-      location={location}
-    >
+    <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h2>{t("header")}</h2>
       <div className="content-two-column">
         <div
