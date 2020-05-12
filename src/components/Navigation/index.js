@@ -73,8 +73,6 @@ const Navigation = () => {
 
   // regex: (\/.{2}\/){0,1} + path
   // Iterate through paths and check which one is active
-  //var pathTest = new RegExp("\/.{2}\/){0,1}");
-  console.log("path", location.pathname);
   Object.keys(nav).forEach(path => {
     let cur = nav[path];
 
