@@ -1,5 +1,4 @@
 import React from "react";
-import Moment from "react-moment";
 import Page, { headerImages } from "../../../components/Page";
 import { useLocalization } from "../../../components/i18n";
 import i18n from "../../../components/i18n";
@@ -7,6 +6,7 @@ import LanLink from "../../../components/LanLink";
 import { graphql } from "gatsby";
 
 import "./all.scss";
+import { FormattedDate } from "../../../components/Intl";
 
 const pageId = "diaryList";
 
@@ -20,7 +20,7 @@ const DiaryEntriesPage = ({ data }) => {
       <ul className="diary-list">
         {data.allDataJson.edges.map(({ node }) => (
           <li key={node.Slug}>
-            <Moment interval={0} date={node.EntryDate} format="D.M.YYYY" />
+            <FormattedDate value={node.EntryDate} />
             <LanLink to={"/diary/" + node.Slug}>
               {i18n.language === "fi" ? node.Subject_fi : node.Subject_en}
             </LanLink>
@@ -35,7 +35,7 @@ export default DiaryEntriesPage;
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allDataJson {
+    allDataJson(sort: { fields: [EntryDate], order: ASC }) {
       edges {
         node {
           Slug

@@ -1,12 +1,11 @@
 import React from "react";
-import Moment from "react-moment";
-import moment from "moment";
 import Page, { headerImages } from "../../../components/Page";
 import { graphql } from "gatsby";
 import { useLocalization } from "../../../components/i18n";
 import dataImg from "./data.jpg";
 
 import "./data.scss";
+import { FormattedDate } from "../../../components/Intl";
 
 const pageId = "data";
 
@@ -55,11 +54,7 @@ const DiaryData = ({ data }) => {
             .map(({ node }) => (
               <tr key={node.EntryDate}>
                 <td>
-                  <Moment
-                    interval={0}
-                    date={moment(node.EntryDate).subtract(1, "d")}
-                    format="D.M.YYYY"
-                  />
+                  <FormattedDate value={new Date(node.EntryDate)} />
                 </td>
                 <td>{node.DistanceTraveled}</td>
                 <td>{node.Temperature}</td>

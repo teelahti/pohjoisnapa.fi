@@ -1,6 +1,5 @@
 import React from "react";
 import LanLink from "../components/LanLink";
-import Moment from "react-moment";
 import Page, { headerImages } from "../components/Page";
 import { useLocalization } from "../components/i18n";
 import LatLong from "../components/LatLong";
@@ -8,6 +7,7 @@ import DiaryImage from "../components/DiaryImage";
 import { graphql } from "gatsby";
 
 import "./diaryentry.scss";
+import { FormattedDate, FormattedDateTime } from "../components/Intl";
 
 const DiaryEntry = ({ data, pageContext }) => {
   const { t } = useLocalization("diaryEntry");
@@ -18,7 +18,7 @@ const DiaryEntry = ({ data, pageContext }) => {
   return (
     <Page id="diaryentry" title={subject} headerImg={headerImages.top5}>
       <h2>
-        <Moment date={doc.EntryDate} format="D.M.YYYY" /> {subject}
+        <FormattedDate value={doc.EntryDate} /> {subject}
       </h2>
       <LatLong
         lat={doc.LocationLatitude}
@@ -52,12 +52,11 @@ const DiaryEntry = ({ data, pageContext }) => {
           <footer>
             <ul className="diaryentry-dates">
               <li>
-                {t("created")}{" "}
-                <Moment date={doc.CreatedDate} format="D.M.YYYY h.mm" />.
+                {t("created")} <FormattedDateTime value={doc.CreatedDate} />.
               </li>
               <li>
                 {t("lastModified")}{" "}
-                <Moment date={doc.LastModifiedDate} format="D.M.YYYY h.mm" />.
+                <FormattedDateTime value={doc.LastModifiedDate} />.
               </li>
             </ul>
             <div id="diaryentry-prev" className="diaryentry-nav">
