@@ -17,7 +17,9 @@ const ClimateChange = () => {
         dangerouslySetInnerHTML={{ __html: t("text") }}
       />
 
-      <LanLink to="/arctic/climate-change-arctic-region">{t("next")} ></LanLink>
+      <LanLink to="/arctic/climate-change-arctic-region">
+        {t("next")} &gt;
+      </LanLink>
     </Page>
   );
 };
