@@ -19,7 +19,7 @@ import hilleberg from "./img/hilleberg.jpg";
 import mildola from "./img/mildola2.jpg";
 import area from "./img/area2.gif";
 import rammer from "./img/rammer.jpg";
-import vaiska from "./img/vaiska.jpg";
+import vaiska from "./img/Vaiska.jpg";
 import vbsnet from "./img/Vbsnet2.jpg";
 import euromaski from "./img/Euromaski.gif";
 import vaasan from "./img/vaasan.jpg";
