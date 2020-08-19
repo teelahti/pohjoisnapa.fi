@@ -22,6 +22,9 @@ static (preferably CDN-based) hosting.
 
 ## Deploy
 
+CI build and deployment has been set up for this site. Just push to master
+branch to deploy. See .github/workflows/deploy.yml for specifics.
+
 To deploy locally built site run `firebase deploy`.
 
 ## Misc

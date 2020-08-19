@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Tero Teelahti",
   "dependencies": {
-    "@hot-loader/react-dom": "npm:react-dom@16.13.1",
     "gatsby": "^2.22.7",
     "gatsby-cli": "^2.12.32",
     "gatsby-plugin-react-helmet": "^3.3.2",
