@@ -1,4 +1,4 @@
-export default {
+module.exports =  {
   arctic: {
     imgAlt: "Diary image",
     header: "Arctic",

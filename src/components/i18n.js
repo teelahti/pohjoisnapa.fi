@@ -1,21 +1,22 @@
 import i18n from "i18next";
-// import Backend from "i18next-xhr-backend";
 import { initReactI18next, useTranslation } from "react-i18next";
-import en from "../locales/en.js";
-import fi from "../locales/fi.js";
+import locales from "../locales/config.js";
+
+const defaultLanguage = locales?.find(loc => loc.default)?.code ?? "fi";
 
 i18n.use(initReactI18next).init({
-  resources: {
-    fi: fi,
-    en: en,
-  },
+  resources: locales.reduce((map, loc) => {
+    map[loc.code] = loc.resources;
+    return map;
+  }, {}),
+
   // Languages supported
-  whitelist: ["fi", "en"],
+  whitelist: locales.map(loc => loc.code),
   nonExplicitWhitelist: true,
 
-  // Do not set the language here as we do want to set it on Page based on input data
-  lng: "fi",
-  fallbackLng: "fi",
+  // Do not set "correct" language here as we do want to set it on Page based on input data
+  lng: defaultLanguage,
+  fallbackLng: defaultLanguage,
 
   load: "languageOnly",
 

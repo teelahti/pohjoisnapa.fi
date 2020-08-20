@@ -1,3 +1,5 @@
+const locales = require(`./src/locales/config.js`);
+
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -60,25 +62,12 @@ exports.onCreatePage = ({ page, actions }) => {
 };
 
 function generatePageInfos(defaultInfos) {
-  const pageFI = {
+  return locales.map(loc => ({
     ...defaultInfos,
     context: {
       ...defaultInfos.context,
-      language: "fi",
+      language: loc.code,
     },
-    // Use the original path for FI
-    path: defaultInfos.path,
-  };
-
-  const pageEN = {
-    ...defaultInfos,
-    context: {
-      ...defaultInfos.context,
-      language: "en",
-    },
-    // Use altered path for EN
-    path: "/en" + defaultInfos.path,
-  };
-
-  return [pageFI, pageEN];
+    path: loc.path + defaultInfos.path,
+  }));
 }

@@ -1,63 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { LocaleContext } from "../Layout";
-
-// Create a map between the supported two letter languages we use in page contexts, and
-// the full locale used in formats.
-const formats = {
-  fi: {
-    full: new Intl.DateTimeFormat("fi-FI", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-    }),
-    date: new Intl.DateTimeFormat("fi-FI", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    }),
-    time: new Intl.DateTimeFormat("fi-FI", {
-      hour: "numeric",
-      minute: "numeric",
-    }),
-    relative: Intl.RelativeTimeFormat
-      ? new Intl.RelativeTimeFormat("fi-FI", {
-          style: "long",
-          numeric: "auto",
-        })
-      : null,
-  },
-  en: {
-    full: new Intl.DateTimeFormat("en-GB", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-    }),
-    date: new Intl.DateTimeFormat("en-GB", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-    }),
-    time: new Intl.DateTimeFormat("en-GB", {
-      hour: "numeric",
-      minute: "numeric",
-    }),
-    relative: Intl.RelativeTimeFormat
-      ? new Intl.RelativeTimeFormat("en-GB", {
-          style: "long",
-          numeric: "auto",
-        })
-      : null,
-  },
-};
+import locales from "../../locales/config.js";
 
 export const FormattedDate = ({ value }) => (
   <LocaleContext.Consumer>
-    {language => <time>{formats[language].date.format(new Date(value))}</time>}
+    {language => (
+      <time>
+        {locales
+          .find(l => l.code === language)
+          .formats.date.format(new Date(value))}
+      </time>
+    )}
   </LocaleContext.Consumer>
 );
 
@@ -71,7 +25,13 @@ FormattedDate.propTypes = {
 
 export const FormattedTime = ({ value }) => (
   <LocaleContext.Consumer>
-    {language => <time>{formats[language].time.format(new Date(value))}</time>}
+    {language => (
+      <time>
+        {locales
+          .find(l => l.code === language)
+          .formats.time.format(new Date(value))}
+      </time>
+    )}
   </LocaleContext.Consumer>
 );
 
@@ -85,7 +45,13 @@ FormattedTime.propTypes = {
 
 export const FormattedDateTime = ({ value }) => (
   <LocaleContext.Consumer>
-    {language => <time>{formats[language].full.format(new Date(value))}</time>}
+    {language => (
+      <time>
+        {locales
+          .find(l => l.code === language)
+          .formats.full.format(new Date(value))}
+      </time>
+    )}
   </LocaleContext.Consumer>
 );
 
@@ -134,7 +100,9 @@ export const FormattedRelative = ({ value }) => {
     <LocaleContext.Consumer>
       {language => (
         <time>
-          {formats[language].relative.format(Math.floor(showDiff), unit)}
+          {locales
+            .find(l => l.code === language)
+            .formats.relative.format(Math.floor(showDiff), unit)}
         </time>
       )}
     </LocaleContext.Consumer>
