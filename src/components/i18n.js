@@ -1,48 +1,43 @@
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
+import { LocaleContext } from "./Layout";
 import locales from "../locales/config.js";
+import { useContext } from "react";
 
-const defaultLanguage = locales?.find(loc => loc.default)?.code ?? "fi";
+const fallBackResources = locales?.find(loc => loc.default)?.resources;
 
-i18n.use(initReactI18next).init({
-  resources: locales.reduce((map, loc) => {
-    map[loc.code] = loc.resources;
-    return map;
-  }, {}),
-
-  // Languages supported
-  whitelist: locales.map(loc => loc.code),
-  nonExplicitWhitelist: true,
-
-  // Do not set "correct" language here as we do want to set it on Page based on input data
-  lng: defaultLanguage,
-  fallbackLng: defaultLanguage,
-
-  load: "languageOnly",
-
-  // have a common namespace used around the full app
-  ns: ["translations"],
-  defaultNS: "translations",
-
-  debug: true,
-
-  interpolation: {
-    escapeValue: false, // not needed for react!!
-  },
-
-  react: {
-    useSuspense: true,
-  },
-});
-
-export default i18n;
-
-// Create custom hook to make it easier to use translations, and to ensure our translation
-// component is always updated. Current language is set at the root at Layout
+// Create custom hook to make it easier to use translations.
+// Hacky but streamlined version using fully own code, without library like i18next.
+// Current language is set at the root at Layout
 function useLocalization(ns) {
-  const { t, i18n } = useTranslation(ns);
+  const language = useContext(LocaleContext);
 
-  return { t, i18n };
+  const { resources } = locales.find(s => s.code === language);
+  if (!resources) {
+    throw new Error(`resources for language ${language} missing`);
+  }
+
+  // Return a function that binds to this resource ns and knows how to get value
+  const t = key => {
+    const report = translation => {
+      if (!translation) {
+        console.error(`translation for ns=${ns} key=${key} is missing`);
+      }
+
+      return translation;
+    };
+
+    // For legacy reason support dot notation to get a sub-property. If the source
+    // translation data is flattened this can be removed
+    if (key.indexOf(".") !== -1) {
+      const [top, sub] = key.split(".");
+      return report(
+        resources[ns]?.[top]?.[sub] ?? fallBackResources?.[ns]?.[top]?.[sub]
+      );
+    }
+
+    return report(resources[ns]?.[key] ?? fallBackResources?.[ns]?.[key]);
+  };
+
+  return { t };
 }
 
 export { useLocalization };

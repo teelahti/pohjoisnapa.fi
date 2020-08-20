@@ -1,7 +1,6 @@
 import React from "react";
 import Page, { headerImages } from "../../../components/Page";
 import { useLocalization } from "../../../components/i18n";
-import i18n from "../../../components/i18n";
 import LanLink from "../../../components/LanLink";
 import { graphql } from "gatsby";
 
@@ -10,7 +9,7 @@ import { FormattedDate } from "../../../components/Intl";
 
 const pageId = "diaryList";
 
-const DiaryEntriesPage = ({ data }) => {
+const DiaryEntriesPage = ({ data, pageContext: { language } }) => {
   const { t } = useLocalization(pageId);
 
   return (
@@ -22,7 +21,7 @@ const DiaryEntriesPage = ({ data }) => {
           <li key={node.Slug}>
             <FormattedDate value={node.EntryDate} />
             <LanLink to={"/diary/" + node.Slug}>
-              {i18n.language === "fi" ? node.Subject_fi : node.Subject_en}
+              {language === "fi" ? node.Subject_fi : node.Subject_en}
             </LanLink>
           </li>
         ))}

@@ -2,13 +2,12 @@ import React from "react";
 import Page, { headerImages } from "../../components/Page";
 import LanLink from "../../components/LanLink";
 import { useLocalization } from "../../components/i18n";
-import i18n from "../../components/i18n";
 import Gallery from "../../components/Gallery";
 import { graphql } from "gatsby";
 
 const pageId = "gallery";
 
-const GalleryPage = ({ data }) => {
+const GalleryPage = ({ data, pageContext: { language } }) => {
   const { t } = useLocalization(pageId);
 
   let imgs = data.allDataJson.edges
@@ -29,7 +28,7 @@ const GalleryPage = ({ data }) => {
           "0"
         )}-small.jpeg`,
       },
-      caption: i18n.language === "fi" ? img.Caption_fi : img.Caption_en,
+      caption: language === "fi" ? img.Caption_fi : img.Caption_en,
     }));
 
   return (
