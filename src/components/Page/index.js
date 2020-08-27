@@ -18,8 +18,6 @@ import { useLocalization } from "../i18n.js";
 import "./index.scss";
 
 const Page = ({ id, title, headerImg, children }) => {
-  const { t } = useLocalization("translations");
-
   let leftColumnImg = id === "index" ? map : gradient;
 
   return (
@@ -34,15 +32,7 @@ const Page = ({ id, title, headerImg, children }) => {
           background: `url(${leftColumnImg}) no-repeat left top 196px, url(${stamp}) no-repeat right 195px`,
         }}
       >
-        <Helmet
-          title={
-            title ? `${t("expeditionName")} - ${title}` : t("expeditionName")
-          }
-          meta={[
-            { name: "description", content: "Pohjoisnapa 2006" },
-            { name: "keywords", content: "retkikunta, expedition" },
-          ]}
-        />
+        <Meta title={title} />
         <Header img={headerImg} />
         <Navigation />
 
@@ -59,6 +49,20 @@ const Page = ({ id, title, headerImg, children }) => {
         <Footer />
       </div>
     </div>
+  );
+};
+
+const Meta = ({ title }) => {
+  const { t } = useLocalization("translations");
+
+  return (
+    <Helmet
+      title={title ? `${t("expeditionName")} - ${title}` : t("expeditionName")}
+      meta={[
+        { name: "description", content: t("expeditionName") },
+        { name: "keywords", content: t("metaKeywords") },
+      ]}
+    />
   );
 };
 

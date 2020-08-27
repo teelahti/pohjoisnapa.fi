@@ -261,6 +261,7 @@ module.exports = {
   },
   translations: {
     expeditionName: "Pohjoisnapa 2006",
+    metaKeywords: "retkikunta,pohjoisnapa,hiihto",
     footer:
       'LASKUVARJOJÄÄKÄRIKILLAN POHJOISNAPARETKIKUNTA 2006 &nbsp;&nbsp; design: <a href="http://www.poppicok.fi/">www.poppicok.fi</a> &nbsp;&nbsp; valokuvat: © poppis suomela',
   },

@@ -1,4 +1,4 @@
-module.exports =  {
+module.exports = {
   arctic: {
     imgAlt: "Diary image",
     header: "Arctic",
@@ -219,6 +219,7 @@ module.exports =  {
   },
   translations: {
     expeditionName: "North Pole 2006",
+    metaKeywords: "expedition,north pole,ski",
     footer:
       'AIRBORNE RANGER CLUB OF FINLAND NORTH POLE EXPEDITION 2006 &nbsp;&nbsp; design: <a href="http://www.poppicok.fi/">www.poppicok.fi</a> &nbsp;&nbsp; photography: © poppis suomela<br />Translated and edited by Peter J. Glithero',
   },
