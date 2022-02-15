@@ -1,19 +1,8 @@
+const diaryTemplate = require("path").resolve(`src/templates/diaryentry.js`);
 const locales = require(`./src/locales/config.js`);
 
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// Implement the Gatsby API “createPages”. This is called once the
-// data layer is bootstrapped to let plugins create pages from data.
-exports.createPages = async ({ actions, graphql }) => {
-  const { createPage } = actions;
-  const path = require("path");
-  const diaryTemplate = path.resolve(`src/templates/diaryentry.js`);
-
-  // Query for markdown nodes to use in creating pages.
+// Implement the Gatsby API “createPages” to create pages from data.
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const result = await graphql(`
     query {
       allDataJson {
@@ -28,46 +17,40 @@ exports.createPages = async ({ actions, graphql }) => {
   `);
 
   if (result.errors) {
-    console.error(result.errors);
-    return;
+    throw result.errors;
   }
 
-  // Create pages for each markdown file.
+  // Create pages for each diary entry
   result.data.allDataJson.edges.forEach(({ node }) => {
-    const path = `/diary/${node.Slug}`;
-
-    let basePageInfo = {
-      path: path,
+    let basePage = {
+      path: `/diary/${node.Slug}`,
       component: diaryTemplate,
-      // Use EntryDate as context to be able to query the contents
+      // Use EntryDate as context to be able to query the contents at page implementation
       context: {
         entryDate: node.EntryDate,
       },
     };
 
-    generatePageInfos(basePageInfo).map(page => createPage(page));
+    i18nPages(basePage).map(page => createPage(page));
   });
 };
 
-// Create language versions of pages. Based on:
+// Create language versions of static (non-diary) pages. Based on:
 // https://github.com/gatsbyjs/gatsby/issues/3853#issuecomment-365216769
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions;
-
+exports.onCreatePage = ({ page, actions: { createPage, deletePage } }) => {
   if (page.path.match(/^\/[\w-\/]*\/?$/) && !page.path.includes("404")) {
-    const i18nPages = generatePageInfos(page);
+    const p = i18nPages(page);
     deletePage(page);
-    i18nPages.map(page => createPage(page));
+    p.map(page => createPage(page));
   }
 };
 
-function generatePageInfos(defaultInfos) {
-  return locales.map(loc => ({
-    ...defaultInfos,
+const i18nPages = page =>
+  locales.map(loc => ({
+    ...page,
     context: {
-      ...defaultInfos.context,
+      ...page.context,
       language: loc.code,
     },
-    path: loc.path + defaultInfos.path,
+    path: loc.path + page.path,
   }));
-}

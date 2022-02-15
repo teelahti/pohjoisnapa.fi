@@ -40,7 +40,7 @@ const GalleryPreviousPage = () => {
     <Page id={pageId} title={t("title")} headerImg={headerImages.top7}>
       <h2>{t("header")}</h2>
 
-      <Gallery images={imgs} showThumbnails={true} />
+      <Gallery imgs={imgs} />
     </Page>
   );
 };

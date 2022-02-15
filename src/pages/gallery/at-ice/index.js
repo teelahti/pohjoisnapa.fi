@@ -39,7 +39,7 @@ const GalleryAtIcePage = ({ data, pageContext: { language } }) => {
         <LanLink to="/gallery">{t("link")}</LanLink>
       </div>
 
-      <Gallery images={imgs} showThumbnails={true} />
+      <Gallery imgs={imgs} />
     </Page>
   );
 };

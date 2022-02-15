@@ -1,58 +1,67 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
 
+import "swiper/scss";
+import "swiper/scss/navigation";
 import "./gallery.scss";
 
-const Gallery = ({ images, heading, subheading }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [openAt, setOpenAt] = useState(0);
+// install Swiper modules
+SwiperCore.use([Navigation]);
 
-  if (!images) {
-    return false;
-  }
+const Gallery = ({ imgs, heading, subheading }) => {
+  const [swiper, setSwiper] = useState(null);
 
   return (
     <div className="section">
       {heading && <h2>{heading}</h2>}
       {subheading && <p>{subheading}</p>}
+
+      <Swiper spaceBetween={10} navigation onSwiper={setSwiper}>
+        {imgs.map((e, i) => (
+          <SwiperSlide key={i}>
+            <figure>
+              <img src={e.source.regular} alt={e.caption} />
+              <figcaption>{e.caption}</figcaption>
+            </figure>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
       <div className="gallery">
-        {images.map((obj, i) => (
-          <a
-            href={obj.source.regular}
-            className={"gallery-thumbnail gallery-" + obj.orientation}
-            key={i}
-            onClick={e => {
-              e.preventDefault();
-              setOpenAt(i);
-              setIsOpen(true);
-            }}
-          >
-            <img
-              src={obj.source.thumbnail}
-              className="gallery-source"
-              alt={obj.caption}
-            />
-          </a>
+        {imgs.map((obj, i) => (
+          <Thumbnail key={i} id={i} obj={obj} swiper={swiper} />
         ))}
       </div>
-      <ModalGateway>
-        {isOpen ? (
-          <Modal onClose={() => setIsOpen(false)} allowFullscreen={false}>
-            <Carousel views={images} currentIndex={openAt} />
-          </Modal>
-        ) : null}
-      </ModalGateway>
     </div>
   );
 };
 
 Gallery.displayName = "Gallery";
 Gallery.propTypes = {
+  imgs: PropTypes.array,
   heading: PropTypes.string,
-  images: PropTypes.array,
-  showThumbnails: PropTypes.bool,
   subheading: PropTypes.string,
 };
 
 export default Gallery;
+
+const Thumbnail = ({
+  id,
+  obj: {
+    caption,
+    source: { thumbnail, regular },
+  },
+  swiper,
+}) => (
+  <a
+    href={regular}
+    onClick={e => {
+      e.preventDefault();
+      swiper.slideTo(id);
+    }}
+  >
+    <img src={thumbnail} className="gallery-source" alt={caption} />
+  </a>
+);
