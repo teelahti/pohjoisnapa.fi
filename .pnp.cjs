@@ -170,7 +170,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["convert-source-map", "npm:1.7.0"],
             ["debug", "virtual:c2bff3e67180802999655a22d390062982690e911b9d9225c258f3b25e7409f3867b2682c16232b77415f560a09d05a95042dc512a5b8c566c42bbbed88b0bbc#npm:4.2.0"],
             ["gensync", "npm:1.0.0-beta.2"],
-            ["json5", "npm:2.1.3"],
+            ["json5", "npm:2.2.1"],
             ["semver", "npm:6.3.0"]
           ],
           "linkType": "HARD",
@@ -13189,18 +13189,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["json5", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/json5-npm-1.0.1-647fc8794b-e76ea23dbb.zip/node_modules/json5/",
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/json5-npm-1.0.2-9607f93e30-866458a8c5.zip/node_modules/json5/",
           "packageDependencies": [
-            ["json5", "npm:1.0.1"],
-            ["minimist", "npm:1.2.5"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:2.1.3", {
-          "packageLocation": "./.yarn/cache/json5-npm-2.1.3-b71ec6bcca-b2de57a665.zip/node_modules/json5/",
-          "packageDependencies": [
-            ["json5", "npm:2.1.3"],
+            ["json5", "npm:1.0.2"],
             ["minimist", "npm:1.2.5"]
           ],
           "linkType": "HARD",
@@ -13394,7 +13386,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:1.2.3"],
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:2.1.0"],
-            ["json5", "npm:1.0.1"]
+            ["json5", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }],
@@ -13404,7 +13396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:1.4.0"],
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:3.0.0"],
-            ["json5", "npm:1.0.1"]
+            ["json5", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }],
@@ -13414,7 +13406,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.2"],
             ["big.js", "npm:5.2.2"],
             ["emojis-list", "npm:3.0.0"],
-            ["json5", "npm:2.1.3"]
+            ["json5", "npm:2.2.1"]
           ],
           "linkType": "HARD",
         }],
@@ -19031,7 +19023,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["tsconfig-paths", "npm:3.14.1"],
             ["@types/json5", "npm:0.0.29"],
-            ["json5", "npm:1.0.1"],
+            ["json5", "npm:1.0.2"],
             ["minimist", "npm:1.2.6"],
             ["strip-bom", "npm:3.0.0"]
           ],
