@@ -33,16 +33,16 @@ const DiaryEntriesPage = ({ data, pageContext: { language } }) => {
 export default DiaryEntriesPage;
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allDataJson(sort: { fields: [EntryDate], order: ASC }) {
-      edges {
-        node {
-          Slug
-          EntryDate
-          Subject_en
-          Subject_fi
+    query IndexQuery {
+      allDataJson(sort: {EntryDate: ASC}) {
+        edges {
+          node {
+            Slug
+            EntryDate
+            Subject_en
+            Subject_fi
+          }
         }
       }
     }
-  }
 `;
