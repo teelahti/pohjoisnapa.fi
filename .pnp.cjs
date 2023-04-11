@@ -41,14 +41,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-sass", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:6.8.0"],
             ["gatsby-source-filesystem", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:5.8.0"],
             ["gatsby-transformer-json", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:5.8.0"],
-            ["prettier", "npm:2.7.1"],
+            ["prettier", "npm:2.8.7"],
             ["prop-types", "npm:15.8.1"],
             ["react", "npm:18.2.0"],
             ["react-dom", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:18.2.0"],
             ["react-helmet", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:6.1.0"],
             ["react-images", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:1.2.0-beta.7"],
-            ["sass", "npm:1.54.8"],
-            ["swiper", "npm:8.3.2"]
+            ["sass", "npm:1.61.0"],
+            ["swiper", "npm:9.2.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -9097,16 +9097,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["dom7", [
-        ["npm:4.0.4", {
-          "packageLocation": "./.yarn/cache/dom7-npm-4.0.4-637bc4420a-b38604f74e.zip/node_modules/dom7/",
-          "packageDependencies": [
-            ["dom7", "npm:4.0.4"],
-            ["ssr-window", "npm:4.0.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["domelementtype", [
         ["npm:2.0.2", {
           "packageLocation": "./.yarn/cache/domelementtype-npm-2.0.2-233e42819b-1ccadc054e.zip/node_modules/domelementtype/",
@@ -11383,7 +11373,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sass", null],
             ["gatsby", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:5.8.1"],
             ["resolve-url-loader", "npm:3.1.5"],
-            ["sass", "npm:1.54.8"],
+            ["sass", "npm:1.61.0"],
             ["sass-loader", "virtual:4d425153f3af78d24139208bbfea43e065e0cfffc7f8ca2daa63d38250915f109b2cddc471bc3a4cac4beea41cb62bfeac9d6bbb15f2af2d51122df068b99739#npm:10.4.1"]
           ],
           "packagePeers": [
@@ -15587,14 +15577,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-sass", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:6.8.0"],
             ["gatsby-source-filesystem", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:5.8.0"],
             ["gatsby-transformer-json", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:5.8.0"],
-            ["prettier", "npm:2.7.1"],
+            ["prettier", "npm:2.8.7"],
             ["prop-types", "npm:15.8.1"],
             ["react", "npm:18.2.0"],
             ["react-dom", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:18.2.0"],
             ["react-helmet", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:6.1.0"],
             ["react-images", "virtual:5e9d10e174773f566bee27acd7ab2430b644f2d7be47552c2c46464059a840b6d8b9ffbe5380b02334e8d6e8c239c8eb11ddf3549c3328cf5262d4b73fc46fb4#npm:1.2.0-beta.7"],
-            ["sass", "npm:1.54.8"],
-            ["swiper", "npm:8.3.2"]
+            ["sass", "npm:1.61.0"],
+            ["swiper", "npm:9.2.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -16477,10 +16467,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.7.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.7.1-d1f40f5e1a-55a4409182.zip/node_modules/prettier/",
+        ["npm:2.8.7", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.7-1962ac9483-fdc8f2616f.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.7.1"]
+            ["prettier", "npm:2.8.7"]
           ],
           "linkType": "HARD",
         }]
@@ -17923,10 +17913,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sass", [
-        ["npm:1.54.8", {
-          "packageLocation": "./.yarn/cache/sass-npm-1.54.8-6582d65f5d-72893b2dc6.zip/node_modules/sass/",
+        ["npm:1.61.0", {
+          "packageLocation": "./.yarn/cache/sass-npm-1.61.0-26fc20ae8e-31bfb3719f.zip/node_modules/sass/",
           "packageDependencies": [
-            ["sass", "npm:1.54.8"],
+            ["sass", "npm:1.61.0"],
             ["chokidar", "npm:3.5.3"],
             ["immutable", "npm:4.0.0"],
             ["source-map-js", "npm:1.0.2"]
@@ -17955,7 +17945,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.2"],
             ["neo-async", "npm:2.6.2"],
             ["node-sass", null],
-            ["sass", "npm:1.54.8"],
+            ["sass", "npm:1.61.0"],
             ["schema-utils", "npm:3.1.1"],
             ["semver", "npm:7.3.2"],
             ["webpack", null]
@@ -19057,11 +19047,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["swiper", [
-        ["npm:8.3.2", {
-          "packageLocation": "./.yarn/unplugged/swiper-npm-8.3.2-1fc49d1c17/node_modules/swiper/",
+        ["npm:9.2.0", {
+          "packageLocation": "./.yarn/cache/swiper-npm-9.2.0-88c42e392b-c0152bd2d0.zip/node_modules/swiper/",
           "packageDependencies": [
-            ["swiper", "npm:8.3.2"],
-            ["dom7", "npm:4.0.4"],
+            ["swiper", "npm:9.2.0"],
             ["ssr-window", "npm:4.0.2"]
           ],
           "linkType": "HARD",
