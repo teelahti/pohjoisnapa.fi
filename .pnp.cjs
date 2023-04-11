@@ -10522,16 +10522,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["file-type", [\
-        ["npm:16.5.3", {\
-          "packageLocation": "./.yarn/cache/file-type-npm-16.5.3-9e176829d5-38a4443d0f.zip/node_modules/file-type/",\
-          "packageDependencies": [\
-            ["file-type", "npm:16.5.3"],\
-            ["readable-web-to-node-stream", "npm:3.0.2"],\
-            ["strtok3", "npm:6.3.0"],\
-            ["token-types", "npm:4.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:16.5.4", {\
           "packageLocation": "./.yarn/cache/file-type-npm-16.5.4-36faadc4ae-d983c0f364.zip/node_modules/file-type/",\
           "packageDependencies": [\
@@ -11171,7 +11161,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ci-info", "npm:2.0.0"],\
             ["configstore", "npm:5.0.1"],\
             ["fastq", "npm:1.13.0"],\
-            ["file-type", "npm:16.5.3"],\
+            ["file-type", "npm:16.5.4"],\
             ["fs-extra", "npm:11.1.1"],\
             ["got", "npm:11.8.5"],\
             ["hash-wasm", "npm:4.9.0"],\
