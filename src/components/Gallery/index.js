@@ -1,14 +1,11 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "./gallery.scss";
-
-// install Swiper modules
-SwiperCore.use([Navigation]);
 
 const Gallery = ({ imgs, heading, subheading }) => {
   const [swiper, setSwiper] = useState(null);
@@ -18,7 +15,7 @@ const Gallery = ({ imgs, heading, subheading }) => {
       {heading && <h2>{heading}</h2>}
       {subheading && <p>{subheading}</p>}
 
-      <Swiper spaceBetween={10} navigation onSwiper={setSwiper}>
+      <Swiper spaceBetween={10} navigation={true} modules={[Navigation]} onSwiper={setSwiper}>
         {imgs.map((e, i) => (
           <SwiperSlide key={i}>
             <figure>
