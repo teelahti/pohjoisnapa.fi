@@ -16,7 +16,7 @@
             # You can set the major version of Node.js to a specific one instead
             # of the default version
             # pkgs.nodejs
-            pkgs.nodejs_22
+            pkgs.nodejs-slim_22
 
             pkgs.yarn
 
