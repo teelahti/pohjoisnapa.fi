@@ -1,0 +1,41 @@
+---
+const { to, img, name, width = "200px" } = Astro.props;
+---
+
+<div class="sponsors-big">
+  <div class="sponsors-logo">
+    <a href={to}>
+      <img src={img} alt={name} />
+    </a>
+  </div>
+  <div class="sponsors-text">
+    <a href={to}>{name}</a>
+    <p><slot /></p>
+  </div>
+</div>
+
+<style define:vars={{ width }}>
+  .sponsors-big {
+    display: flex;
+    margin-bottom: 20px;
+
+    .sponsors-logo {
+      width: 270px;
+
+      img {
+        width: var(--width);
+      }
+    }
+
+    .sponsors-text {
+      flex: 1;
+
+      a,
+      a:link,
+      a:visited {
+        color: #fff;
+        font-size: 1.2em;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeaderImages from "../../components/header-images";
+import PressImg from "../../components/PressImg.astro";
+---
+
+<Layout title="Lehdistökuvat" headerImg={HeaderImages.Top7}>
+  <h2>Lehdistökuvat</h2>
+
+  <p>
+    Lehdistokuvat vapaassa tiedotuskäytässä 20.5.2006 asti. Käytön yhteydessä
+    mainittava kuvaaja Poppicok/Kari Poppis Suomela. Kuviin liittyvät
+    tiedustelut tai lisäkuvien tilaukset poppis@pohjoisnapa.fi, 0400 420 002.
+  </p>
+
+  <div class="imgs">
+    <PressImg
+      src="pohjoisnapa_ryhma"
+      alt="Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006"
+    >
+      Laskuvarjojääkärikillan pohjoisnaparetkikunta 2006.
+      <br />
+      Edestä vasemmalta: Kari Poppis Suomela, Perttu Ojala, Tero Teelahti.
+      <br />
+      Keskirivi: Henrik B. Reims, Mikko Vermas, Jermi Tertsunen. <br />
+      Ylärivi: Toni Vaartimo.
+    </PressImg>
+
+    <PressImg
+      src="pohjoisnapa_ylitys"
+      alt="Avovesirailon ylitys kuivapuku päällä uiden"
+      >Avovesirailon ylitys kuivapuku päällä uiden
+    </PressImg>
+    <PressImg
+      src="pohjoisnapa_hiihto"
+      alt="Retkikunta matkalla kohti pohjoista"
+    >
+      Retkikunta matkalla kohti pohjoista. Etenemistä hidastavat raskaat ahkiot
+      ja epätasaiset ahtojäät.
+    </PressImg>
+    <PressImg src="pohjoisnapa_leiri" alt="Iltatoimia leirissä"
+      >Iltatoimia leirissä. Mikko Vermas harjaa Toni Vaartimolta pahimmat
+      jäätyneet hiet pois.
+    </PressImg>
+    <PressImg src="pohjoisnapa_ahto" alt="Raskasta etenemistä ahtojäissä">
+      Raskasta etenemistä ahtojäissä</PressImg
+    >
+  </div>
+  <h2>Tiedustelut ja haastattelupyynnöt</h2>
+  <p>
+    Tiedotus ja media, valokuvat
+    <br />
+    Kari Poppis Suomela 0400 420 002
+  </p>
+  <p>
+    Retkikunnan johtaja
+    <br />
+    Henrik B. Reims 040 515 5719
+  </p>
+</Layout>
+
+<style>
+  .imgs {
+    display: grid;
+    grid-template-columns: 367px 370px;
+    margin-bottom: 30px;
+
+    figure:first-child {
+      grid-column: 1/3;
+      justify-self: center;
+      padding-left: 80px;
+    }
+  }
+</style>

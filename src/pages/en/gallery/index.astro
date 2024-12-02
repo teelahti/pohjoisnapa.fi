@@ -1,0 +1,20 @@
+---
+import { Collection, getImages } from "../../../components/images.ts";
+import Layout from "../../../layouts/Layout.astro";
+import Gallery from "../../../components/Gallery.astro";
+import LanLink from "../../../components/LanLink.astro";
+import HeaderImages from "../../../components/header-images";
+
+const imgs = await getImages(Collection.Before, Astro.currentLocale ?? "fi");
+---
+
+<Layout
+  title="Gallery, images taken before start"
+  headerImg={HeaderImages.Top7}
+>
+  <h2>Gallery, images taken before start</h2>
+
+  <LanLink to="/gallery/at-ice">Go to images taken at the ice</LanLink>
+
+  <Gallery imgs={imgs} />
+</Layout>

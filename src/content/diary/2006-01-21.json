@@ -1,0 +1,35 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-01-23T00:59:00",
+    
+    "EntryDate": "2006-01-21T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Matti Mattila, member of the support team, is checking a cargo box.",
+            "Caption_fi": "Support-tiimin Matti Mattila kokeilemassa ahkion sopimista pakkauslaatikkoonsa.",
+            "CreatedDate": "2006-01-23T00:59:00",
+            "Id": 26
+        },
+        {
+            "Caption_en": "Toni checking out the food. Lots of data were stored for each item. This data will be used for a research purposed.",
+            "Caption_fi": "Toni ruokien keskellä. Kaikista ruuista otettiin tiedot ylös, jotta matkaan lähtevän ruuan ominaisuudet ovat mahdollisimman hyvin selvillä. Näitä tietoja tarvitaan mm. ihmisen sopeutumiseen liittyvää tieteellistä tutkimusta varten.",
+            "CreatedDate": "2006-01-23T01:01:00",
+            "Id": 27
+        }
+    ],
+    "LastModifiedBy": "Jarmo Aho",
+    "LastModifiedDate": "2006-02-14T19:13:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Weekend of cargo preparations - day 2",
+    "Subject_fi": "Rahtiviikonlopun toinen päivä",
+    
+    "Text_en": "The second day was used to doublecheck all foods and removing unnecessary packing materials. The skis were prepared and packing was done for the air cargo. The cargo boxes turned out to be very solid which is excellent as the equipments are so critical to the success of the expedition.<BR>",
+    "Text_fi": "Retkikunta jatkoi siitä mihin eilen jäätiin. Päivä kului ruokien inventoinnissa sekä ruokien pakkausmateriaalien poistossa. Lisäksi kiinnitettiin suksiin nousukarvat ja loput siteet, sekä rakennettiin seitsemän kappaletta ahkionkuljetuslaatikoita lentorahtia varten. Laatikoista tuli hyvät ja erittäin vahvat, mikä ei ole yhtään liioittelua kun ottaa huomioon kuinka kriittinen varuste ahkio retkikunnalle on. <BR>",
+    "Weather": null,
+    
+    "Slug": "2006-01-21-rahtiviikonlopun-toinen-paiva",
+    "Previous": "2006-01-20-rahtiviikonlopun-ensimmainen-paiva",
+    "Next": "2006-01-22-rahtiviikonlopun-kolmas-paiva"
+}

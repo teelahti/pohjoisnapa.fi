@@ -1,0 +1,28 @@
+{
+    "CreatedBy": "tero teelahti",
+    "CreatedDate": "2006-05-09T15:35:00",
+    
+    "EntryDate": "2006-05-05T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "All is happy with the Expedition.",
+            "Caption_fi": "Iloinen retkikunta.",
+            "CreatedDate": "2006-05-09T15:35:00",
+            "Id": 99
+        }
+    ],
+    "LastModifiedBy": "Tero Teelahti",
+    "LastModifiedDate": "2007-05-08T15:03:00",
+    
+    
+    
+    "Subject_en": "Expedition at home in Finland",
+    "Subject_fi": "Retkikunta Suomessa",
+    
+    "Text_en": "<p>The Expedition arrived safe and happy back in Finland today after flying in from Spitzbergen via Oslo. After champagne, cakes and coffee, we held a well attended and successful press conference at Helsinki-Vantaa International Airport.</p><p>After this, we returned to the welcome embrace of our families, having been away for nearly three long months.</p><p>We would like to thank all our readers and followers for your support and questions. In your own very important way, you have helped us achieve our dream.</p><p>Daily updates of this diary end with this entry.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Retkikunta saapui onnellisesti Suomeen ja piti lehdistötilaisuuden Helsinki-Vantaan lentokentällä. Tämän jälkeen siirryttiin lähes kolmen kuukauden erossa olon jälkeen perheiden pariin.</p><p>Kiitos kaikille lukijoille ja viestien lähettäjille. Olette omalta osaltanne auttaneet unelmamme toteuttamisessa. </p><p>Päiväkirjan päivitykset loppuvat tähän. </p><p>Retkikunnalla kaikki hyvin. </p>",
+    "Weather": null,
+    
+    "Slug": "2006-05-05-retkikunta-suomessa",
+    "Previous": "2006-05-03-kokoustelua-ja-grillausta"
+}

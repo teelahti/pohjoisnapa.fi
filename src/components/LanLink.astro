@@ -1,0 +1,11 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+// If lan is given it overrides the current locale
+const { to, lan = Astro.currentLocale, ...rest } = Astro.props;
+const href = getRelativeLocaleUrl(lan, to);
+---
+
+<a href={href} {...rest}>
+  <slot />
+</a>

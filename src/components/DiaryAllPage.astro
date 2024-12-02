@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderImages from "./header-images";
+import LanLink from "./LanLink.astro";
+import FormattedDate from "./FormattedDate.astro";
+
+import { getCollection } from "astro:content";
+const all = await getCollection("diary");
+
+const { title } = Astro.props;
+---
+
+<Layout title={title} headerImg={HeaderImages.Top5}>
+  <h2>{title}</h2>
+
+  <ul class="diary-list">
+    {
+      all.map((n) => (
+        <li>
+          <FormattedDate value={n.data.EntryDate} />
+          <LanLink to={"/diary/" + n.data.Slug}>
+            {(Astro.currentLocale ?? "fi") === "fi"
+              ? n.data.Subject_fi
+              : n.data.Subject_en}
+          </LanLink>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
+
+<style>
+  .diary-list {
+    list-style-type: none;
+    padding-left: 0px;
+
+    li {
+      margin-bottom: 2px;
+
+      time {
+        display: inline-block;
+        width: 100px;
+      }
+    }
+  }
+</style>

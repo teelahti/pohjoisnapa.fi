@@ -1,0 +1,35 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-09T21:53:00",
+    
+    "EntryDate": "2006-01-06T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "The training unit. Additional weight on wheel is between 25-40 kg (50-80 lbs.).",
+            "Caption_fi": "Treenauksessa käytetty vetorengas. Painona on treenistä riippuen 25-40 kg.",
+            "CreatedDate": "2006-01-10T13:32:00",
+            "Id": 18
+        },
+        {
+            "Caption_en": "Poppis dragging a wheel.",
+            "Caption_fi": "Poppis vetämässä rengasta.",
+            "CreatedDate": "2006-01-10T13:33:00",
+            "Id": 19
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-20T19:26:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Wheel dragging and gear meeting",
+    "Subject_fi": "Renkaanvetotreeni ja varustekokous",
+    
+    "Text_en": "<p>Expedition had a get-togerther starting at 8.00 in central park of Espoo. The target was to perform a refreshing three hour wheel dragging exercise. Afther the exercise, the group headed to Mikko's appartment to enjoy one of the most important targets - getting more weight -&nbsp; in a form of breakfast. After the breakfast, the day was spent on discussing gear and maintenance. During the day, the <A href=\"http://www.fischer.fi/\">skies</A> were prepared.</p>",
+    "Text_fi": "Retkikunta kokoontui aamulla kello 8.00 Espoon keskuspuistoon tekemään kolmen tunnin virkistävän rengastreenin. Tämän jälkeen siirryttiin Mikon luokse syömään yhtä tärkeimmistä tavoitteista, lihomista, edesauttava aamiainen. Tämän jälkeen päivä kului varusteista keskustelemisen sekä niiden huoltamisen ja valmistamisen merkeissä. Päivän aikana mm. <A href=\"http://www.fischer.fi/\">sukset</A> saivat siteet ja niiden pohjat hiottiin nousukarvojen liimaamista varten. ",
+    "Weather": null,
+    
+    "Slug": "2006-01-06-renkaanvetotreeni-ja-varustekokous",
+    "Previous": "2005-12-03-yhteishengen-nostatusta",
+    "Next": "2006-01-07-retkikunta-heikoilla-jailla"
+}

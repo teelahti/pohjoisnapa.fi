@@ -1,0 +1,168 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderImages from "./header-images";
+import LanLink from "./LanLink.astro";
+import LatLon from "./LatLon.astro";
+import DiaryImage from "./DiaryImage.astro";
+import FormattedDate from "./FormattedDate.astro";
+import FormattedDateTime from "./FormattedDateTime.astro";
+import { byLocale } from "./translations";
+const t = byLocale(Astro.currentLocale);
+
+interface Props {
+  title: string;
+  body: string;
+  createdBy: string;
+  // Dates are strings even though they are parsed to be dates at
+  // collection definition. No idea why.
+  created: string;
+  distance?: number;
+  entrydate: string;
+  imgs: any;
+  lastModifiedBy?: string;
+  lastModified?: string;
+  lat?: number;
+  lon?: number;
+  eastWest?: string;
+  temp?: number;
+  wind?: number;
+  prev?: string;
+  next?: string;
+}
+
+const {
+  title,
+  body,
+  // createdBy,
+  created,
+  distance,
+  entrydate,
+  imgs,
+  // lastModifiedBy,
+  lastModified,
+  lat,
+  lon,
+  eastWest,
+  temp,
+  wind,
+  prev,
+  next,
+} = Astro.props;
+---
+
+<Layout title={title} headerImg={HeaderImages.Top5}>
+  <h2><FormattedDate value={entrydate} /> {title}</h2>
+
+  <LatLon lat={lat} lon={lon} eastWest={eastWest} />
+
+  <div class="diaryentry-content">
+    <div>
+      <div set:html={body} />
+      {
+        distance || temp || wind ? (
+          <aside class="diaryentry-data">
+            <dl>
+              <dt>{t("data_distance")}</dt>
+              <dd>{distance ?? 0} km</dd>
+              <dt>{t("data_temperature")}</dt>
+              <dd>{temp ?? "n/a"}°C</dd>
+              <dt>{t("data_wind")}</dt>
+              <dd>{wind ?? "n/a"} m/s</dd>
+            </dl>
+            <LanLink to="/diary/data">{t("data_link")}</LanLink>
+          </aside>
+        ) : (
+          false
+        )
+      }
+      <footer>
+        <ul class="diaryentry-dates">
+          <li>
+            {t("created")}
+            <FormattedDateTime value={created} />.
+          </li>
+          <li>
+            {t("lastmodified")}{" "}
+            <FormattedDateTime value={lastModified} />.
+          </li>
+        </ul>
+        <div class="diaryentry-nav">
+          {prev && <LanLink to={`/diary/${prev}`}>{t("diary_prev")}</LanLink>}
+        </div>
+        <div class="diaryentry-nav">
+          {next && <LanLink to={`/diary/${next}`}>{t("diary_next")}</LanLink>}
+        </div>
+      </footer>
+    </div>
+
+    {
+      imgs ? (
+        <aside class="diaryentry-images">
+          {imgs.map((img: any) => (
+            <DiaryImage
+              id={img.Id}
+              caption={img[`Caption_${Astro.currentLocale ?? "fi"}`]}
+            />
+          ))}
+        </aside>
+      ) : (
+        false
+      )
+    }
+  </div>
+</Layout>
+
+<style>
+  .diaryentry-content {
+    display: flex;
+  }
+
+  .diaryentry-images {
+    margin: 0 0 20px 20px;
+
+    .diaryentry-image {
+      margin: 0 0 15px 10px;
+
+      figcaption {
+        width: 360px;
+      }
+    }
+  }
+
+  .diaryentry-dates {
+    list-style-type: none;
+    padding: 0;
+    color: #ccc;
+    font-style: italic;
+
+    margin-bottom: 30px;
+  }
+
+  .diaryentry-nav {
+    display: inline-block;
+    margin-right: 20px;
+
+    font-family:
+      Arial Narrow,
+      Arial;
+    font-size: 1.1em;
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+  }
+
+  .diaryentry-data {
+    width: 340px;
+    dl {
+      dt {
+        display: inline-block;
+        width: 100px;
+        margin-right: 10px;
+      }
+      dd {
+        display: inline-block;
+        width: 220px;
+        margin: 0;
+      }
+    }
+  }
+</style>

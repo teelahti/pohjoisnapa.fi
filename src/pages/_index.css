@@ -1,0 +1,51 @@
+#index {
+  display: flex;
+  min-height: 365px;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 0px;
+  }
+
+  p {
+    margin-top: 2px;
+  }
+
+  > div {
+    width: 595px;
+    margin: 40px 0 0 147px;
+
+    > div:first-child {
+      display: flex;
+
+      aside {
+        margin-top: 25px;
+        padding-left: 5px;
+
+        img {
+          position: relative;
+          float: right;
+          vertical-align: top;
+          width: 128px;
+          height: 100px;
+        }
+      }
+    }
+
+    > div:nth-child(2) {
+      display: flex;
+
+      div {
+        width: 280px;
+      }
+
+      aside {
+        margin: 35px 0 0 35px;
+      }
+    }
+  }
+}

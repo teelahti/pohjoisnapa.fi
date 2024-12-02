@@ -1,0 +1,40 @@
+---
+interface Props {
+  lat?: number;
+  lon?: number;
+  eastWest?: string;
+}
+const { lat, lon, eastWest } = Astro.props;
+
+if (!lat) {
+  return false;
+}
+
+// Convert to string:
+const slat = "" + lat;
+const slon = "" + lon;
+---
+
+<div class="latlon">
+  {slat.slice(0, 2)}
+  {slat.slice(2, 4)}
+  {slat.slice(4)}
+  <span>N</span>
+  {slon.slice(0, 2)}
+  {slon.slice(2, 4)}
+  {slon.slice(4)}
+  {eastWest}
+</div>
+
+<style>
+  .latlon {
+    font-family:
+      Monospace,
+      Courier New,
+      Courier;
+  }
+  .latlon > span {
+    display: inline-block;
+    margin-right: 20px;
+  }
+</style>

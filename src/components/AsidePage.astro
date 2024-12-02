@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { title, headerImg } = Astro.props;
+---
+
+<Layout title={title} headerImg={headerImg}>
+  <h2>{title}</h2>
+
+  <div class="content-two-column">
+    <div class="content left">
+      <slot name="left" />
+    </div>
+
+    <aside class="right">
+      <slot name="right" />
+    </aside>
+  </div>
+</Layout>

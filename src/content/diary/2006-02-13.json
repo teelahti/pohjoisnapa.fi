@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-02-14T19:11:00",
+    
+    "EntryDate": "2006-02-13T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "",
+            "Caption_fi": "Valmistautuminen loppusuoralla.",
+            "CreatedDate": "2006-02-14T19:11:00",
+            "Id": 32
+        }
+    ],
+    "LastModifiedBy": "Tero Teelahti",
+    "LastModifiedDate": "2006-02-20T11:17:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Expeditions pre-journey diet",
+    "Subject_fi": "Retkikunnan lihotus loppusuoralla",
+    
+    "Text_en": "<p>Expedition is right now on a high fat diet. Every member tries to get at least 10 extra kilograms of fat. During the journey it isn't possible to eat as much as one needs for two reasons: 1) Body can't take enough calories, and 2) no-one can pull that much food in a sledge. A good way to gain&nbsp;weight is to eat as much oil, nuts, chips and bacon as possible.</p>",
+    "Text_fi": "<p>Hiihdon aikana ei ole mahdollista syödä kulutusta vastaavaa määrää ruokaa kahdesta syystä: 1. elimistö ei ota niin paljoa päivässä vastaan, ja 2. ruokaa ei painon vuoksi ole tarpeeksi mukana. Tämän vuoksi kaikki retkikunnan jäsenet ovat lihottaneet itseään, tavoitteena saada noin 10 kilon ylipaino. Osa on päässyt tavoitteeseen, osalla on vielä matkaa. Hyväksi lihottamiskeinoksi ovat osoittautuneet erilaiset öljyt, pähkinät, sipsit ja pekoni.</p>",
+    "Weather": null,
+    
+    "Slug": "2006-02-13-retkikunnan-lihotus-loppusuoralla",
+    "Previous": "2006-01-22-rahtiviikonlopun-kolmas-paiva",
+    "Next": "2006-02-14-viesti-kulkee"
+}

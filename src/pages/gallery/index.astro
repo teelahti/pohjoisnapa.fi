@@ -1,0 +1,21 @@
+---
+import { Collection, getImages } from "../../components/images.ts";
+import Layout from "../../layouts/Layout.astro";
+import Gallery from "../../components/Gallery.astro";
+import LanLink from "../../components/LanLink.astro";
+import HeaderImages from "../../components/header-images";
+
+const imgs = await getImages(Collection.Before, Astro.currentLocale ?? "fi");
+---
+
+<Layout
+  title="Galleria, ennen hiihdon alkamista otetut kuvat"
+  headerImg={HeaderImages.Top7}
+>
+  <h2>Retkikuntakuvat ennen hiihdon alkua</h2>
+
+  <LanLink to="/gallery/at-ice">Siirry hiihdon aikana otettuihin kuviin</LanLink
+  >
+
+  <Gallery imgs={imgs} />
+</Layout>

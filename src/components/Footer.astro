@@ -1,0 +1,31 @@
+---
+import { byLocale } from "../components/translations";
+const t = byLocale(Astro.currentLocale);
+---
+
+<footer>
+  <div set:html={t("footer")} />
+</footer>
+
+<style>
+  footer > div {
+    height: 50px;
+    background: url(/images/sana-unsupported.gif) no-repeat left bottom;
+    padding: 5px 0;
+    border-top: solid 1px #fff;
+    color: #ccc;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+
+    a,
+    a:visited {
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+</style>

@@ -1,0 +1,69 @@
+---
+import HeaderImages from "./header-images";
+import Layout from "../layouts/Layout.astro";
+
+const { title } = Astro.props;
+---
+
+<Layout title={title} headerImg={HeaderImages.Top8}>
+  <h2>{title}</h2>
+
+  <div class="content-two-column" id="expedition-content">
+    <div class="content left">
+      <slot />
+    </div>
+
+    <aside class="right">
+      <figure>
+        <img src="/images/expedition/henkku4.jpg" alt="Henrik B. Reims" />
+        <figcaption>Henrik B. Reims</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/poppis4.jpg" alt="Poppis Suomela" />
+        <figcaption>Poppis Suomela</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/toni4.jpg" alt="Toni Vaartimo" />
+        <figcaption>Toni Vaartimo</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/mikko4.jpg" alt="Mikko Vermas" />
+        <figcaption>Mikko Vermas</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/tero4.jpg" alt="Tero Teelahti" />
+        <figcaption>Tero Teelahti</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/perttu4.jpg" alt="Perttu Ojala" />
+        <figcaption>Perttu Ojala</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/expedition/jermi4.jpg" alt="Jermi Tertsunen" />
+        <figcaption>Jermi Tertsunen</figcaption>
+      </figure>
+    </aside>
+  </div>
+</Layout>
+
+<style>
+  #expedition-content {
+    aside {
+      height: 370px;
+      display: flex;
+      flex-flow: row wrap;
+
+      figure {
+        width: 95px;
+        height: 120px;
+        margin: 0 10px 5px 0;
+      }
+    }
+  }
+</style>

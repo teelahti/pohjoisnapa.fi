@@ -1,0 +1,17 @@
+---
+import { Collection, getImages } from "../../../components/images.ts";
+import Layout from "../../../layouts/Layout.astro";
+import Gallery from "../../../components/Gallery.astro";
+import HeaderImages from "../../../components/header-images";
+
+const imgs = await getImages(Collection.Previous, Astro.currentLocale ?? "fi");
+---
+
+<Layout
+  title="Gallery, pictures from previous expditions."
+  headerImg={HeaderImages.Top7}
+>
+  <h2>Gallery, pictures from previous expditions.</h2>
+
+  <Gallery imgs={imgs} />
+</Layout>

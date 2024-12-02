@@ -1,0 +1,17 @@
+---
+import AsidePage from "../../components/AsidePage.astro";
+import HeaderImages from "../../components/header-images";
+---
+
+<AsidePage title="Arktis" headerImg={HeaderImages.Top1}>
+  <p slot="left">
+    Tässä osiossa on tietoa arktisilta alueilta, pohjoisesta luonnosta ja
+    kokemuksista kylmässä elämisestä.
+  </p>
+
+  <img
+    slot="right"
+    src="/images/paivakirja/paivakirja360.jpg"
+    alt="Päiväkirjakuva"
+  />
+</AsidePage>

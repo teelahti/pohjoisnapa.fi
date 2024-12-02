@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-03-12T08:54:00",
+    "DistanceTraveled": 4.8,
+    "EntryDate": "2006-03-11T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Pack-ice in sunset.",
+            "Caption_fi": "Ahtojäitä iltahämärässä.",
+            "CreatedDate": "2006-03-12T08:54:00",
+            "Id": 58
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-13T06:47:00",
+    "LocationLatitude": 831756,
+    "LocationLongitude": 740603,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Another boring day at the office",
+    "Subject_fi": "Tavallinen päivä toimistossa",
+    "Temperature": -40.0,
+    "Text_en": "<p>Only real difference between today and previous days: scattered cloud. As such, this does not hinder our progress, but the clouds have brought on a cold breeze. With daytime temperatures approaching \u00e2\u20ac\u201c 40 C, even a wind of 3 m/s can be dangerous. It becomes essential to protect your face from the cold. We regularly check each other's faces, visually, for the white patches that would warn of an on-coming frostbite.</p><p>The terrain today was mostly `easy\u00b4, much a repeat of yesterday. We did need to traverse a couple of challenging obstacles, but the general impression is that the going is getting easier. This afternoon, we had our first encounter with open water: a newly-opened, 20-meter-wide crack in the ice sheet. After a brief search, we found a place where the two edges of the crack came together. The whole team got over dry, and in one piece. The only other alternative would have been to pitch camp, and wait for the crack to freeze over by morning.</p><p>By the time we did pitch camp in the evening, the wind had become brisker. Overall, it felt very cold all day long, even though the absolute temperature was no lower than on previous days. Chill-factor is important!</p>",
+    "Text_fi": "<p>Aamu erosi edellisistä siinä, että taivaalla oli vähän pilviä. Pilvet sinällään eivät meidän matkantekoa haittaisi, mutta tällä kertaa ne toivat mukanaan pienen tuulenvireen. Tuuli näissä pakkaslukemissa on aina paha asia - varsinkin kasvojen suojaaminen muuttuu entistä tärkeämmäksi.</p><p>Päivän maasto oli enimmäkseen helppoa ja eteneminen edellisten päivien toisintoa. Matkan varrella oli pari pahempaa paikkaa, mutta yleistuntuma on että maasto on keventymässä. Iltapäivällä törmäsimme ensimmäistä kertaa avoveteen. Vastassa oli noin 20 m leveä railo. Pienen etsimisen jälkeen löytyi paikka jossa jäät painuivat yhteen, ja päästiin yli. Toinen vaihtoehto olisi ollut tehdä leiri railon reunaan ja ylittää se aamulla.</p><p>Illalla leiriin saavuttaessa muuttui tuuli hieman navakammaksi. Kaiken kaikkiaan päivä tuntui erittäin kylmältä, vaikkei mittarin mukaan ollutkaan kylmimpiä tällä reissulla koettuja.</p><p>&nbsp;</p><p>******</p><p>&nbsp;</p><p>Morgonen skilde sig fr\u00e5n de tidigare p\u00e5 s\u00e5 sätt, att det fanns n\u00e5gra moln p\u00e5 himlen. Molnen p\u00e5verkar i och för sig inte v\u00e5ra planer, men nu hade de med sig lite bl\u00e5st. Vind i dessa temperaturer är alltid illa - att skydda framförallt ansiktet är viktigare än n\u00e5gonsin.<BR><BR>Terrängen var i dag i huvudsak lätt och framryckningen som under tidigare dagar. Under dagens etapp hade vi ett par knepigare passager, men som helhet kan man säga att terrängen blir lättare. P\u00e5 eftermiddagen stötte vi för första g\u00e5ngen p\u00e5 öppet vatten. Det var en ca 20 m bred r\u00e5k. Efter ett kort sökande fann vi en plats där isarna pressats ihop, och där kom vi över. Det andra alternativet hade varit att sl\u00e5 läger vid r\u00e5ken och skida över p\u00e5 morgonen.<BR><BR>P\u00e5 kvällen i lägret friskade vinden i n\u00e5got. Det känns rejält kallt, trots att vi enligt termometern haft kallare väder under resan.</p>",
+    "Weather": null,
+    "Wind": 3.0,
+    "Slug": "2006-03-11-tavallinen-paiva-toimistossa",
+    "Previous": "2006-03-10-kepeasti-eteenpain-pakkasen-lauhtuessa",
+    "Next": "2006-03-12-taas-kylmenevaa"
+}

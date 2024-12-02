@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import LanLink from "../../components/LanLink.astro";
+import HeaderImages from "../../components/header-images.ts";
+import "../_index.css";
+const pageId = "index";
+---
+
+<Layout id={pageId} title="North Pole 2006" headerImg={HeaderImages.Top5}>
+  <div>
+    <div>
+      <div>
+        <h2>Latest Entry</h2>
+        <h3>4.5.2006 EXPEDITION AT HOME IN FINLAND</h3>
+        <p>
+          The Expedition arrived safe and happy back in Finland today after
+          flying in from Spitzbergen via Oslo. After champagne, cakes and
+          coffee, we held a well attended and successful press conference at ...
+          <LanLink to="/diary/2006-05-05-retkikunta-suomessa">
+            Read more
+          </LanLink>
+        </p>
+      </div>
+      <aside>
+        <img src="/images/paivakirja/099-small.jpeg" alt="" />
+      </aside>
+    </div>
+
+    <div>
+      <div>
+        <h2>The expedition</h2>
+        <h3>Unsupported expedition to the North Pole</h3>
+        <p>
+          Airborne Ranger Club of Finland's expedition skied from Canadas Ward
+          Hunt to the geographic North Pole during spring 2006. Expedition
+          consisted of seven skiing expedition members, and a large group of
+          support members...
+          <LanLink to="/expedition">Read more</LanLink>
+        </p>
+      </div>
+      <aside>
+        <LanLink to="/diary/book">
+          <h3>The book "Pohjoisnapa - jäinen haaste" has been published</h3>
+        </LanLink>
+        <LanLink to="/diary/book">Read more and order...</LanLink>
+      </aside>
+    </div>
+  </div>
+</Layout>
+
+<style></style>

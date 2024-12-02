@@ -1,0 +1,25 @@
+---
+const {
+  idx,
+  obj: {
+    caption,
+    source: { thumbnail, regular },
+  },
+} = Astro.props;
+---
+
+<a class="gallery-thumbnail-link" data-idx={idx} href={regular}>
+  <img src={thumbnail} class="gallery-source" alt={caption} />
+</a>
+
+<script>
+  const thumbs = document.querySelectorAll(".gallery-thumbnail-link");
+
+  thumbs.forEach((t) => {
+    t.addEventListener("click", (e) => {
+      e.preventDefault();
+      const i = (e.currentTarget as any).dataset?.idx ?? 0;
+      (document.getElementById("swiper") as any).swiper.slideTo(i);
+    });
+  });
+</script>

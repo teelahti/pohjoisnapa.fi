@@ -1,0 +1,35 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-02-22T18:59:00",
+    
+    "EntryDate": "2006-02-22T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "At the Check-in desk",
+            "Caption_fi": "Check-in tiskillä",
+            "CreatedDate": "2006-02-22T19:10:00",
+            "Id": 38
+        },
+        {
+            "Caption_en": "Before five at the airport.",
+            "Caption_fi": "Aamulla ennen viittä lentokentällä.",
+            "CreatedDate": "2006-02-23T10:25:00",
+            "Id": 39
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-23T10:25:00",
+    
+    
+    
+    "Subject_en": "Kick-off!",
+    "Subject_fi": "Startti on tapahtunut",
+    
+    "Text_en": "<p>This morning just after 4.00 o'clock seven skiers and part of the support team met at the airport and started to queue for check-in. The queuing didn't take that long, but the actual check-in took almost an hour. There were lots of packages - 17 items - and almost every single one of them were special packages. Fortunately, no extra fees were required for the cargo. </p><p>Long route to Resolute Bay has now started.</p><p>The Explorer group sent an update from Montreal:</p><p>From Helsinki we fly to Amsterdam where we waited six hours for the connection flight. The waiting time was used efficiently by buying MP3-players and having a meeting at a restaurant. Finally we started the long flight over Atlantic. After seven hours, the team members and especially all their gear arrived happily to Montreal. From Monteal we continued with a bus to Ottawa where we have rooms booked. AMF-butter had been ordered and delivered to that hotel and it will be included with the other cargo.</p>",
+    "Text_fi": "<p>Aamulla vähän jälkeen neljä seitsemän hiihtäjää sekä osa support-tiimistä kokoontui Seutulan lentokentälle check-in tiskille jonottamaan. Jonotus ei kestänyt kauaa, mutta sisäänkirjoittautuminen vei melkein tunnin, sillä ruumaan pakattavia matkatavaroita oli 17 kappaletta ja ne olivat lähes kaikki erikoismatkatavaroita. Painorajat olivat tosi kovilla, mutta kaikki saatiin kyytiin ilman lisäpainosakkoja.</p><p>Pitkä siirtyminen kohti Resolute Baytä on nyt käynnissä.</p><p>Retkikunta päivitti tilannetta Montrealista:</p><p>Helsinki-Vantaan lentokentältä siirryttiin Amsterdamiin, jossa oli kuuden tunnin odotusaika. Odotusaika käytettiin tehokkaasti mp3-soittimia ostaen ja baarissa kokoustaen. Tämän jälkeen lähdettiin pitkälle lennolle Atlantin yli. Seitsemän tunnin jälkeen retkikunta, ja etenkin sen kaikki varusteet saapuivat onnellisesti Montrealiin. Montrealista jatkettiin linja-autokyydillä Ottawaan, jossa majoituttiin hotelliin. Hotelliin oli etukäteen tilattu kuivattu voi (AMF), joka sovitettiin väellä ja voimalla muiden varusteiden sekaan.</p>",
+    "Weather": null,
+    
+    "Slug": "2006-02-22-startti-on-tapahtunut",
+    "Previous": "2006-02-16-testit-ja-laakintakoulutus",
+    "Next": "2006-02-23-retkikunta-resolute-bayssa"
+}

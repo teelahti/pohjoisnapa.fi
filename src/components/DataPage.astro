@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderImages from "./header-images";
+import { byLocale } from "./translations.ts";
+const t = byLocale(Astro.currentLocale);
+
+import { getCollection } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+const all = await getCollection("diary");
+
+const { title } = Astro.props;
+---
+
+<Layout title={title} headerImg={HeaderImages.Top5}>
+  <h2>{title}</h2>
+  <img src="/images/data.jpg" alt="Data" />
+
+  <table id="diary-data">
+    <thead>
+      <tr>
+        <th>{t("date")}</th>
+        <th>
+          {t("distance")}
+          <br />
+          (km)
+        </th>
+        <th>
+          {t("temperature")}
+          <br />
+          (°C)
+        </th>
+        <th>
+          {t("wind")}
+          <br />
+          (m/s)
+        </th>
+      </tr>
+      <tr class="color">
+        <td></td>
+        <td class="dist"></td>
+        <td class="temp"></td>
+        <td class="wind"></td>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        all
+          .filter((n) => {
+            let d = new Date(n.data.EntryDate);
+            return d > new Date(2006, 2, 4) && d < new Date(2006, 3, 29);
+          })
+          .map((n) => (
+            <tr>
+              <td>
+                <FormattedDate value={n.data.EntryDate} />
+              </td>
+              <td>{n.data.DistanceTraveled}</td>
+              <td>{n.data.Temperature}</td>
+              <td>{n.data.Wind}</td>
+            </tr>
+          ))
+      }
+    </tbody>
+  </table>
+</Layout>
+
+<style>
+  #diary-data {
+    td,
+    th {
+      text-align: right;
+    }
+    th {
+      width: 25%;
+    }
+
+    tr.color {
+      td {
+        height: 10px;
+      }
+
+      .dist {
+        background-color: #cc0000;
+      }
+      .temp {
+        background-color: #99ccff;
+      }
+      .wind {
+        background-color: #cc9900;
+      }
+    }
+  }
+</style>

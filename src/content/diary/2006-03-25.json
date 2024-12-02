@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "jarmo aho",
+    "CreatedDate": "2006-03-26T17:13:00",
+    "DistanceTraveled": 9.4,
+    "EntryDate": "2006-03-25T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Crossing a lead is precision work.",
+            "Caption_fi": "Avovesirailon ylityksessä pitää olla tarkkana.",
+            "CreatedDate": "2006-03-26T22:51:00",
+            "Id": 73
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-27T19:19:00",
+    "LocationLatitude": 835710,
+    "LocationLongitude": 745646,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Spring is in the air",
+    "Subject_fi": "Kevättä rinnassa",
+    "Temperature": -19.0,
+    "Text_en": "<p>After a rejuvenating day of rest, we once again made tracks for the Geographic North Pole. Spring was in the air: a gentle breeze with temperatures, for the first time during this trip, rising above \u00e2\u20ac\u201c 20 C.</p><p>We were able to ski all day long using single-carry: advancing with all our gear on full sledges. Double-carry shuttling no longer seems necessary, since the going is getting easier, and our sledges lighter by the day. As a result, today's distance traveled was a new record for the Expedition, and our traveling time was the shortest yet.</p><p>This evening, the temperature once again dropped: by bedtime it was a crisp \u00e2\u20ac\u201c 33C.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<P class=MsoNormal style=\"MARGIN: 0cm 0cm 0pt\">Taukopäivän jälkeen pääsimme jälleen hiihtämään kohti pohjoista. Sää oli varsin keväinen ja keli muutenkin miellyttävä, kun aamulla tuuli tyyntyi ja lämpötila nousi parinkymmenen pakkasen paremmalle puolelle. Varusteiden tuplakelkkomisesta luovuttiin tänään ja kuljetimme koko omaisuutemme yhdellä pulkanvedolla koko päivän matkan kerrallaan. Tämän tuloksena saavutettiinkin toistaiseksi pisin hiihtomatka toistaiseksi lyhyimmällä käytetyllä ajalla. </p><p>Illalla lämpötila laski jälleen ja nukkumaan mennessä saimme nauttia taas kirpeämmästä -33 asteen pakkasesta.</p><p>Retkikunnalla kaikki hyvin.</p><p>*********************</p><p>V\u00e5r i luften</p><p>Efter att ha vilat oss en dag var det \u00e5ter dags att skida norrut. Vädret var v\u00e5rigt och trevligt d\u00e5 vinden mojnade och temperaturen steg till över minus 20 grader. Vi fr\u00e5ngick dubbelskeppandet och drog hela bohaget p\u00e5 en g\u00e5ng. Resultatet var v\u00e5r hittills längsta distans p\u00e5 hittills kortaste tid.</p><p>P\u00e5 kvällen sjönk temperaturen igen och d\u00e5 vi kröp till kojs hade vi minus 33 grader.</p><p>Expeditionen allt väl.</p>",
+    "Weather": null,
+    "Wind": 1.0,
+    "Slug": "2006-03-25-kevatta-rinnassa",
+    "Previous": "2006-03-24-rattoisa-lepopaiva",
+    "Next": "2006-03-26-rankka-paiva"
+}

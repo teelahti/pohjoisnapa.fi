@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "jarmo aho",
+    "CreatedDate": "2006-03-27T07:01:00",
+    "DistanceTraveled": 9.6,
+    "EntryDate": "2006-03-26T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Arctic lunchbreak.",
+            "Caption_fi": "Taukoilua Arktiksella.",
+            "CreatedDate": "2006-03-27T07:01:00",
+            "Id": 74
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-27T19:16:00",
+    "LocationLatitude": 840127,
+    "LocationLongitude": 743738,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Heavy day",
+    "Subject_fi": "Rankka päivä",
+    "Temperature": -34.0,
+    "Text_en": "<p>The spring weather we experienced yesterday was premature. Today, we had a rude awakening in the form of another severe dose of Arctic winter: morning temperature \u00e2\u20ac\u201c 34 C, cloudy skies and a raw wind. By the time we got underway, the wind had become brisker still.</p><p>To make things worse, the pack-ice in front of us became depressingly difficult to negotiate. As a result of these desperate conditions, a dark cloud of hopelessness settled over the joint consciousness of the Expedition. The pulkhas seemed to resist our pulling like stubborn donkeys. Our brains ordered us onwards and our muscles ached with the effort, but it all seemed to no avail.</p><p>Due to `whiteout\u00b4, it became impossible for the lead skier to see in front of him. An invisible snowdrift would upend him, and all we would see was the large backside of an Airborne Ranger and the back end of a pair of skis. Often on such occasions, from beyond the snowdrift, we would then here the names of various Finnish Pagan Gods and Devils being shouted to the icy heavens\u00e2\u20ac\u00a6</p><p>[Ed: Whiteout is an optical phenomenon occurring in polar regions in which the snow-covered ground blends into a uniformly white sky blotting out shadows, clouds, horizon, etc. and destroying all sense of depth, direction or distance (Webster's New World Dictionary)]</p><p>Fairy tales, they say, always have a happy ending; and so does this one. As the afternoon drew on, the wind calmed slightly, the terrain became smoother, and the sun came out. We even made some good headway. The collective mood of the Expedition lightened.</p><p>However, the day's skiing came to an unexpected end when we were halted by a newly opened lead with open water. It was getting wider by the minute. We scouted for a way around it without success. The only solution was to pitch camp for the night, and hope the lead would freeze over by morning.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Ei se eilen ennustettu kevät vielä saapunutkaan; tänään arktis jakoi talvea oikein isolla kauhalla. Aamulla kun herättiin oli lämpötila laskenut 34 pakkasasteeseen, aurinko pilvessä ja tuulta riittävästi. Kun päästiin liikkeelle yltyi tuuli vielä entisestään. Edellisten lisäksi oli maasto varsin onnetonta. Nämä yhdessä aiheuttivat kollektiivisen epätoivon tunteen, kun ahkio ei tuntunut liikkuvan mihinkään. Aivot käskivät ja reidet jylläsivät, mutta tuntui kuin jossain olisi lyönyt tyhjää. Whiteoutista johtuen edessä hiihtävä ei erottanut kunnolla maaston muotoja. Niinpä suksien tökätessä odottamattomaan esteeseen nähtiin vain jääkärin leveä ahteri, suksien kannat ja kuultiin kinoksen takaa mahdollisesti liuta kotimaisten pakanajumalien nimiä...</p><p>Vaan onneksi kaikissa saduissa on onnellinen loppu. Niin tässäkin. Tuuli hieman tyyntyi, maasto tasaantui, ja aurinko näyttäytyi iltaa kohti. Saatiin siis jonkin verran kilometrejä kasaan. Päivä loppui hieman odotettua aikaisemmin kun törmäsimme avoimeen railoon, joka koko ajan leveni. Etsimme jonkin aikaa ylityspaikkaa, tuloksetta. Tästä päättelimme railon olevan valtameren levyinen. Päätimme laittaa leirin pystyyn ja katsoa aamulla miltä tilanne näyttää.</p><p>Retkikunnalla kaikki hyvin. </p><p>&nbsp;</p><p>************</p><p>En tuff dag<BR><BR>V\u00e5ren visade sig i g\u00e5r, men i dag \u00e5tervände kung Bore i full styrka. D\u00e5 vi vaknade p\u00e5 morgonen hade temperaturen sjunkit till minus 34 grader, solen var i moln och det bl\u00e5ste tillräckligt. D\u00e5 vi kom ig\u00e5ng tilltog vinden ytterligare. Till r\u00e5ga p\u00e5 allt var terrängen minst sagt omedgörlig. Med dessa ingredienser f\u00e5r man till st\u00e5nd en känsla av hopplöshet d\u00e5 pulkan inte verkar röra sig ur fläcken. Hjärnan ger order och l\u00e5ren spänns, men det är som om det skulle sl\u00e5 tomt. Till r\u00e5ga p\u00e5 allt hade vi whiteout och den första skidaren kunde inte urskilja terrängformationerna. D\u00e5 skidspetsarna körde fast i ett obetydligt hinder s\u00e5g man bara jägarens breda akter och skidsvansarna. Fr\u00e5n bakom snödrivan hördes kanske en svada hednagudars namn p\u00e5 det andra inhemska ...<BR><BR>Men till all lycka har alla sagor ett lyckligt slut. S\u00e5 även här. Vinden mojnade n\u00e5got, terrängen jämnade ut sig och solen tittade fram. Vi fick n\u00e5gra kilometer under bältet. Dagen tog slut lite överraskande d\u00e5 vi kom till en öppen r\u00e5k, som blev bredare hela tiden. Vi sökte efter ett överg\u00e5ngsställe, men utan resultat. Av detta drog vi slutsatsen, att r\u00e5ken är bred som en ocean. Vi beslöt sl\u00e5 läger och se hur r\u00e5ken tar sig ut p\u00e5 morgonen.<BR><BR>Expeditionen allt väl.<BR></p>",
+    "Weather": null,
+    "Wind": 8.0,
+    "Slug": "2006-03-26-rankka-paiva",
+    "Previous": "2006-03-25-kevatta-rinnassa",
+    "Next": "2006-03-27-lossaus-puuhia"
+}

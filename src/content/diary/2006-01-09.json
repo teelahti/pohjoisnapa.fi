@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-10T13:07:00",
+    
+    "EntryDate": "2006-01-09T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Toni performing maximum endurance test.",
+            "Caption_fi": "Toni tekemässä maksimirasitustestiä",
+            "CreatedDate": "2006-01-10T13:07:00",
+            "Id": 13
+        }
+    ],
+    "LastModifiedBy": "Tero Teelahti",
+    "LastModifiedDate": "2006-02-20T13:17:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Rest of the expedition taking physical tests",
+    "Subject_fi": "Loput retkikunnasta testeissä",
+    
+    "Text_en": "Mikko, Toni ja Perttu visited Jyväskylä to conduct the same tests rest of the expedition did previously. Tests went as expected and results were good.",
+    "Text_fi": "Mikko, Toni ja Perttu kävivät Jyväskylässä samoissa testeissä kuin muu retkikunta aiemmin. Testit menivät hyvin; tulokset olivat hyviä eikä mitään yllättävää ilmaantunut.",
+    "Weather": null,
+    
+    "Slug": "2006-01-09-loput-retkikunnasta-testeissa",
+    "Previous": "2006-01-07-retkikunta-heikoilla-jailla",
+    "Next": "2006-01-20-rahtiviikonlopun-ensimmainen-paiva"
+}

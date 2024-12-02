@@ -1,0 +1,11 @@
+---
+const { id, caption } = Astro.props;
+const src = `/images/paivakirja/${id.toString().padStart(3, "0")}`;
+---
+
+<figure class="diaryentry-image">
+  <a href={`${src}.jpeg`}>
+    <img src={`${src}-small.jpeg`} alt={caption} />
+  </a>
+  <figcaption>{caption}</figcaption>
+</figure>

@@ -1,0 +1,17 @@
+---
+const { src, alt } = Astro.props;
+---
+
+<figure>
+  <a href={`/images/press/${src}.jpg`}>
+    <img
+      alt={alt}
+      width="280"
+      height="187"
+      src={`/images/press/${src}_pieni.jpg`}
+    />
+  </a>
+  <figcaption>
+    <slot />
+  </figcaption>
+</figure>

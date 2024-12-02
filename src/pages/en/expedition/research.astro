@@ -1,0 +1,44 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import HeaderImages from "../../../components/header-images";
+---
+
+<Layout title="Scientific research" headerImg={HeaderImages.Top8}>
+  <h2>Scientific reasearch</h2>
+
+  <figure>
+    <img
+      alt="Perttu conducting maximum endurance test 16.2.2006"
+      src="/images/expedition/KiHuPerttu360.jpg"
+    />
+    <figcaption>Perttu at maximum endurance test 16.2.2006</figcaption>
+  </figure>
+  <div class="content">
+    <h4>
+      Human acclimatization and performance in extreme conditions -
+      Physiological inputs and outpus, and changes in physical performance
+      observed in the members of the North Pole expedition.
+    </h4>
+    <p>
+      Heikki Karinen<sup>1</sup>, Heikki Kyröläinen LitT/Dos/Prof<sup>2</sup>,
+      Teemu Pullinen LitT<sup>2</sup>, Henri Vähä-Ypyä<sup>2</sup>, Panu
+      Moilanen<sup>2</sup>
+    </p>
+    <ol>
+      <li>Institute of Military Clinical Science, Finland</li>
+      <li>
+        Department of Biology and Physical Activity, University of Jyväskylä
+      </li>
+    </ol>
+  </div>
+</Layout>
+
+<style>
+  figure {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+  figcaption {
+    margin-left: 5px;
+  }
+</style>

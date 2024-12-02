@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "jarmo aho",
+    "CreatedDate": "2006-04-09T09:59:00",
+    "DistanceTraveled": 20.4,
+    "EntryDate": "2006-04-08T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Skiing in a white mist, we bumped into a pressure ridge.",
+            "Caption_fi": "Keskellä valkoista usvaa, ja kas - edessä onkin yllättäen ahtojäätä.",
+            "CreatedDate": "2006-04-09T10:03:00",
+            "Id": 87
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-04-09T20:45:00",
+    "LocationLatitude": 853228,
+    "LocationLongitude": 755545,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "New distance record",
+    "Subject_fi": "Uusi päiväenkka",
+    "Temperature": -23.0,
+    "Text_en": "<p>Encouraged and fortified by yesterday's afternoon of rest, we today posted a new daily distance record. In addition, we broke through that magical 20 km per day psychological barrier. From here on, we will need to make plus-20-km days on almost every active trek day if we are to reach the Geographic North Pole by May 1st, just over three weeks from today.</p><p>There was little change in the weather; no sun today but, thankfully, sufficient light filtered through the cloud cover to allow us to see, at least partially, the lay of the icescape. On some occasions we did experience partial whiteout, interrupted by blue pack ice here and there.</p><p>The terrain is gradually becoming more friendly. The sheets of level ice are noticeably increasing in size, boarded by narrower pressure ridges. Obstacles hindering progress are decreasing in number. Our average speed of advance today was between 2.3 and 2.5 km per hour. Active skiing time was 9.5 hours. Add to this the time spent on lunch break \u00e2\u20ac\u00a6 a long day at the office.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Lepoiltapäivän innoittamina ja hyvän mielen siivittäminä teimme tänään uuden päiväenkan. Maaginen kahdenkymmenen kilometrin raja ylitettiin. Tosin syytä jo olikin sillä hiihdettävää matkaa riittää edelleen ja aikaa navalle pääsemiseksi on kolme viikkoa.</p><p>Keli pysytteli viime päivien kaltaisena. Aurinkoa emme nähneet mutta onneksi välillä hajavalo maalasi joitain maastomuotoja. Välillä tosin ympärillä ei nähty mitään muuta kuin valkoista ja siellä täällä sinistä ahtojäätä.</p><p>Maasto muuttui myös osin myös inhimillisemmäksi. Tänään oli taas selvästi isompia jäälauttoja joiden välissä ahtojäät kasvoivat röykkiöiksi. Onneksi näitä hidasteita oli vain silloin tällöin. Matkavauhtimme oli tänään keskimäärin 2,3-2,5 km tunnissa. Hiihtoaikaa kertyi tänään 9,5 tuntia ja tauko siihen väliin, joten liikkeellä olimme kaiken kaikkiaan kellon ympäri.</p><p>Retkikunnalla kaikki hyvin.</p><p>****</p><p>Stärkta av en halv vilodag och gott humör gjorde vi i dag ett nytt rekord. Den magiska tjugokilometersgränsen är nu bruten. Det var sannerligen p\u00e5 tiden, eftersom det fortfarande är l\u00e5ngt till polen och tre veckor kvar.<BR><BR>Vädret var som tidigare. Vi s\u00e5g inte solen men till all lycka fanns det tillräckligt ambient ljus s\u00e5 att vi kunde urskilja n\u00e5gra konturer. Allt emellan\u00e5t s\u00e5g vi dock bara vitt överallt och nu och d\u00e5 bl\u00e5 packis.<BR><BR>Terrängen blev ocks\u00e5 mera mänsklig. I dag hade vi flera större isflak med stora packisrösen i skarvarna, men som tur var inte alltför ofta. V\u00e5r hastighet var i medeltal 2,3-2,5 km/h. Vi skidade sammanlagt 9,5 h och höll dessutom pauser, s\u00e5 var var p\u00e5 väg ca 12 timmar.<BR><BR>Expeditionen allt väl.</p>",
+    "Weather": null,
+    "Wind": 3.0,
+    "Slug": "2006-04-08-uusi-paivaenkka",
+    "Previous": "2006-04-07-laski-salonen-on-kuollut-kauan-elakoon-suunto",
+    "Next": "2006-04-09-ahtoa-ja-tasaista"
+}

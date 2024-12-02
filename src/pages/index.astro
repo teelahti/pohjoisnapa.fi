@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LanLink from "../components/LanLink.astro";
+import HeaderImages from "../components/header-images.ts";
+import "./_index.css";
+const pageId = "index";
+---
+
+<Layout id={pageId} title="Pohjoisnapa 2006" headerImg={HeaderImages.Top5}>
+  <div>
+    <div>
+      <div>
+        <h2>Tuorein päiväkirjaote</h2>
+        <h3>4.5.2006 RETKIKUNTA SUOMESSA</h3>
+        <p>
+          Retkikunta saapui onnellisesti Suomeen ja piti lehdistötilaisuuden
+          Helsinki-Vantaan lentokentällä. Tämän jälkeen siirryttiin lähes kolmen
+          kuukauden erossa olon jälkeen perheiden pariin. ...
+          <LanLink to="/diary/2006-05-05-retkikunta-suomessa">
+            Lue lisää
+          </LanLink>
+        </p>
+      </div>
+      <aside>
+        <img src="/images/paivakirja/099-small.jpeg" alt="" />
+      </aside>
+    </div>
+
+    <div>
+      <div>
+        <h2>Retkikunta</h2>
+        <h3>Unsupport-retkikunta pohjoisnavalle</h3>
+        <p>
+          Laskuvarjojääkärikillan retkikunta hiihti maantieteelliselle
+          pohjoisnavalle keväällä 2006. Seitsemän hengen unsupport- retkikunta
+          lähti liikkeelle Pohjoiskanadasta Ward Huntista maaliskuun alussa ...
+          <LanLink to="/expedition">Lue lisää</LanLink>
+        </p>
+      </div>
+      <aside>
+        <LanLink to="/diary/book">
+          <h3>Kirja "Pohjoisnapa - jäinen haaste" julkaistu</h3>
+        </LanLink>
+        <LanLink to="/diary/book">Tutustu ja tilaa...</LanLink>
+      </aside>
+    </div>
+  </div>
+</Layout>
+
+<style></style>

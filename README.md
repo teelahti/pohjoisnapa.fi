@@ -7,17 +7,17 @@ database support was removed and replaced with static data files.
 
 Original hosting was in Azure, and it leveraged Azure's SQL and CDN features.
 
-This newest rewrite is based on [Gatsby JS](https://www.gatsbyjs.org) and hosted on Google Firebase
+Recent rewrite was based on [Gatsby JS](https://www.gatsbyjs.org) and hosted on Google Firebase
 hosting to get cheap and easy SSL-secured CDN hosting. During rewrite some of HTML was modernized, but otherwise the
 site was left intact.
 
-Language translation setup is inspired from this [article](https://www.gatsbyjs.org/blog/2017-10-17-building-i18n-with-gatsby/).
+Current, newest rewrite is based on Astro. Again, some modernization was done, but site is still old and ugly. Hosting is still at Google firebase.
 
 ## Develop
 
-Run `gatsby develop` for normal development view. To build production site (for testing
-purposes, see Deploy below) run `gatsby build`, then test the site with `gatsby serve`.
-Build production site will be at folder /public, and can be copied from there to any
+Run `yarn run dev` for normal development view. To build production site (for testing
+purposes, see Deploy below) run `yarn run build`, then test the site e.g. with `yarn run preview`.
+Build production site will be at folder /dist, and can be copied from there to any
 static (preferably CDN-based) hosting.
 
 ## Deploy

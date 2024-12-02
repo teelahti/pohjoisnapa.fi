@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "jarmo aho",
+    "CreatedDate": "2006-03-18T08:14:00",
+    "DistanceTraveled": 6.5,
+    "EntryDate": "2006-03-17T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Setting up the Bear Alarm tripwires.",
+            "Caption_fi": "Jääkarhuhälyttimen virittelyä. ",
+            "CreatedDate": "2006-03-18T08:27:00",
+            "Id": 65
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-20T08:41:00",
+    "LocationLatitude": 833149,
+    "LocationLongitude": 734941,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Sunshine once more",
+    "Subject_fi": "Aurinko paistaa taas",
+    "Temperature": -37.0,
+    "Text_en": "<p>Hatching from our sleeping bags this morning, we were greeted by a bitter frost. Yesterday's bikini-weather proved to be a one-day-wonder. In the evening the temperature went down to \u00e2\u20ac\u201c 40 C, but it never got warmer than \u00e2\u20ac\u201c 36 all day. Clear blue skies and a low-flying sun kept our spirits up.</p><p>Yesterday's experiment with single-carry tactics has clearly inspired us: Is there any way we can lighten our load? We went through our gear with this in mind, and anything surplus to essential requirements (e.g. used socks and bindings) went on the campfire. Also, each team member went through his personal kit: If something has not been used during the first two weeks, will it really be needed for the remaining journey?</p><p>The ice was generally flatter today than on previous days, but we were hindered occasionally by pack-ice boulders. On the other hand, even the `flat\u00b4 ice was strangely undulating, which made sledge-pulling hard work.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Kirpeä pakkassää vastaanotti meidät kömpiessämme aamulla ulos makuupusseista. Eilinen lämmin sää oli vain yhden päivän oikku. Illalla pakkanen laski taas neljään kymppiin, mutta päivällä mittari pysytteli 36 ja 37 asteen tienoilla. Sininen pilvetön taivas ja matalalta loimottava aurinko piristivät mieliä.</p><p>Eilisestä kaikkien kamojen kerralla vetämisen kokeilusta intoutuneina kevensimme turhia tavaroita. Ainakin nuotioon joutui muutamat käytetyt sukat ja monojen huovat. Lisäksi jokainen mietti vielä omia tavaroita, että onko nyt kahden viikon jälkeen vielä jotain turhaa mukana...</p><p>Tänään oli hiihtopohjana osin tasaisempaa jäätä mutta paikoin oli edessä edelleen ahtojääröykkiöitäkin. Tasainen jää oli tänään kumman kumpuilevaa joten ahkion vetäminen tuntui käyvän työstä tänäänkin.</p><p>Retkikunnalla kaikki hyvin.</p><p>************************</p><p>Det bet i näsan d\u00e5 vi kröp ut ur sovsäckarna i morse. G\u00e5rdagens varma väder var tydligen ett undantag. P\u00e5 kvällen sjänk<BR>temperaturen igen till minus fyrtio, men p\u00e5 dagen höll den sig runt minus 36-37 grader. En klar, bl\u00e5 himmel och en l\u00e5g,<BR>flammande sol piggade upp oss.</p><p>Inspirerade av g\u00e5rdagens experiment med att dra all utrustning p\u00e5 en g\u00e5ng beslöt vi att utföra en avlusning i Bouchts anda, dvs. slänga allt som vi ans\u00e5g vara onödigt. Bland annat n\u00e5gra använda strumpor och filtstövlar blev l\u00e5gornas rov. Varje<BR>expeditionsmedlem funderar nu över sina grejor; finns där n\u00e5got som visat sig mindre nödvändigt efter tv\u00e5 veckors skidande.</p><p>I dag var skidbanan delvis slät is med här och där träffade vi fortfarande p\u00e5 packis. Den släta isen var märkvärdigt kuperad och det var som vanligt ett hundgöra att ta sig fram.</p><p>Expeditionen allt väl.</p><p>&nbsp;</p>",
+    "Weather": null,
+    "Wind": 1.0,
+    "Slug": "2006-03-17-aurinko-paistaa-taas",
+    "Previous": "2006-03-16-lamminta-kelia",
+    "Next": "2006-03-18-juopuneita-pahkinoita"
+}

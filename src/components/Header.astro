@@ -1,0 +1,37 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import LanLink from "./LanLink.astro";
+import HeaderImages from "./header-images.ts";
+const { img = HeaderImages.Top5 } = Astro.props;
+const imgSrc = `url(${img})`;
+---
+
+<header>
+  <LanguageSwitcher />
+  <div>
+    <h1>
+      <LanLink href="/">
+        <img src="/images/logo_vaalea.gif" alt="Logo" />
+      </LanLink>
+    </h1>
+  </div>
+</header>
+
+<style define:vars={{ imgSrc }}>
+  header > div {
+    background-image: var(--imgSrc);
+    width: 740px;
+    height: 181px;
+    margin-bottom: 5px;
+
+    h1 {
+      margin: 0;
+
+      a {
+        position: relative;
+        left: 30px;
+        top: 118px;
+      }
+    }
+  }
+</style>

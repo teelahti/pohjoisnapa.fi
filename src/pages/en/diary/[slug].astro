@@ -1,0 +1,36 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import Diary from "../../../components/Diary.astro";
+
+export async function getStaticPaths() {
+  const all = await getCollection("diary");
+
+  return Array.from(all.map((d) => ({ params: { slug: d.data.Slug } })));
+}
+
+const { slug } = Astro.params;
+
+// Cut the date from slug; this is our id to fetch the day entry
+const date = slug.substring(0, 10);
+const entries = await getEntry("diary", date);
+const d = entries!.data;
+---
+
+<Diary
+  title={d.Subject_en}
+  body={d.Text_en}
+  createdBy={d.CreatedBy}
+  created={d.CreatedDate}
+  distance={d.DistanceTraveled}
+  entrydate={d.EntryDate}
+  imgs={d.Images}
+  lastModifiedBy={d.LastModifiedBy}
+  lastModified={d.LastModifiedDate}
+  lat={d.LocationLatitude}
+  lon={d.LocationLongitude}
+  eastWest={d.LocationLongitudeEastWest}
+  temp={d.Temperature}
+  wind={d.Wind}
+  prev={d.Previous}
+  next={d.Next}
+/>

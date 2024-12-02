@@ -1,0 +1,35 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-09T21:41:00",
+    
+    "EntryDate": "2005-11-08T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "",
+            "Caption_fi": "Jermi maksimirasitustestissä. Verikoe otettiin alussa viiden minuutin välein.",
+            "CreatedDate": "2006-01-10T13:28:00",
+            "Id": 16
+        },
+        {
+            "Caption_en": "",
+            "Caption_fi": "Tero isometrisessä voimatestissä.",
+            "CreatedDate": "2006-01-10T13:28:00",
+            "Id": 17
+        }
+    ],
+    "LastModifiedBy": "Tero Teelahti",
+    "LastModifiedDate": "2006-02-20T13:16:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Expedition at physical tests",
+    "Subject_fi": "Retkikunta kuntotesteissä Jyväskylässä",
+    
+    "Text_en": "<p>Last night half of the expedition drove to Jyväskylä to get a good nights sleep before physical tests. Tests began with some nerve tests, and after those were blood tests, and power and maximum endurance tests.</p><p>Everyone gave his best at the test. The overall result was nice: expedition members all are pretty much in equal shape, and the shape is good of non-professional athlete.</p><p>Rest of the expedition will attend similar tests in January. </p>",
+    "Text_fi": "<p>Edellisenä iltana puolet retkikunnasta ajoi hyvissä ajoissa edellisenä iltana Jyväskylään lepäämään. Hyvin nukutun yön jälkeen siirryttiin Jyväskylän yliopiston liikuntabiologian laitokseen, jossa tehtiin hermostoon liittyviä testejä, verikokeita, sekä voima- ja maksimirasitustestit. </p><p>Jokainen antoi testeissä kaikkensa, ei ollut tavatonta että juoksumatolta romahdettiin suoraan ketoon lepäämään. Testien valvojan kommenttikin oli, että \"ainakin tämä oli kaikilta maksimisuoritus\".</p><p>Testien lopputulos oli toivoa antava: retkikunna jäsenet ovat yllättävän tasakuntoisia, ja kaikkien kunto on normaali-ihmisten taulukoilla mitattuna hyvä. Huippu-urheilijoiden taulukot jätämme omaan arvoonsa. </p><p>Toinen puoli retkikunnasta menee vastaaviin testeihin tammikuun alussa. </p>",
+    "Weather": null,
+    
+    "Slug": "2005-11-08-retkikunta-kuntotesteissa-jyvaskylassa",
+    "Previous": "2005-11-02-retkikunta-ski-expo-messuilla",
+    "Next": "2005-11-21-ahkio-ja-kuivapukutestausta-rajamaen-uimahallissa"
+}

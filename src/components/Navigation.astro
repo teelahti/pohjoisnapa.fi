@@ -1,0 +1,168 @@
+---
+import LanLink from "./LanLink.astro";
+import { byLocale } from "./translations.ts";
+const t = byLocale(Astro.currentLocale);
+
+const nav: any = {
+  "/": {
+    text: t("home"),
+  },
+  "/expedition": {
+    text: t("expedition"),
+    sub: {
+      "/expedition/background": { text: t("expedition_background") },
+      "/expedition/objectives": { text: t("expedition_objectives") },
+      "/expedition/timetable": { text: t("expedition_timetable") },
+      "/expedition/research": { text: t("expedition_research") },
+      "/expedition/equipment": { text: t("expedition_equipment") },
+      "/expedition/club": { text: t("expedition_club") },
+    },
+  },
+  "/diary/2006-05-05-retkikunta-suomessa": {
+    test: "/diary",
+    text: t("diary"),
+    sub: {
+      "/diary/all": { text: t("diary_all") },
+      "/diary/data": { text: t("diary_data") },
+      "/diary/book": { text: t("diary_book") },
+    },
+  },
+  "/gallery": {
+    text: t("gallery"),
+    sub: {
+      "/gallery/at-ice": { text: t("gallery_ice") },
+      "/gallery/previous-expeditions": { text: t("gallery_previous") },
+      "/gallery/press": { text: t("gallery_press") },
+    },
+  },
+  "/sponsors": {
+    text: t("sponsors"),
+    sub: {
+      "/sponsors/list": { text: t("sponsors_list") },
+      "/sponsors/media": { text: t("sponsors_media") },
+    },
+  },
+  "/arctic": {
+    text: t("arctic"),
+    sub: {
+      "/arctic/history": { text: t("arctic_history") },
+      "/arctic/polar-bear": { text: t("arctic_polarBear") },
+      "/arctic/climate-change": { text: t("arctic_climateChange") },
+      "/arctic/orienteering": { text: t("arctic_orienteering") },
+      "/arctic/photographing": { text: t("arctic_photographing") },
+      "/arctic/food": { text: t("arctic_food") },
+    },
+  },
+};
+
+let subNav: any = null;
+
+// regex: (\/.{2}\/){0,1} + path
+// Iterate through paths and check which one is active
+Object.keys(nav).forEach((path) => {
+  let cur = nav[path];
+
+  // Test with or without language
+  // Use given test, or path if not given
+  let pathReg = new RegExp("(/[a-z]{2}/){0,1}" + (cur.test ? cur.test : path));
+
+  if (pathReg.test(Astro.url.pathname)) {
+    cur.active = true;
+    subNav = cur.sub;
+  } else if (cur.sub) {
+    // Check if any subpath matches
+    Object.keys(cur.sub).forEach((subpath) => {
+      var subReg = new RegExp("(/[a-z]{2}/){0,1}" + subpath);
+      if (subReg.test(Astro.url.pathname)) {
+        cur.active = true;
+        cur.sub[subpath].active = true;
+        subNav = cur.sub;
+      }
+    });
+  }
+});
+---
+
+<nav>
+  <ul>
+    {
+      Object.keys(nav).map((p) => (
+        <li>
+          <LanLink to={p} class:list={[{ "nav-active": nav[p].active }]}>
+            {nav[p].text}
+          </LanLink>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    subNav ? (
+      <ul>
+        {Object.keys(subNav).map((p) => (
+          <li>
+            <LanLink to={p}>{subNav[p].text}</LanLink>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      false
+    )
+  }
+</nav>
+
+<style>
+  nav {
+    margin-left: 230px;
+    color: #cccccc;
+    font-family:
+      Arial Narrow,
+      Arial;
+    font-stretch: condensed;
+    font-size: 11pt;
+    text-align: center;
+
+    a,
+    a:visited {
+      text-decoration: none;
+      color: #cccccc;
+    }
+
+    a:hover {
+      color: #ccc;
+      text-decoration: underline;
+    }
+
+    a.nav-active {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* Both menu and submenu shared: */
+    ul {
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    li {
+      display: block;
+      text-align: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+
+    /* Main menu specific styles */
+    ul:first-child {
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    /* Sub-menu specific styles */
+    ul:nth-child(2) {
+      margin: 0 0 60px 0;
+      font-size: 16px;
+    }
+  }
+</style>

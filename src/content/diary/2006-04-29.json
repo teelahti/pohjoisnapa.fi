@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Jarmo Aho",
+    "CreatedDate": "2006-04-29T21:01:00",
+    
+    "EntryDate": "2006-04-29T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "",
+            "Caption_fi": "Pohjoisnapa",
+            "CreatedDate": "2006-05-02T00:35:00",
+            "Id": 95
+        }
+    ],
+    "LastModifiedBy": "tero teelahti",
+    "LastModifiedDate": "2006-05-02T00:35:00",
+    "LocationLatitude": 900000,
+    "LocationLongitude": 0,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Mission accomplished",
+    "Subject_fi": "Tehtävä suoritettu",
+    
+    "Text_en": "<p>The Unsupported Expedition of the Airborne Rangers Club of Finland planted its Finnish Flag at the Geographic North Pole today, 4/29/2006 at 1931 Finnish time (1631 GMT).</p><p>All is very, very excellent with Our Expedition.</p><p>&nbsp;</p>",
+    "Text_fi": "<p>Retkikunta on pystyttänyt Suomen lipun maantieteelliselle pohjoisnavalle kello 19.31 Suomen aikaa.</p><p>Retkikunnalla kaikki erittäin hyvin.</p><p>*****************</p><p>Updraget utfört.</p><p>Expeditionen har hissat Finlands flagga p\u00e5 nordpolen kl 19.31 finsk tid.</p><p>Expeditionen allt väldigt väl.</p>",
+    "Weather": null,
+    
+    "Slug": "2006-04-29-tehtava-suoritettu",
+    "Previous": "2006-04-28-viimeiset-tuskaiset-kilometrit",
+    "Next": "2006-04-30-barneon-kautta-huippuvuorille"
+}

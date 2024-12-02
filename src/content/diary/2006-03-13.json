@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-14T15:36:00",
+    "DistanceTraveled": 4.6,
+    "EntryDate": "2006-03-13T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Striking camp.",
+            "Caption_fi": "Leirin purku käynnissä.",
+            "CreatedDate": "2006-03-14T15:36:00",
+            "Id": 60
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-16T13:46:00",
+    "LocationLatitude": 832234,
+    "LocationLongitude": 740955,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Communications challenges",
+    "Subject_fi": "Viestiyhteyksien kanssa pieniä ongelmia",
+    "Temperature": -47.0,
+    "Text_en": "<p>Early this morning, the temperature was a crisp - 47 C. The first skiing leg of the day turned out to be very tough going: after struggling with the sledges for one and a half hours, we had advanced a total distance of 1.6 km.</p><p>After lunch, however, the terrain became more friendly to us. At one stage in the afternoon, we even managed to ski for a whole hour without once removing our skis. This is a new record for the Expedition. Hopefully, we will find more of the same easy territory on days to come; preferably easier still.</p><p>We've been experiencing some problems with our E-mail communications: our satellite uplink sometimes cuts off prematurely, so we've not always been able to send all the messages we'd like to.</p><p>For this same reason, the present diary entry appeared on the website later in the day than had previous entries. Our Support Team was inundated with worried messages. But don't panic, dear readers: problematic communications are an integral part of Arctic wandering! Thank you all for your concern.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Tänään aamulla herätessä oli rapeat 47 astetta pakkasta. Päivän ensimmäinen legi osoittautui rankaksi: puolentoista tunnin tahkomisella ei päästy kuin 1,6 km. Lounaan jälkeen alkoi kuitenkin iloisempi maasto - päästiin jopa tunnin verran eteenpäin irroittamatta suksia kertaakaan jalasta. Se on tähänastinen ennätys. Pitää toivoa että lisää samankaltaista maastoa, tai mielellään jopa parempaa, on seuraavinakin päivinä edessä. </p><p><BR>Sähköpostin kulkemisen kanssa on ollut hieman ongelmia. Verkkoyhteys ei ole jaksanut olla pystyssä aina riittävää aikaa, joten viestejä ei ole saatu liikkeelle halutussa määrin. <BR></p><p>Vaikka retkikunnalta ei joka päivä tulisikaan viestiä, ei kannata heti hätääntyä. Vaikeat viestiyhteydet kuuluvat arktiseen vaellustoimintaan.<BR><BR>Retkikunnalla kaikki hyvin.</p><p>&nbsp;</p><p>************</p><p>I dag vaknade vi i uppfriskande -47 grader C. Dagens första etapp visade sig vara krävande: trots att vi slet i en och en halv timme kom vi bara 1,6 km fram\u00e5t. Efter lunch blev det bättre, och vi kunde skida en hel timme utan att ta skidorna fr\u00e5n fötterna. Det är nytt rekord för oss. Vi f\u00e5r hoppas att terrängen framför oss är lika bra eller till och med ännu bättre.</p><p>Vi har haft sm\u00e5 problem med e-posten.&nbsp; Satellitförbindelsen har inte h\u00e5llits uppe tillräckligt länge, s\u00e5 vi har inte f\u00e5tt skickat s\u00e5 m\u00e5nga meddelanden som vi skulle ha velat.</p><p>\u00c3\u201even om expeditionen inte sänder meddelanden varje dag är det ingen orsak till panik. Sv\u00e5ra förbindelser hör till vardagen i arktiska expeditioner.</p><p>Expeditionen allt väl.</p>",
+    "Weather": null,
+    "Wind": 2.0,
+    "Slug": "2006-03-13-viestiyhteyksien-kanssa-pienia-ongelmia",
+    "Previous": "2006-03-12-taas-kylmenevaa",
+    "Next": "2006-03-14-lentokone-nakyvissa"
+}

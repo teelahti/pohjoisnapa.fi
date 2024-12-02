@@ -1,0 +1,38 @@
+---
+import AsidePage from "../../../components/AsidePage.astro";
+import HeaderImages from "../../../components/header-images";
+---
+
+<AsidePage title="Excelsior" headerImg={HeaderImages.Top8}>
+  <Fragment slot="left">
+    <p>
+      The Airborne Ranger club of Finland was founded in 1964. Its mission is to
+      maintain and upkeep the social bonds between Airborne Ranger veterans. It
+      is among Finland’s largest civilian societies in the defense sector, with
+      2000 members in 19 local affiliated societies. Active members adhere to
+      the same values, principals and traditions that they learned in their
+      Airborne Ranger training phase.
+    </p>
+    <p>
+      The Airborne Ranger Club has specialised in performing demanding
+      expeditions. Other special interests are parachuting, diving and shooting.
+      In all these areas the training of it's members play a vital role.
+    </p>
+    <p>
+      Members of the Club are united by red barret and hunger for adventure.
+    </p>
+    <p>
+      For more information, please visit <a
+        href="https://lsvjkilta.fi"
+        target="_blank"
+        class="ulkoinen">lsvjkilta.fi</a
+      >
+    </p>
+  </Fragment>
+
+  <img
+    slot="right"
+    src="/images/expedition/kartanlukua.jpg"
+    alt="Reading the map"
+  />
+</AsidePage>

@@ -1,0 +1,95 @@
+---
+import "swiper/css";
+import GalleryThumbnail from "./GalleryThumbnail.astro";
+
+interface Img {
+  source: {
+    regular: string;
+    thumbnail: string;
+  };
+  caption: string;
+}
+interface Props {
+  imgs: Img[];
+  title?: string;
+  subtitle?: string;
+}
+
+const { imgs, title, subtitle } = Astro.props;
+---
+
+<script>
+  import { register } from "swiper/element/bundle";
+  register();
+</script>
+
+<div class="section">
+  {title && <h2>{title}</h2>}
+  {subtitle && <p>{subtitle}</p>}
+
+  <swiper-container
+    id="swiper"
+    space-between="10"
+    navigation="true"
+    css-mode="true"
+  >
+    {
+      imgs.map((e) => (
+        <swiper-slide>
+          <figure>
+            <img src={e.source.regular} alt={e.caption} />
+            <figcaption>{e.caption}</figcaption>
+          </figure>
+        </swiper-slide>
+      ))
+    }
+  </swiper-container>
+
+  <div class="gallery">
+    {imgs.map((obj, i) => <GalleryThumbnail idx={i} obj={obj} />)}
+  </div>
+</div>
+
+<style>
+  :root {
+    --swiper-navigation-color: #fff;
+
+    --width: 660px;
+    --height: 540px;
+    --thumbwidth: 100px;
+    --thumbheight: 80px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 4px;
+    justify-content: space-evenly;
+
+    img {
+      width: var(--thumbwidth);
+      height: var(--thumbheight);
+      object-fit: cover;
+    }
+  }
+  swiper-container {
+    margin-top: 20px;
+  }
+  swiper-slide {
+    width: var(--width);
+    height: var(--height);
+
+    figure {
+      img {
+        width: var(--width);
+        height: calc(var(--height) - 60px);
+        object-fit: contain;
+        object-position: center;
+      }
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+</style>

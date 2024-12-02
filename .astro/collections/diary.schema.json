@@ -1,0 +1,115 @@
+{
+  "$ref": "#/definitions/diary",
+  "definitions": {
+    "diary": {
+      "type": "object",
+      "properties": {
+        "Slug": {
+          "type": "string"
+        },
+        "CreatedBy": {
+          "type": "string"
+        },
+        "CreatedDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DistanceTraveled": {
+          "type": "number"
+        },
+        "EntryDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "Images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Caption_en": {
+                "type": "string"
+              },
+              "Caption_fi": {
+                "type": "string"
+              },
+              "CreatedDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "Id": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "Caption_en",
+              "Caption_fi",
+              "CreatedDate",
+              "Id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "LastModifiedBy": {
+          "type": "string"
+        },
+        "LastModifiedDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "LocationLatitude": {
+          "type": "integer"
+        },
+        "LocationLongitude": {
+          "type": "integer"
+        },
+        "LocationLongitudeEastWest": {
+          "type": "string",
+          "enum": [
+            "E",
+            "W"
+          ]
+        },
+        "Subject_en": {
+          "type": "string"
+        },
+        "Subject_fi": {
+          "type": "string"
+        },
+        "Temperature": {
+          "type": "number"
+        },
+        "Wind": {
+          "type": "number"
+        },
+        "Text_en": {
+          "type": "string"
+        },
+        "Text_fi": {
+          "type": "string"
+        },
+        "Previous": {
+          "type": "string"
+        },
+        "Next": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Slug",
+        "CreatedBy",
+        "CreatedDate",
+        "EntryDate",
+        "Images",
+        "Subject_en",
+        "Subject_fi",
+        "Text_en",
+        "Text_fi"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

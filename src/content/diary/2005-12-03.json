@@ -1,0 +1,29 @@
+{
+  "CreatedBy": "Tero Teelahti",
+  "CreatedDate": "2006-01-09T22:02:00",
+  
+  "EntryDate": "2005-12-03T00:00:00",
+  "Images": [
+    {
+      "Caption_en": "Magnetic North Pole expedition. Kari Vainio (second row, second person from left) acts as the support team leader, others will ski.",
+      "Caption_fi": "Magneettisen pohjoisnavan retkikunta, kuvan henkilöistä Kari Vainio (keskimmäinen rivi, toinen vas.) toimii support-tiimin vetäjänä ja muut hiihtävät.",
+      "CreatedDate": "2006-01-10T13:36:00",
+      "Id": 20
+    }
+  ],
+  "LastModifiedBy": "Antti Pohjolainen",
+  "LastModifiedDate": "2006-02-20T19:35:00",
+  "LocationLatitude": 601000,
+  "LocationLongitude": 244600,
+  "LocationLongitudeEastWest": "E",
+  "Subject_en": "Building team spirit",
+  "Subject_fi": "Yhteishengen nostatusta ",
+  
+  "Text_en": "<p>The expedition group got together to TF hut for risk management discussions. During the weekend, some difficult cases were handled pertaining to exceptional situations. Another target was to ease the possible tensions caused by hectic preparation phase. Some of the support team members participated the meeting during Saturday.</p>",
+  "Text_fi": "Retkikunta kokoontui viikonlopuksi TF:n majalle teemana riskienhallinta. Viikonlopun aikana käytiin läpi osin vaikeitakin asioita poikkeustilanteisiin liittyen. Viikonlopun tarkoituksena oli myös poistaa mahdollisia järjestelyn kiireessä syntyneitä jäsenien välisiä jännitteitä. Lauantaina mukana oli myös osa support-tiimistä.",
+  "Weather": null,
+  
+  "Slug": "2005-12-03-yhteishengen-nostatusta",
+  "Previous": "2005-11-21-ahkio-ja-kuivapukutestausta-rajamaen-uimahallissa",
+  "Next": "2006-01-06-renkaanvetotreeni-ja-varustekokous"
+}

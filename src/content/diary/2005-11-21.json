@@ -1,0 +1,35 @@
+{
+    "CreatedBy": "Tero Teelahti",
+    "CreatedDate": "2006-01-09T21:33:00",
+    
+    "EntryDate": "2005-11-21T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Pasi testing the dry suit.",
+            "Caption_fi": "Pasi testaamassa kuivapukua.",
+            "CreatedDate": "2006-01-10T13:19:00",
+            "Id": 14
+        },
+        {
+            "Caption_en": "Tero testing the pulka draft.",
+            "Caption_fi": "Tero kokeilemassa ahkiolauttaa.",
+            "CreatedDate": "2006-01-10T13:21:00",
+            "Id": 15
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-02-20T19:53:00",
+    "LocationLatitude": 601000,
+    "LocationLongitude": 244600,
+    "LocationLongitudeEastWest": "E",
+    "Subject_en": "Pulka and dry suit testing at Rajamäki swimming hall",
+    "Subject_fi": "Ahkio- ja kuivapukutestausta Rajamäen uimahallissa",
+    
+    "Text_en": "<p>The Expedition team met at Rajamäki swimming hall to test possible methods to cross open water. The evening had two clear targets:</p><OL><LI>To build and test a simple pulka draft.</LI><LI>To test dry suit in pool conditions.</LI></OL><p>Before entering the water, a planning session was held. Quite quickly we were able to fix two pulkas together by using light weight karabiners and using skis to add firmness to structure. Both pulkas were filled with approximately 130 kg of weight (approximately 260 lbs.), to find out how the pulkas float with cargo and then Henkku started to paddle. The correct technic was found out pretty quickly and now we have a fast and reliable method to cross open water. Next test will take place on more realistic conditions close by Helsinki or Oulu, depending on the weather conditions.</p><p>The other important test was to find out how the dry suit works. The suit is made of Gore tex based on our own design. The main design principle was to have a light and easy to be used suit together with the skiing wear in very cold conditions. Toni entered the water with the suit on and soon we discovered that some water had entered the suit caused by improper zipping of the suit. The suit is designed to be used when floating face up. Swimming with the suit is possible, but one must be extremely careful. Others tested the suit as well and a few improvements were discovered. The suit must be really large to enable wearing it with smittens on. There will be one more prototype provided before entering more realistic conditions. The night was really succesfull and the team closed the meeting around 11.00 pm after several hours in water.</p>",
+    "Text_fi": "<p>Retkikunta kokoontui 21.11. Rajamäen uimahalliin testaamaan tulevalla retkellä mahdollisesti tarvittavia avoveden ylitysvalmiuksia. Illalla oli kaksi selkeää tavoitetta: </p><OL><LI>Testata ahkiolautan teko mahdollisimman yksinkertaisesti ja koittaa käytännössä sen toimivuus altaassa. <LI>Testata kuivapuku allasolosuhteissa. </LI></OL><p>Testi alkoi ennen altaalle menoa uimahallin vapaa-ajan tiloissa, jossa pohdimme nopeasti kuinka kahdesta ahkiosta kyetään rakentamaan mahdollisimman vaivattomasti ahkiolautta. Melko nopeasti olimme liittäneet ahkiot toisiinsa kiinni kevyillä tarvikesulkurenkailla ja laittaneet ahkion keulaan ja perään sukset jäykistämään rakennetta. Oli aika siirtyä altaille. Täytimme molemmat ahkiot vähintään 130 kg painoilla nähdäksemme kuinka ahkiot kelluvat täydessä lastissa ja tämän jälkeen Henkku alkoi meloa ahkiolla pitkin uimahallia. Aika pian kävi selväksi, että melottaessa ahkiolla on syytä olla melko tarkkana roiskiessa vettä ahkion kankaisiin. Pienen totuttelun jälkeen homma alkoi sujua varsin mukavasti ja nyt meillä on nopea ja luotettava tapa käyttää ahkioita ylitysvälineinä kohdattaessa avovettä. Seuraava testi onkin sitten laivaväylällä joko Helsingin edustalla tai Oulun tietämillä \u00e2\u20ac\u201c keleistä riippuen.<BR>&nbsp;</p><p>Toinen illan tärkeä testikohde oli siis kuivapuku ja sen toimivuus. Kuivapukumme on tehty goretexistä oman suunnittelumme pohjalta. Tässä ajatuksena on ollut puvun keveys ja helppokäyttöisyys hiihtovaatteet päällä kovassa pakkasessa. Toni aloitti luttaamisen puvulla ja aika pian huomasimme, että puku oli hörpännyt kaula-aukosta hivenen vettä huonon sulkemisen takia. Puku on siis suunniteltu selällään uitavaksi ja sen kanssa uiminen vaatii erityistä rauhallisuutta. Illlan mittaan vielä muutkin paikalla olijat testasivat pukua ja löysimme siihen muutaman kehitysehdotuksen. Päällimmäisenä tietysti mielessä puvun riittävän suuri koko, jotta pukeutuminen onnistuu kintaat kädessä -45 pakkaskelissä \u00e2\u20ac\u201c mikäli tarve niin&nbsp; vaatii. Seuraavaksi saamme käyttöön vielä yhden prototyypin jota testataan altaalla ennen ulkona luttaamista. Ilta oli siis kaikinpuolin onnistunut ja pääsimme ajelemaan kohti sivistystä (:-)) noin 23.00 useamman tunnin vesileikkien jälkeen.<BR></p>",
+    "Weather": null,
+    
+    "Slug": "2005-11-21-ahkio-ja-kuivapukutestausta-rajamaen-uimahallissa",
+    "Previous": "2005-11-08-retkikunta-kuntotesteissa-jyvaskylassa",
+    "Next": "2005-12-03-yhteishengen-nostatusta"
+}

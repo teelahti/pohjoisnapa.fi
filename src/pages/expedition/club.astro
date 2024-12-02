@@ -1,0 +1,38 @@
+---
+import AsidePage from "../../components/AsidePage.astro";
+import HeaderImages from "../../components/header-images";
+---
+
+<AsidePage title="Excelsior" headerImg={HeaderImages.Top8}>
+  <Fragment slot="left">
+    <p>
+      Vuonna 1964 perustettu Laskuvarjojääkärikilta ry toimii
+      Laskuvarjojääkärikoulun käyneiden miesten yhdyssiteenä, ollen Suomen
+      suurimpia maanpuolustuskiltoja. 2000 jäsenen ja 19 paikallisosaston voimin
+      kilta jatkaa Laskuvarjojääkärikoulussa opittuja reippaita toimintatapoja
+      ja vaalii Päämajan tiedustelupataljoona (ErP4) perinteitä. Vanhojen
+      kaukopartiomiesten aikanaan suorittaman tärkeän työn ja perinteen
+      vaaliminen on Laskuvarjojääkärikillan kunniatehtävä.
+    </p>
+    <p>
+      Killan erikoisalueita vaativien retkikuntien järjestämisen lisäksi ovat
+      laskuvarjourheilu, sukellus, radioamatööritoiminta, ammunta ja
+      vapaaehtoinen maanpuolustuskoulutus. Kaikilla edellä mainituilla
+      osa-alueilla on jäsenistön koulutus merkittävässä asemassa.
+    </p>
+    <p>Kiltalaisia yhdistää seikkailunhalu ja punainen baretti.</p>
+    <p>
+      Lisätietoja killan toiminnasta <a
+        href="https://lsvjkilta.fi"
+        target="_blank"
+        class="ulkoinen">lsvjkilta.fi</a
+      >
+    </p>
+  </Fragment>
+
+  <img
+    slot="right"
+    src="/images/expedition/kartanlukua.jpg"
+    alt="Kartan lukua"
+  />
+</AsidePage>

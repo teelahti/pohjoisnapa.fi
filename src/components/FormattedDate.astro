@@ -1,0 +1,15 @@
+---
+interface Props {
+  value?: string;
+}
+const { value } = Astro.props;
+import formats from "./dateformats.ts";
+
+if (!value) {
+  return false;
+}
+---
+
+<time>
+  {formats(Astro.currentLocale ?? "fi").date.format(new Date(value))}
+</time>

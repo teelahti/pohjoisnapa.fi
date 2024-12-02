@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-21T08:18:00",
+    "DistanceTraveled": 8.5,
+    "EntryDate": "2006-03-20T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Today's picture transmission from the ice did not succeed. This picture is from the first day of the Expedition, when we were airlifted into Ward Hunt.",
+            "Caption_fi": "Kuvan lähetys jäältä ei onnistunut. Kuvassa retkikunta on aloittamassa hiihtourakkaansa. Takana näkyy toinen pikkukoneista, joilla retkikunta siirrettiin lähtöpaikkaan.",
+            "CreatedDate": "2006-03-21T08:18:00",
+            "Id": 68
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-21T21:37:00",
+    "LocationLatitude": 834149,
+    "LocationLongitude": 735014,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "Successful day",
+    "Subject_fi": "Onnistunut päivä",
+    "Temperature": -35.0,
+    "Text_en": "<p>It felt good today, skiing in warm sunlight. One could even say spring is in the air. The temperature soared to \u00e2\u20ac\u201c 35 C.</p><p>We avoided the worst of the pack-ice today. Several times, we were able to ski across large, flat ice fields. And once, for the first time this trip, we could exploit a narrow lead that went in the desired direction. (Ed: A lead is a crack opening up in the ice, which then freezes over quickly to form a flat, easy `highway\u00b4 down which we can speed.)</p><p>Hopefully, tomorrow morning's wakeup call will prove more peaceful than this morning's. Close by our camp, two large ice sheets crunched together like tectonic plates, giving birth to a new ridge of pack-ice boulders. The noise was impressive. From inside our sleeping bags, it sounded as if the icy boulders would soon come crashing through the front door of our tent. Nature sometimes puts on spectacular shows: it's worth skiing to the North Pole to see them.</p><p>All with the Expedition is well.</p>",
+    "Text_fi": "<p>Auringossa hiihdellen tunnelma oli välillä jopa keväinen. Lämpötilakin nousi -35 asteeseen. Muutamaa suurempaa jääkenttää ja oikeaan suuntaan vievää kapeaa railoa pitkin kiersimme ahtojäitä. Toivottavasti herääminen huomisaamuna on rennompi kuin tänään, kun jäälautat ryskyivät yhteen ja nostivat röykkiöitä uusiin muodostelmiin lähistöllä. Tärinä luonnollisesti tuntui makuupussiin niinkuin lohkareet tulisivat ovesta sisään. Niinpä, luonto tarjoaa välillä hienoja näytöksiä.&nbsp; Näitä varten kannattaa hiihtää vaikkapa napajäällä.</p><p>Retkikunnalla kaikki hyvin.</p><p>************</p><p>D\u00e5 vi skidar i solskenet känns det att vi har v\u00e5r i luften. Tempereraturen steg till minus 35 grader. Vi gick runt de värsta packisbältena via n\u00e5gra större isfält och en smal nyfrusen r\u00e5k som r\u00e5kade g\u00e5 \u00e5t rätt h\u00e5ll. Vi f\u00e5r hoppas att vi i morgon har en lugnare väckning än i dag, d\u00e5 isflaken pressades samman och lyfte höga skruvisar i närheten. Isen bävade och det känndes som om isblocken var p\u00e5 väg in i tältet. Naturen bjuder p\u00e5 fina uppvisningar. Det lönar sig till och med att skida p\u00e5 polarisen för att f\u00e5 uppleva dem.</p><p>Expeditionen allt väl.</p><p>&nbsp;</p>",
+    "Weather": null,
+    "Wind": 2.0,
+    "Slug": "2006-03-20-onnistunut-paiva",
+    "Previous": "2006-03-19-tasaistako",
+    "Next": "2006-03-21-arktista-viimaa-ja-vipellysta"
+}

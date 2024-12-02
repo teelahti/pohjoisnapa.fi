@@ -1,0 +1,29 @@
+{
+    "CreatedBy": "Antti Pohjolainen",
+    "CreatedDate": "2006-03-30T08:26:00",
+    "DistanceTraveled": 13.6,
+    "EntryDate": "2006-03-29T00:00:00",
+    "Images": [
+        {
+            "Caption_en": "Henkku on a break.",
+            "Caption_fi": "Henkku tauolla.",
+            "CreatedDate": "2006-03-30T08:26:00",
+            "Id": 77
+        }
+    ],
+    "LastModifiedBy": "Antti Pohjolainen",
+    "LastModifiedDate": "2006-03-30T11:55:00",
+    "LocationLatitude": 842257,
+    "LocationLongitude": 740930,
+    "LocationLongitudeEastWest": "W",
+    "Subject_en": "30 meters in an hour",
+    "Subject_fi": "30 metriä tunnissa",
+    "Temperature": -29.0,
+    "Text_en": "<p>Temperatures remain at around \u00e2\u20ac\u201c 30C. Perhaps our thermometer is frozen stiff? The morning was cloudy, but later in the day the sun warmed things up.</p><p>Another thing that warmed us up was yet more packed ice. Two sheets of mature ice had again crunched together to form an impressive little `mountain range\u00b4. First we spread out to scout a route through the icy boulders: slow work at the best of times. Next, it took even more time to get the sledges over the chosen `mountain pass\u00b4.</p><p>In order to advance the thirty meters, as-the-crow-flies, across the line of pack ice, the Expedition spent just over an hour. Job done. Ski on, brave warriors.</p><p>All is well with the Expedition.</p>",
+    "Text_fi": "<p>Pakkanen tuntuu jämähtäneen kolmenkymmenen asteen tietämille. Päivällä aurinko lämmitti tehokkaasti. Tosin aamupäivällä oli aika pilvistä.</p><p>Iltapäivällä päästiin taas kunnon ahtojäiden pariin. Kahden vanhan jäälautan väliin pusertunut mahtava ahtauma hidasti matkantekoamme. Ensin mahdollisen reitin löytäminen oli vaikeaa valtavien jääpalojen seassa. Sen jälkeen ahkioiden saaminen siitä läpi vei aikansa. Kolmenkymmennen metrin matkaan meni reilu tunti ja taas hiihto saattoi jatkua.</p><p>Retkikunnalla kaikki hyvin.</p><p>&nbsp;</p><p>****</p><p>Kylan verkar ha parkerat runt minus 30 grader. Under dagen värmde solen effektivt. Det var dock rätt molnigt p\u00e5 förmiddagen.<BR><BR>P\u00e5 eftermiddagen fick vi packis igen. Ett verkligt berg hade pressats upp mellan tv\u00e5 flak gammal is. Först försökte vi finna en väg genom ismassorna, och sedan kämpa med pulkorna för att f\u00e5 dem till andra sidan. En sträcka p\u00e5 trettio meter tog en dryg timme förrän färden kunde fortsätta igen.<BR><BR>Expeditionen allt väl.</p>",
+    "Weather": null,
+    "Wind": 3.0,
+    "Slug": "2006-03-29-30-metria-tunnissa",
+    "Previous": "2006-03-28-railopaiva",
+    "Next": "2006-03-30-palapelihiihtoa"
+}
