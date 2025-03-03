@@ -7,3 +7,5 @@ yarn.lock
 src/content/diary/*.json
 .husky
 .gitignore
+flake.nix
+.envrc

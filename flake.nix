@@ -1,29 +1,31 @@
 {
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    systems.url = "github:nix-systems/default";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
-
   outputs =
-    { systems, nixpkgs, ... }@inputs:
-    let
-      eachSystem = f: nixpkgs.lib.genAttrs (import systems) (system: f nixpkgs.legacyPackages.${system});
-    in
     {
-      devShells = eachSystem (pkgs: {
-        default = pkgs.mkShell {
-          buildInputs = [
-            # You can set the major version of Node.js to a specific one instead
-            # of the default version
-            # pkgs.nodejs
-            pkgs.nodejs-slim_22
-
-            pkgs.yarn
-
-            pkgs.nodePackages.typescript
-            pkgs.nodePackages.typescript-language-server
-          ];
-        };
-      });
-    };
+      self,
+      nixpkgs,
+      flake-utils,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
+      let
+        overlays = [ ];
+        pkgs = import nixpkgs { inherit system; };
+      in
+      {
+        devShell =
+          with pkgs;
+          mkShell {
+            buildInputs = [
+              nodejs_22
+              yarn
+              # Not really used but might be in the future
+              bun
+            ];
+          };
+      }
+    );
 }
