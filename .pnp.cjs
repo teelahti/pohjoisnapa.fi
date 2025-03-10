@@ -170,7 +170,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/@astrojs-prism-npm-3.2.0-e92ac8e5bc-10c0.zip/node_modules/@astrojs/prism/",\
         "packageDependencies": [\
           ["@astrojs/prism", "npm:3.2.0"],\
-          ["prismjs", "npm:1.29.0"]\
+          ["prismjs", "npm:1.30.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4234,10 +4234,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prismjs", [\
-      ["npm:1.29.0", {\
-        "packageLocation": "../../.yarn/berry/cache/prismjs-npm-1.29.0-6faa5b04b8-10c0.zip/node_modules/prismjs/",\
+      ["npm:1.30.0", {\
+        "packageLocation": "../../.yarn/berry/cache/prismjs-npm-1.30.0-c3c5ff824c-10c0.zip/node_modules/prismjs/",\
         "packageDependencies": [\
-          ["prismjs", "npm:1.29.0"]\
+          ["prismjs", "npm:1.30.0"]\
         ],\
         "linkType": "HARD"\
       }]\
