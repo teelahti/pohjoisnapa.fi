@@ -3,8 +3,8 @@ import LanLink from "./LanLink.astro";
 import { byLocale } from "./translations";
 const t = byLocale(Astro.currentLocale);
 
-import config from "../../astro.config.mjs";
-const locs = config.i18n?.locales ?? [];
+import  i18n  from "../../src/i18n_config.ts";
+const locs = i18n?.locales ?? [];
 ---
 
 <div id="languageSwitcher">
