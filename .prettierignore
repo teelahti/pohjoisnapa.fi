@@ -1,11 +1,15 @@
 **/public
 **/.git
+**/.github
 **/node_modules
 **/dist
+**/.yarn
 yarn.lock
 .prettierignore
+.pnp.cjs
 src/content/diary/*.json
 .husky
 .gitignore
 flake.nix
+flake.lock
 .envrc

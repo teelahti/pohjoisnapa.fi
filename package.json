@@ -20,13 +20,13 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/ts-plugin": "^1.10.4",
-    "astro": "5.12.8",
+    "astro": "5.12.9",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
-    "swiper": "^11.1.15",
-    "typescript": "^5.6.3"
+    "swiper": "^11.2.10",
+    "typescript": "^5.9.2"
   },
   "packageManager": "yarn@4.7.0"
 }
