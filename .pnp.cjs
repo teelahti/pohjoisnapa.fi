@@ -1522,7 +1522,7 @@ const RAW_RUNTIME_STATE =
           ["cssesc", "npm:3.0.0"],\
           ["debug", "virtual:99b2e4c11c721a776fab79814639a0752f6a35bd04e35975cdf4286759909111e0d2e2db3a19e904f1b5552330866df2b34d47e7017b76a6dfe68c418ea3a924#npm:4.4.1"],\
           ["deterministic-object-hash", "npm:2.0.2"],\
-          ["devalue", "npm:5.1.1"],\
+          ["devalue", "npm:5.3.2"],\
           ["diff", "npm:5.2.0"],\
           ["dlv", "npm:1.1.3"],\
           ["dset", "npm:3.1.4"],\
@@ -2062,10 +2062,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["devalue", [\
-      ["npm:5.1.1", {\
-        "packageLocation": "../../.yarn/berry/cache/devalue-npm-5.1.1-56bf07adb2-10c0.zip/node_modules/devalue/",\
+      ["npm:5.3.2", {\
+        "packageLocation": "../../.yarn/berry/cache/devalue-npm-5.3.2-4d46764aac-10c0.zip/node_modules/devalue/",\
         "packageDependencies": [\
-          ["devalue", "npm:5.1.1"]\
+          ["devalue", "npm:5.3.2"]\
         ],\
         "linkType": "HARD"\
       }]\
