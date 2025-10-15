@@ -20,7 +20,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/ts-plugin": "^1.10.4",
-    "astro": "5.14.1",
+    "astro": "5.14.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
     "prettier": "^3.6.2",
