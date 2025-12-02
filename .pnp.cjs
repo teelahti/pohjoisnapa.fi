@@ -2707,7 +2707,7 @@ const RAW_RUNTIME_STATE =
           ["hast-util-from-parse5", "npm:8.0.3"],\
           ["hast-util-to-parse5", "npm:8.0.0"],\
           ["html-void-elements", "npm:3.0.0"],\
-          ["mdast-util-to-hast", "npm:13.2.0"],\
+          ["mdast-util-to-hast", "npm:13.2.1"],\
           ["parse5", "npm:7.3.0"],\
           ["unist-util-position", "npm:5.0.0"],\
           ["unist-util-visit", "npm:5.0.0"],\
@@ -2729,7 +2729,7 @@ const RAW_RUNTIME_STATE =
           ["comma-separated-tokens", "npm:2.0.3"],\
           ["hast-util-whitespace", "npm:3.0.0"],\
           ["html-void-elements", "npm:3.0.0"],\
-          ["mdast-util-to-hast", "npm:13.2.0"],\
+          ["mdast-util-to-hast", "npm:13.2.1"],\
           ["property-information", "npm:7.1.0"],\
           ["space-separated-tokens", "npm:2.0.2"],\
           ["stringify-entities", "npm:4.0.4"],\
@@ -3320,10 +3320,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mdast-util-to-hast", [\
-      ["npm:13.2.0", {\
-        "packageLocation": "../../.yarn/berry/cache/mdast-util-to-hast-npm-13.2.0-538a77f867-10c0.zip/node_modules/mdast-util-to-hast/",\
+      ["npm:13.2.1", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-to-hast-npm-13.2.1-c34c4454f4-10c0.zip/node_modules/mdast-util-to-hast/",\
         "packageDependencies": [\
-          ["mdast-util-to-hast", "npm:13.2.0"],\
+          ["mdast-util-to-hast", "npm:13.2.1"],\
           ["@types/hast", "npm:3.0.4"],\
           ["@types/mdast", "npm:4.0.4"],\
           ["@ungap/structured-clone", "npm:1.3.0"],\
@@ -4462,7 +4462,7 @@ const RAW_RUNTIME_STATE =
           ["remark-rehype", "npm:11.1.2"],\
           ["@types/hast", "npm:3.0.4"],\
           ["@types/mdast", "npm:4.0.4"],\
-          ["mdast-util-to-hast", "npm:13.2.0"],\
+          ["mdast-util-to-hast", "npm:13.2.1"],\
           ["unified", "npm:11.0.5"],\
           ["vfile", "npm:6.0.3"]\
         ],\
