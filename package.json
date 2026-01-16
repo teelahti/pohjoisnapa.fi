@@ -18,15 +18,15 @@
     "*": "prettier --write"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/ts-plugin": "^1.10.4",
-    "astro": "5.15.6",
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/ts-plugin": "^1.10.6",
+    "astro": "5.16.10",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.3",
-    "prettier": "^3.6.2",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.0",
     "prettier-plugin-astro": "^0.14.1",
-    "swiper": "^12.0.2",
-    "typescript": "^5.9.2"
+    "swiper": "^12.0.3",
+    "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.7.0"
 }
