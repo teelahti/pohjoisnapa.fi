@@ -2627,18 +2627,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["h3", [\
-      ["npm:1.15.4", {\
-        "packageLocation": "../../.yarn/berry/cache/h3-npm-1.15.4-7a97ca8210-10c0.zip/node_modules/h3/",\
+      ["npm:1.15.5", {\
+        "packageLocation": "../../.yarn/berry/cache/h3-npm-1.15.5-676ab956f4-10c0.zip/node_modules/h3/",\
         "packageDependencies": [\
-          ["h3", "npm:1.15.4"],\
+          ["h3", "npm:1.15.5"],\
           ["cookie-es", "npm:1.2.2"],\
           ["crossws", "npm:0.3.5"],\
           ["defu", "npm:6.1.4"],\
           ["destr", "npm:2.0.5"],\
           ["iron-webcrypto", "npm:1.2.1"],\
-          ["node-mock-http", "npm:1.0.2"],\
+          ["node-mock-http", "npm:1.0.4"],\
           ["radix3", "npm:1.1.2"],\
-          ["ufo", "npm:1.6.1"],\
+          ["ufo", "npm:1.6.3"],\
           ["uncrypto", "npm:0.1.3"]\
         ],\
         "linkType": "HARD"\
@@ -3965,10 +3965,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-mock-http", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "../../.yarn/berry/cache/node-mock-http-npm-1.0.2-f99d1cfa01-10c0.zip/node_modules/node-mock-http/",\
+      ["npm:1.0.4", {\
+        "packageLocation": "../../.yarn/berry/cache/node-mock-http-npm-1.0.4-1c992c8f16-10c0.zip/node_modules/node-mock-http/",\
         "packageDependencies": [\
-          ["node-mock-http", "npm:1.0.2"]\
+          ["node-mock-http", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5146,6 +5146,13 @@ const RAW_RUNTIME_STATE =
           ["ufo", "npm:1.6.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.6.3", {\
+        "packageLocation": "../../.yarn/berry/cache/ufo-npm-1.6.3-29bac69d97-10c0.zip/node_modules/ufo/",\
+        "packageDependencies": [\
+          ["ufo", "npm:1.6.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["ultrahtml", [\
@@ -5391,7 +5398,7 @@ const RAW_RUNTIME_STATE =
           ["chokidar", "npm:4.0.3"],\
           ["db0", null],\
           ["destr", "npm:2.0.5"],\
-          ["h3", "npm:1.15.4"],\
+          ["h3", "npm:1.15.5"],\
           ["idb-keyval", null],\
           ["ioredis", null],\
           ["lru-cache", "npm:10.4.3"],\
