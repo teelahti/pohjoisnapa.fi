@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["prettier", "npm:3.8.0"],\
           ["prettier-plugin-astro", "npm:0.14.1"],\
-          ["swiper", "npm:12.0.3"],\
+          ["swiper", "npm:12.1.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -4148,7 +4148,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["prettier", "npm:3.8.0"],\
           ["prettier-plugin-astro", "npm:0.14.1"],\
-          ["swiper", "npm:12.0.3"],\
+          ["swiper", "npm:12.1.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
@@ -4890,10 +4890,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["swiper", [\
-      ["npm:12.0.3", {\
-        "packageLocation": "../../.yarn/berry/cache/swiper-npm-12.0.3-2debafdbb3-10c0.zip/node_modules/swiper/",\
+      ["npm:12.1.2", {\
+        "packageLocation": "../../.yarn/berry/cache/swiper-npm-12.1.2-03ca083205-10c0.zip/node_modules/swiper/",\
         "packageDependencies": [\
-          ["swiper", "npm:12.0.3"]\
+          ["swiper", "npm:12.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
