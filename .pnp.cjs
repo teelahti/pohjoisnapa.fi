@@ -1599,7 +1599,7 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.34.4"],\
           ["shiki", "npm:3.21.0"],\
           ["smol-toml", "npm:1.6.0"],\
-          ["svgo", "npm:4.0.0"],\
+          ["svgo", "npm:4.0.1"],\
           ["tinyexec", "npm:1.0.2"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["tsconfck", "virtual:a831af089b41e8d11ead7ef790a4ef359aa9f965b7654a484376f8ce2a565146460d76ac29e6cce57647c6521ab3884f5d7c9cd0ca978f860a5b386423e3d2b8#npm:3.1.6"],\
@@ -4642,10 +4642,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sax", [\
-      ["npm:1.4.4", {\
-        "packageLocation": "../../.yarn/berry/cache/sax-npm-1.4.4-0d170e0f2d-10c0.zip/node_modules/sax/",\
+      ["npm:1.5.0", {\
+        "packageLocation": "../../.yarn/berry/cache/sax-npm-1.5.0-d40bca2226-10c0.zip/node_modules/sax/",\
         "packageDependencies": [\
-          ["sax", "npm:1.4.4"]\
+          ["sax", "npm:1.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4924,17 +4924,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["svgo", [\
-      ["npm:4.0.0", {\
-        "packageLocation": "../../.yarn/berry/cache/svgo-npm-4.0.0-2bdecef5cd-10c0.zip/node_modules/svgo/",\
+      ["npm:4.0.1", {\
+        "packageLocation": "../../.yarn/berry/cache/svgo-npm-4.0.1-262aa771e6-10c0.zip/node_modules/svgo/",\
         "packageDependencies": [\
-          ["svgo", "npm:4.0.0"],\
+          ["svgo", "npm:4.0.1"],\
           ["commander", "npm:11.1.0"],\
           ["css-select", "npm:5.2.2"],\
           ["css-tree", "npm:3.1.0"],\
           ["css-what", "npm:6.2.2"],\
           ["csso", "npm:5.0.5"],\
           ["picocolors", "npm:1.1.1"],\
-          ["sax", "npm:1.4.4"]\
+          ["sax", "npm:1.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
