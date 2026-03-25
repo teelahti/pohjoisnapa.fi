@@ -155,7 +155,7 @@ const RAW_RUNTIME_STATE =
           ["remark-rehype", "npm:11.1.2"],\
           ["remark-smartypants", "npm:3.0.2"],\
           ["shiki", "npm:3.21.0"],\
-          ["smol-toml", "npm:1.6.0"],\
+          ["smol-toml", "npm:1.6.1"],\
           ["unified", "npm:11.0.5"],\
           ["unist-util-remove-position", "npm:5.0.0"],\
           ["unist-util-visit", "npm:5.0.0"],\
@@ -1598,7 +1598,7 @@ const RAW_RUNTIME_STATE =
           ["semver", "npm:7.7.3"],\
           ["sharp", "npm:0.34.4"],\
           ["shiki", "npm:3.21.0"],\
-          ["smol-toml", "npm:1.6.0"],\
+          ["smol-toml", "npm:1.6.1"],\
           ["svgo", "npm:4.0.1"],\
           ["tinyexec", "npm:1.0.2"],\
           ["tinyglobby", "npm:0.2.15"],\
@@ -4775,10 +4775,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["smol-toml", [\
-      ["npm:1.6.0", {\
-        "packageLocation": "../../.yarn/berry/cache/smol-toml-npm-1.6.0-d08833c4ac-10c0.zip/node_modules/smol-toml/",\
+      ["npm:1.6.1", {\
+        "packageLocation": "../../.yarn/berry/cache/smol-toml-npm-1.6.1-17dfda1d34-10c0.zip/node_modules/smol-toml/",\
         "packageDependencies": [\
-          ["smol-toml", "npm:1.6.0"]\
+          ["smol-toml", "npm:1.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
