@@ -1,23 +1,25 @@
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 
 const diaryCollection = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/diary" }),
   schema: z.object({
     Slug: z.string(),
     CreatedBy: z.string(),
-    CreatedDate: z.string().datetime({ local: true }),
+    CreatedDate: z.iso.datetime({ local: true }),
     DistanceTraveled: z.optional(z.number()),
-    EntryDate: z.string().datetime({ local: true }),
+    EntryDate: z.iso.datetime({ local: true }),
     Images: z.array(
       z.object({
         Caption_en: z.string(),
         Caption_fi: z.string(),
-        CreatedDate: z.string().datetime({ local: true }),
+        CreatedDate: z.iso.datetime({ local: true }),
         Id: z.number(),
       }),
     ),
     LastModifiedBy: z.optional(z.string()),
-    LastModifiedDate: z.optional(z.string().datetime({ local: true })),
+    LastModifiedDate: z.optional(z.iso.datetime({ local: true })),
     LocationLatitude: z.optional(z.number().int()),
     LocationLongitude: z.optional(z.number().int()),
     LocationLongitudeEastWest: z.optional(z.enum(["E", "W"])),

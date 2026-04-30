@@ -12,6 +12,7 @@ dist/
 
 # dependencies
 node_modules/
+.pnp.*
 
 # logs
 npm-debug.log*
