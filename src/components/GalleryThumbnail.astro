@@ -18,8 +18,11 @@ const {
   thumbs.forEach((t) => {
     t.addEventListener("click", (e) => {
       e.preventDefault();
-      const i = (e.currentTarget as any).dataset?.idx ?? 0;
-      (document.getElementById("swiper") as any).swiper.slideTo(i);
+      const i = Number((e.currentTarget as HTMLElement).dataset?.idx ?? 0);
+      const slides = document.querySelectorAll<HTMLElement>(
+        "#carousel .carousel-slide",
+      );
+      slides[i]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
     });
   });
 </script>

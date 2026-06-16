@@ -1,12 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "plugins": [
-      {
-        "name": "@astrojs/ts-plugin"
-      }
-    ]
+    "allowImportingTsExtensions": true
   },
   "exclude": ["internet-archive", "dist", "node_modules", "public"]
 }

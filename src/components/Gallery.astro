@@ -1,5 +1,4 @@
 ---
-import "swiper/css";
 import GalleryThumbnail from "./GalleryThumbnail.astro";
 
 interface Img {
@@ -18,46 +17,117 @@ interface Props {
 const { imgs, title, subtitle } = Astro.props;
 ---
 
-<script>
-  import { register } from "swiper/element/bundle";
-  register();
-</script>
-
 <div class="section">
   {title && <h2>{title}</h2>}
   {subtitle && <p>{subtitle}</p>}
 
-  <swiper-container
-    id="swiper"
-    space-between="10"
-    navigation="true"
-    css-mode="true"
-  >
-    {
-      imgs.map((e) => (
-        <swiper-slide>
-          <figure>
+  <div class="carousel-wrapper">
+    <button class="carousel-nav prev" aria-label="Previous">&#10094;</button>
+    <div class="carousel" id="carousel">
+      {
+        imgs.map((e) => (
+          <figure class="carousel-slide">
             <img src={e.source.regular} alt={e.caption} />
             <figcaption>{e.caption}</figcaption>
           </figure>
-        </swiper-slide>
-      ))
-    }
-  </swiper-container>
+        ))
+      }
+    </div>
+    <button class="carousel-nav next" aria-label="Next">&#10095;</button>
+  </div>
 
   <div class="gallery">
     {imgs.map((obj, i) => <GalleryThumbnail idx={i} obj={obj} />)}
   </div>
 </div>
 
+<script>
+  const carousel = document.getElementById("carousel");
+  const wrapper = carousel?.closest(".carousel-wrapper");
+
+  if (carousel && wrapper) {
+    const slide = () => carousel.querySelector(".carousel-slide");
+
+    wrapper.querySelector(".prev")?.addEventListener("click", () => {
+      const w = slide()?.clientWidth ?? carousel.clientWidth;
+      carousel.scrollBy({ left: -w, behavior: "smooth" });
+    });
+
+    wrapper.querySelector(".next")?.addEventListener("click", () => {
+      const w = slide()?.clientWidth ?? carousel.clientWidth;
+      carousel.scrollBy({ left: w, behavior: "smooth" });
+    });
+  }
+</script>
+
 <style>
   :root {
-    --swiper-navigation-color: #fff;
+    --nav-color: #fff;
 
     --width: 660px;
     --height: 540px;
     --thumbwidth: 100px;
     --thumbheight: 80px;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    margin-top: 20px;
+    width: var(--width);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    margin: 0;
+    width: var(--width);
+    height: var(--height);
+
+    img {
+      width: var(--width);
+      max-width: 100%;
+      height: calc(var(--height) - 60px);
+      object-fit: contain;
+      object-position: center;
+    }
+    figcaption {
+      text-align: center;
+    }
+  }
+
+  .carousel-nav {
+    position: absolute;
+    top: calc((var(--height) - 60px) / 2);
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--nav-color);
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1;
+    padding: 8px 12px;
+    user-select: none;
+  }
+  .carousel-nav.prev {
+    left: 0;
+  }
+  .carousel-nav.next {
+    right: 0;
   }
 
   .gallery {
@@ -71,25 +141,6 @@ const { imgs, title, subtitle } = Astro.props;
       width: var(--thumbwidth);
       height: var(--thumbheight);
       object-fit: cover;
-    }
-  }
-  swiper-container {
-    margin-top: 20px;
-  }
-  swiper-slide {
-    width: var(--width);
-    height: var(--height);
-
-    figure {
-      img {
-        width: var(--width);
-        height: calc(var(--height) - 60px);
-        object-fit: contain;
-        object-position: center;
-      }
-      figcaption {
-        text-align: center;
-      }
     }
   }
 </style>

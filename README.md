@@ -27,6 +27,18 @@ branch to deploy. See .github/workflows/deploy.yml for specifics.
 
 To deploy locally built site run `firebase deploy`.
 
+## Maintenance
+
+This is a **frozen archive**; there will never be new content. Dependencies are
+intentionally pinned to exact versions and should **not** be routinely updated.
+Update a dependency only if a concrete problem affects building or hosting the
+site (e.g. a security issue in the build toolchain or a hosting/CI requirement).
+
+The site ships **no client-side dependencies**: the image gallery uses a small
+hand-written CSS scroll-snap carousel (see `src/components/Gallery.astro`) instead
+of a third-party slider library. The Nix flake pins a stable nixpkgs release rather
+than `nixos-unstable` so the dev toolchain does not drift.
+
 ## Misc
 
 The folder "internet-archive" contains some archived pages from the internet discussing this trip.
