@@ -39,6 +39,26 @@ hand-written CSS scroll-snap carousel (see `src/components/Gallery.astro`) inste
 of a third-party slider library. The Nix flake pins a stable nixpkgs release rather
 than `nixos-unstable` so the dev toolchain does not drift.
 
+### Reader-mode compatibility
+
+Diary entries (`src/components/Diary.astro`) are structured so that Safari
+Reader — and other reading apps that use the arc90 Readability heuristics —
+recognise them as articles **without altering the visual layout**:
+
+- Each post is a single semantic `<article>` carrying schema.org `BlogPosting`
+  microdata, and the layout wrapper is a `<main>` (not an `<article>`) so the
+  post is the one unambiguous article on the page.
+- The entry body is injected with `<Fragment set:html>` rather than a wrapping
+  `<div>`, so the paragraphs sit directly inside the article. Reader scores by
+  paragraph length/density and is confused by deeply nested wrapper divs.
+- Previous/next links are a `<p class="diaryentry-siblings">` — not a
+  `<footer>`, `<nav>`, or a `"nav"`-classed `<div>` — so Reader keeps them in
+  the reading view instead of pruning them as navigation chrome.
+
+Very short entries (roughly one or two sentences) still won't trigger Reader:
+that is an inherent minimum-length threshold in every reader implementation,
+not something the markup can override.
+
 ## Misc
 
 The folder "internet-archive" contains some archived pages from the internet discussing this trip.

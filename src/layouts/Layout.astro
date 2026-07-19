@@ -11,9 +11,12 @@ interface Props {
   id?: string;
   title: string;
   headerImg?: HeaderImages;
+  // When set, emits Open Graph article hints that help Safari Reader (and
+  // other reading apps) recognise the page as a standalone article.
+  ogType?: "website" | "article";
 }
 
-const { id, title, headerImg } = Astro.props;
+const { id, title, headerImg, ogType = "website" } = Astro.props;
 
 // Create CSS variables; this gives us cleaner HTML than inline styles
 const leftColSrc = `url(/images/${id === "index" ? "kartta.jpg" : "gradient.jpg"})`;
@@ -28,6 +31,9 @@ const leftColSrc = `url(/images/${id === "index" ? "kartta.jpg" : "gradient.jpg"
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{t("expeditionName")} - {title}</title>
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <slot name="head" />
   </head>
   <body>
     <div id="wrapper">
@@ -35,9 +41,9 @@ const leftColSrc = `url(/images/${id === "index" ? "kartta.jpg" : "gradient.jpg"
         <Header img={headerImg} />
         <Navigation />
 
-        <article id={id} class="contentpage">
+        <main id={id} class="contentpage">
           <slot />
-        </article>
+        </main>
 
         <Footer />
       </div>

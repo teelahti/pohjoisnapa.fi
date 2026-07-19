@@ -33,7 +33,7 @@ interface Props {
 const {
   title,
   body,
-  // createdBy,
+  createdBy,
   created,
   distance,
   entrydate,
@@ -50,66 +50,88 @@ const {
 } = Astro.props;
 ---
 
-<Layout title={title} headerImg={HeaderImages.Top5}>
-  <h2><FormattedDate value={entrydate} /> {title}</h2>
+<Layout title={title} headerImg={HeaderImages.Top5} ogType="article">
+  <!--
+    Wrapping the post in a semantic <article> with schema.org microdata gives
+    Safari Reader (and other reading apps) a single, unambiguous content block
+    to latch onto. The body is injected with <Fragment> rather than a wrapping
+    <div> so the paragraphs sit directly inside the article, which reads more
+    cleanly for the arc90 Reader heuristics. See README for details.
+  -->
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="datePublished" content={entrydate} />
+    <meta itemprop="dateModified" content={lastModified ?? created} />
+    <meta itemprop="author" content={createdBy} />
 
-  <LatLon lat={lat} lon={lon} eastWest={eastWest} />
+    <h2 itemprop="headline">
+      <FormattedDate value={entrydate} />
+      {title}
+    </h2>
 
-  <div class="diaryentry-content">
-    <div>
-      <div set:html={body} />
+    <LatLon lat={lat} lon={lon} eastWest={eastWest} />
+
+    <div class="diaryentry-content">
+      <div class="diaryentry-text" itemprop="articleBody">
+        <Fragment set:html={body} />
+        {
+          distance || temp || wind ? (
+            <aside class="diaryentry-data">
+              <dl>
+                <dt>{t("data_distance")}</dt>
+                <dd>{distance ?? 0} km</dd>
+                <dt>{t("data_temperature")}</dt>
+                <dd>{temp ?? "n/a"}°C</dd>
+                <dt>{t("data_wind")}</dt>
+                <dd>{wind ?? "n/a"} m/s</dd>
+              </dl>
+              <LanLink to="/diary/data">{t("data_link")}</LanLink>
+            </aside>
+          ) : (
+            false
+          )
+        }
+        <footer>
+          <ul class="diaryentry-dates">
+            <li>
+              {t("created")}
+              <FormattedDateTime value={created} />.
+            </li>
+            <li>
+              {t("lastmodified")}{" "}
+              <FormattedDateTime value={lastModified} />.
+            </li>
+          </ul>
+        </footer>
+        {
+          /*
+        The previous/next links live in a <p> (not a <footer>, <nav>, or a
+        "nav"-classed <div>) so Safari Reader keeps them in the reading view
+        instead of pruning them as navigation chrome. Styled below to look
+        identical to the original inline links.
+      */
+        }
+        <p class="diaryentry-siblings">
+          {prev && <LanLink to={`/diary/${prev}`}>{t("diary_prev")}</LanLink>}
+          {next && <LanLink to={`/diary/${next}`}>{t("diary_next")}</LanLink>}
+        </p>
+      </div>
+
       {
-        distance || temp || wind ? (
-          <aside class="diaryentry-data">
-            <dl>
-              <dt>{t("data_distance")}</dt>
-              <dd>{distance ?? 0} km</dd>
-              <dt>{t("data_temperature")}</dt>
-              <dd>{temp ?? "n/a"}°C</dd>
-              <dt>{t("data_wind")}</dt>
-              <dd>{wind ?? "n/a"} m/s</dd>
-            </dl>
-            <LanLink to="/diary/data">{t("data_link")}</LanLink>
+        imgs ? (
+          <aside class="diaryentry-images">
+            {imgs.map((img: any) => (
+              <DiaryImage
+                id={img.Id}
+                caption={img[`Caption_${Astro.currentLocale ?? "fi"}`]}
+              />
+            ))}
           </aside>
         ) : (
           false
         )
       }
-      <footer>
-        <ul class="diaryentry-dates">
-          <li>
-            {t("created")}
-            <FormattedDateTime value={created} />.
-          </li>
-          <li>
-            {t("lastmodified")}{" "}
-            <FormattedDateTime value={lastModified} />.
-          </li>
-        </ul>
-        <div class="diaryentry-nav">
-          {prev && <LanLink to={`/diary/${prev}`}>{t("diary_prev")}</LanLink>}
-        </div>
-        <div class="diaryentry-nav">
-          {next && <LanLink to={`/diary/${next}`}>{t("diary_next")}</LanLink>}
-        </div>
-      </footer>
     </div>
-
-    {
-      imgs ? (
-        <aside class="diaryentry-images">
-          {imgs.map((img: any) => (
-            <DiaryImage
-              id={img.Id}
-              caption={img[`Caption_${Astro.currentLocale ?? "fi"}`]}
-            />
-          ))}
-        </aside>
-      ) : (
-        false
-      )
-    }
-  </div>
+  </article>
 </Layout>
 
 <style>
@@ -138,9 +160,9 @@ const {
     margin-bottom: 30px;
   }
 
-  .diaryentry-nav {
-    display: inline-block;
-    margin-right: 20px;
+  .diaryentry-siblings {
+    margin: 0;
+    padding: 0;
 
     font-family:
       Arial Narrow,
@@ -148,6 +170,11 @@ const {
     font-size: 1.1em;
     letter-spacing: 0.18em;
     text-transform: lowercase;
+
+    a {
+      display: inline-block;
+      margin-right: 20px;
+    }
   }
 
   .diaryentry-data {
