@@ -21,7 +21,9 @@
           mkShell {
             buildInputs = [
               nodejs_24
-              yarn
+              # Pin yarn to the same Node as the shell, so it cannot drift to an
+              # older nixpkgs default that Astro does not support.
+              (yarn.override { nodejs = nodejs_24; })
             ];
           };
       }
