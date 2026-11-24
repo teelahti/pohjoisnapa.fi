@@ -8,5 +8,8 @@ export default defineConfig({
   site: "https://www.pohjoisnapa.fi",
   // This follows previous site's convention
   trailingSlash: "always",
+  // Astro 7 defaults to 'jsx' whitespace rules, which drop the spaces
+  // between inline elements that the templates rely on. Keep v6 behavior.
+  compressHTML: true,
   integrations: [],
 });
