@@ -25,9 +25,14 @@ const { imgs, title, subtitle } = Astro.props;
     <button class="carousel-nav prev" aria-label="Previous">&#10094;</button>
     <div class="carousel" id="carousel">
       {
-        imgs.map((e) => (
+        imgs.map((e, i) => (
           <figure class="carousel-slide">
-            <img src={e.source.regular} alt={e.caption} />
+            <img
+              src={e.source.regular}
+              alt={e.caption}
+              loading={i === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
             <figcaption>{e.caption}</figcaption>
           </figure>
         ))

@@ -9,7 +9,13 @@ const {
 ---
 
 <a class="gallery-thumbnail-link" data-idx={idx} href={regular}>
-  <img src={thumbnail} class="gallery-source" alt={caption} />
+  <img
+    src={thumbnail}
+    class="gallery-source"
+    alt={caption}
+    loading="lazy"
+    decoding="async"
+  />
 </a>
 
 <script>
@@ -22,7 +28,11 @@ const {
       const slides = document.querySelectorAll<HTMLElement>(
         "#carousel .carousel-slide",
       );
-      slides[i]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      slides[i]?.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
     });
   });
 </script>
